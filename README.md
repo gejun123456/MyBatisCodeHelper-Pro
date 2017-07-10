@@ -34,7 +34,7 @@ Pro版本与免费版本的区别
 ![generateMultiple](http://ogyxv3y5w.bkt.clouddn.com/generate_multiple_method.gif)
 
  根据数据库对象一键生成 Dao接口，Service，Xml，数据库建表Sql文件  提供dao与xml的跳转
-![generateFile](http://ogyxv3y5w.bkt.clouddn.com/generate_multiple_method.gif)
+![generateFile](http://ogyxv3y5w.bkt.clouddn.com/generate_files_20170710.gif)
 
 
  根据dao中的方法名生成对应的mapper sql并进行方法补全  
