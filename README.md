@@ -3,14 +3,15 @@
 MyBatisCodeHelper-Pro
 =================
 
-[![Jetbrains Plugins][plugin-img]][plugin] [![Version](http://phpstorm.espend.de/badge/9445/version)][plugin]
-[![Downloads](http://phpstorm.espend.de/badge/9445/downloads)][plugin]
-[![Downloads last month](http://phpstorm.espend.de/badge/9445/last-month)][plugin]
+![Jetbrains Plugins](https://img.shields.io/badge/plugin-9445-orange.svg)
+![Version](http://phpstorm.espend.de/badge/9445/version)
+![Downloads](http://phpstorm.espend.de/badge/9445/downloads)
+![Downloads last month](http://phpstorm.espend.de/badge/9445/last-month)
 
 Intellij下代码自动生成插件 支持生成mybatis的dao接口,mapper xml,和建表sql, 支持直接从接口方法名直接生成sql.
 -----------------------------------------------------------------------
 
-###付款29元使用Pro版本一年
+付款29元使用Pro版本一年
 
 <img src="http://ogyxv3y5w.bkt.clouddn.com/1499648049347.jpg" width="300">
 
@@ -18,22 +19,21 @@ Intellij下代码自动生成插件 支持生成mybatis的dao接口,mapper xml,�
 
 
 
-
-####根据接口的方法名直接生成对应的sql
+根据接口的方法名直接生成对应的sql
 ![generateMultiple](http://ogyxv3y5w.bkt.clouddn.com/generate_multiple_method.gif)
 
-- 根据数据库对象一键生成 Dao接口，Service，Xml，数据库建表Sql文件  提供dao与xml的跳转
+ 根据数据库对象一键生成 Dao接口，Service，Xml，数据库建表Sql文件  提供dao与xml的跳转
 ![generateFile](http://ogyxv3y5w.bkt.clouddn.com/generate_multiple_method.gif)
 
 
-#### 根据dao中的方法名生成对应的mapper sql并进行方法补全
+ 根据dao中的方法名生成对应的mapper sql并进行方法补全
 ![find](http://ogyxv3y5w.bkt.clouddn.com/find.gif)
 ![update](http://ogyxv3y5w.bkt.clouddn.com/update.gif)
 ![delete](http://ogyxv3y5w.bkt.clouddn.com/delete.gif)
 ![count](http://ogyxv3y5w.bkt.clouddn.com/count.gif)
 ![all_1](http://ogyxv3y5w.bkt.clouddn.com/all_1.gif)
 
-#### mybatis接口方法名重构支持
+ mybatis接口方法名重构支持
 ![refacterMethodName](http://ogyxv3y5w.bkt.clouddn.com/refactor_method_name.gif)
 
 #### mybatis xml的自动补全
@@ -215,11 +215,6 @@ CHANGELOG
 
 
 截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.c
-[release-img]: https://img.shields.io/github/release/gejun123456/MyBatisCodeHelper.svg
-[latest-release]: https://github.com/gejun123456/MyBatisCodeHelper/releases/latest
-[badge-gitter-img]: https://img.shields.io/gitter/room/gejun123456/MyBatisCodeHelper.svg
-[badge-gitter]: https://gitter.im/codehelper-generator/Lobby
-[plugin-img]: https://img.shields.io/badge/plugin-9445-orange.svg
-[plugin]: https://plugins.jetbrains.com/plugin/9445
+
 
 
