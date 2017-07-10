@@ -17,6 +17,17 @@ Intellij下代码自动生成插件 支持生成mybatis的dao接口,mapper xml,�
 
 <img src="http://ogyxv3y5w.bkt.clouddn.com/mm_facetoface_collect_qrcode_1499647909690.png" width="300">
 
+Pro版本与免费版本的区别
+
+- 支持生成多字段索引和多字段唯一
+- 支持生成方法 max,min,sum等方法
+- 支持生成 findOne,Before,After等语法
+- 当查找多个字段时支持生成DTO
+- 支持生成接口和接口实现
+- 生成的dao不再使用pojo作为param
+- 修复byte类型的生成
+
+之后会加入更多功能
 
 
 根据接口的方法名直接生成对应的sql
@@ -184,6 +195,15 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 CHANGELOG
 ------------------------------------------------
+
+1.6.0
+- 支持生成多字段索引和多字段唯一
+- 支持生成方法 max,min,sum等方法
+- 支持生成 findOne,Before,After等语法
+- 当查找多个字段时支持生成DTO
+- 支持生成接口和接口实现
+- 生成的dao不再使用pojo作为param
+- 修复byte类型的生成
 
 1.4.2
 - 支持oracle
