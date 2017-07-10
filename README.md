@@ -30,14 +30,14 @@ Pro版本与免费版本的区别
 之后会加入更多功能
 
 
-根据接口的方法名直接生成对应的sql
+ 根据接口的方法名直接生成对应的sql
 ![generateMultiple](http://ogyxv3y5w.bkt.clouddn.com/generate_multiple_method.gif)
 
  根据数据库对象一键生成 Dao接口，Service，Xml，数据库建表Sql文件  提供dao与xml的跳转
 ![generateFile](http://ogyxv3y5w.bkt.clouddn.com/generate_multiple_method.gif)
 
 
- 根据dao中的方法名生成对应的mapper sql并进行方法补全
+ 根据dao中的方法名生成对应的mapper sql并进行方法补全  
 ![find](http://ogyxv3y5w.bkt.clouddn.com/find.gif)
 ![update](http://ogyxv3y5w.bkt.clouddn.com/update.gif)
 ![delete](http://ogyxv3y5w.bkt.clouddn.com/delete.gif)
