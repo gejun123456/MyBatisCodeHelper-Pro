@@ -214,7 +214,7 @@ CHANGELOG
 ![qqGroup](http://ogyxv3y5w.bkt.clouddn.com/qqgroup.png)
 
 
-截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.c
+截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.com/gejun123456/codehelperPluginDemo)
 
 
 
