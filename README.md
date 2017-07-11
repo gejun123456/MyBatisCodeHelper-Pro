@@ -19,6 +19,7 @@ Intellij下代码自动生成插件 支持生成mybatis的dao接口,mapper xml,�
 
 Pro版本与免费版本的区别
 
+- 支持在查询条件上生成 if test
 - 支持生成多字段索引和多字段唯一
 - 支持生成方法 max,min,sum等方法
 - 支持生成 findOne,Before,After等语法
@@ -197,6 +198,7 @@ CHANGELOG
 ------------------------------------------------
 
 1.6.0
+- 支持查询条件加上if test
 - 支持生成多字段索引和多字段唯一
 - 支持生成方法 max,min,sum等方法
 - 支持生成 findOne,Before,After等语法
