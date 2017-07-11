@@ -31,10 +31,10 @@ Pro版本与免费版本的区别
 之后会加入更多功能
 
 
- 根据接口的方法名直接生成对应的sql
+ 根据接口的方法名直接生成对应的sql  
 ![generateMultiple](http://ogyxv3y5w.bkt.clouddn.com/generate_multiple_method.gif)
 
- 根据数据库对象一键生成 Dao接口，Service，Xml，数据库建表Sql文件  提供dao与xml的跳转
+ 根据数据库对象一键生成 Dao接口，Service，Xml，数据库建表Sql文件  提供dao与xml的跳转  
 ![generateFile](http://ogyxv3y5w.bkt.clouddn.com/generate_files_20170710.gif)
 
 
@@ -72,6 +72,9 @@ Pro版本与免费版本的区别
 
 **使用 IDE 内置插件系统:**
 - <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"MybatisCodeHelper"</kbd> > <kbd>Install Plugin</kbd>
+
+**直接下载**
+- download[`lastest plugin zip`](http://ogyxv3y5w.bkt.clouddn.com/MyBatisCodeHelper-Pro-1.6.1.zip) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
 
 
 重启**IDE**.
@@ -237,6 +240,8 @@ CHANGELOG
 
 
 截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.com/gejun123456/codehelperPluginDemo)
+
+
 
 
 
