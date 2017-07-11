@@ -3,10 +3,10 @@
 MyBatisCodeHelper-Pro
 =================
 
-![Jetbrains Plugins](https://img.shields.io/badge/plugin-9445-orange.svg)
-![Version](http://phpstorm.espend.de/badge/9445/version)
-![Downloads](http://phpstorm.espend.de/badge/9445/downloads)
-![Downloads last month](http://phpstorm.espend.de/badge/9445/last-month)
+![Jetbrains Plugins](https://img.shields.io/badge/plugin-9837-orange.svg)
+![Version](http://phpstorm.espend.de/badge/9837/version)
+![Downloads](http://phpstorm.espend.de/badge/9837/downloads)
+![Downloads last month](http://phpstorm.espend.de/badge/9837/last-month)
 
 Intellij下代码自动生成插件 支持生成mybatis的dao接口,mapper xml,和建表sql, 支持直接从接口方法名直接生成sql.
 -----------------------------------------------------------------------
