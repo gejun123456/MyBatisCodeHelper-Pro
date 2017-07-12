@@ -17,6 +17,8 @@ Intellij下代码自动生成插件 支持生成mybatis的dao接口,mapper xml,�
 
 <img src="http://ogyxv3y5w.bkt.clouddn.com/mm_facetoface_collect_qrcode_1499647909690.png" width="300">
 
+收到钱后 发激活码
+
 Pro版本与免费版本的区别
 
 - 支持在查询条件上生成 if test
@@ -35,7 +37,7 @@ Pro版本与免费版本的区别
 ![generateMultiple](http://ogyxv3y5w.bkt.clouddn.com/generate_multiple_method.gif)
 
  根据数据库对象一键生成 Dao接口，Service，Xml，数据库建表Sql文件  提供dao与xml的跳转  
-![generateFile](http://ogyxv3y5w.bkt.clouddn.com/generate_files_20170710.gif)
+![generateFile](http://ogyxv3y5w.bkt.clouddn.com/20170712_generateFiles.gif)
 
 
  根据dao中的方法名生成对应的mapper sql并进行方法补全  
@@ -74,7 +76,7 @@ Pro版本与免费版本的区别
 - <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"MybatisCodeHelper-Pro"</kbd> > <kbd>Install Plugin</kbd>
 
 **直接下载**
-- download[`lastest plugin zip`](http://ogyxv3y5w.bkt.clouddn.com/MyBatisCodeHelper-Pro-1.6.1.zip) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
+- download[`lastest plugin zip`](http://ogyxv3y5w.bkt.clouddn.com/MyBatisCodeHelper-Pro-1.6.2.zip) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
 
 
 重启**IDE**.
