@@ -240,7 +240,7 @@ CHANGELOG
 - support java8 time type
 - using new pic
 - auto import after generate the method sql
-- bugfix 修复生成文件为null和initialize class com.ccnode.codegenerator.freemarker.TemplateUtil exception(大部分mac会出现的问题)
+- bugfix 
 
 
 1.2
