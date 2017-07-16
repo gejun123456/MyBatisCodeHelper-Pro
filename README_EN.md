@@ -1,8 +1,5 @@
 # MyBatisCodeHelper-Pro
 
-MyBatisCodeHelper-Pro
-=================
-
 [![Jetbrains Plugins](https://img.shields.io/badge/plugin-9837-orange.svg)][plugin]
 [![Version](http://phpstorm.espend.de/badge/9837/version)][plugin]
 [![Downloads](http://phpstorm.espend.de/badge/9837/downloads)][plugin]
@@ -18,7 +15,7 @@ Intellij code generate plugin. support to generate mybatis dao interface,mapper 
 
 ## paypal me 5 dollar to use 1 year.
 
-* [buy](paypal.me/gejun123456/5)
+* [buy](https://paypal.me/gejun123456/5)
 
 * i will send you the activite code after receive the money.
 

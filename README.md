@@ -1,8 +1,5 @@
 # MyBatisCodeHelper-Pro
 
-MyBatisCodeHelper-Pro
-=================
-
 [![Jetbrains Plugins](https://img.shields.io/badge/plugin-9837-orange.svg)][plugin]
 [![Version](http://phpstorm.espend.de/badge/9837/version)][plugin]
 [![Downloads](http://phpstorm.espend.de/badge/9837/downloads)][plugin]
