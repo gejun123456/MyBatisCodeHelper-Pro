@@ -105,9 +105,20 @@ Pro版本与免费版本的区别
 | java.lang.Boolean    |   v1.2              |
 | java.util.Date       |   v1.2              |
 | java.lang.String     |   v1.2              |
-| java.lang.Byte       |   v1.2              |
 | java.math.BigDecimal |   v1.2              |
 | java.lang.Short      |   v1.2              |
+|java.sql.Date | v1.3|
+|java.sql.Time | v1.3|
+|java.sql.Timestamp | v1.3|
+|java.time.LocalDateTime | v1.3|
+|java.time.LocalDate | v1.3|
+|java.time.LocalTime | v1.3|
+|java.time.OffsetDateTime | v1.3|
+|java.time.OffsetTime | v1.3|
+|java.time.ZonedDateTime | v1.3|
+| java.lang.Byte       |   v1.6.0              |
+
+
 
 
 
@@ -138,21 +149,26 @@ xml中对应的resultMap为
 
 可以跟在字段后面的比较符有
 
-比较符  | 生成sql
-------- | --------
-between |  prop > {} and prop <{}
-betweenOrEqualto | prop >={} and prop <={} v1.3
-lessThan  | prop < {}
-lessThanOrEqualto | prop <={}  v1.3
-greaterThan | prop > {}
-greaterThanOrEqualto | prop >={}  v1.3
-isnull | prop is null
-notnull | prop is not null
-like   | prop like {}
-in     | prop in {}
-notin  | prop not in {}
-not    | prop != {}
-notlike | prop not like {}
+比较符  | 生成sql | 开始支持的版本号
+------- | -------- |---------
+between |  prop > {} and prop <{}  |v1.3
+betweenOrEqualto | prop >={} and prop <={} | v1.3
+lessThan  | prop < {} | v1.3
+lessThanOrEqualto | prop <={}  |v1.3
+greaterThan | prop > {} |v1.3
+greaterThanOrEqualto | prop >={} | v1.3
+isnull | prop is null |v1.3
+notnull | prop is not null |v1.3
+like   | prop like {} |v1.3
+in     | prop in {} |v1.3
+notin  | prop not in {} |v1.3
+not    | prop != {} |v1.3
+notlike | prop not like {} |v1.3
+startingWith | prop like {}% |v1.6.0
+endingWith | prop like %{} |v1.6.0
+containing | prop like %{}% |v1.6.0
+
+
 
 - find方法
 
@@ -170,9 +186,13 @@ findByIdLessThanAndUserNameIn  | select * from user where id < {} and user_name 
 findByUserNameAndPassword      | select * from user where user_name = {} and password = {}
 findUserNameOrderByIdDesc   | select user_name from user order by id desc
 findDistinctUserNameByIdBetween | select distinct(user_name) from user where id >= {} and id <={}
+findOneById	| select * from user where id = {} limit 1
 findFirstByIdGreaterThan | select * from user where id > {} limit 1
 findFirst20ByIdLessThan  | select * from user where id < {} limit 20
 findFirst10ByIdGreaterThanOrderByUserName  | select * from user where id > {} order by user_name limit 10
+findMaxIdByUserNameGreaterThan | select max(id) from user where user_name > {}
+findMaxIdAndMinId   | select max(id) as maxId, min(id) as minId from user
+
 
 - update方法 by后面设置的条件同上
 
