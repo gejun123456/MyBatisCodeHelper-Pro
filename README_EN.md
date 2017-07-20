@@ -66,6 +66,10 @@ and will later add more feature, the free version will no longer maintained.
 
 ![property complete](http://ogyxv3y5w.bkt.clouddn.com/propertyComplete.gif)
 
+### method generate sql support if test
+
+![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
+
 Installation
 ----
 

@@ -11,6 +11,7 @@
 
 Intellij下代码自动生成插件 支持生成mybatis的dao接口,mapper xml,和建表sql, 支持直接从接口方法名直接生成sql.
 -----------------------------------------------------------------------
+付款前请添加微信:gejun12311  
 
 付款29元使用Pro版本一年
 
@@ -62,6 +63,10 @@ Pro版本与免费版本的区别
 #### property refid resultMap等的自动补全
 
 ![property complete](http://ogyxv3y5w.bkt.clouddn.com/propertyComplete.gif)
+
+### 方法名生成sql时支持if test
+
+![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
 
 安装
 ----
