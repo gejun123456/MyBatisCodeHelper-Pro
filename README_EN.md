@@ -38,7 +38,7 @@ and will later add more feature, the free version will no longer maintained.
 
 
 #### use method name to generate sql in xml   
-![generateMultiple](http://ogyxv3y5w.bkt.clouddn.com/generate_multiple_method.gif)
+![generateMultiple](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_multiple_sql_generate.gif)
 
 #### generate mybatis dao interface, mapper xml by domain class, support dao interface jump to mybatis mapper file    
 ![generateFile](http://ogyxv3y5w.bkt.clouddn.com/20170712_generateFiles.gif)

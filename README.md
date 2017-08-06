@@ -36,7 +36,7 @@ Pro版本与免费版本的区别
 
 
 #### 根据接口的方法名直接生成对应的sql  
-![generateMultiple](http://ogyxv3y5w.bkt.clouddn.com/generate_multiple_method.gif)
+![generateMultiple](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_multiple_sql_generate.gif)
 
 #### 根据java对象一键生成 Dao接口，Service，Xml，数据库建表Sql文件  提供dao与xml的跳转  
 ![generateFile](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/20170712_generateFiles.gif)
