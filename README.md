@@ -68,6 +68,10 @@ Pro版本与免费版本的区别
 
 ![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
 
+### 使用mybatis genertor 来进行生成
+
+![mybatis-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_mybatis_generator.gif)
+
 安装
 ----
 

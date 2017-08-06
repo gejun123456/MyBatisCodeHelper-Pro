@@ -70,6 +70,10 @@ and will later add more feature, the free version will no longer maintained.
 
 ![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
 
+### use mybatis generator to generate files
+
+![mybatis-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_mybatis_generator.gif)
+
 Installation
 ----
 
