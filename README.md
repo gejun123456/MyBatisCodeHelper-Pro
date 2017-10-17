@@ -199,7 +199,7 @@ findByIdLessThanAndUserNameIn  | select * from user where id < {} and user_name 
 findByUserNameAndPassword      | select * from user where user_name = {} and password = {}
 findUserNameOrderByIdDesc   | select user_name from user order by id desc
 findDistinctUserNameByIdBetween | select distinct(user_name) from user where id >= {} and id <={}
-findOneById	| select * from user where id = {} limit 1
+findOneById	| select * from user where id = {}
 findFirstByIdGreaterThan | select * from user where id > {} limit 1
 findFirst20ByIdLessThan  | select * from user where id < {} limit 20
 findFirst10ByIdGreaterThanOrderByUserName  | select * from user where id > {} order by user_name limit 10
@@ -234,6 +234,36 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 CHANGELOG
 ------------------------------------------------
+
+1.7.0
+- 生成service添加override注解
+- 修复生成的service没有导入java包的问题
+- 修复findFirstN没有返回List的问题
+
+
+1.6.9
+- 方法名自动生成增强
+- 修复Long类型的jdbcType
+- 支持transient字段类型
+- findOne不再生成limit 1 可用findFirst
+
+
+1.6.8
+- 修复xml变动时图标会消失的问题
+- 支持生成jdbcType
+
+1.6.7
+- 生成sql可从java类中生成注释
+- 支持切换图标
+- 支持updateIncVersion语法
+
+1.6.5
+- 支持findWithPage
+- 支持自定义mapper后缀
+
+1.6.4
+- 支持sqlite
+- oracel支持生成多字段唯一，多字段索引
 
 1.6.0
 - 支持查询条件加上if test
