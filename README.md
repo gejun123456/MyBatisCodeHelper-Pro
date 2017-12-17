@@ -16,7 +16,7 @@ Intellij下代码自动生成插件 支持生成mybatis的dao接口,mapper xml,�
 
 付款url: http://brucege.com/pay/view
 
-付款过程中有问题请添加微信:
+付款过程中有问题请添加微信:  
 ![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
 
 Pro版本与免费版本的区别
