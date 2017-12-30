@@ -35,6 +35,10 @@ Pro版本与免费版本的区别
 - 修复byte类型的生成
 - 修复其他的一些bug
 
+
+不支持的功能
+- 不支持生成关联表的sql (如果觉得可以实现可以联系我)
+
 之后会加入更多功能
 
 
@@ -106,6 +110,8 @@ Pro版本与免费版本的区别
 
 - 使用方法名生成sql 需要在接口中提供一个insert或save或add方法并以数据库对象为第一参数 (可以通过数据库对象自动生成)
 - 使用方法名生成的sql的字段会从数据库对象对应的resultMap中的数据库字段来设置。
+- 图标跳转目前需确保java类和xml在一个module中
+- java类生成文件这些 java类中的字段只支持对象类型
 
 现在支持的数据库对象字段类型
 
@@ -234,6 +240,14 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 CHANGELOG
 ------------------------------------------------
+
+1.7.1 （近期发布）
+- 修复intellij 2017.3的报错
+- 优化mac下的ui显示
+- 修复orderby多个字段
+- 通过数据库的表生成sql添加滚动条
+- 不使用的xml标红，可以一键删除
+
 
 1.7.0
 - 生成service添加override注解
