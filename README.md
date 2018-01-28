@@ -91,7 +91,7 @@ Pro版本与免费版本的区别
 - <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"MybatisCodeHelper-Pro"</kbd> > <kbd>Install Plugin</kbd>
 
 **直接下载**
-- download[`lastest plugin zip`](http://ogyxv3y5w.bkt.clouddn.com/MyBatisCodeHelper-Pro-1.6.6.zip) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
+- download[`lastest plugin zip`](http://ogyxv3y5w.bkt.clouddn.com/MyBatisCodeHelper-Pro-1.7.2.zip) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
 
 
 重启**IDE**.
@@ -239,8 +239,9 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 CHANGELOG
 ------------------------------------------------
 
-1.7.2
-- 修复html中的select标签报错
+1.7.2  
+- 修复 html中 select标签报错  
+
 1.7.1 
 - 修复intellij 2017.3的报错
 - 优化mac下的ui显示
