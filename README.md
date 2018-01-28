@@ -98,7 +98,7 @@ Pro版本与免费版本的区别
 
 使用方法
 --------------------------------------------------------------------------
-- 在数据库对象上使用alt+insert （generate mybatis files）生成对应的dao xml文件等 （mac上使用 ctrl+N 即getter setter对应的快捷键)
+- 在java对象上使用alt+insert （generate mybatis files）生成对应的dao xml文件等 （mac上使用 ctrl+N 即getter setter对应的快捷键)
 - 当数据库对象添加字段后也可使用alt+insert （generate mybatis files）来生成更新后的xml。（只会更新默认的insert,insertList,update方法 其他自定义的方法不会变）
 - 在mybatis的接口文件上的方法名上使用alt+enter generatedaoxml 生成对应的mybatis sql及方法的补全
 
@@ -239,7 +239,9 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 CHANGELOG
 ------------------------------------------------
 
-1.7.1 （近期发布）
+1.7.2
+- 修复html中的select标签报错
+1.7.1 
 - 修复intellij 2017.3的报错
 - 优化mac下的ui显示
 - 修复orderby多个字段
