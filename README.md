@@ -75,7 +75,17 @@ Pro版本与免费版本的区别
 
 ### 使用mybatis genertor 来进行生成
 
+#### 使用mybatisGenerator的配置文件来生成
+
+ mybatis generator 配置文件的规则   
+  http://www.mybatis.org/generator/configreference/xmlconfig.html
 ![mybatis-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_mybatis_generator.gif)
+
+#### 使用添加的datasource来生成 （目前只支持mysql) 
+
+![mybatis-database-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabaseToUseMybatisGenerator.gif)
+
+
 
 安装
 ----
