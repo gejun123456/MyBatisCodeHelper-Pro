@@ -32,7 +32,7 @@ Pro版本与免费版本的区别
 - 支持更换图标
 - 修复byte类型的生成
 - 修复其他的一些bug
-
+- 一键生成mybatis generator的xml文件
 
 不支持的功能
 - 不支持生成关联表的sql (如果觉得可以实现可以联系我)
@@ -81,7 +81,7 @@ Pro版本与免费版本的区别
   http://www.mybatis.org/generator/configreference/xmlconfig.html
 ![mybatis-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_mybatis_generator.gif)
 
-#### 使用添加的datasource来生成 （目前只支持mysql) 
+#### 使用添加的datasource来生成 （目前只支持mysql 推荐使用该种方式) 
 
 ![mybatis-database-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabaseToUseMybatisGenerator.gif)
 
@@ -248,6 +248,17 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 CHANGELOG
 ------------------------------------------------
+
+
+1.7.4
+- 一键生成mybatis generator的xml文件
+- 当更新java类的时候添加jdbcType
+- 当xml不被使用时使用警告而不是标红
+
+1.7.3
+- 修复thread assertion报错
+- 使用mybatis generator时不修改dao文件
+- 修复java dateTime的jdbcType
 
 1.7.2  
 - 修复 html中 select标签报错  
