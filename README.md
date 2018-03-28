@@ -32,6 +32,7 @@ Pro版本与免费版本的区别
 - 支持更换图标
 - 修复byte类型的生成
 - 修复其他的一些bug
+- 一键删除不再使用的xml
 - 一键生成mybatis generator的xml文件
 
 不支持的功能
@@ -101,7 +102,7 @@ Pro版本与免费版本的区别
 - <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"MybatisCodeHelper-Pro"</kbd> > <kbd>Install Plugin</kbd>
 
 **直接下载**
-- download[`lastest plugin zip`](http://ogyxv3y5w.bkt.clouddn.com/MyBatisCodeHelper-Pro-1.7.2.zip) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
+- download[`lastest plugin zip`](http://ogyxv3y5w.bkt.clouddn.com/MyBatisCodeHelper-Pro-1.7.4.zip) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
 
 
 重启**IDE**.
