@@ -86,6 +86,10 @@ Pro版本与免费版本的区别
 
 ![mybatis-database-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabaseToUseMybatisGenerator.gif)
 
+#### 一键生成mybatis generator的xml文件
+
+![generate_mybatis_generator_config_file](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generate_mybatis_generator_config_file.gif)
+
 
 
 安装
@@ -102,7 +106,7 @@ Pro版本与免费版本的区别
 - <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"MybatisCodeHelper-Pro"</kbd> > <kbd>Install Plugin</kbd>
 
 **直接下载**
-- download[`lastest plugin zip`](http://ogyxv3y5w.bkt.clouddn.com/MyBatisCodeHelper-Pro-1.7.4.zip) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
+- download[`lastest plugin zip`](http://ogyxv3y5w.bkt.clouddn.com/MyBatisCodeHelper-Pro-1.7.6.zip) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
 
 
 重启**IDE**.
@@ -121,6 +125,8 @@ Pro版本与免费版本的区别
 - 使用方法名生成的sql的字段会从数据库对象对应的resultMap中的数据库字段来设置。
 - 图标跳转目前需确保java类和xml在一个module中
 - java类生成文件这些 java类中的字段只支持对象类型
+- 当mapper文件和xml文件不在一个module中时 可以在设置中选择searchScope为project
+- 当mapper对应多个xml文件时 可以在配置中勾选multipleXmlFile选项
 
 现在支持的数据库对象字段类型
 
@@ -249,7 +255,13 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 CHANGELOG
 ------------------------------------------------
-
+1.7.6
+- 记忆用户保存的路径
+- java和xml相互跳转添加快捷键
+- 修复编码错误
+- 可以配置使用project scope还是module scope
+- 修复生成mybatis generator的xml
+- 支持一个mapper对应多个xml
 
 1.7.4
 - 一键生成mybatis generator的xml文件
