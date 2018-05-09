@@ -123,10 +123,16 @@ Pro版本与免费版本的区别
 
 - 使用方法名生成sql 需要在接口中提供一个insert或save或add方法并以数据库对象为第一参数 (可以通过数据库对象自动生成)
 - 使用方法名生成的sql的字段会从数据库对象对应的resultMap中的数据库字段来设置。
-- 图标跳转目前需确保java类和xml在一个module中
-- java类生成文件这些 java类中的字段只支持对象类型
+- java类生成文件这些 java类中的字段只支持对象类型 比如 int需要改写为Integer
 - 当mapper文件和xml文件不在一个module中时 可以在设置中选择searchScope为project
 - 当mapper对应多个xml文件时 可以在配置中勾选multipleXmlFile选项
+
+常见问题
+----------------------------------------------------------------------------
+- "please check with your resultMap dose it contain all the property of 
+此时可以检查这个接口对应的对象 比如 这个接口有个 insert(User user) 即 User对象
+是否有一个对应的完整的resultMap在xml中， 目前resultMap不支持 extend属性， 以后会支持
+
 
 现在支持的数据库对象字段类型
 
