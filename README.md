@@ -9,6 +9,8 @@
 <a href="README_EN.md">English</a>
 </div>
 
+介绍视频:https://www.bilibili.com/video/av23458308/
+
 Intellij下代码自动生成插件 支持生成mybatis的dao接口,mapper xml,和建表sql, 支持直接从接口方法名直接生成sql.
 -----------------------------------------------------------------------
 
