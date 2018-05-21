@@ -361,7 +361,7 @@ CHANGELOG
 - 添加方法名自动提示
 ----------------------------------
 - 加入qq群  
-
+542735979
 ![qqGroup](http://ogyxv3y5w.bkt.clouddn.com/qqgroup.png)
 
 
