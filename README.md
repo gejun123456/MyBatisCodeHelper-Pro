@@ -11,7 +11,9 @@
 
 介绍视频:https://www.bilibili.com/video/av23458308/
 
-Intellij下代码自动生成插件 支持生成mybatis的dao接口,mapper xml,和建表sql, 支持直接从接口方法名直接生成sql.
+Intellij下代码自动生成插件 通过从java实体生成crub代码 或者 通过表结构生成crud代码
+
+从方法名生成sql代码，支持springDataJpa的语法，使用比springDataJpa更简单
 -----------------------------------------------------------------------
 1元使用10天
 3元使用30天
@@ -85,7 +87,7 @@ Pro版本与免费版本的区别
   http://www.mybatis.org/generator/configreference/xmlconfig.html
 ![mybatis-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_mybatis_generator.gif)
 
-#### 使用添加的datasource来生成 （目前只支持mysql 推荐使用该种方式) 
+#### 使用添加的datasource来生成 （目前只支持mysql 1.8.0版本支持oracle和postgresql) 
 
 ![mybatis-database-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabaseToUseMybatisGenerator.gif)
 
@@ -358,7 +360,7 @@ CHANGELOG
 - 添加方法名生成sql
 - 添加方法名自动提示
 ----------------------------------
-- 加入qq群
+- 加入qq群  
 ![qqGroup](http://ogyxv3y5w.bkt.clouddn.com/qqgroup.png)
 
 
