@@ -6,14 +6,21 @@
 [![Downloads last month](http://phpstorm.espend.de/badge/9837/last-month)][plugin]
 
 <div align="right">
-<a href="README_EN.md">English</a>
+<a href="README_EN.md">English</a>  
 </div>
 
 介绍视频:https://www.bilibili.com/video/av23458308/
 
-Intellij下代码自动生成插件 通过从java实体生成crub代码 或者 通过表结构生成crud代码
+Intellij下代码自动生成插件 通过从java实体生成crud代码 或者 通过表结构生成crud代码
 
 从方法名生成sql代码，支持springDataJpa的语法，使用比springDataJpa更简单
+
+支持mapper与xml的互相跳转 mapper中的方法名重构
+
+mapper方法中一键 添加 param注解
+
+检测mapper中没有使用的方法  检测xml没有使用的 并可以一键删除
+
 -----------------------------------------------------------------------
 1元使用10天
 3元使用30天
@@ -136,7 +143,10 @@ Pro版本与免费版本的区别
 ----------------------------------------------------------------------------
 - "please check with your resultMap dose it contain all the property of 
 此时可以检查这个接口对应的对象 比如 这个接口有个 insert(User user) 即 User对象
-是否有一个对应的完整的resultMap在xml中， 目前resultMap不支持 extend属性， 以后会支持
+是否有一个对应的完整的resultMap在xml中， 目前resultMap不支持 extend属性， 1.8.0版本已支持
+
+- xml文件可以跳转到mapper文件，mapper文件上没图标， 请确保xml文件对应的 resource文件夹 被 mark as resource root
+
 
 
 现在支持的数据库对象字段类型
