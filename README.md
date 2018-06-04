@@ -22,11 +22,16 @@ mapper方法中一键 添加 param注解
 检测mapper中没有使用的方法  检测xml没有使用的 并可以一键删除
 
 -----------------------------------------------------------------------
+
+付款url: http://brucege.com/pay/view
+
+上面链接 可以免费试用
+
 1元使用10天
 3元使用30天
 29元使用一年
 
-付款url: http://brucege.com/pay/view
+
 
 付款过程中有问题请添加微信:  
 ![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
