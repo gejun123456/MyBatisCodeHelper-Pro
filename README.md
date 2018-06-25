@@ -97,7 +97,7 @@ Pro版本与免费版本的区别
   http://www.mybatis.org/generator/configreference/xmlconfig.html
 ![mybatis-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_mybatis_generator.gif)
 
-#### 使用添加的datasource来生成 （目前只支持mysql 1.8.0版本支持oracle和postgresql) 
+#### 使用添加的datasource来生成 （目前支持mysql oracle postgresql sqlserver) 
 
 ![mybatis-database-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabaseToUseMybatisGenerator.gif)
 
@@ -149,9 +149,9 @@ Pro版本与免费版本的区别
 是否有一个对应的完整的resultMap在xml中， 目前resultMap不支持 extend属性， 1.8.0版本已支持
 
 - xml文件可以跳转到mapper文件，mapper文件上没图标， 请确保xml文件对应的 resource文件夹 被 mark as resource root
-- 由于激活的时候需要联网，某些公司可能设置了拦截 无法联网，此时可以使用vpn 或者 手机开热点，实在不行 可以进行离线激活 离线激活的教程为 
+- 由于激活的时候需要联网，某些公司可能设置了拦截 无法联网，此时可以使用vpn 或者 手机开热点，实在不行 可以进行离线激活 离线激活的教程为 1.8.3版本支持
 
-![offline] (1.8.3版本支持) (https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/offlineActivation.png)
+![offline](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/offlineActivation.png)
 
 - 购买后会发两个激活码 可以在两台设备上绑定 一个激活码绑定一个设备 解绑可进行下图的操作 (1.8.3版本支持)
 ![unBind](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/unBind.png)
