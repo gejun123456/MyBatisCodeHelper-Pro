@@ -392,6 +392,8 @@ CHANGELOG
 
 截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.com/gejun123456/codehelperPluginDemo)
 
+通过数据库来生成CRUD代码参考了 https://github.com/zouzg/mybatis-generator-gui 项目 已征得该项目作者同意，后续插件将添加定制列等功能
+
 
 [plugin]: https://plugins.jetbrains.com/plugin/9837
 
