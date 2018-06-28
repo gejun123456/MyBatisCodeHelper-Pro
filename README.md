@@ -97,7 +97,7 @@ Pro版本与免费版本的区别
   http://www.mybatis.org/generator/configreference/xmlconfig.html
 ![mybatis-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_mybatis_generator.gif)
 
-#### 使用添加的datasource来生成 （目前支持mysql oracle postgresql sqlserver) 
+#### 使用添加的datasource来生成 （目前支持mysql oracle postgresql sqlserver  myql支持5.5版本级以上  oracle支持oracle10g及以上 postgresql sqlserver支持最新版，老板本未测试 有问题请联系我) 
 
 ![mybatis-database-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabaseToUseMybatisGenerator.gif)
 
