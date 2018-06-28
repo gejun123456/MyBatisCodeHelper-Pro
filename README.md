@@ -1,9 +1,7 @@
 # MyBatisCodeHelper-Pro
 
-[![Jetbrains Plugins](https://img.shields.io/badge/plugin-9837-orange.svg)][plugin]
-[![Version](http://phpstorm.espend.de/badge/9837/version)][plugin]
-[![Downloads](http://phpstorm.espend.de/badge/9837/downloads)][plugin]
-[![Downloads last month](http://phpstorm.espend.de/badge/9837/last-month)][plugin]
+[![Jetbrains Plugins](https://img.shields.io/jetbrains/plugin/v/9837-a8translate.svg)][plugin]
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/9837.svg?style=flat-square)][plugin]
 
 <div align="right">
 <a href="README_EN.md">English</a>  
