@@ -146,6 +146,9 @@ Pro版本与免费版本的区别
 此时可以检查这个接口对应的对象 比如 这个接口有个 insert(User user) 即 User对象
 是否有一个对应的完整的resultMap在xml中， 目前resultMap不支持 extend属性， 1.8.0版本已支持
 
+- 当生成sql时 如果比如UserMapper对应的User对象中含有List或Set类型的属性时，sql会无法生成
+请将这些属性设置为transient类型  
+
 - xml文件可以跳转到mapper文件，mapper文件上没图标， 请确保xml文件对应的 resource文件夹 被 mark as resource root
 - 由于激活的时候需要联网，某些公司可能设置了拦截 无法联网，此时可以使用vpn 或者 手机开热点，实在不行 可以进行离线激活 离线激活的教程为 1.8.3版本支持
 
