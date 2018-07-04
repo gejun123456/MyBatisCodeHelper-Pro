@@ -69,6 +69,7 @@ Pro版本与免费版本的区别
 ![all_1](http://ogyxv3y5w.bkt.clouddn.com/all_1.gif)
 
 #### mybatis接口方法名重构支持
+
 ![refacterMethodName](http://ogyxv3y5w.bkt.clouddn.com/refactor_method_name.gif)
 
 #### mybatis xml的自动补全
