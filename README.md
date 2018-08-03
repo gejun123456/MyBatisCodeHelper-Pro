@@ -32,21 +32,21 @@ mapper方法中一键 添加 param注解
 付款过程中有问题请添加微信:  
 ![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
 
-Pro版本与免费版本的区别
-
-- 支持在查询条件上生成 if test
-- 支持生成多字段索引和多字段唯一
-- 支持生成方法 max,min,sum等方法
-- 支持生成 findOne,Before,After等语法
-- 当查找多个字段时支持生成DTO
-- 支持生成接口和接口实现
-- 生成的dao不再使用pojo作为param
-- 支持生成jdbcType
-- 支持更换图标
-- 修复byte类型的生成
-- 修复其他的一些bug
-- 一键删除不再使用的xml
-- 一键生成mybatis generator的xml文件
+功能
+- 从java类生成mybatis crud代码 建表语句 支持生成service，建表支持生成多字段的索引
+- 添加一个数据库 从数据库生成crud代码 支持mysql oracle sqlserver postgresql 
+- 通过方法名来生成sql 可以生成大部分单表操作的sql 只需要一个方法的名字即可 会自动补全好方法的参数和返回值 和springdatajpa的语句基本一致
+- xml中的 param的自动提示 if test的自动提示 resultMap refid 等的自动提示
+- xml中refid，resultMap等的跳转到定义
+- mybatis接口和xml的互相跳转  支持一个mybatis接口对应多个xml
+- 检测没有使用的xml 可一键删除
+- 检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml
+- 检测resultmap的property是否有误 
+- resultMap中的property的自动提示
+- mybatis接口中一键添加param注解
+- mybatis接口一键生成xml
+- mybaits和spring的集成 将mybatis的接口注入到spring中 IDEA高级版中的spring不再报错 
+- mybatis接口中的方法名重构支持
 
 不支持的功能
 - 不支持生成关联表的sql (如果觉得可以实现可以联系我)
@@ -145,7 +145,7 @@ Pro版本与免费版本的区别
 ----------------------------------------------------------------------------
 - "please check with your resultMap dose it contain all the property of 
 此时可以检查这个接口对应的对象 比如 这个接口有个 insert(User user) 即 User对象
-是否有一个对应的完整的resultMap在xml中， 目前resultMap不支持 extend属性， 1.8.0版本已支持
+是否有一个对应的完整的resultMap在xml中， 
 
 - 当生成sql时 如果比如UserMapper对应的User对象中含有List或Set类型的属性时，sql会无法生成
 请将这些属性设置为transient类型  
