@@ -119,7 +119,7 @@ Pro版本与免费版本的区别
 **使用 IDE 内置插件系统:**
 - <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"MybatisCodeHelper-Pro"</kbd> > <kbd>Install Plugin</kbd>
 
-**直接下载**
+**直接下载** (不要解压zip 直接安装即可)
 - download[`lastest plugin zip`](http://ogyxv3y5w.bkt.clouddn.com/MyBatisCodeHelper-Pro-1.8.2.zip) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
 
 
@@ -293,6 +293,45 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 CHANGELOG
 ------------------------------------------------
+1.8.6
+- 添加2018.1及之后版本的spring支持
+- 修复resultMap的自动补全
+- 优化check resultMap的提示
+
+1.8.4
+- 使用数据库生成时可以自定义字段
+- Intellij高级版支持 param的自动补全
+- 添加spring的支持
+
+1.8.3
+- 离线激活支持
+- 解绑支持
+- 数据库界面优化
+
+1.8.2
+- 修复mysql使用mybatis generator生成时的数据库名
+
+
+1.8.1
+- 添加sqlserver和 oracle10g和 mysql8.0的支持
+- 修复BaseColumnList重复生成的问题
+- 支持mybatis上 insertProvider等注解
+
+
+1.8.0
+- 支持识别resultMap的extend属性
+- 添加oracle和postgresql的支持
+- mybatis generator的ui优化
+- 自动import优化
+
+
+1.7.7
+- 可以直接从java类跳转到xml
+- 一键为方法添加param注解
+- 更新生成到mysql的编码为uft8mb4
+- 修复findByLike
+
+
 1.7.6
 - 记忆用户保存的路径
 - java和xml相互跳转添加快捷键
