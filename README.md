@@ -120,7 +120,7 @@ mapper方法中一键 添加 param注解
 - <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"MybatisCodeHelper-Pro"</kbd> > <kbd>Install Plugin</kbd>
 
 **直接下载** (不要解压zip 直接安装即可)
-- download[`lastest plugin zip`](http://ogyxv3y5w.bkt.clouddn.com/MyBatisCodeHelper-Pro-1.8.6.zip) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
+- download[`lastest plugin zip`](https://plugins.jetbrains.com/plugin/9837-mybatiscodehelperpro) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
 
 
 重启**IDE**.
@@ -293,6 +293,12 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 CHANGELOG
 ------------------------------------------------
+1.8.7
+- 直接在Intellij的datasource中生成crud代码
+- 添加resultMap property是否正确的检测
+- sql中的param if test的自动补全的优化
+- bug修复
+
 1.8.6
 - 添加2018.1及之后版本的spring支持
 - 修复resultMap的自动补全
