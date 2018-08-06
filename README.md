@@ -78,19 +78,19 @@ mapper方法中一键 添加 param注解
 
 #### mybatis接口方法名重构支持
 
-![refacterMethodName](http://ogyxv3y5w.bkt.clouddn.com/refactor_method_name.gif)
+![refacterMethodName](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/refactor_method_name.gif)
 
 #### mybatis xml的自动补全
 
-![autocomplete](http://ogyxv3y5w.bkt.clouddn.com/autoComplete.gif)
+![autocomplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/autoComplete.gif)
 
 #### resultMap refid 跳转到定义和重构
 
-![resultMap](http://ogyxv3y5w.bkt.clouddn.com/resultMapJump.gif)
+![resultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapJump.gif)
 
 #### property refid resultMap等的自动补全
 
-![property complete](http://ogyxv3y5w.bkt.clouddn.com/propertyComplete.gif)
+![property complete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/propertyComplete.gif)
 
 ### 方法名生成sql时支持if test
 
