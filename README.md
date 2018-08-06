@@ -65,10 +65,16 @@ mapper方法中一键 添加 param注解
 
 #### 根据dao中的方法名生成对应的mapper sql并进行方法补全  
 ![find](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_find_example_2.gif)
-![update](http://ogyxv3y5w.bkt.clouddn.com/update.gif)
-![delete](http://ogyxv3y5w.bkt.clouddn.com/delete.gif)
-![count](http://ogyxv3y5w.bkt.clouddn.com/count.gif)
-![all_1](http://ogyxv3y5w.bkt.clouddn.com/all_1.gif)
+
+![update](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/update.gif)
+
+
+![delete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/delete.gif)
+
+
+![count](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/count.gif)
+
+![all_1](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/all_1.gif)
 
 #### mybatis接口方法名重构支持
 
