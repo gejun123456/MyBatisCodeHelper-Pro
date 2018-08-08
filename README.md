@@ -35,10 +35,6 @@ Intellij下Mybatis支持插件
 
 可以免费试用: http://brucege.com/pay/view
 
-1元使用10天
-3元使用30天
-29元使用一年
-
 付款过程中有问题请添加微信:
 ![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
 
