@@ -36,7 +36,7 @@ mapper方法中一键 添加 param注解
 
 功能
 - 从java类生成mybatis crud代码 建表语句 支持生成service，建表支持生成多字段的索引
-- 添加一个数据库 从数据库生成crud代码 支持mysql oracle sqlserver postgresql 
+- 添加一个数据库 从数据库生成crud代码 支持mysql oracle sqlserver postgresql 1.8.8版本支持从Intellij的数据库来进行生成
 - 通过方法名来生成sql 可以生成大部分单表操作的sql 只需要一个方法的名字即可 会自动补全好方法的参数和返回值 和springdatajpa的语句基本一致
 - xml中的 param的自动提示 if test的自动提示 resultMap refid 等的自动提示
 - xml中refid，resultMap等的跳转到定义
@@ -49,6 +49,7 @@ mapper方法中一键 添加 param注解
 - mybatis接口一键生成xml
 - mybaits和spring的集成 将mybatis的接口注入到spring中 IDEA高级版中的spring不再报错 
 - mybatis接口中的方法名重构支持
+- 支持spring 将mapper注入到spring中 intellij的spring注入不再报错
 
 不支持的功能
 - 不支持生成关联表的sql (如果觉得可以实现可以联系我)
@@ -96,16 +97,7 @@ mapper方法中一键 添加 param注解
 
 ![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
 
-### 使用mybatis genertor 来进行生成
-
-#### 使用mybatisGenerator的配置文件来生成
-
- mybatis generator 配置文件的规则   
-  http://www.mybatis.org/generator/configreference/xmlconfig.html
-![mybatis-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_mybatis_generator.gif)
-
-
-#### 可以使用Intellij自带的datasource来生成（1.8.8版本 理论上Intellij支持的数据库都支）
+#### 可以使用Intellij自带的datasource来生成（1.8.8版本 理论上Intellij支持的数据库都支持 强烈推荐）
 ![intellijDatasourceGenerateCrud](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/IntellijDatasourceGenerateCrudFile.gif)
 
 
@@ -113,9 +105,22 @@ mapper方法中一键 添加 param注解
 
 ![mybatis-database-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabaseToUseMybatisGenerator.gif)
 
+
+#### 使用mybatisGenerator的配置文件来生成
+
+ mybatis generator 配置文件的规则   
+  http://www.mybatis.org/generator/configreference/xmlconfig.html
+
+![mybatis-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_mybatis_generator.gif)
+
 #### 一键生成mybatis generator的xml文件
 
 ![generate_mybatis_generator_config_file](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generate_mybatis_generator_config_file.gif)
+
+## spring的支持 识别componentscan mapperscan等注解 将mapper自动注入到spring中 可跳转到定义 支持springboot， Intellij注入mapper不再报错
+
+![sprinboot](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/springSupport.gif)
+
 
 
 
