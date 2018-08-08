@@ -11,32 +11,12 @@
 
 介绍视频:https://www.bilibili.com/video/av23458308/
 
-Intellij下代码自动生成插件 通过从java实体生成crud代码 或者 通过表结构生成crud代码
-
-从方法名生成sql代码，支持springDataJpa的语法，使用比springDataJpa更简单
-
-支持mapper与xml的互相跳转 mapper中的方法名重构
-
-mapper方法中一键 添加 param注解
-
-检测mapper中没有使用的方法  检测xml没有使用的 并可以一键删除
-
------------------------------------------------------------------------
-
-可以免费试用: http://brucege.com/pay/view
-
-1元使用10天
-3元使用30天
-29元使用一年
-
-
-
-付款过程中有问题请添加微信:  
-![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
+Intellij下Mybatis支持插件 
 
 功能
 - 从java类生成mybatis crud代码 建表语句 支持生成service，建表支持生成多字段的索引
-- 添加一个数据库 从数据库生成crud代码 支持mysql oracle sqlserver postgresql 1.8.8版本支持从Intellij的数据库来进行生成
+- 添加一个数据库 从数据库生成crud代码 支持mysql oracle sqlserver postgresql 
+- 直接从Intellij自带的数据库生成crud代码
 - 通过方法名来生成sql 可以生成大部分单表操作的sql 只需要一个方法的名字即可 会自动补全好方法的参数和返回值 和springdatajpa的语句基本一致
 - xml中的 param的自动提示 if test的自动提示 resultMap refid 等的自动提示
 - xml中refid，resultMap等的跳转到定义
@@ -49,7 +29,18 @@ mapper方法中一键 添加 param注解
 - mybatis接口一键生成xml
 - mybaits和spring的集成 将mybatis的接口注入到spring中 IDEA高级版中的spring不再报错 
 - mybatis接口中的方法名重构支持
-- 支持spring 将mapper注入到spring中 intellij的spring注入不再报错
+- 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot
+
+-----------------------------------------------------------------------
+
+可以免费试用: http://brucege.com/pay/view
+
+1元使用10天
+3元使用30天
+29元使用一年
+
+付款过程中有问题请添加微信:
+![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
 
 不支持的功能
 - 不支持生成关联表的sql (如果觉得可以实现可以联系我)
