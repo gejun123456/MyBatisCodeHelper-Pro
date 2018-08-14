@@ -447,6 +447,9 @@ CHANGELOG
 通过数据库来生成CRUD代码参考了 https://github.com/zouzg/mybatis-generator-gui 项目 已征得该项目作者同意
 
 
+大家可以学习https://www.imooc.com/learn/924 来掌握更多使用Intellij的技巧 视频讲得很棒
+
+
 [plugin]: https://plugins.jetbrains.com/plugin/9837
 
 
