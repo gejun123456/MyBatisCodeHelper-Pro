@@ -9,6 +9,8 @@
 <a href="README_EN.md">English</a>  
 </div>
 
+qq群：542735979（插件最新版本及问题讨论）
+
 介绍视频:https://www.bilibili.com/video/av23458308/
 
 Intellij下Mybatis支持插件 
