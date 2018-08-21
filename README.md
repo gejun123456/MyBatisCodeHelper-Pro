@@ -301,6 +301,15 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 CHANGELOG
 ------------------------------------------------
+1.8.9
+- 支持高清图标
+- mybatis接口一键生成testcase 可对复杂的sql 快速进行测试 不需要要启动spring容器
+- java生成crud代码支持postgresql
+- 数据库生成时支持使用lombok 支持添加mapperscan注解 toString方法等
+- 修复alt+enter在方法名生成sql时的thread报错
+- 修复数据库生成时勾选列
+1.8.8
+- 加快mybatis接口和xml关联的速度
 1.8.7
 - 直接在Intellij的datasource中生成crud代码
 - 添加resultMap property是否正确的检测
