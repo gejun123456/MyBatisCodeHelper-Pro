@@ -9,7 +9,7 @@
 <a href="README_EN.md">English</a>  
 </div>
 
-qq群：542735979（插件最新版本及问题讨论）
+qq群：542735979（插件bug修复 最新版本及问题讨论）
 
 介绍视频:https://www.bilibili.com/video/av23458308/
 
@@ -29,7 +29,6 @@ Intellij下Mybatis支持插件
 - resultMap中的property的自动提示
 - mybatis接口中一键添加param注解
 - mybatis接口一键生成xml
-- mybaits和spring的集成 将mybatis的接口注入到spring中 IDEA高级版中的spring不再报错 
 - mybatis接口中的方法名重构支持
 - 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot
 
