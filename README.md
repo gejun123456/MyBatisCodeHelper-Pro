@@ -85,7 +85,7 @@ Intellij下Mybatis支持插件
 
 ![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
 
-#### 可以使用Intellij自带的datasource来生成（1.9.2版本 理论上Intellij支持的数据库都支持 强烈推荐）
+#### 可以使用Intellij自带的datasource来生成（1.9.2版本 1.8.8-1.9.1有bug 详见https://github.com/gejun123456/MyBatisCodeHelper-Pro/issues/170 理论上Intellij支持的数据库都支持 强烈推荐）
 ![intellijDatasourceGenerateCrud](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/IntellijDatasourceGenerateCrudFile.gif)
 
 
