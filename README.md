@@ -301,6 +301,17 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 CHANGELOG
 ------------------------------------------------
+1.9.3
+- 可以通过方法名insertList, insertSelective来生成插入语句
+- 修复可能的nullPointer
+
+1.9.1 1.9.2
+- 修复使用Intellij的数据库生成的默认类型
+- 通过数据库生成时 包名可以自动提示
+
+1.9.0
+- 修复intellij重启后配置失效的bug
+
 1.8.9
 - 支持高清图标
 - mybatis接口一键生成testcase 可对复杂的sql 快速进行测试 不需要要启动spring容器
