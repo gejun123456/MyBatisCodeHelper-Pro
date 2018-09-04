@@ -115,7 +115,7 @@ Intellij下Mybatis支持插件
 安装
 ----
 
-支持下面产品 2016.1版本及以上版本
+支持下面产品 2016.2版本及以上版本
 
 - IntelliJ IDEA
 - IntelliJ IDEA Community Edition
