@@ -87,7 +87,7 @@ Intellij下Mybatis支持插件
 
 ### 一键生成测试mybatis接口的测试类 不需要启动spring容器，写完了立马就可以测试sql  
 
-![generate-testcase](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateTestCaseByClick.gif.gif)
+![generate-testcase](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateTestCaseByClick.gif)
 
 
 #### 可以使用Intellij自带的datasource来生成（1.9.2版本 1.8.8-1.9.1有bug 详见https://github.com/gejun123456/MyBatisCodeHelper-Pro/issues/170 理论上Intellij支持的数据库都支持 强烈推荐）
