@@ -45,7 +45,7 @@ Intellij下Mybatis支持插件
 之后会加入更多功能
 
 
-#### 根据接口的方法名直接生成对应的sql  
+#### 根据接口的方法名直接生成对应的sql 只需要一个方法的名字 不需要返回值和参数 会自动给生成好
 ![generateMultiple](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_multiple_sql_generate.gif)
 
 #### 根据java对象一键生成 Dao接口，Service，Xml，数据库建表Sql文件  提供dao与xml的跳转  
