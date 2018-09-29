@@ -23,7 +23,7 @@
 
 ### 激活码激活
 - 未激活时IDEA打开项目时会有一个通知 在IDEA的eventLog可以找到 上面有一个一个register的按钮 点击按钮 输入激活码即可
-![register](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/register_new.png)
+![register](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/register_new.gif)
 
 
 ###离线激活
