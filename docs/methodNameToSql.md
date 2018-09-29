@@ -21,12 +21,12 @@
 
 ![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
 
-### 使用方法  
+## 使用方法  
 - 在mybatis的接口文件上的方法名上使用右键 generatedaoxml 生成对应的mybatis sql及方法的补全
 
 
 
-### 生成的例子
+## 生成的例子
 方法名生成sql
 -----------------------------------------------------------------------------------------
 数据库对象User
@@ -122,7 +122,7 @@ count   | select count(1) from user
 countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from user where id > {}
 
 
-### 注意的点  
+## 注意的点  
 
 - 使用方法名生成sql 需要在接口中提供一个insert或save或add方法并以数据库对象为第一参数 (可以通过数据库对象自动生成)
 - 使用方法名生成的sql的字段会从数据库对象对应的resultMap中的数据库字段来设置。

@@ -1,5 +1,6 @@
 * 快速开始
 
+  * [简介](README.md)
   * [java类生成crud代码](javaToCrud.md)
   * [数据库生成crud代码](databaseToCrud.md)
   * [方法名生成sql](methodNameToSql.md)
