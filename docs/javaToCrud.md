@@ -1,0 +1,36 @@
+#### 根据java对象一键生成 Dao接口，Service，Xml，数据库建表Sql文件  提供dao与xml的跳转  
+![generateFile](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/20170712_generateFiles.gif)
+
+### 使用方法
+
+- 在java对象上使用alt+insert （generate mybatis files）生成对应的dao xml文件等 （mac上使用 ctrl+N 即getter setter对应的快捷键)
+- 当数据库对象添加字段后也可使用alt+insert （generate mybatis files）来生成更新后的xml。（只会更新默认的insert,insertList,update方法 其他自定义的方法不会变）
+
+### 注意的点
+
+- java类生成文件这些 java类中的字段只支持对象类型 比如 int需要改写为Integer
+
+
+现在支持的java对象字段类型
+
+| 字段类型            |  开始支持的版本        |
+|----------------------|-------------------  |
+| java.lang.Integer    |   v1.2              |
+| java.lang.Long       |   v1.2              |
+| java.lang.FLoat      |   v1.2              |
+| java.lang.Double     |   v1.2              |
+| java.lang.Boolean    |   v1.2              |
+| java.util.Date       |   v1.2              |
+| java.lang.String     |   v1.2              |
+| java.math.BigDecimal |   v1.2              |
+| java.lang.Short      |   v1.2              |
+|java.sql.Date | v1.3|
+|java.sql.Time | v1.3|
+|java.sql.Timestamp | v1.3|
+|java.time.LocalDateTime | v1.3|
+|java.time.LocalDate | v1.3|
+|java.time.LocalTime | v1.3|
+|java.time.OffsetDateTime | v1.3|
+|java.time.OffsetTime | v1.3|
+|java.time.ZonedDateTime | v1.3|
+| java.lang.Byte       |   v1.6.0              |

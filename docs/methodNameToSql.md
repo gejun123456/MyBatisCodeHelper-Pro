@@ -1,0 +1,135 @@
+#### 根据接口的方法名直接生成对应的sql 只需要一个方法的名字 不需要返回值和参数 会自动给生成好
+![generateMultiple](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_multiple_sql_generate.gif)
+
+
+
+#### 根据dao中的方法名生成对应的mapper sql并进行方法补全  
+![find](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_find_example_2.gif)
+
+![update](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/update.gif)
+
+
+![delete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/delete.gif)
+
+
+![count](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/count.gif)
+
+![all_1](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/all_1.gif)
+
+
+### 方法名生成sql时支持if test  
+
+![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
+
+### 使用方法  
+- 在mybatis的接口文件上的方法名上使用右键 generatedaoxml 生成对应的mybatis sql及方法的补全
+
+
+
+### 生成的例子
+方法名生成sql
+-----------------------------------------------------------------------------------------
+数据库对象User
+
+字段名  | 类型
+-----   | ------
+id      | Integer
+userName | String
+password | String
+
+表名为user
+
+xml中对应的resultMap为
+
+	<resultMap id="AllCoumnMap" type="com.codehelper.domain.User">
+	    <result column="id" property="id"/>
+	    <result column="user_name" property="userName"/>
+	    <result column="password" property="password"/>
+	</resultMap>
+
+
+以下是方法名与sql的对应关系(方法名的大小写无所谓)
+
+
+可以跟在字段后面的比较符有
+
+比较符  | 生成sql | 开始支持的版本号
+------- | -------- |---------
+between |  prop > {} and prop <{}  |v1.3
+betweenOrEqualto | prop >={} and prop <={} | v1.3
+lessThan  | prop < {} | v1.3
+lessThanOrEqualto | prop <={}  |v1.3
+greaterThan | prop > {} |v1.3
+greaterThanOrEqualto | prop >={} | v1.3
+isnull | prop is null |v1.3
+notnull | prop is not null |v1.3
+like   | prop like {} |v1.3
+in     | prop in {} |v1.3
+notin  | prop not in {} |v1.3
+not    | prop != {} |v1.3
+notlike | prop not like {} |v1.3
+startingWith | prop like {}% |v1.6.0
+endingWith | prop like %{} |v1.6.0
+containing | prop like %{}% |v1.6.0
+
+
+
+- find方法
+
+支持获取多字段，by后面可以设置多个字段的条件 一个字段后面只能跟一个比较符
+支持orderBy,distinct, findFirst
+
+方法名       |  sql
+-----------  |  --------------
+find         | select * from user
+findUserName | select user_name from user
+findById	| select * from user where id = {}
+findByIdGreaterThanAndUserName | select * from user where id > {} and user_name = {}
+findByIdGreaterThanOrIdLessThan | select * from user where id > {} or id < {}
+findByIdLessThanAndUserNameIn  | select * from user where id < {} and user_name in {}
+findByUserNameAndPassword      | select * from user where user_name = {} and password = {}
+findUserNameOrderByIdDesc   | select user_name from user order by id desc
+findDistinctUserNameByIdBetween | select distinct(user_name) from user where id >= {} and id <={}
+findOneById	| select * from user where id = {}
+findFirstByIdGreaterThan | select * from user where id > {} limit 1
+findFirst20ByIdLessThan  | select * from user where id < {} limit 20
+findFirst10ByIdGreaterThanOrderByUserName  | select * from user where id > {} order by user_name limit 10
+findMaxIdByUserNameGreaterThan | select max(id) from user where user_name > {}
+findMaxIdAndMinId   | select max(id) as maxId, min(id) as minId from user
+
+
+- update方法 by后面设置的条件同上
+
+方法名     | sql
+---------- |  -------
+updateUserNameById | update user set user_name = {} where id = {}
+updateUserNameAndPasswordByIdIn  | update user set user_name = {} and password = {} where id in {}
+
+- delete方法
+by后面设置的条件同上
+
+方法名  |  sql
+------- | ---------
+deleteById | delete from user where id = {}
+deleteByUserNameIsNull  | delete from user where user_name is null
+
+- count方法
+by后面设置的条件同上 支持distinct
+
+方法名  | sql
+------- | ----------
+count   | select count(1) from user
+countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from user where id > {}
+
+
+### 注意的点  
+
+- 使用方法名生成sql 需要在接口中提供一个insert或save或add方法并以数据库对象为第一参数 (可以通过数据库对象自动生成)
+- 使用方法名生成的sql的字段会从数据库对象对应的resultMap中的数据库字段来设置。
+
+- "please check with your resultMap dose it contain all the property of 
+此时可以检查这个接口对应的对象 比如 这个接口有个 insert(User user) 即 User对象
+是否有一个对应的完整的resultMap在xml中， 
+
+- 当生成sql时 如果比如UserMapper对应的User对象中含有List或Set类型的属性时，sql会无法生成
+请将这些属性设置为transient类型  比如 private transient List<Comment>
