@@ -40,12 +40,15 @@ Intellij下Mybatis支持插件
 
 ## 联系我
 
-付款过程中有问题请添加微信:
-![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
 
 - 加入qq群  
 542735979
 ![qqGroup](http://ogyxv3y5w.bkt.clouddn.com/qqgroup.png)
+
+
+- 或者添加我的微信:
+
+![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
 
 
 截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.com/gejun123456/codehelperPluginDemo)
