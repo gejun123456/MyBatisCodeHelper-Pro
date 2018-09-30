@@ -131,12 +131,12 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 ## 注意的点  
 
-- 使用方法名生成sql 需要在接口中提供一个insert或save或add方法并以数据库对象为第一参数 (可以通过数据库对象自动生成)
+- 使用方法名生成sql 需要在接口中提供一个insert或save或add方法并以表对应的java对象为第一参数 (类似于 insert(User user) 需要通过User来进行方法名的推断)
 - 使用方法名生成的sql的字段会从数据库对象对应的resultMap中的数据库字段来设置。
 
 - "please check with your resultMap dose it contain all the property of 
 此时可以检查这个接口对应的对象 比如 这个接口有个 insert(User user) 即 User对象
-是否有一个对应的完整的resultMap在xml中， 
+是否有一个对应的完整的resultMap在xml中，resultMap中少了属性的话 无法生成 可以将属性设置为transient类型
 
 - 当生成sql时 如果比如UserMapper对应的User对象中含有List或Set类型的属性时，sql会无法生成
 请将这些属性设置为transient类型  比如 private transient List<Comment>

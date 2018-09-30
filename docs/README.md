@@ -11,7 +11,7 @@ qq群：542735979（插件bug修复 最新版本及问题讨论）
 
 Intellij下Mybatis支持插件 
 
-功能
+## 功能
 - 从java类生成mybatis crud代码 建表语句 支持生成service，建表支持生成多字段的索引
 - 添加一个数据库 从数据库生成crud代码 支持mysql oracle sqlserver postgresql 
 - 直接从Intellij自带的数据库生成crud代码
@@ -32,13 +32,16 @@ Intellij下Mybatis支持插件
 
 可以免费试用: http://brucege.com/pay/view
 
-付款过程中有问题请添加微信:
-![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
 
 不支持的功能
 - 不支持生成关联表的sql (如果觉得可以实现可以联系我)
 
 之后会加入更多功能
+
+## 联系我
+
+付款过程中有问题请添加微信:
+![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
 
 - 加入qq群  
 542735979
