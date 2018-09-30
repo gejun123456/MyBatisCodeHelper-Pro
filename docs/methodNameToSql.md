@@ -1,9 +1,7 @@
-#### 根据接口的方法名直接生成对应的sql 只需要一个方法的名字 不需要返回值和参数 会自动给生成好
+## 根据mybatis接口中的方法名生成对应的mapper sql并进行方法补全  
+
 ![generateMultiple](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_multiple_sql_generate.gif)
 
-
-
-#### 根据dao中的方法名生成对应的mapper sql并进行方法补全  
 ![find](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_find_example_2.gif)
 
 ![update](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/update.gif)
@@ -17,16 +15,26 @@
 ![all_1](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/all_1.gif)
 
 
-### 方法名生成sql时支持if test  
+## 方法名生成sql时支持if test  
 
 ![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
 
+
+## 一键生成findByAll
+
+![findByAll]](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/support_find_by_all.gif)
+
+
+## 一键生成insertList
+![insertList]](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/methodNameCouldGenerateInsertList.gif)
+
 ## 使用方法  
-- 在mybatis的接口文件上的方法名上使用右键 generatedaoxml 生成对应的mybatis sql及方法的补全
+- 在mybatis的接口文件上的方法名(只需要一个名字，不需要返回值和参数 会自动推导出来)上使用右键 generatedaoxml 生成对应的mybatis sql及方法的补全
 
 
 
-## 生成的例子
+## 方法名的规则
+
 方法名生成sql
 -----------------------------------------------------------------------------------------
 数据库对象User
