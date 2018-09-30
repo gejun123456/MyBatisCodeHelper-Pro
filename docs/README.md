@@ -41,7 +41,8 @@ Intellij下Mybatis支持插件
 ## 联系我
 
 
-- 加入qq群  
+- 加入qq群 由于Intellij插件市场需要两天审核  插件的bug修复 最新版本 会先放在qq群中 出现任何问题可在qq群反馈
+
 542735979
 ![qqGroup](http://ogyxv3y5w.bkt.clouddn.com/qqgroup.png)
 
