@@ -26,7 +26,7 @@
 ![register](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/register_new.gif)
 
 
-###离线激活
+### 离线激活
 - 由于激活的时候需要联网，某些公司可能设置了拦截 无法联网，此时可以使用vpn 或者 手机开热点，实在不行 可以进行离线激活 离线激活的教程为 1.8.3版本支持
 
 ![offline](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/offlineActivation.png)
