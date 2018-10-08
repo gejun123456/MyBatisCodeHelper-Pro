@@ -25,6 +25,9 @@
 - 未激活时IDEA打开项目时会有一个通知 在IDEA的eventLog可以找到 上面有一个一个register的按钮 点击按钮 输入激活码即可
 ![register](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/register_new.gif)
 
+激活的时候 如果出现 connect error 请检查下IDEA是否设置了proxy 可以去掉proxy试试
+如果还有问题，请加qq群联系我
+
 
 ### 离线激活
 - 由于激活的时候需要联网，某些公司可能设置了拦截 无法联网，此时可以使用vpn 或者 手机开热点，实在不行 可以进行离线激活 离线激活的教程为 1.8.3版本支持
