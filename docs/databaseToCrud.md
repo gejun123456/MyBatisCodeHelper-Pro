@@ -1,7 +1,9 @@
 ## 使用Intellij自带的datasource来生成
 
+
 ![intellijDatasourceGenerateCrud](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/IntellijDatasourceGenerateCrudFile.gif)
 
+选定了module后 会自动配置好java model folder, java mapper folder 以及 resource folder 一般不需要修改
 
 ## 使用添加的datasource来生成 （目前支持mysql oracle postgresql sqlserver  myql支持5.5及以上  oracle支持oracle10g及以上 postgresql sqlserver支持最新版，老版本未测试 有问题请联系我) 
 
