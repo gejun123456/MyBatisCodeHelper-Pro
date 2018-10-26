@@ -1,3 +1,29 @@
+2.0.0
+- 识别mybatis的标签 如trim set where include， 提供在这些标签后的sql的自动补全 检测sql的正确性
+- 可以通过数据库的表来生成java类
+- 可以通过数据库的表来生成sql表中的所有字段
+- 对 generatePageQuery提供更好的支持
+- 支持 findByATrue  findByAFalse语法
+- if test的自动补全 更好的支持
+- 数据库生成crud时 提供实现Serializable接口
+- 在< 或者<= 提供一键插入cdata
+
+1.9.9
+- 修复java类生成crud代码 需要忽略掉static字段
+- 对mybatis的注解 提供sql补全功能
+- 生成if test时 对于string 判断null和空
+- 可以一键在mybatis 的resultMap上生成所有的property
+1.9.8
+- 数据库生成crud 支持java8的时间类型
+- 直接从xml sql 生成java类和resultMap
+- 修复部分用户激活时log4j的bug
+1.9.5
+- 修复 @MapperScan注解 spring没有注入的问题
+- 更好的激活体验
+1.9.4
+- 数据库生成crud对多module的项目 支持更好
+- 修复在module项目 一键生成testcase
+- 设置界面可以插件激活码到期时间
 1.9.3
 - 可以通过方法名insertList, insertSelective来生成插入语句
 - 修复可能的nullPointer
