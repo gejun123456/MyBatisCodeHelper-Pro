@@ -18,6 +18,7 @@ Intellij下Mybatis支持插件
 - resultMap中的property的自动提示
 - xml中refid，resultMap等的跳转到定义
 - **通过方法名(不需要方法的返回值和参数 会自动推导出来)来生成sql 可以生成大部分单表操作的sql 只需要一个方法的名字即可 会自动补全好方法的参数和返回值 和springdatajpa的语句基本一致**
+- **sql全自动提示，sql正确性检测，插件会识别mybatis的一系列标签 如 include trim set where，在这些标签之后的sql可以自动提示数据库的字段，检测sql的正确性，从此不用担心sql写错**
 - 从java类生成mybatis crud代码 建表语句 支持生成service，建表支持生成多字段的索引
 - 添加一个数据库 从数据库生成crud代码 支持mysql oracle sqlserver postgresql 
 - 直接从Intellij自带的数据库生成crud代码
