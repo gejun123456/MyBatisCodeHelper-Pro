@@ -17,7 +17,11 @@
       maxLevel: 4,
       subMaxLevel: 2,
       loadSidebar: true,
-      loadNavbar: true
+      loadNavbar: true,
+      alias: {
+        '/.*/_navbar.md': '/_navbar.md',
+        '/en/(.*)': 'https://gejun123456.github.io/MyBatisCodeHelper-Pro/en/#/$1'
+      }
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
