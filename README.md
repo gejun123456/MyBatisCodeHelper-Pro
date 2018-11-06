@@ -5,7 +5,7 @@
 [![加入QQ群](https://img.shields.io/badge/chat-QQ群-46BC99.svg?style=flat-square)](//shang.qq.com/wpa/qunwpa?idkey=6bc11bfe278fa0d1d0d6292fa010b1aa8ddadbfeb70ef893083d5ab800137c1a)
 
 
-<div align="center">
+<div align="left">
 <a href="https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/en/">English</a>
 </div>
 
