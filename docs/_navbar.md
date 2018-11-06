@@ -1,2 +1,3 @@
-* [En](/en/)
-* [中文](/)
+- Translations
+  - [:uk: English](/en)
+  - [:cn: 中文](/)
