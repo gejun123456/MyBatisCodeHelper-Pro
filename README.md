@@ -6,7 +6,7 @@
 
 
 <div align="right">
-<a href="https://gejun123456.github.io/MyBatisCodeHelper-Pro/en">English</a> 
+<a href="https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/en/">English</a>
 </div>
 
 > Intellij下Mybatis支持插件 
