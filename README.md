@@ -9,11 +9,11 @@
 <a href="https://gejun123456.github.io/MyBatisCodeHelper-Pro/en">English</a> 
 </div>
 
+> Intellij下Mybatis支持插件 
+
 qq群：542735979（插件bug修复 最新版本及问题讨论）
 
 介绍视频:https://www.bilibili.com/video/av23458308/
-
-Intellij下Mybatis支持插件 
 
 文档地址： https://gejun123456.github.io/MyBatisCodeHelper-Pro/
 
