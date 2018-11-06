@@ -22,6 +22,7 @@ qq群：542735979（插件bug修复 最新版本及问题讨论）
 - **sql全自动提示，sql正确性检测，插件会识别mybatis的一系列标签 如 include trim set where，在这些标签之后的sql可以自动提示数据库的字段，检测sql的正确性，从此不用担心sql写错**
 - 从java类生成mybatis crud代码 建表语句 支持生成service，建表支持生成多字段的索引
 - 添加一个数据库 从数据库生成crud代码 支持mysql oracle sqlserver postgresql 
+- 数据库添加字段后可以继续生成，不会修改之前已经在接口或xml添加的自定义的方法 无需再去进行手动的添加
 - 直接从Intellij自带的数据库生成crud代码
 - mybatis接口和xml的互相跳转  支持一个mybatis接口对应多个xml
 - mybatis接口中的方法名重构支持

@@ -16,6 +16,7 @@ qq群：542735979（插件bug修复 最新版本及问题讨论）
 - 从java类生成mybatis crud代码 建表语句 支持生成service，建表支持生成多字段的索引
 - 添加一个数据库 从数据库生成crud代码 支持mysql oracle sqlserver postgresql 
 - 直接从Intellij自带的数据库生成crud代码
+- 数据库添加字段后可以继续生成，不会修改之前已经在接口或xml添加的自定义的方法 无需再去进行手动的添加
 - mybatis接口和xml的互相跳转  支持一个mybatis接口对应多个xml
 - mybatis接口中的方法名重构支持
 - xml中的 param的自动提示 if test的自动提示 resultMap refid 等的自动提示
