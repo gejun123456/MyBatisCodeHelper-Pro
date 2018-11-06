@@ -8,6 +8,7 @@
 <div align="left">
 <a href="https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/en/">English</a>
 </div>
+ &nbsp;&nbsp;
 
 > Intellij下Mybatis支持插件 
 
