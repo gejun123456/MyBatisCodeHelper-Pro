@@ -36,6 +36,9 @@
 
 ![where](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/whereAutoCompleteAndSqlDetectInTag.gif)
 
+解析sql的正确性 需要先配置下
+
+![databaseConfig](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabase.png)
 
 
 
