@@ -1,3 +1,6 @@
+## 一键从接口生成xml文件
+![addXml](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateXmlFromMapper.gif)
+
 ## 一键添加mybatis的param注解
 ![addParam](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/addParamForOneClick.gif)
 

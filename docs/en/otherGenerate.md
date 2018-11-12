@@ -1,3 +1,6 @@
+## generate mapper xml from interface
+![addXml](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateXmlFromMapper.gif)
+
 ## Add mybatis param annotation 
 ![addParam](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/addParamForOneClick.gif)
 
