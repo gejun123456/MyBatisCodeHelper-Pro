@@ -30,6 +30,15 @@ Telegram: https://t.me/MybatisCodeHelperProPlugin
 
 Free trial: http://brucege.com/
 
+The plugin are has used and learn from following project.
+
+mybatis：https://github.com/mybatis/mybatis-3
+
+mybatis generator: https://github.com/mybatis/generator
+
+pageHelper: https://github.com/pagehelper/Mybatis-PageHelper
+
+If you are anthor of those project, please concat me, I will send you a long term free licence.
 
 ## Contact me
 

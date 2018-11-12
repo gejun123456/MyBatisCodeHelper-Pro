@@ -44,6 +44,16 @@ qq群：542735979（插件bug修复 最新版本及问题讨论）
 
 大家可以学习https://www.imooc.com/learn/924 来掌握更多使用Intellij的技巧 视频讲得很棒
 
+该项目使用了或参考了以下项目:
+
+mybatis：https://github.com/mybatis/mybatis-3
+
+mybatis generator: https://github.com/mybatis/generator
+
+pageHelper: https://github.com/pagehelper/Mybatis-PageHelper
+
+如果您是这些项目的作者，请联系我，我将发送免费的永久key给您
+
 [plugin]: https://plugins.jetbrains.com/plugin/9837
 
 
