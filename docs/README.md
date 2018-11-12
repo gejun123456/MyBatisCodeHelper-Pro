@@ -53,10 +53,18 @@ qq群：542735979（插件bug修复 最新版本及问题讨论）
 
 ![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
 
+该项目使用了或参考了以下项目:
+mybatis：https://github.com/mybatis/mybatis-3
+
+mybatis generator: https://github.com/mybatis/generator
+
+pageHelper: https://github.com/pagehelper/Mybatis-PageHelper
+
+mybatis-generator-gui: https://github.com/zouzg/mybatis-generator-gui
+
+如果您是这些项目的作者，请联系我，我将发送免费的永久key给您
 
 截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.com/gejun123456/codehelperPluginDemo)
-
-通过数据库来生成CRUD代码参考了 https://github.com/zouzg/mybatis-generator-gui 项目 已征得该项目作者同意
 
 
 大家可以学习https://www.imooc.com/learn/924 来掌握更多使用Intellij的技巧 视频讲得很棒

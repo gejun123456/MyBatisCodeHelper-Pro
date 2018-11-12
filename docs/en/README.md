@@ -38,6 +38,8 @@ mybatis generator: https://github.com/mybatis/generator
 
 pageHelper: https://github.com/pagehelper/Mybatis-PageHelper
 
+mybatis-generator-gui: https://github.com/zouzg/mybatis-generator-gui
+
 If you are anthor of those project, please concat me, I will send you a long term free licence.
 
 ## Contact me

@@ -52,6 +52,8 @@ mybatis generator: https://github.com/mybatis/generator
 
 pageHelper: https://github.com/pagehelper/Mybatis-PageHelper
 
+mybatis-generator-gui: https://github.com/zouzg/mybatis-generator-gui
+
 如果您是这些项目的作者，请联系我，我将发送免费的永久key给您
 
 [plugin]: https://plugins.jetbrains.com/plugin/9837
