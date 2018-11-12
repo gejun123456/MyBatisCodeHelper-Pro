@@ -12,3 +12,8 @@
 ## 从xml中的sql推导出要生成的java类 和 resultMap 
 
 ![generateJavaClassAndResultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateJavaClassAndResultMap.gif)
+
+
+## 一键生成分页查询 （依赖于 pageHelper)
+
+![generatePageQuery](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generatePageQuery.gif)

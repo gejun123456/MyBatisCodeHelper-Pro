@@ -10,3 +10,8 @@
 ## Generate java class and ResultMap from sql
 
 ![generateJavaClassAndResultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateJavaClassAndResultMap.gif)
+
+
+## Generate page query （depend on pageHelper)
+
+![generatePageQuery](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generatePageQuery.gif)
