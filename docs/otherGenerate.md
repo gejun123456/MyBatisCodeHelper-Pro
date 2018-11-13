@@ -5,6 +5,9 @@
 ![addParam](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/addParamForOneClick.gif)
 
 
+## 一键生成resultMap对象中 未使用的字段
+![generateUnusedProps](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateUnUsedProperties.gif)
+
 ## 一键生成测试mybatis接口的测试类 
 
 不需要启动spring容器，写完了立马就可以测试sql  对于复杂的sql 可以很方便的进行测试 

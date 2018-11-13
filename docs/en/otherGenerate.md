@@ -5,6 +5,10 @@
 ![addParam](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/addParamForOneClick.gif)
 
 
+## generate unUsedProp in resultMap
+![generateUnusedProps](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateUnUsedProperties.gif)
+
+
 ## Generate Mybatis Mapper method testcase
 
 ![generate-testcase](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateTestCaseByClick.gif)
