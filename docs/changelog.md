@@ -1,3 +1,13 @@
+2.0.1
+- 数据库生成crud后立刻跳转到mapper接口文件
+- 数据库生成crud支持swagger
+- 数据库生成crud的java类型可以自动补全
+- 数据库生成crud自动给sql关键字添加转义
+- 数据库生成crud自动检测generatedKey
+- 使用注解 支持注解sql字符串的+
+- 可以使用ctrl+alt+b 从接口方法跳转到xml
+
+
 2.0.0
 - 识别mybatis的标签 如trim set where include， 提供在这些标签后的sql的自动补全 检测sql的正确性
 - 可以通过数据库的表来生成java类

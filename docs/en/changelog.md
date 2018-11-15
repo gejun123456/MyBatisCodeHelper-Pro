@@ -1,8 +1,17 @@
 <strong>2.0.1</strong>
         <ul>
-                <li>support add swagger annotation when database generate crud</li>
-                <li>auto detect table generated key</li>
-                <li>jump to mapper interface after database generate crud</li>
+                <li>[IMPROVE]jump to mapper interface after database generate crud</li>
+                <li>[NEW]support add swagger annotation when database generate crud</li>
+                <li>[NEW]could use ctrl+alt+b to jump from mapper method to xml</li>
+                <li>[New]could jump from resultMap property to java field</li>
+                <li>[IMPROVE]auto detect table generated key when database generate crud</li>
+                <li>[IMPROVE]jump to mapper interface after database generate crud</li>
+                <li>[FIX]exception when use alt+enter generate method xml</li>
+                <li>[IMPROVE]auto add delemeter when database generate crud</li>
+                <li>[IMPROVE]support mybatis annotation string concat inject sql language</li>
+                <li>[FIX]possible file not update when generate class already exist</li>
+                <li>[IMPROVE]java generate crud better ui</li>
+                <li>[NEW]customize fields when database generate curd javaType could auto complete</li>
         </ul>
     <strong>2.0.0</strong>
             <ul>
