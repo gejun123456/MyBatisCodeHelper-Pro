@@ -4,6 +4,8 @@
 
 选定了module后 插件会自动配置好java model folder, java mapper folder 以及 resource folder 一般不需要修改
 
+在数据库添加了字段后 也可以重新生成，并且不会覆盖你的mapper接口中已经添加的方法
+
 ## 使用添加的datasource来生成 （目前支持mysql oracle postgresql sqlserver  myql支持5.5及以上  oracle支持oracle10g及以上 postgresql sqlserver支持最新版，老版本未测试 有问题请联系我) 
 
 ![mybatis-database-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabaseToUseMybatisGenerator.gif)
