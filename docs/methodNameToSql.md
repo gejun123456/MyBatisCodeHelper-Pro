@@ -78,6 +78,10 @@ notlike | prop not like {} |v1.3
 startingWith | prop like {}% |v1.6.0
 endingWith | prop like %{} |v1.6.0
 containing | prop like %{}% |v1.6.0
+true       | prop = true | 2.0
+false      | prop = false |2.0
+lessThanEqual| prop <= {} | 2.0
+greaterThanEqual | prop >={}|2.0
 
 
 
