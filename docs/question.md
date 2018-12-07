@@ -30,5 +30,5 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 设置里面可以配置 
 
-![setting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/settings.png)
+![setting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/settings.png ':size=100%')
 
