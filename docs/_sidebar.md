@@ -8,6 +8,7 @@
   * [其他代码生成功能](otherGenerate.md)
   * [spring的支持](spring.md)
   * [安装和激活等](install.md)
+  * [设置详解](settings.md)
   * [更新日志](changelog.md)
   * [常见问题](question.md)
   
