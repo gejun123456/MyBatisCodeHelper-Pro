@@ -144,3 +144,8 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 - 当生成sql时 如果比如UserMapper对应的User对象中含有List或Set类型的属性时，sql会无法生成
 请将这些属性设置为transient类型  比如 private transient List<Comment>
+
+- 我写了find后方法名没有自动提示如何处理?
+
+查看IDEA设置里的completion 是否设置为 firstLetter
+![compele](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/completeSetting.png)
