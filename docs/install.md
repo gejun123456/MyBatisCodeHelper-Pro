@@ -37,7 +37,7 @@
 
 ![offline](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/offlineActivation.png)
 
-### 解绑
+## 解绑
 
 - 购买后会发两个激活码 可以在两台设备上绑定 一个激活码绑定一个设备 解绑可进行下图的操作 (1.8.3版本支持)
 ![unBind](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/unBind.png)
