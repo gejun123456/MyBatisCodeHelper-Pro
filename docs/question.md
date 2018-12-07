@@ -26,8 +26,9 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 经测试 mysql不需要 oracle需要 
 
-## 怎么生成 if test 怎么换图标
+## 怎么生成 if test 怎么换图标 方法名生成的代码怎么弄到service中
 
 设置里面可以配置 
+
 ![setting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/settings.png)
 
