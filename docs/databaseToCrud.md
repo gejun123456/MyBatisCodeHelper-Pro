@@ -10,6 +10,10 @@
 
 ![mybatis-database-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabaseToUseMybatisGenerator.gif)
 
+## 如何配置
+
+一般只用配置下包名 就可以使用了
+![mybatis-database-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/DatabaseGenerateSetting.png)
 
 ## 使用mybatisGenerator的配置文件来生成
 
