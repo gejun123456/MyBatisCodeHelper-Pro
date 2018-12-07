@@ -28,5 +28,6 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## 怎么生成 if test 怎么换图标
 
-设置里面可以配置 (https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/settings.png)
+设置里面可以配置 
+![setting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/settings.png)
 
