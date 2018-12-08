@@ -43,7 +43,7 @@ resultMap中的property的自动提示|✔|✔
 检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml方法块|✔|✔
 检测resultmap的property是否有误|✔|✔
 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot|✔|✔
-一键生成分页查询|支持|支持
+一键生成分页查询|✔|✔
 一键添加resultMap中未被使用的属性| ✔|✔
 一键生成mybatis接口的testcase |✘|✔
 通过方法名生成sql | ✘| ✔
