@@ -28,8 +28,29 @@ qq群：542735979（插件bug修复 最新版本及问题讨论）
 - mybatis接口一键生成xml
 - 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot
 - 一键生成mybatis接口的testcase 无需启动spring，复杂sql可进行快速测试
-
 -----------------------------------------------------------------------
+
+插件未激活与激活状态的功能比较  未激活版的功能可以免费一直使用下去
+
+功能点  |  未激活版 | 激活版
+-----   | ------ | -----
+接口与xml互相跳转 更换图标| 支持| 支持
+接口方法名重构| 支持| 支持
+一键添加param| 支持| 支持
+xml中的 param的自动提示 if test的自动提示 resultMap refid 等的自动提示|支持| 支持
+resultMap中的property的自动提示|支持|支持
+检测没有使用的xml 可一键删除|支持|支持
+检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml方法块|支持|支持
+检测resultmap的property是否有误|支持|支持
+支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot|支持|支持
+一键生成分页查询|支持|支持
+一键添加resultMap中未被使用的属性| 支持|支持
+一键生成mybatis接口的testcase |不支持|支持
+通过方法名生成sql | 不支持| 支持
+通过数据库生成crud代码| 不支持|支持
+通过java类生成crud代码|不支持|支持
+xml collection中的 param提示| 不支持|支持
+识别mybatis的标签 全自动sql补全| 不支持|支持
 
 可以免费试用: http://brucege.com/pay/view
 
