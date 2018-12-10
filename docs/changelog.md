@@ -1,6 +1,7 @@
 2.0.2
-- orace date类型使用timeStamp作为jdbcType
+- oracle date类型使用timeStamp作为jdbcType
 - 数据库生成crud支持生成到通用mapper和mybatisPlus
+- 方法名生成sql支持通用mapper和mybatisPlus
 - 修复IndexNotReadyException
 - 修复可能的方法名生成sql的Exception
 - 设置界面优化
@@ -9,7 +10,7 @@
 - findByLike 现在会添加% 符号
 - 修复ctrl+alt+b跳转时可能的exception
 - 使用mybatisDatabase连接数据库表太多时 会卡顿的问题
-- 
+- 使用cd 一键生成cdata co 一键生成collection语句
 
 2.0.1
 - 数据库生成crud后立刻跳转到mapper接口文件

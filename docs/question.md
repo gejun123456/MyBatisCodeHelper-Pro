@@ -32,3 +32,15 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ![setting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/settings.png ':size=100%')
 
+
+## 方法名生成sql时 出现 please check with your xml resultMap id:  dose it contain all the property of resultMap 怎么处理
+
+出现该异常的原因是 xml中的resultMap 和 resultMap type中 对应的实体的属性不一致  xml的resultMap中缺少了一些字段
+
+由于方法名生成sql 需要知道实体里面 每个属性 对应的数据库字段名
+
+要么在 resultMap中添加缺少的属性  或者 在java实体中 将这个属性 设置为 transient
+
+有一些java实体中 会有一些属性是从其他表查出来的  比如 Blog类 里面有一个 List<Commnet> 
+
+这种情况 用 transient 也不合适， 建议更改继承关系 不要把List<Comment>放到 Blog中  而是加一个 BlogWithComment的类 继承 Blog类。
