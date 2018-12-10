@@ -44,3 +44,10 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 有一些java实体中 会有一些属性是从其他表查出来的  比如 Blog类 里面有一个 List<Commnet> 
 
 这种情况 用 transient 也不合适， 建议更改继承关系 不要把List<Comment>放到 Blog中  而是加一个 BlogWithComment的类 继承 Blog类。
+
+
+## 通过数据库 生成的文件 没有 service类
+
+目前没有生成service， 不过Intellij 有一个自带的delegate方法 可以很简单的mapper接口中的方法 移到service里面
+
+![setting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/IntellijDelegate.gif)

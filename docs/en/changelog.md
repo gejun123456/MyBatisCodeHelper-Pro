@@ -1,3 +1,20 @@
+  <strong>2.0.2</strong>
+        <ul>
+            <li>[FIX]oracle date type with jdbcType date instead of timeStamp</li>
+            <li>[New]database generate crud support common mapper and mybatisPlus</li>
+            <li>[FIX]indexNotReady exception when generate testcase</li>
+            <li>[FIX]mapper definition search threading exception</li>
+            <li>[FIX]method name generate sql possible exception</li>
+            <li>[IMPROVE]when database contains too many table, connect to database very snow</li>
+            <li>[IMPROVE]better ui for setting page</li>
+            <li>[IMPROVE]mybatis spring support * and ** wildcard</li>
+            <li>[New]method name generate sql support common mapper and mybatisPlus new and old version</li>
+            <li>[IMPROVE]sql param auto complete with jdbcType</li>
+            <li>[FIX]postgresql numeric with no length should use bigDecimal instead of short</li>
+            <li>[IMPROVE]make domain class comment better</li>
+            <li>[IMPROVE]findByLike will add % to it</li>
+            <li>[FIX]possible bug when using ctrl+alt+b to jump to xml</li>
+        </ul>
 <strong>2.0.1</strong>
         <ul>
                 <li>[IMPROVE]jump to mapper interface after database generate crud</li>
