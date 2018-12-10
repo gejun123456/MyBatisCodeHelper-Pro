@@ -1,8 +1,10 @@
-## 使用Intellij自带的datasource来生成
+## 使用Intellij自带的datasource来生成 最简单的从数据库生成代码
 
 ![intellijDatasourceGenerateCrud](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/IntellijGenerateCrud.gif)
 
 选定了module后 插件会自动配置好java model folder, java mapper folder 以及 resource folder 一般不需要修改
+
+只用第一次使用配置好包名就行了，包名还有自动补全 2.0.1版本后插件会自动检测 generatedKey 一般不需要配置
 
 在数据库添加了字段后 也可以重新生成，并且不会覆盖你的mapper接口中已经添加的方法
 
