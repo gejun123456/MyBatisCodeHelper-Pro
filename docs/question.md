@@ -30,7 +30,7 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 设置里面可以配置 
 
-![setting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/settings.png ':size=100%')
+![setting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/settings.png)
 
 
 ## 方法名生成sql时 出现 please check with your xml resultMap id:  dose it contain all the property of resultMap 怎么处理
