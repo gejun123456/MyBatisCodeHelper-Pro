@@ -44,6 +44,7 @@ resultMap中的property的自动提示|✔|✔
 检测resultmap的property是否有误|✔|✔
 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot|✔|✔
 一键生成分页查询|✔|✔
+代码模版，生成cdata和collection语句|✔|✔
 一键添加resultMap中未被使用的属性| ✔|✔
 一键生成mybatis接口的testcase |✘|✔
 通过方法名生成sql | ✘| ✔
@@ -66,14 +67,17 @@ xml collection中的 param提示| ✘|✔
 - 加入qq群 由于Intellij插件市场需要两天审核  插件的bug修复 最新版本 会先放在qq群中 出现任何问题可在qq群反馈
 
 542735979
-![qqGroup](http://ogyxv3y5w.bkt.clouddn.com/qqgroup.png)
+![qqGroup](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/qqgroup.png)
 
 
 - 或者添加我的微信:
 
-![weichaturl](http://ogyxv3y5w.bkt.clouddn.com/WechatIMG1.jpeg)
+![weichaturl](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/wechatme.jpg)
 
 该项目使用了或参考了以下项目:
+
+codehelper.generator: https://github.com/zhengjunbase/codehelper.generator
+
 mybatis：https://github.com/mybatis/mybatis-3
 
 mybatis generator: https://github.com/mybatis/generator

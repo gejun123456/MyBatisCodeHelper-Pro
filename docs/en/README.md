@@ -28,9 +28,31 @@ Telegram: https://t.me/MybatisCodeHelperProPlugin
 
 -----------------------------------------------------------------------
 
+## Most features are free to use, following are the difference between after activate the plugin
+
+Feature  |  unActivate | after activate
+-----   | ------ | -----
+Jump from mybatis dao interface to mapper xml each other,change icon|  ✔ | ✔
+refactor for mapper method name| ✔| ✔
+add param | ✔| ✔
+Auto complete for mybatis param,if test,foreach,resultMap,refid in sql|✔| ✔
+Auto complete for resultMap property|✔|✔
+Full inspection for mybatis, like unused sql in xml, mapper method not have sql in xml, check if resultMap property is right ect|✔|✔
+ Spring support for mybatis, inject mybatis mapper to spring bean, support springboot|✔|✔
+ Generate page query by mapper interface method|✔|✔
+ Code Template like cdata and collectioin statement|✔|✔
+Generate mybatis mapper testcase from mybatis interface method |✘|✔
+Generate mybatis sql based on mybatis interface method name like spring data jpa | ✘| ✔
+Use database to generate mybatis crud code| ✘|✔
+Generate mybatis crud and create table sql according to java class|✘|✔
+xml collection param auto complete| ✘|✔
+Recognize mybatis tag in xml, provide auto complete for table column ect| ✘|✔
+
 Free trial: http://brucege.com/
 
 The plugin are has used and learn from following project.
+
+codehelper.generator: https://github.com/zhengjunbase/codehelper.generator
 
 mybatis：https://github.com/mybatis/mybatis-3
 

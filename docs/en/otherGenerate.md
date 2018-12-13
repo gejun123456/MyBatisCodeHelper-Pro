@@ -22,3 +22,8 @@
 ## Generate page query （depend on pageHelper)
 
 ![generatePageQuery](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generatePageQuery.gif)
+
+
+## generate cdata and collection statement
+cd  for cdata   co for collection
+![codeTemplate](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/codeTemplate.gif)

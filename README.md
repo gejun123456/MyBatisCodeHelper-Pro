@@ -67,6 +67,9 @@ xml collection中的 param提示| ✘|✔
 
 该项目使用了或参考了以下项目:
 
+
+codehelper.generator: https://github.com/zhengjunbase/codehelper.generator
+
 mybatis：https://github.com/mybatis/mybatis-3
 
 mybatis generator: https://github.com/mybatis/generator
