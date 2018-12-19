@@ -48,6 +48,11 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## 通过数据库 生成的文件 没有 service类
 
-目前没有生成service， 不过Intellij 有一个自带的delegate方法 可以很简单的mapper接口中的方法 移到service里面
+目前没有生成service， 不过Intellij 有一个自带的delegate方法 可以很简单的mapper接口中的方法 移到service里面 2.0.3版支持生成service
 
 ![setting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/IntellijDelegate.gif)
+
+
+## 数据库 添加字段后 如何生成
+
+直接使用 mybatis generator 重新生成即可会保留接口和xml中不是自动生成的方法
