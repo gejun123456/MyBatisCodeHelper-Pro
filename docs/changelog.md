@@ -1,3 +1,16 @@
+<strong> 2.0.3 </strong>
+        <ul>
+            <li> [FIX]生成测试用例数据库url使用utc而不是本地时区</li>
+            <li> [NEW]使用mybatis generator进行多表生成</li>
+            <li> [IMPROVE] tk mapper可以配置超类</li>
+            <li> [NEW]使用mybatis生成器可以生成service类</li>
+            <li> [IMPROVE]自动完成when语句和resultMap jdbcType /li>
+            <li> [IMPROVE] resultMap和refId从其他mybatis文件提供自动补全</li>
+            <li> [FIX]oracle使用tk mapper column注解注释使用单引号不识别</li>
+            <li> [NEW]mybatis sql标签自动提示列名 且不再报错</li>
+            <li> [NEW]resultMap column根据property值来进行自动补全</li>
+            <li> [NEW]mybatis generator生成时可以在表名前面添加schema名称</li>
+        </ul>
 2.0.2
 - oracle date类型使用timeStamp作为jdbcType
 - 数据库生成crud支持生成到通用mapper和mybatisPlus

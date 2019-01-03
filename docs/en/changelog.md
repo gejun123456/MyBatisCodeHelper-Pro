@@ -1,3 +1,16 @@
+ <strong>2.0.3</strong>
+        <ul>
+            <li>[FIX]generate test case database url use utc instead of local time zone</li>
+            <li>[New]use mybatis generator for multiple table generate</li>
+            <li>[IMPROVE]tk mapper could config is super class</li>
+            <li>[NEW]use mybatis generator could generate service</li>
+            <li>[IMPROVE]auto complete for when statement and resultMap jdbcType</li>
+            <li>[IMPROVE]resultMap and refId provide complete from other mybatis file</li>
+            <li>[FIX]oracle using with tk mapper column annotation using ' not recognized</li>
+            <li>[NEW]mybatis sql tag auto complete for columns</li>
+            <li>[NEW]resultMap column auto complete based on property name</li>
+            <li>[NEW]could add schema name to table name</li>
+        </ul>  
   <strong>2.0.2</strong>
         <ul>
             <li>[FIX]oracle date type with jdbcType date instead of timeStamp</li>
