@@ -1,6 +1,6 @@
 <strong> 2.0.3 </strong>
         <ul>
-            <li> [FIX]生成测试用例数据库url使用utc而不是本地时区</li>
+            <li> [FIX]生成测试用例数据库url使用本地时区替换utc时区</li>
             <li> [NEW]使用mybatis generator进行多表生成</li>
             <li> [IMPROVE] tk mapper可以配置超类</li>
             <li> [NEW]使用mybatis生成器可以生成service类</li>
