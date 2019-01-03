@@ -1,4 +1,4 @@
-## 根据mybatis接口中的方法名生成对应的mapper sql并进行方法补全  
+## 根据mybatis接口中的方法名生成对应的mapper sql并进行方法补全  支持通用mapper mybatisplus
 
 ![generateMultiple](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_multiple_sql_generate.gif)
 
@@ -30,7 +30,6 @@
 
 ## 使用方法  
 - 在mybatis的接口文件上的方法名(只需要一个名字，不需要返回值和参数 会自动推导出来)上使用alt+enter gendaoxml 或者选中方法名右键来生成
-
 
 
 ## 方法名的规则
@@ -135,7 +134,7 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 ## 注意的点  
 
-- 使用方法名生成sql 需要在接口中提供一个insert或save或add方法并以表对应的java对象为第一参数 (类似于 insert(User user) 需要通过User来进行方法名的推断)
+- 使用方法名生成sql 需要在接口中提供一个insert或save或add方法并以表对应的java对象为第一参数 (类似于 insert(User user) 需要通过User来进行方法名的推断) 使用了通用mapper或者mybatisplus的话 不需要insert方法
 - 使用方法名生成的sql的字段会从数据库对象对应的resultMap中的数据库字段来设置。
 
 - "please check with your resultMap dose it contain all the property of 
