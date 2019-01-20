@@ -1,3 +1,12 @@
+<strong>2.1</strong>
+        <ul>
+            <li>[New]从xml的sql一键测试sql 支持动态sql的测试</li>
+            <li>[IMPROVE]java类生成crud可以选择其他module的路径</li>
+            <li>[IMPROVE]支持collection array等不带参数的自动补全</li>
+            <li>[IMPROVE]数据库使用通用mapper和mybatisplus生成时最转义数据库关键字</li>
+            <li>[IMPROVE]通用方法名生成sql 支持以select query get modify remove等关键字开头</li>
+            <li>[IMPROVE]set trim where 标签后面的第一个if test不再高亮<li>
+        </ul>
 <strong> 2.0.3 </strong>
         <ul>
             <li> [FIX]生成测试用例数据库url使用本地时区替换utc时区</li>

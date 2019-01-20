@@ -1,3 +1,11 @@
+ <strong>2.1</strong>
+        <ul>
+            <li>[New]quick execute mybatis sql from sql statement</li>
+            <li>[IMPROVE]java generate crud could use other module path</li>
+            <li>[IMPROVE]support collection array no param auto complete</li>
+            <li>[IMPROVE]auto escape sql keywords for tk mapper and mybatisplus</li>
+            <li>[IMPROVE]method name generate sql could use select get query alias ect</li>
+        </ul>
  <strong>2.0.3</strong>
         <ul>
             <li>[FIX]generate test case database url use utc instead of local time zone</li>
