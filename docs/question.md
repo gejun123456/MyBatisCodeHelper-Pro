@@ -6,6 +6,13 @@
 useGeneratedKey = true
 在执行完插入语句后 可以使用 user.getId() 来获取生成的id
 
+
+## mybatis generator没有生成service接口
+
+一般spring项目中service接口没啥用 参考 https://www.zhihu.com/question/296829023/answer/521249348
+
+如果实在要接口 可以使用Intellij自带的一键导出接口 https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/extractInterface.png
+
 ## 我不想要xml的注释怎么处理
 
 通过数据库生成时，xml里面会有一系列 @Mbg generated的这种注释，这个注释的目的是让人知道这个是自动生成的，并且可以在数据库添加了字段重新生成的时候 只会更新 xml中标记了这些注释的语句，所以建议还是生成注释比较好
