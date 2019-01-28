@@ -2,6 +2,8 @@
 ## 安装
 ----
 
+* 插件可能会和其他的mybatis插件冲突，如果发现比如方法名生成sql找不到对应的xml文件等，请先卸载掉其他的mybatis插件 然后使用 invalidate Cache and restart. https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/invalidateCacheAndRestart.png
+
 支持下面产品 2016.2版本及以上版本
 
 - IntelliJ IDEA
