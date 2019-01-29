@@ -1,5 +1,7 @@
 ## 根据mybatis接口中的方法名生成对应的mapper sql并进行方法补全  支持通用mapper mybatisplus
 
+只需要一个方法名 即可 不需要方法和参数 和返回值 输入方法名后 alt+enter 就可以生成了
+
 ![generateMultiple](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_multiple_sql_generate.gif)
 
 ![find](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_find_example_2.gif)
