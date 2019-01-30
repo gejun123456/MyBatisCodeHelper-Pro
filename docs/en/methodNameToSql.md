@@ -86,7 +86,7 @@ greaterThanEqual | prop >={}|2.0
 
 
 
-- find
+- find   could use select query get to repalce find
 support orderBy,distinct, findFirst
 
 methodName       |  sql
@@ -108,14 +108,14 @@ findMaxIdByUserNameGreaterThan | select max(id) from user where user_name > {}
 findMaxIdAndMinId   | select max(id) as maxId, min(id) as minId from user
 
 
-- update
+- update  could use modify to replace update
 
 methodName     | sql
 ---------- |  -------
 updateUserNameById | update user set user_name = {} where id = {}
 updateUserNameAndPasswordByIdIn  | update user set user_name = {} and password = {} where id in {}
 
-- delete
+- delete  could use remove to replace delete.
 
 methodName  |  sql
 ------- | ---------

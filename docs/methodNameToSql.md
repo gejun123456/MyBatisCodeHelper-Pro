@@ -86,9 +86,9 @@ greaterThanEqual | prop >={}|2.0
 
 
 
-- find方法
+- find方法  可以使用 select query get 替代find开头
 
-支持获取多字段，by后面可以设置多个字段的条件 一个字段后面只能跟一个比较符
+支持获取多字段，by后面可以设置多个字段的条件 一个字段后面只能跟一个比较符 
 支持orderBy,distinct, findFirst
 
 方法名       |  sql
@@ -110,14 +110,14 @@ findMaxIdByUserNameGreaterThan | select max(id) from user where user_name > {}
 findMaxIdAndMinId   | select max(id) as maxId, min(id) as minId from user
 
 
-- update方法 by后面设置的条件同上
+- update方法 by后面设置的条件同上 可以使用modify替代update开头
 
 方法名     | sql
 ---------- |  -------
 updateUserNameById | update user set user_name = {} where id = {}
 updateUserNameAndPasswordByIdIn  | update user set user_name = {} and password = {} where id in {}
 
-- delete方法
+- delete方法  可以使用remove替代delete开头
 by后面设置的条件同上
 
 方法名  |  sql
