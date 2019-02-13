@@ -23,3 +23,10 @@
 ## 一键生成分页查询 （依赖于 pageHelper)
 
 ![generatePageQuery](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generatePageQuery.gif)
+
+
+## 一键生成cdata 和 collection 语句
+
+cd 生成cdata co生成collection 
+![codeTemplate](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/codeTemplate.gif)
+
