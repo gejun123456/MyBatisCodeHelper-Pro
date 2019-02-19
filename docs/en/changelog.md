@@ -1,3 +1,18 @@
+<strong>2.3</strong>
+        <ul>
+            <li>[IMPROVE]springboot typealias support</li>
+            <li>[IMPROVE]xml inspection on resultMap resultType parameterType ect</li>
+            <li>[IMPROVE]sql param auto complete in multiple foreach tag</li>
+            <li>[IMPROVE]regenerate service will merge content</li>
+            <li>[IMPROVE]update delete count could use if test when using method name generate sql</li>
+            <li>[IMPROVE]findByAll generate use domain entity as param</li>
+            <li>[IMPROVE]generate testcase could use database from intellij and history</li>
+            <li>[FIX]fix exception when using typealias</li>
+            <li>[NEW]database generate crud could add batchInsert, batchUpdate, InsertOnDuplicate methods</li>
+            <li>[IMPROVE]support multiple xml with same namespace when using methodName generate sql</li>
+            <li>[FIX]fix oracle param auto complete exception</li>
+            <li>[IMPROVE]better format when using method name generate sql</li>
+        </ul> 
  <strong>2.1</strong>
         <ul>
             <li>[New]quick execute mybatis sql from sql statement</li>

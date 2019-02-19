@@ -1,3 +1,17 @@
+<strong>2.3</strong>
+        <ul>
+            <li>[IMPROVE]springboot typealias 支持</li>
+            <li>[IMPROVE]xml上 resultMap resultType parameterType 等检测</li>
+            <li>[IMPROVE]多个foreach标签内的param补全支持</li>
+            <li>[IMPROVE]通过数据库生成service 重新生成时 会检测service是否存在 合并内容</li>
+            <li>[IMPROVE]方法名生成sql 使用 update count delete 可以生成if test</li>
+            <li>[IMPROVE]findByAll使用model类作为参数</li>
+            <li>[IMPROVE]generate testcase可以使用Intellij的数据库来生成jdbc配置</li>
+            <li>[NEW]数据库生成crud 添加 batchInsert, batchUpdate, InsertOnDuplicate方法</li>
+            <li>[IMPROVE]支持相同namespace的多个xml通过方法名来生成sql/li>
+            <li>[FIX]修复oracle下param自动补全的exception</li>
+            <li>[IMPROVE]使用方法名生成sql的格式优化</li>
+        </ul> 
 <strong>2.1</strong>
         <ul>
             <li>[New]从xml的sql一键测试sql 支持动态sql的测试</li>
