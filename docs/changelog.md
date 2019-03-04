@@ -1,3 +1,18 @@
+ <strong>2.4</strong>
+    <ul>
+        <li>[IMPROVE]数据库直接生成java类支持lombok Serializable等</li>
+        <li>[IMPROVE]生成testcase会自动配置好typeAlias</li>
+        <li>[IMPROVE]支持 findAllByXXX 语法</li>
+        <li>[IMPROVE]数据库生成crud可选不生成jdbcType</li>
+        <li>[IMPROVE]mybatis 配置文件resource的跳转自动补全</li>
+        <li>[FIX]java类跳转到selectProvider优先选择当前module跳转</li>
+        <li>[IMPROVE]typeAlias性能优化</li>
+        <li>[FIX]使用mybatis datasource选择java8 LocalDateTime不生效的bug</li>
+        <li>[NEW]从数据库可以直接生成batchInsert batchUpdate等</li>
+        <li>[IMPROVE]数据库生成curd时添加fileHeader 比如@author</li>
+        <li>[IMPROVE]findByXXIn使用Collection作为参数类型替代List</li>
+        <li>[IMPROVE]数据库重新生成时会保留java model类中的transient字段及其get set方法</li>
+    </ul>
 <strong>2.3</strong>
         <ul>
             <li>[IMPROVE]springboot typealias 支持</li>

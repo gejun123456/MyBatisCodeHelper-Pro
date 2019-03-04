@@ -1,3 +1,18 @@
+ <strong>2.4</strong>
+    <ul>
+        <li>[IMPROVE]generate java class support lombok Serializable ect</li>
+        <li>[IMPROVE]generate testcase will auto config typeAlias</li>
+        <li>[IMPROVE]support findAllByXXX ect</li>
+        <li>[IMPROVE]database generate crud choose not generate jdbcType</li>
+        <li>[IMPROVE]mybatis configuration file mapper resource auto complete</li>
+        <li>[FIX]java to select provider will use current module and dependency</li>
+        <li>[IMPROVE]better performance for typeAlias support</li>
+        <li>[FIX]mybatis datasource use java8 localDate ect not function</li>
+        <li>[NEW]database could generate batchInsert,batchUpdate ect</li>
+        <li>[IMPROVE]add file header when database generate curd like @author</li>
+        <li>[IMPROVE]findByXXIn will use Collection as param instead of List</li>
+        <li>[IMPROVE]database regenerate model will ignore transient field and it's getter and setter</li>
+    </ul>
 <strong>2.3</strong>
         <ul>
             <li>[IMPROVE]springboot typealias support</li>
