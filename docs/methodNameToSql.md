@@ -116,6 +116,7 @@ findMaxIdAndMinId   | select max(id) as maxId, min(id) as minId from user
 ---------- |  -------
 updateUserNameById | update user set user_name = {} where id = {}
 updateUserNameAndPasswordByIdIn  | update user set user_name = {} and password = {} where id in {}
+updateIncVersionByIdAndVersion | update user set version = version+1 where id = {} and version = {}
 
 - delete方法  可以使用remove替代delete开头
 by后面设置的条件同上

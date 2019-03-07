@@ -114,6 +114,7 @@ methodName     | sql
 ---------- |  -------
 updateUserNameById | update user set user_name = {} where id = {}
 updateUserNameAndPasswordByIdIn  | update user set user_name = {} and password = {} where id in {}
+updateIncVersionByIdAndVersion | update user set version = version+1 where id = {} and version = {}
 
 - delete  could use remove to replace delete.
 
