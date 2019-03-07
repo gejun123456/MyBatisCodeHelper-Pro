@@ -66,4 +66,8 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## 数据库 添加字段后 如何生成
 
-直接使用 mybatis generator 重新生成即可会保留接口和xml中不是自动生成的方法
+直接使用 mybatis generator 重新生成即可 会保留接口和xml中不是自动生成的方法
+
+
+## mybatis在写sql时数据库字段没有自动提示
+使用Intellij高级版 需要配置idea自带的database 在配置的时候记得填上数据库名
