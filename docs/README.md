@@ -72,7 +72,7 @@ xml collection中的 param提示| ✘|✔
 
 - 或者添加我的微信:
 
-![weichaturl](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/wechatme.jpg)
+![weichaturl](https://github.com/gejun123456/MyBatisCodeHelper-Pro/blob/master/screenshots/wechatme.png)
 
 该项目使用了或参考了以下项目:
 
