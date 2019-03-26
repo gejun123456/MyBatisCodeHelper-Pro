@@ -36,6 +36,9 @@ qq群：542735979（插件bug修复 最新版本及问题讨论）
 - mybatis接口一键生成xml
 - 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot
 - 一键生成mybatis接口的testcase 无需启动spring，复杂sql可进行快速测试
+- 一键生成两张表关联的join
+- 一键从sql语句中 导出resultMap
+
 
 -----------------------------------------------------------------------
 
