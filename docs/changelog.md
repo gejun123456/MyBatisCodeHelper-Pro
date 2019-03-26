@@ -1,3 +1,19 @@
+   <strong>2.5</strong>
+        <ul>
+            <li>[NEW]一键从xml生成join语句</li>
+            <li>[IMPROVE]更短的xml注释</li>
+            <li>[IMPROVE]去除blob字段的判断</li>
+            <li>[IMPROVE]数据库生成crud 可以生成service接口</li>
+            <li>[NEW]支持updateByXXX语法</li>
+            <li>[NEW]支持sqlServer生成建表语句 方法名生成sql</li>
+            <li>[NEW]可以定制数据库生成的crud方法</li>
+            <li>[IMPROVE]ui美化</li>
+            <li>[FIX]null pointer exception ModuleRootManager</li>
+            <li>[FIX]hashMap$Node cast exception</li>
+            <li>[FIX]临时文件没有删除</li>
+            <li>[NEW]可以配置是否自动折叠自动生成的方法</li>
+            <li>[NEW]mybatis selectKey的自动补全</li>
+        </ul>
  <strong>2.4</strong>
     <ul>
         <li>[IMPROVE]数据库直接生成java类支持lombok Serializable等</li>

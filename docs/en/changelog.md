@@ -1,3 +1,18 @@
+  <strong>2.5</strong>
+        <ul>
+            <li>[NEW]generate join statement from xml</li>
+            <li>[IMPROVE]shorten xml comment</li>
+            <li>[IMPROVE]mark blob column as common column</li>
+            <li>[IMPROVE]database generate crud could generate service interface</li>
+            <li>[NEW]support updateByXXX statement</li>
+            <li>[NEW]better support for sqlServer</li>
+            <li>[NEW]could customize database generate curd methods</li>
+            <li>[IMPROVE]better ui for database generate crud</li>
+            <li>[FIX]null pointer exception ModuleRootManager</li>
+            <li>[FIX]hashMap$Node cast exception</li>
+            <li>[NEW]could config auto fold xml generated methods</li>
+            <li>[NEW]auto complete for mybatis selectKey</li>
+        </ul>
  <strong>2.4</strong>
     <ul>
         <li>[IMPROVE]generate java class support lombok Serializable ect</li>
