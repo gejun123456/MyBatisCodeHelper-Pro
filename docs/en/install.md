@@ -27,6 +27,9 @@ Restart**IDE**.
 ### Using Activate code to activate
 ![register](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/register_new.gif)
 
+- or register in setting page
+![registerInSetting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/registerInSettings.png)
+
 ### Unbind
 
 - If you want to change your computer, You need to unbind the key

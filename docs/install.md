@@ -28,6 +28,9 @@
 - 未激活时IDEA打开项目时会有一个通知 在IDEA的eventLog可以找到 上面有一个一个register的按钮 点击按钮 输入激活码即可
 ![register](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/register_new.gif)
 
+- 或者可以在设置界面激活
+![registerInSetting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/registerInSettings.png)
+
 激活的时候 如果出现 connect error 请检查下IDEA是否设置了proxy 可以去掉proxy试试
 如果还有问题，请加qq群联系我
 
