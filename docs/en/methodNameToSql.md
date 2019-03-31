@@ -94,6 +94,7 @@ methodName       |  sql
 find         | select * from user
 findUserName | select user_name from user
 findById	| select * from user where id = {}
+findUserNameById | select user_name from user where id = {}
 findByIdGreaterThanAndUserName | select * from user where id > {} and user_name = {}
 findByIdGreaterThanOrIdLessThan | select * from user where id > {} or id < {}
 findByIdLessThanAndUserNameIn  | select * from user where id < {} and user_name in {}
