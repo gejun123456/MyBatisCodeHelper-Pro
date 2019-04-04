@@ -1,5 +1,5 @@
 ## Use Intellij database to generate crud code
-![intellijDatasourceGenerateCrud](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/IntellijGenerateCrud.gif)
+![intellijDatasourceGenerateCrud](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/数据库生成和合并代码.gif)
 
 after choose the module,the plugin will auto configure java model folder, java mapper folder and resource folder, normally you don't need to change them.
 
