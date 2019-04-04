@@ -1,6 +1,6 @@
 ## 使用Intellij自带的datasource来生成 最简单的从数据库生成代码
 
-![intellijDatasourceGenerateCrud](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/数据库生成和合并代码.gif)
+![intellijDatasourceGenerateCrud](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/databaseCrud.gif)
 
 选定了module后 插件会自动配置好java model folder, java mapper folder 以及 resource folder 一般不需要修改
 
