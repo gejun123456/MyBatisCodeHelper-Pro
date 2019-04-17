@@ -1,11 +1,11 @@
-## 根据java对象一键生成 Dao接口，Service，Xml，数据库建表Sql文件  提供dao与xml的跳转  
+## 根据java对象一键生成建表语句
 ### 未来将废弃掉java类生成crud功能，只支持java类生成建表sql语句，在创建完表后 从数据库进行生成，从数据库生成功能更多 数据库添加字段等更新也更方便
 
 ![generateFile](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/20170712_generateFiles.gif)
 
 ## 使用方法
 
-- 在java对象上使用alt+insert （generate mybatis files）生成对应的dao xml文件等 （mac上使用 ctrl+N 即getter setter对应的快捷键)
+- 在java对象上使用alt+insert （generate mybatis files）生成对应的建表语句sql文件 （mac上使用 ctrl+N 即getter setter对应的快捷键)
 - 当数据库对象添加字段后也可使用alt+insert （generate mybatis files）来生成更新后的xml。（只会更新默认的insert,insertList,update方法 其他自定义的方法不会变）
 
 ## 注意的点

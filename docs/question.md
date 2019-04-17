@@ -1,6 +1,7 @@
 ## 如何生成的时候返回主键id？
 
 首先要确保主键是自动生成的，比如 mysql主键 设置为 autoIncrement
+oracle 主键添加序列和触发器 (用java类生成建表语句可以自动生成好)
 然后 数据库在生成的时候 填写了 useGeneratedKey为你的主键字段名
 之后在生成的接口会有一个insert方法 比如  insert(User user)  生成的xml中的insert 语句 会有
 useGeneratedKey = true
