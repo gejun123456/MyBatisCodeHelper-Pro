@@ -17,7 +17,7 @@
 ![all_1](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/all_1.gif)
 
 
-## 方法名生成sql时支持if test  
+## 方法名生成sql时支持if test ( 新版本无需配置 直接alt+enter generate method to sql with if test即可)
 
 ![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
 
