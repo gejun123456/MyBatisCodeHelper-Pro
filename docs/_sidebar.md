@@ -1,6 +1,7 @@
 * 快速开始
 
   * [简介](README.md)
+  * [配置数据库](configure.md)
   * [数据库生成crud代码](databaseToCrud.md)
   * [方法名生成sql](methodNameToSql.md)
   * [自动补全 重构等功能](complete.md)
@@ -12,4 +13,3 @@
   * [设置详解](settings.md)
   * [更新日志](changelog.md)
   * [常见问题](question.md)
-  
