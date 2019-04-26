@@ -1,10 +1,8 @@
 ## mybatis接口方法名重构支持
-
-![refacterMethodName](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/refactor_method_name.gif)
+![renameMapperMethod](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/renameMapperMethod.gif)
 
 ## mybatis param的自动补全
-
-![autocomplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/simplecompletion.gif)
+![paramComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/paramComplete.gif)
 
 ## resultMap refid 跳转到定义和重构
 
@@ -13,11 +11,6 @@
 ## property refid resultMap等的自动补全
 
 ![property complete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/propertyComplete.gif)
-
-## collection的自动补全
-
-![collection complete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/listRecommeds.gif)
-
 
 ## resultMap中的collection association自动补全
 
