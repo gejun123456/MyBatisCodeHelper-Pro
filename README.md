@@ -14,7 +14,7 @@
 
 qq群：542735979（插件bug修复 最新版本及问题讨论）
 
-介绍视频:https://www.bilibili.com/video/av23458308/
+介绍视频: https://www.bilibili.com/video/av50632948
 
 文档地址： https://gejun123456.github.io/MyBatisCodeHelper-Pro/
 
