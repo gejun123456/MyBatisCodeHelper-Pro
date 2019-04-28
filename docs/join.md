@@ -88,7 +88,7 @@ List<AWithB> AJoinB();
 
 在这个生成之后 我们添加一下参数 和关联关系 就可以直接使用了
 
-在xml文件上 右键选择 generateJoin 即可
+在xml编辑器里面右键选择 generateJoin 即可
 
 最终生成截图
 ![一键生成两张表关联的join.gif](https://upload-images.jianshu.io/upload_images/11962894-8b93561ef68a91d1.gif?imageMogr2/auto-orient/strip)
