@@ -1,23 +1,17 @@
 ## Using Mapper method name to generate sql. Only need a method name, no need for method parameters and return type.
 
-![generateMultiple](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/一键从方法名生成sql.gif)
+![findMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findMethodNameToSql.gif)
 
-![find](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_find_example_2.gif)
+![updateMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/updateMethodNameToSql.gif)
 
-![update](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/update.gif)
+![deleteMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/deleteMethodNameToSql.gif)
 
-
-![delete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/delete.gif)
-
-
-![count](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/count.gif)
-
-![all_1](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/all_1.gif)
+![countMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/countMethodNameToSql.gif)
 
 
 ## Method generate sql support generate if test.
 
-![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
+![findWithIfTest](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findWithIfTest.gif)
 
 
 ## Generate findByAll

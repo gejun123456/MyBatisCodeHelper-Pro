@@ -1,25 +1,19 @@
 ## 根据mybatis接口中的方法名生成对应的mapper sql并进行方法补全  支持通用mapper mybatisplus
 
-只需要一个方法名 即可 不需要方法和参数 和返回值 输入方法名后 alt+enter generate method sql 就可以生成了
+只需要一个方法名 即可 不需要方法和参数 和返回值 输入方法名后 alt+enter Generate mybatis sql 就可以生成了
 
-![generateMultiple](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/fromMethodName.gif)
+![findMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findMethodNameToSql.gif)
 
-![find](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_find_example_2.gif)
+![updateMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/updateMethodNameToSql.gif)
 
-![update](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/update.gif)
+![deleteMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/deleteMethodNameToSql.gif)
 
-
-![delete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/delete.gif)
-
-
-![count](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/count.gif)
-
-![all_1](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/all_1.gif)
+![countMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/countMethodNameToSql.gif)
 
 
-## 方法名生成sql时支持if test (2.3版本后无需配置 直接alt+enter generate method to sql with if test即可)
+## 方法名生成sql时支持if test (2.3版本后无需配置 直接alt+enter Generate mybatis sql with if test即可)
 
-![if-test](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatis_generate_if_test.gif)
+![findWithIfTest](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findWithIfTest.gif)
 
 
 ## 一键生成findByAll
@@ -31,7 +25,7 @@
 ![insertList]](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/methodNameCouldGenerateInsertList.gif)
 
 ## 使用方法  
-- 在mybatis的接口文件上的方法名(只需要一个名字，不需要返回值和参数 会自动推导出来)上使用alt+enter generate method sql 或者选中方法名右键来生成
+- 在mybatis的接口文件上的方法名(只需要一个名字，不需要返回值和参数 会自动推导出来)上使用alt+enter Generate mybatis sql 或者选中方法名右键来生成
 
 
 ## 方法名的规则
