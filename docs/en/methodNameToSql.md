@@ -16,11 +16,10 @@
 
 ## Generate findByAll
 
-![findByAll]](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/support_find_by_all.gif)
-
+![findByAllEE](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findByAllEE.gif)
 
 ## Generate insertList
-![insertList]](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/methodNameCouldGenerateInsertList.gif)
+![insertList](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/insertList.gif)
 
 ## How use
 

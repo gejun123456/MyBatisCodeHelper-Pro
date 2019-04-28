@@ -18,11 +18,11 @@
 
 ## 一键生成findByAll
 
-![findByAll]](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/support_find_by_all.gif)
-
+![findByAllEE](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findByAllEE.gif)
 
 ## 一键生成insertList
-![insertList]](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/methodNameCouldGenerateInsertList.gif)
+
+![insertList](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/insertList.gif)
 
 ## 使用方法  
 - 在mybatis的接口文件上的方法名(只需要一个名字，不需要返回值和参数 会自动推导出来)上使用alt+enter Generate mybatis sql 或者选中方法名右键来生成
