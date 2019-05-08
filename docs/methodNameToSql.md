@@ -140,7 +140,7 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 是否有一个对应的完整的resultMap在xml中，resultMap中少了属性的话 无法生成 可以将属性设置为transient类型
 
 - 当生成sql时 如果比如UserMapper对应的User对象中含有List或Set类型的属性时，sql会无法生成
-请将这些属性设置为transient类型  比如 private transient List<Comment>
+请将这些属性设置为transient类型  比如 private transient List<Comment>  或者把这些属性移到一个继承的类中
 
 - 我写了find后方法名没有自动提示如何处理?
 
