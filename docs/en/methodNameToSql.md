@@ -129,3 +129,10 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 - When use method name to generate sql, you need to hava an Insert or add 
 like insert(User user) in your mapper method. Cause User is needed to support springdataJpa like language.
+- MethodName to sql current only support generate in xml files, you need to set up a xml file first, you can
+generate it by alt+enter on mapper interface class name.
+- If you have xml and you have insert method but the method name completion not work, please make sure your completion
+setting is same to following.
+
+![compele](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/completeSetting.png)
+
