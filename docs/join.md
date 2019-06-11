@@ -91,8 +91,7 @@ List<AWithB> AJoinB();
 在xml编辑器里面右键选择 generateJoin 即可
 
 最终生成截图
-![一键生成两张表关联的join.gif](https://upload-images.jianshu.io/upload_images/11962894-8b93561ef68a91d1.gif?imageMogr2/auto-orient/strip)
-
+![generateJoin](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateJoin.gif)
 
 使用该功能生成目前有一个要求 两个xml 中需要有BaseResultMap存在 并且要有一个insert语句 这样我可以找到表名
 以后会优化下 
