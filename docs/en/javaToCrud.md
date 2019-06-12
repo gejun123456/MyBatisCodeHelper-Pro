@@ -1,5 +1,5 @@
-## Generate Mapper interface，Service，mapper xml Xml，create table sql by java class
-![generateFile](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/20170712_generateFiles.gif)
+## Generate Create table sql by java class
+![generateCreateTable](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateCreateTable.gif)
 
 ## how to use
 

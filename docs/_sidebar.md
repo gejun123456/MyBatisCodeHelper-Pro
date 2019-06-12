@@ -6,7 +6,7 @@
   * [方法名生成sql](methodNameToSql.md)
   * [自动补全 重构等功能](complete.md)
   * [其他代码生成功能](otherGenerate.md)
-  * [java类生成crud代码](javaToCrud.md)  
+  * [java类生成建表语句](javaToCrud.md)
   * [spring的支持](spring.md)
   * [一键生成join](join.md)
   * [安装和激活和解绑](install.md)

@@ -1,13 +1,11 @@
 ## 根据java对象一键生成建表语句
-### 未来将废弃掉java类生成crud功能，只支持java类生成建表sql语句，在创建完表后 从数据库进行生成，从数据库生成功能更多 数据库添加字段等更新也更方便
+### 2.6版本已废弃掉java类生成crud功能，只支持java类生成建表sql语句，在创建完表后 从数据库进行生成，从数据库生成功能更多 数据库添加字段等更新也更方便
 
-![generateFile](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/20170712_generateFiles.gif)
+![generateCreateTable](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateCreateTable.gif)
 
 ## 使用方法
 
 - 在java对象上使用alt+insert （generate mybatis files）生成对应的建表语句sql文件 （mac上使用 ctrl+N 即getter setter对应的快捷键)
-- 当数据库对象添加字段后也可使用alt+insert （generate mybatis files）来生成更新后的xml。（只会更新默认的insert,insertList,update方法 其他自定义的方法不会变）
-
 ## 注意的点
 
 - java类生成文件这些 java类中的字段只支持对象类型 比如 int需要改写为Integer

@@ -6,7 +6,6 @@
   * [Auto complete and refactor](en/complete.md)
   * [Other code generate features](en/otherGenerate.md)
   * [Spring support](en/spring.md)
-  * [Java class generate crud code](en/javaToCrud.md)
+  * [Java class generate create table sql](en/javaToCrud.md)
   * [Install and activate](en/install.md)
   * [ChangeLog](en/changelog.md)
-  
