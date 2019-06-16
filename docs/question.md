@@ -7,8 +7,12 @@ oracle 主键添加序列和触发器 (用java类生成建表语句可以自动�
 useGeneratedKey = true
 在执行完插入语句后 可以使用 user.getId() 来获取生成的id
 
+## 生成代码出现 can't find xml file for namespace xxxx
+先查看xml中的namespace是否与接口一致，如果一致， 查看是否安装了其他冲突插件如FreeMybatisPlugin,MybatisX,MybatisPlugin,如果有请卸卸掉 然后使用 invalidate Cache and restart. https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/invalidateCacheAndRestart.png
+如果还没有发现问题，请查看下 接口和xml 是否在同一个module，module是否有依赖关系，如果在同一个module还有问题，请联系我
 
-## mybatis generator没有生成service接口
+
+## mybatis generator没有生成service接口 (2.6版本可以生成)
 
 一般spring项目中service接口没啥用 参考 https://www.zhihu.com/question/296829023/answer/521249348
 
