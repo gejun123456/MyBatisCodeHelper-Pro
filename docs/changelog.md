@@ -1,3 +1,8 @@
+
+   <strong>2.7</strong>https://github.com/gejun123456/MyBatisCodeHelper-Pro/issues?q=is%3Aissue+is%3Aopen+label%3A2.7
+
+   <strong>2.6</strong>https://github.com/gejun123456/MyBatisCodeHelper-Pro/issues?utf8=%E2%9C%93&q=label%3A2.6+
+
    <strong>2.5</strong>
         <ul>
             <li>[NEW]一键从xml生成join语句</li>
