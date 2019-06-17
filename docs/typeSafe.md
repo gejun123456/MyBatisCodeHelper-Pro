@@ -16,7 +16,7 @@
 set标签
 ![set标签正确性](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/set标签正确性.gif)
 
-## 当使用if test时 可能只能部分条件成立 choose when 则只有一个条件成立 插件引入了 @ignoreSql 注释，如果需要if test 或choose when 不成立可以使用该注释，检测sql是否正确和代码提示
+## 当使用if test时 可能只有部分条件成立 choose when 则只有一个条件成立 插件引入了 @ignoreSql 注释，如果需要if test 或choose when 不成立可以使用该注释，检测sql是否正确和代码提示
 
 ![ifTestChooseWhen选择性注入sql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/ifTestChooseWhen选择性注入sql.gif)
 
@@ -36,9 +36,9 @@ foreach collection
 ## 在2.5版本后 插件便可以对 #{}中的内容进行检测是否正确
 ![检测param是否正确](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/检测param是否正确.gif)
 
-## 另外在sql标签中的sql 由于不是完整的sql，无法进行检测和代码补全，插件引入了 @sql 注释
+## 另外在sql标签中的sql 由于不是完整的sql，无法进行检测和代码补全，插件引入了 @sql 注释，在注释中把sql的前缀和后缀填写进去，可保证sql标签中的sql无误
 ![sqlTagNoError](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/sqlTagNoError.gif)
 
-@sql和$sql的唯一区别是 如果@sql如果是通过 include refid引入的时候的不会被解析.
+@sql和$sql的唯一区别是 如果@sql如果是通过 include refid引入的时候的不会被解析. 如在一个select引入include时 不会对include中的@sql注释的sql解析，但会对$sql解析
 
 ## 插件在2.7版本引入了3个注释 @ignoreSql @sql $sql来保证条件sql的正确性，添加了ognl支持 防止 if test bind ${ foreach collection中的内容出错，基本可以保证sql不再出错了。之后会加入支持让这些注释更易用。
