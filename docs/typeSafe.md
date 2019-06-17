@@ -41,4 +41,8 @@ foreach collection
 
 @sql和$sql的唯一区别是 如果@sql如果是通过 include refid引入的时候的不会被解析. 如在一个select引入include时 不会对include中的@sql注释的sql解析，但会对$sql解析
 
-## 插件在2.7版本引入了3个注释 @ignoreSql @sql $sql来保证条件sql的正确性，添加了ognl支持 防止 if test bind ${ foreach collection中的内容出错，基本可以保证sql不再出错了。之后会加入支持让这些注释更易用。
+## 插件在2.7版本引入了3个注释 @ignoreSql @sql $sql来保证条件sql的正确性，添加了ognl支持 防止 if test bind ${ foreach collection中的内容出错，基本可以保证sql不再出错了。
+
+## 2.7版可能出现的问题
+1. if test等中的ognl表达式只支持一层方法调用，不支持多层（一般很少会用到多层方法调用)，可以通过先bind一个变量调用一个方法，然后使用这个bind的这个值
+2. 在写ignoreSql sql ${时 输入后看到代码提示时按enter会有一个不影响使用的报错，可以按tab替代，按tab不会报错
