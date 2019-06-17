@@ -4,6 +4,8 @@
 
 选定了module后 插件会自动配置好java model folder, java mapper folder 以及 resource folder 一般不需要修改
 
+* 注意最后生成的路径都是folder+package  所以一般选定了module后 只用填package就行了
+
 只用第一次使用配置好包名就行了，包名有自动补全 2.0.1版本后插件会自动检测 generatedKey 一般不需要配置
 
 在数据库添加了字段后 也可以重新生成，并且不会覆盖你的mapper接口中已经添加的方法
