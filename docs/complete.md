@@ -4,6 +4,9 @@
 ## mybatis param的自动补全
 ![paramComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/paramComplete.gif)
 
+## mybatis param检测是否正确
+![检测param是否正确](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/检测param是否正确.gif)
+
 ## resultMap refid 跳转到定义和重构
 
 ![resultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapJump.gif)
@@ -25,9 +28,11 @@
 补全的时候由于不能识别mybatis的这些标签，导致在写了上述的标签后 之后的sql无法进行自动补全
 插件优化了这块，可以让Intellij正确识别这些标签 正确解析sql语法
 
-![trimAndSet](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/tirmAndSetDetect.gif)
+trim标签
+![trim标签正确性检测](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/trim标签正确性检测.gif)
 
-![where](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/whereAutoCompleteAndSqlDetectInTag.gif)
+set标签
+![set标签正确性](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/set标签正确性.gif)
 
 解析sql的正确性 需要先配置下
 
