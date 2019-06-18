@@ -6,7 +6,7 @@
 
 > Intellij full support for Mybatis Framework
 
-Telegram: https://t.me/joinchat/JN0V4hD_bRDxRmrq7K9Fng
+Gitter : https://gitter.im/MyBatisCodeHelper/Lobby
 
 
 ##  Features
