@@ -76,3 +76,6 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## mybatis在写sql时数据库字段没有自动提示
 使用Intellij高级版 需要配置idea自带的database 在配置的时候记得填上数据库名
+
+## param检测未生效
+检查插件版本是否大于2.6 然后是否使用使用IDEA高级版，IDEA的数据库是否配置好，注意要在设置中配置当前项目的数据库类型 参考https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/configure
