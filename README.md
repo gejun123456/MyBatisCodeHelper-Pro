@@ -31,7 +31,9 @@ qq群：542735979（插件bug修复 最新版本及问题讨论）
 - xml中refid，resultMap等的跳转到定义
 - 检测没有使用的xml 可一键删除
 - 检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml
-- 检测resultmap的property是否有误 
+- 检测resultmap的property是否有误
+- param检测 检测#{ 中的内容是否有误
+- ognl 支持 if test when test foreach bind中的自动补全，跳转和检测
 - mybatis接口中一键添加param注解
 - mybatis接口一键生成xml
 - 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot

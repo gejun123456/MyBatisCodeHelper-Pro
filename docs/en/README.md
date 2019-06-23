@@ -14,10 +14,12 @@ Gitter : https://gitter.im/MyBatisCodeHelper/Lobby
 - **Generate mybatis sql based on mybatis interface method name like spring data jpa**
 - **Full mybatis sql auto complete, recognize mybatis tag in xml, like where trim update ect,provide sql completion after those tag,check if the sql is right**
 - Generate mybatis crud code by Intellij database table or add a database connection
-- Generate mybatis crud and create table sql according to java class
+- Generate create table sql according to java class
 - Jump from mybatis dao interface to mapper xml each other
 - Refactor for mybatis interface method name,refid,resultMap ect
 - Auto complete for mybatis param,if test,foreach,resultMap,refid in sql
+- Mybatis Param Inspection
+- Ognl support, if test when test ${ bind foreach collection, Inspection and auto complete
 - Auto complete for resultMap property
 - Jump from refid resultMap to their definition, refactor their name as well
 - Add param for mapper method with one click

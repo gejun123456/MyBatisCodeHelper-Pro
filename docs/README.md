@@ -26,6 +26,8 @@ qq群：542735979（插件bug修复 最新版本及问题讨论）
 - 检测resultmap的property是否有误 
 - mybatis接口中一键添加param注解
 - mybatis接口一键生成xml
+- param检测 检测#{ 中的内容是否有误
+- ognl 支持 if test when test foreach bind中的自动补全，跳转和检测
 - 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot
 - 一键生成mybatis接口的testcase 无需启动spring，复杂sql可进行快速测试
 - 一键生成两张表关联的join
