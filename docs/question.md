@@ -79,3 +79,6 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## param检测未生效
 检查插件版本是否大于2.6 然后是否使用使用IDEA高级版，IDEA的数据库是否配置好，注意要在设置中配置当前项目的数据库类型 参考https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/configure
+
+## 使用模版如cd co ${ ignore sql报错Range Marker Error
+出现提示后请用tab键 而不是enter键来进行补全，这个是IDEA的一个bug 以后看看
