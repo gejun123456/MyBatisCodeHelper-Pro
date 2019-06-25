@@ -20,7 +20,7 @@
 ![associactionAndCollectionComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/associationAndCollectionCouldAutoComplete.gif)
 
 ## xml中if test的自动补全
-![iftestCompltete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/ifTestCompletion.gif)
+![ifWhenTest中ognl支持](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/ifWhenTest中ognl支持.gif)
 
 ## 任意位置的sql的自动补全 识别include trim where set 等mybatis的标签
 
