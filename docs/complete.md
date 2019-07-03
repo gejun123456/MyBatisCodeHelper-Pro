@@ -5,15 +5,14 @@
 ![paramComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/paramComplete.gif)
 
 ## mybatis param检测是否正确
+
 ![检测param是否正确](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/检测param是否正确.gif)
 
 ## resultMap refid 跳转到定义和重构
-
-![resultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapJump.gif)
+![resultMapRefidJumAndRefactor](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapRefidJumAndRefactor.gif)
 
 ## property refid resultMap等的自动补全
-
-![property complete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/propertyComplete.gif)
+![autoCompleteForPropertyResultMapEct](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/autoCompleteForPropertyResultMapEct.gif)
 
 ## resultMap中的collection association自动补全
 
