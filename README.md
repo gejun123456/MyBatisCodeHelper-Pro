@@ -67,6 +67,7 @@ xml collection中的 param提示| ✘|✔
 识别mybatis的标签 全自动sql补全| ✘|✔
 检测#{中的参数是否正确| ✘|✔
 if test when test foreach collection $中的OGNL支持| ✘|✔
+param重构功能(2.7.2)| ✘|✔
 
 可以免费试用: http://brucege.com/pay/view
 
