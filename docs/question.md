@@ -62,12 +62,6 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 这种情况 用 transient 也不合适， 建议更改继承关系 不要把List<Comment>放到 Blog中  而是加一个 BlogWithComment的类 继承 Blog类。
 
 
-## 通过数据库 生成的文件 没有 service类
-
-目前没有生成service， 不过Intellij 有一个自带的delegate方法 可以很简单的mapper接口中的方法 移到service里面 2.0.3版支持生成service
-
-![setting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/IntellijDelegate.gif)
-
 
 ## 数据库 添加字段后 如何生成
 
@@ -82,3 +76,7 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## 使用模版如cd co ${ ignore sql报错Range Marker Error
 出现提示后请用tab键 而不是enter键来进行补全，这个是IDEA的一个bug 以后看看
+
+## 从表生成代码只有两个insert方法
+请检查表中是否有主键，如果有主键请刷新IDEA的数据库 直到下图这种
+![tableNoPrimaryKey](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/tableNoPrimaryKey.png)
