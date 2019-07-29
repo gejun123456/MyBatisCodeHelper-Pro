@@ -9,6 +9,7 @@
   * [其他代码生成功能](otherGenerate.md)
   * [java类生成建表语句](javaToCrud.md)
   * [实现安全的sql支持](typeSafe.md)
+  * [重构](refactor.md)
   * [spring的支持](spring.md)
   * [一键生成join](join.md)
   * [安装和激活和解绑](install.md)

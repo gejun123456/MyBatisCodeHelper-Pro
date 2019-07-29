@@ -1,25 +1,14 @@
-## mybatis接口方法名重构支持
-![renameMapperMethod](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/renameMapperMethod.gif)
-
 ## mybatis param的自动补全
 ![paramComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/paramComplete.gif)
 
 ## mybatis param检测是否正确
-
 ![检测param是否正确](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/检测param是否正确.gif)
-
-## resultMap refid 跳转到定义和重构
-![resultMapRefidJumAndRefactor](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapRefidJumAndRefactor.gif)
 
 ## property refid resultMap等的自动补全
 ![autoCompleteForPropertyResultMapEct](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/autoCompleteForPropertyResultMapEct.gif)
 
 ## resultMap中的collection association自动补全
-
-![associactionAndCollectionComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/associationAndCollectionCouldAutoComplete.gif)
-
-## xml中if test的自动补全
-![ifWhenTest中ognl支持](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/ifWhenTest中ognl支持.gif)
+![resultMapCollectionAndAssociactionBetterAutoComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapCollectionAndAssociactionBetterAutoComplete.gif)
 
 ## 任意位置的sql的自动补全 识别include trim where set 等mybatis的标签
 
