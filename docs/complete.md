@@ -7,6 +7,9 @@
 ## property refid resultMap等的自动补全
 ![autoCompleteForPropertyResultMapEct](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/autoCompleteForPropertyResultMapEct.gif)
 
+## resultMap column 检测是否正确
+![resultMapColumnInspectionAndAutoComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapColumnInspectionAndAutoComplete.gif)
+
 ## resultMap中的collection association自动补全
 ![resultMapCollectionAndAssociactionBetterAutoComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapCollectionAndAssociactionBetterAutoComplete.gif)
 
