@@ -16,3 +16,4 @@
   * [设置详解](settings.md)
   * [更新日志](changelog.md)
   * [常见问题](question.md)
+  * [2.7.2更新](2_7_2.md)
