@@ -1,5 +1,5 @@
 ## mybatis param的自动补全
-![paramComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/paramComplete.gif)
+![betterParamAutoComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/betterParamAutoComplete.gif)
 
 ## mybatis param检测是否正确
 ![检测param是否正确](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/检测param是否正确.gif)
