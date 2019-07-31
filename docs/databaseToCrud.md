@@ -17,6 +17,7 @@
 - mapper xml 文件 首先会删除掉 @mbg generated 注释的方法 然后生成你选择的方法  即不会覆盖掉你自己写的方法
 - java 实体 会保留java实体中的 static方法 static 字段 transient方法 transient字段
 - 请不要修改自动生成的方法 如果要修改 请将sql中的 @mbg generated注释给去掉 以免在添加字段重新生成后 将该方法给覆盖掉了
+- model类可以在设置里面关掉auto merge 以防添加字段后model类被覆盖(比如model添加了一些自定义的注解如jackson时)
 
 ## IDEA社区版可以使用添加的datasource来生成 （目前支持mysql oracle postgresql sqlserver  myql支持5.5及以上  oracle支持oracle10g及以上 postgresql sqlserver支持最新版，老版本未测试 有问题请联系我) 
 
