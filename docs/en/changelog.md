@@ -1,3 +1,75 @@
+  <strong>2.7.3</strong>
+        <ul>
+            <li>[NEW]resultmap column inspection support columnPrefix</li>
+            <li>[FIX]mapper interface with super class generic</li>
+            <li>[NEW]use java method to config columnName to propertyName</li>
+            <li>[NEW]resultMap jdbcType and typeHandler better auto complete and inspection</li>
+            <li>[NEW]generate properties on resultMap will auto match column in select tag</li>
+        </ul>
+        <strong>2.7.2</strong>
+        <ul>
+            <li>[NEW]param and ognl refactor</li>
+            <li>[NEW]intellij community version param complete</li>
+            <li>[IMPROVE]better param completion and inspection for typeHandler and mode and resultMap ect</li>
+            <li>[FIX]resultType resultMap inspection</li>
+            <li>[NEW]resultMap column inspection</li>
+            <li>[FIX]resultMap discriminator support</li>
+            <li>[NEW]database generate crud support mybatisPlus2</li>
+            <li>[NEW]better merge ui</li>
+            <li>[FIX]sql extract resultmap support more sql pattern</li>
+            <li>[NEW]kotlin class jump to xml each other</li>
+            <li>[FIX]better generic in mapper interface support</li>
+            <li>[NEW]support ognl use instanceOf</li>
+        </ul>
+        <strong>2.7.1</strong>
+        <ul>
+            <li>[NEW]ognl better completion and inspection for single param no annotation</li>
+            <li>[FIX]intellij community version typed error</li>
+            <li>[FIX]support 2019.2 version</li>
+            <li>[NEW]add checkBlobColumn option </li>
+            <li>[FIX]check conflict for exampleQuery and tkMapper</li>
+            <li>[NEW]comment in sql use xml comment instead of sql</li>
+        </ul>
+        <strong>2.7</strong>
+        <ul>
+            <li>[NEW]ognl support for if test when test foreach collection </li>
+            <li>[FIX]java utils null pointer exception when setter method not return void</li>
+            <li>[IMPROVE]param auto complete in cdata block</li>
+            <li>[FIX]example query generated service List is not import</li>
+            <li>[FIX]java.lang.RunTimeException:After patch:doc</li>
+            <li>[FIX]database generate crud press enter will not exit</li>
+            <li>[FIX]if test string compare with single char inspection</li>
+            <li>[FIX]type safe mybatis sql with @ignoreSql @sql $sql comments</li>
+            <li>[NEW]method return type inspection</li>
+            <li>[NEW]database regenerated java class could merge by ui</li>
+            <li>[FIX]p3c comment id problem</li>
+            <li>[IMPROVE]other fix</li>
+        </ul>
+        <strong>2.6.1</strong>
+        <ul>
+            <li>[FIX]completion kotlin null pointer exception</li>
+            <li>[IMPROVE]better method name auto complete</li>
+            <li>[FIX]fix caret point to method body when generate select statement from method</li>
+        </ul>
+        <strong>2.6</strong>
+        <ul>
+            <li>[NEW]mybatis param inspection</li>
+            <li>[IMPROVE]better param auto complete</li>
+            <li>[IMPROVE]better method name auto complete for method name to sql</li>
+            <li>[IMPROVE]resultMap property auto complete and rename support set method and field</li>
+            <li>[NEW]support bind tag in xml</li>
+            <li>[NEW]mapperScan package auto compelte and inspection</li>
+            <li>[IMPROVE]reformat code after add param action</li>
+            <li>[FIX]oracle findFirst generate sql not right</li>
+            <li>[FIX]generate testcase in maven project exception</li>
+            <li>NEW]support mybatis useActualParamName</li>
+            <li>[FIX]service not import list when database generate crud</li>
+            <li>[FIX]database generate crud resource folder not provide package from resource</li>
+            <li>[FIX]database generate crud mapperAnnotation not remembered</li>
+            <li>[NEW]database to crud support mybatis plus generate service</li>
+            <li>[NEW]generate join query support tk mapper and mybatisplus</li>
+            <li>[FIX]possible exception fix</li>
+        </ul>
   <strong>2.5</strong>
         <ul>
             <li>[NEW]generate join statement from xml</li>
