@@ -83,3 +83,8 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## sql标签中的字段标红 sql标签中的sql 由于不是完整的sql，无法进行检测和代码补全，插件引入了 @sql 注释，在注释中把sql的前缀和后缀填写进去，可保证sql标签中的sql无误
 ![sqlTagNoError](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/sqlTagNoError.gif)
+
+## choose when语句 没有自动提示，标红
+
+请添加ignore注释 参考
+![chooseWhenAutoComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/chooseWhenAutoComplete.gif)
