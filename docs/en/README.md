@@ -49,6 +49,9 @@ Use database to generate mybatis crud code| ✘|✔
 Generate mybatis crud and create table sql according to java class|✘|✔
 xml collection param auto complete| ✘|✔
 Recognize mybatis tag in xml, provide auto complete for table column ect| ✘|✔
+param inspection and refactor| ✘|✔
+Ognl support if test when test bind foreach $, Inspection and refactor| ✘|✔
+ResultMap column inspection and autocompletion| ✘|✔
 
 Free trial: http://brucege.com/
 

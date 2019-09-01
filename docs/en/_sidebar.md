@@ -7,6 +7,7 @@
   * [Refactor](en/refactor.md)
   * [Other code generate features](en/otherGenerate.md)
   * [Spring support](en/spring.md)
+  * [Ognl support](en/ognl.md)
   * [Java class generate create table sql](en/javaToCrud.md)
   * [Install and activate](en/install.md)
   * [ChangeLog](en/changelog.md)

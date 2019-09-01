@@ -51,7 +51,7 @@ qq群：542735979（插件bug修复 最新版本及问题讨论）
 接口与xml互相跳转 更换图标|  ✔ | ✔
 接口方法名重构| ✔| ✔
 一键添加param| ✔| ✔
-xml中的 param的自动提示 if test的自动提示 resultMap refid 等的自动提示|✔| ✔
+xml中的 param的自动提示 resultMap refid 等的自动提示|✔| ✔
 resultMap中的property的自动提示|✔|✔
 检测没有使用的xml 可一键删除|✔|✔
 检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml方法块|✔|✔
@@ -68,6 +68,7 @@ xml collection中的 param提示| ✘|✔
 检测#{中的参数是否正确| ✘|✔
 if test when test foreach collection $中的OGNL支持| ✘|✔
 param重构功能(2.7.2)| ✘|✔
+resultMap column提示与检测|✘|✔
 
 可以免费试用: http://brucege.com/pay/view
 
