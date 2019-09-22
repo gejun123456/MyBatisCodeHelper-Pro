@@ -32,5 +32,5 @@ Restart**IDE**.
 
 ### Unbind
 
-- If you want to change your computer, You need to unbind the key
+- If you want to change your computer or if you reinstall the operating system, You need to unbind the key
 ![unBind](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/unBind.png)

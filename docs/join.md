@@ -99,3 +99,5 @@ List<AWithB> AJoinB();
 2.7.4 支持快速生成多表的join 通过在表右键来获取所有列，然后resultMap使用columnPrefix进行自动匹配字段 可以快速生成一个join
 ## 自动匹配resultMap中的字段
 ![joinAutoMapping](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/joinAutoMapping.gif)
+
+
