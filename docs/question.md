@@ -2,6 +2,7 @@
 
 首先要确保主键是自动生成的，比如 mysql主键 设置为 autoIncrement
 oracle 主键添加序列和触发器 (用java类生成建表语句可以自动生成好)
+(2.7.6支持配置oracle序列)
 然后 数据库在生成的时候 填写了 useGeneratedKey为你的主键字段名
 之后在生成的接口会有一个insert方法 比如  insert(User user)  生成的xml中的insert 语句 会有
 useGeneratedKey = true
@@ -61,7 +62,7 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 这种情况 用 transient 也不合适， 建议更改继承关系 不要把List<Comment>放到 Blog中  而是加一个 BlogWithComment的类 继承 Blog类。
 
-
+请不要更改自动生成的BaseResultMap.
 
 ## 数据库 添加字段后 如何生成
 
@@ -70,9 +71,6 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## mybatis在写sql时数据库字段没有自动提示
 使用Intellij高级版 需要配置idea自带的database 在配置的时候记得填上数据库名
-
-## param检测未生效
-检查插件版本是否大于2.6 然后是否使用使用IDEA高级版，IDEA的数据库是否配置好，注意要在设置中配置当前项目的数据库类型 参考https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/configure
 
 ## 使用模版如cd co ${ ignore sql报错Range Marker Error
 出现提示后请用tab键 而不是enter键来进行补全，这个是IDEA的一个bug 以后看看
