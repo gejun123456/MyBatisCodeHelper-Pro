@@ -91,7 +91,7 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## 使用${}的sql会标红
 
-由于$中可以使用任意的sql 无法解析具体的sql是啥 可以在${}的后面添加一个注释代表真正可能的sql
+由于$中可以使用任意的字符串 无法解析具体的sql是啥 插件没有将${}加入sql解析 可以在${}的后面添加一个注释代表真正可能的sql
 
 (2.7.6支持一键生成对应的sql)
 ![AddSqlAfter$](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/AddSqlAfter$.gif)
