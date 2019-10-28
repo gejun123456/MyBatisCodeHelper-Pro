@@ -4,8 +4,10 @@
 ## 一键添加mybatis的param注解
 ![addParam](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/addParamForOneClick.gif)
 
-
 ## 自动匹配resultMap中的字段
+![joinAutoMapping](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/joinAutoMapping.gif)
+
+支持columnPrefix匹配
 ![joinAutoMapping](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/joinAutoMapping.gif)
 
 ## 一键生成测试mybatis接口的测试类 
@@ -35,4 +37,12 @@
 
 cd 生成cdata co生成collection 
 ![codeTemplate](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/codeTemplate.gif)
+
+## 一键生成所有列 
+![allColumnSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/allColumnSql.gif)
+
+生成用于join的列和resultMap
+![generateJoinColumnAndResultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateJoinColumnAndResultMap.gif)
+
+
 
