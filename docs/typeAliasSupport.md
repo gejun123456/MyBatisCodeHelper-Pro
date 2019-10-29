@@ -5,7 +5,7 @@ mybatis-config文件中的typeAlias
 
 其他情况可能会无法识别 可以在项目的设置中配置下
 
-目前不支持typeAlias中的*号, 可以将\*号展开配置多个包名 (如下图)
+目前不支持typeAlias中的 \*号, 可以将 \* 号展开配置多个包名 (如下图)
 
 ![supportTypeAlias](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/supportTypeAlias.gif)
 
