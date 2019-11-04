@@ -2,27 +2,27 @@
 
 只需要一个方法名 即可 不需要方法和参数 和返回值 输入方法名后 alt+enter Generate mybatis sql 就可以生成了
 
-![findMethodNameToSql](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/findMethodNameToSql.gif)
+![findMethodNameToSql](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/findMethodNameToSql.gif)
 
-![updateMethodNameToSql](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/updateMethodNameToSql.gif)
+![updateMethodNameToSql](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/updateMethodNameToSql.gif)
 
-![deleteMethodNameToSql](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/deleteMethodNameToSql.gif)
+![deleteMethodNameToSql](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/deleteMethodNameToSql.gif)
 
-![countMethodNameToSql](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/countMethodNameToSql.gif)
+![countMethodNameToSql](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/countMethodNameToSql.gif)
 
 
 ## 方法名生成sql时支持if test (2.3版本后无需配置 直接alt+enter Generate mybatis sql with if test即可)
 
-![findWithIfTest](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/findWithIfTest.gif)
+![findWithIfTest](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/findWithIfTest.gif)
 
 
 ## 一键生成findByAll
 
-![findByAllEE](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/findByAllEE.gif)
+![findByAllEE](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/findByAllEE.gif)
 
 ## 一键生成insertList
 
-![insertList](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/insertList.gif)
+![insertList](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/insertList.gif)
 
 ## 使用方法  
 - 在mybatis的接口文件上的方法名(只需要一个名字，不需要返回值和参数 会自动推导出来)上使用alt+enter Generate mybatis sql 或者选中方法名右键来生成
@@ -145,4 +145,4 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 - 我写了find后方法名没有自动提示如何处理?
 
 查看IDEA设置里的completion 是否设置为 firstLetter
-![compele](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/completeSetting.png)
+![compele](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/completeSetting.png)

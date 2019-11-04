@@ -1,3 +1,3 @@
 ## 设置配置详解
 
-![setting](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/settings.png)
+![setting](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/settings.png)

@@ -72,12 +72,12 @@ resultMap中column提示与检测(2.7.2)| ✘|✔
 - 加入qq群 由于Intellij插件市场需要两天审核  插件的bug修复 最新版本 会先放在qq群中 出现任何问题可在qq群反馈
 
 542735979
-![qqGroup](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/qqgroup.png)
+![qqGroup](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/qqgroup.png)
 
 
 - 或者添加我的微信:
 
-![weichaturl](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/wechatme.png)
+![weichaturl](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/wechatme.png)
 
 该项目使用了或参考了以下项目:
 
