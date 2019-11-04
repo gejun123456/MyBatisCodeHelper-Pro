@@ -2,7 +2,7 @@
 ## 安装
 ----
 
-### 插件可能会和其他的mybatis插件冲突，如 mybatisX,freeMybatisPlugin,mybatisPlugin.(mybatisLogPlugin没有冲突),如果发现比如方法名生成sql找不到对应的xml文件等，请先卸载掉其他的mybatis插件 然后使用 invalidate Cache and restart. https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/invalidateCacheAndRestart.png
+### 插件可能会和其他的mybatis插件冲突，如 mybatisX,freeMybatisPlugin,mybatisPlugin.(mybatisLogPlugin没有冲突),如果发现比如方法名生成sql找不到对应的xml文件等，请先卸载掉其他的mybatis插件 然后使用 invalidate Cache and restart. https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/invalidateCacheAndRestart.png
 
 
 
@@ -28,10 +28,10 @@
 ### 激活码激活
 
 - 未激活时IDEA打开项目时会有一个通知 在IDEA的eventLog可以找到 上面有一个一个register的按钮 点击按钮 输入激活码即可
-![register](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/register_new.gif)
+![register](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/register_new.gif)
 
 - 或者可以在设置界面激活
-![registerInSetting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/registerInSettings.png)
+![registerInSetting](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/registerInSettings.png)
 
 激活的时候 如果出现 connect error 请检查下IDEA是否设置了proxy 可以去掉proxy试试
 如果还有问题，请加qq群联系我
@@ -42,9 +42,9 @@
 - 由于激活的时候需要联网，某些公司可能设置了拦截 无法联网，此时可以使用vpn 或者 手机开热点，实在不行 可以进行离线激活 离线激活的教程参考下图  由于离线激活需要我这边来操作 只有年费用户可以使用 
 注意:离线激活的设备无法进行解绑 不能换电脑
 
-![offline](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/offlineActivation.png)
+![offline](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/offlineActivation.png)
 
 ## 解绑
 
 - 购买后会发两个激活码，可以在两台设备上绑定，一个激活码绑定一个设备。当更新机器或者重装系统时需要解绑。可进行下图的操作  一个激活码最多可以解绑10次(1.8.3版本支持)
-![unBind](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/unBind.png)
+![unBind](https://gitee.com/gejun123456/MyBatisCodeHelper-Pro/raw/master/screenshots/unBind.png)
