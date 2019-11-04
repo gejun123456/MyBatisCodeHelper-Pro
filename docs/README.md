@@ -19,11 +19,11 @@ qq群：542735979（插件bug修复 最新版本及问题讨论）
 - mybatis接口和xml的互相跳转  支持一个mybatis接口对应多个xml
 - mybatis接口中的方法名重构支持
 - xml中的 param的自动提示 if test的自动提示 resultMap refid 等的自动提示
-- resultMap中的property的自动提示
+- resultMap中的property的自动提示，检测，重构
+- resultMap中column自动提示，检测
 - xml中refid，resultMap等的跳转到定义
 - 检测没有使用的xml 可一键删除
 - 检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml
-- 检测resultmap的property是否有误 
 - mybatis接口中一键添加param注解
 - mybatis接口一键生成xml
 - 完整的typeAlias支持
