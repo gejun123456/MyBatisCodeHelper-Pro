@@ -93,3 +93,7 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 (2.7.6支持一键生成对应的sql)
 ![AddSqlAfter$](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/AddSqlAfter$.gif)
+
+## 数据库表是tinyint(1)生成了boolean类型
+
+mysql tinyint(1)与boolean是一个含义，不想生成boolean请使用tinyint(4)
