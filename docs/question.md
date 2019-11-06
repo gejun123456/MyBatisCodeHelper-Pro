@@ -100,4 +100,4 @@ mysql tinyint(1)与boolean是一个含义，不想生成boolean请使用tinyint(
 
 
 ## 怎么去掉sql显示中的黄色背景
-![yellowBackGround](https://coding.net/u/gejun123456/MyBatisCodeHelper-Pro/git/raw/master/screenshots/yellowBackGround.png)
+![yellowBackGround](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/yellowBackGround.png)
