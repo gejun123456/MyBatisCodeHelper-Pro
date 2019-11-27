@@ -18,7 +18,7 @@ set标签
 
 ## 当使用if test时 可能只有部分条件成立 choose when 则只有一个条件成立 插件引入了 @ignoreSql 注释，如果需要if test 或choose when 不成立可以使用该注释，检测sql是否正确和代码提示
 
-![ifTestChooseWhen选择性注入sql](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/ifTestChooseWhen选择性注入sql.gif)
+![chooseWhenAutoComplete](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/chooseWhenAutoComplete.gif)
 
 ## 当我们写if test when bind ${} foreach collection中的语句也可能会出错，这块语法是使用的ognl语法，插件对这块进行了支持
 
