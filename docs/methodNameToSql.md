@@ -138,10 +138,18 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 
 - "please check with your resultMap dose it contain all the property of 
 此时可以检查这个接口对应的对象 比如 这个接口有个 insert(User user) 即 User对象
-是否有一个对应的完整的resultMap在xml中，resultMap中少了属性的话 无法生成 可以将属性设置为transient类型
+是否有一个对应的完整的resultMap在xml中，resultMap中少了属性的话，无法生成 如果属性在表里面有，请将属性添加到resultMap(一般为baseResultMap) 如果没有 
+可以将属性设置为transient类型
+即private transient String moreField 或者添加@javax.persistence.Transient注解
+如果找不到该注解 请添加maven依赖  
+<dependency>
+    <groupId>javax.persistence</groupId>
+    <artifactId>javax.persistence-api</artifactId>
+    <version>2.2</version>
+</dependency>
 
 - 当生成sql时 如果比如UserMapper对应的User对象中含有List或Set类型的属性时，sql会无法生成
-请将这些属性设置为transient类型  比如 private transient List<Comment>  或者把这些属性移到一个继承的类中
+请将这些属性设置为transient类型  比如 private transient List<Comment>  或者最好把这些属性移到一个继承的类中
 
 - 我写了find后方法名没有自动提示如何处理?
 
