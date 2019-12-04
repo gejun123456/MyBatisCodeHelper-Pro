@@ -33,6 +33,8 @@
 - 或者可以在设置界面激活
 ![registerInSetting](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/registerInSettings.png)
 
+在线激活使用onlineActivation 无法联网的机器使用offlineActivation.
+
 激活的时候 如果出现 connect error 请检查下IDEA是否设置了proxy 可以去掉proxy试试
 如果还有问题，请加qq群联系我
 
