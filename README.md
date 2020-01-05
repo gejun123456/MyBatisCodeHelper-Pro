@@ -12,7 +12,9 @@
 
 > Intellij下Mybatis支持插件 
 
-qq群：542735979（插件bug修复 最新版本及问题讨论）
+qq群（插件bug修复 最新版本及问题讨论）
+1群: 542735979
+2群: 914051156(1群人已满)
 
 介绍视频: https://www.bilibili.com/video/av50632948
 
