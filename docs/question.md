@@ -108,8 +108,12 @@ mysql tinyint(1)与boolean是一个含义，不想生成boolean请使用tinyint(
 table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，插件便可以解析BaseColumnList为表中的字段，另外在方法名生成sql的时候不再需要依赖一个insert方法了.
 
 
-## 2019.3版本 sql表和列明没有自动自动
+## 2019.3版本 sql表和列明没有自动提示
 看文档配置数据那节，记得设置里面配置好dialect
 
 ## 想用模版来生成
 可以使用 https://github.com/gejun123456/easyCode-MybatisCodeHelper。
+
+## 插件生成testcase 配置文件只会加载当前的接口对应的xml，如果引用了其他xml需要自己添加一下
+在生成testcase的setUp方法会引用一个xml文件，在xml文件中添加引用的xml位置
+![testcaseAddMapperResource](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/testcaseAddMapperResource.png)
