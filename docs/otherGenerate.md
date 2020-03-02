@@ -5,6 +5,7 @@
 ![addParam](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/addParamForOneClick.gif)
 
 ## 自动匹配resultMap中的字段
+autoMap会找到resultMap type中的属性与resultMap引用的sql select的字段以最近的字段来进行匹配
 ![joinAutoMapping](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/joinAutoMapping.gif)
 
 支持columnPrefix匹配
@@ -43,6 +44,9 @@ cd 生成cdata co生成collection
 
 生成用于join的列和resultMap
 ![generateJoinColumnAndResultMap](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateJoinColumnAndResultMap.gif)
+
+## 从表数据导出java insert语句 可用于快速构造测试数据
+![GenerateJavaSetterFromTableRow](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/GenerateJavaSetterFromTableRow.gif)
 
 
 
