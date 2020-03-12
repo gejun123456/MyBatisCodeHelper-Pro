@@ -49,7 +49,5 @@ cd 生成cdata co生成collection
 ![GenerateJavaSetterFromTableRow](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/GenerateJavaSetterFromTableRow.gif)
 
 
-## 和其他插件对比
-插件拥有最好的mybatis sql代码提示，代码检测，重构，快速测试sql，方法名生成sql等。大幅提升开发效率。
 
 

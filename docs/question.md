@@ -117,3 +117,8 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 ## 插件生成testcase 配置文件只会加载当前的接口对应的xml，如果引用了其他xml需要自己添加一下
 在生成testcase的setUp方法会引用一个xml文件，在xml文件中添加引用的xml位置
 ![testcaseAddMapperResource](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/testcaseAddMapperResource.png)
+
+
+
+## 和其他插件对比
+插件拥有最好的mybatis sql代码提示，代码检测，重构，快速测试sql，方法名生成sql等。大幅提升开发效率。
