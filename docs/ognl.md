@@ -9,6 +9,8 @@ bind和 ${
 foreach collection
 ![collection标签跳转检测正确](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/collection标签跳转检测正确.gif)
 
+ognl中方法调用和检测
+![ognl method call](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/collectionCallMethdo.gif)
 
 ##注意 
 Ognl目前不支持多层方法的调用，如果有多层方法调用 请先bind一个变量 在调用下一个方法
