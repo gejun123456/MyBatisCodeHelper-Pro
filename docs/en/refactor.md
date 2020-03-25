@@ -4,7 +4,7 @@
 ## param and ognl refactor
 ![paramOgnlRefactor](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/paramOgnlRefactor.gif)
 
-refactor from java field
+## refactor from java field
 ![fromFieldRefactor](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/fromFieldRefactor.gif)
 
 ## resultMap refid refactor

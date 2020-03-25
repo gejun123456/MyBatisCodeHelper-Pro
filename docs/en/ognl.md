@@ -8,6 +8,8 @@ bind And ${
 foreach collection
 ![Collection Ognl Support](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/collection标签跳转检测正确.gif)
 
+ognl method call support and inspection
+![ognl method call](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/collectionCallMethdo.gif)
 
 ##Problem 
 Ognl current not support multiple method invoke, you can bind a variable by method invoke, then use the variable to invoke next method.

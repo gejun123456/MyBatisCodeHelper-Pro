@@ -7,7 +7,7 @@
 ## property refid resultMap auto complete
 ![autoCompleteForPropertyResultMapEct](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/autoCompleteForPropertyResultMapEct.gif)
 
-## resultMap column inspection(2.7.2)
+## resultMap column inspection(2.7.2) the plugin will parse select statement with the resultMap.
 ![resultMapColumnInspectionAndAutoComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapColumnInspectionAndAutoComplete.gif)
 
 ## resultMap collection association auto complete
