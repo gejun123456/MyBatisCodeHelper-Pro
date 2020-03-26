@@ -1,7 +1,7 @@
 ## 根据java对象一键生成建表语句
 ### 2.6版本已废弃掉java类生成crud功能，只支持java类生成建表sql语句，在创建完表后 从数据库进行生成，从数据库生成功能更多 数据库添加字段等更新也更方便
 
-![generateCreateTable](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateCreateTable.gif)
+![generateCreateTable](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateCreateTable.gif)
 
 ## 使用方法
 

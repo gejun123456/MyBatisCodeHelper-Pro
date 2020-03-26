@@ -31,12 +31,12 @@ cd  for cdata   co for collection
 
 
 ## generate all column statement 
-![allColumnSql](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/allColumnSql.gif)
+![allColumnSql](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/allColumnSql.gif)
 
 generate result and column for join statement.
-![generateJoinColumnAndResultMap](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateJoinColumnAndResultMap.gif)
+![generateJoinColumnAndResultMap](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateJoinColumnAndResultMap.gif)
 
 ## extract java insert statement from table data, help to generate test data ect.
-![GenerateJavaSetterFromTableRow](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/GenerateJavaSetterFromTableRow.gif)
+![GenerateJavaSetterFromTableRow](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/GenerateJavaSetterFromTableRow.gif)
 
 
