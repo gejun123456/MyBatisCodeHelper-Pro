@@ -77,9 +77,11 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## 从表生成代码只有两个insert方法
 请检查表中是否有主键，如果有主键请刷新IDEA的数据库 直到下图这种
+
 ![tableNoPrimaryKey](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/tableNoPrimaryKey.png)
 
 ## sql标签中的字段标红 sql标签中的sql 由于不是完整的sql，无法进行检测和代码补全，插件引入了 @sql 注释，在注释中把sql的前缀和后缀填写进去，可保证sql标签中的sql无误
+
 ![sqlTagNoError](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/sqlTagNoError.gif)
 
 ## choose when语句 没有自动提示，标红
@@ -101,6 +103,8 @@ mysql tinyint(1)与boolean是一个含义，不想生成boolean请使用tinyint(
 
 
 ## 怎么去掉sql显示中的黄色背景
+
+
 ![yellowBackGround](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/yellowBackGround.png)
 
 ## 生成的xml中的@Table有什么用
@@ -109,6 +113,7 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 
 
 ## 2019.3版本 sql表和列明没有自动提示
+
 看文档配置数据那节，记得设置里面配置好dialect
 
 ## 想用模版来生成

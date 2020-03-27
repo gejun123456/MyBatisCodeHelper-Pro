@@ -1,4 +1,4 @@
-#  构建安全的mybatis sql（插件2.7版本）
+#  构建安全的mybatis sql（插件2.8.0版本）
 
 ## IDEA高级版提供了sql自动补全 sql语法检测， IDEA高级版可以写出安全的sql 如下图
 ![idea自带的database自动补全和检测和运行sql](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/idea自带的database自动补全和检测和运行sql.gif)
@@ -9,7 +9,7 @@
 3. if test when bind ${} foreach collection中的判断语句错误
 4. #{} 中的语句错误
 
-## 2.0.1版本后的插件便可以识别include trim set where foreach标签，使用了标签的sql可以进行检测和自动补全
+## 插件可以识别include trim set where foreach标签，使用了标签的sql可以进行检测和自动补全
 比如对于trim标签
 ![trim标签正确性检测](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/trim标签正确性检测.gif)
 
@@ -27,6 +27,11 @@ if test when test
 
 bind和 ${
 ![bind和${的ognl支持](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/bind和${的ognl支持.gif)
+
+bind进行绑定变量的类型推断支持
+
+![ognl method call](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/collectionCallMethdo.gif)
+
 
 对于 ${ 由于里面的输入可以是任意字符，sql会无法解析，插件引入了 $sql注释，如上图，真正要被替换的语句写入$sql 注释中
 
