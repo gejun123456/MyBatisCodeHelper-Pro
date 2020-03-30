@@ -11,6 +11,7 @@
   * [实现安全的sql支持](typeSafe.md)
   * [重构](refactor.md)
   * [spring的支持](spring.md)
+  * [快速测试sql](quicktestsql.md)
   * [生成join](join.md)
   * [TypeAlias支持](typeAliasSupport.md)
   * [安装和激活和解绑](install.md)
