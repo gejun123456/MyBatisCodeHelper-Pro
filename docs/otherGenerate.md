@@ -15,7 +15,7 @@ autoMap会找到resultMap type中的属性与resultMap引用的sql select的字�
 
 不需要启动spring容器，写完了立马就可以测试sql  对于复杂的sql 可以很方便的进行测试 
 
-![generate-testcase](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateTestCaseByClick.gif)
+![generateTestcase](https://coding.net/u/gejun123456/p/MyBatisCodeHelper-Pro/git/raw/master/screenshots/autoGenerateTestCase.gif)
 
 ## 从xml生成java接口 (2.7.4)
 ![generateResultMapAndXmlGenerateJavaMethod](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateResultMapAndXmlGenerateJavaMethod.gif)
