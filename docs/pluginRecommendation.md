@@ -92,3 +92,5 @@ Intellij官方出的搜索依赖的工具，直接在Intellij中搜索依赖并�
 
 有其他插件推荐的话，欢迎留言，对Intellij开发感兴趣的话可以关注公众号。
 
+![myQr](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/myQr.jpg)
+
