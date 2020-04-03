@@ -54,7 +54,7 @@ mybatis全方位支持插件，方便的自动提示，代码检测，生成代�
 介绍视频: https://www.bilibili.com/video/av83628121/
 
 截图: 
-![mybatisCodeHelperPro](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/mybatisCodeHelperPro.gif)
+![bindSupport](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/bindSupport.gif)
 
 9. [singleton](https://plugins.jetbrains.com/plugin/9415-singleton)
 一键生成单例
