@@ -5,7 +5,7 @@
 
 生成各种ignore文件，一键创建git ignore文件的模板，免得自己去写
 
-截图: 
+截图:
 ![ignoreFileGenerator](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/ignoreFileGenerator.png)
 
 2. [lombok](https://plugins.jetbrains.com/plugin/6317-lombok-plugin)
@@ -19,7 +19,7 @@
 
 阿里巴巴出品的java代码规范插件
 
-可以扫描整个项目 找到不规范的地方 并且大部分可以自动修复 
+可以扫描整个项目 找到不规范的地方 并且大部分可以自动修复
 
 更多可看: https://github.com/alibaba/p3c/tree/master/idea-plugin
 
@@ -29,13 +29,13 @@
 
 写完代码后检测下 避免低级bug，强烈建议用一下，一不小心就发现很多老代码的bug
 
-截图: 
+截图:
 ![findBugs](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/findBugs.gif)
 
 5. [GsonFormat](https://plugins.jetbrains.com/plugin/7654-gsonformat)
 一键根据json文本生成java类  非常方便
 
-截图: 
+截图:
 ![gsonformat](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/gsonformat.gif)
 
 6. [Maven Helper](https://plugins.jetbrains.com/plugin/7179-maven-helper)
@@ -60,7 +60,7 @@ mybatis全方位支持插件，方便的自动提示，代码检测，生成代�
 
 介绍视频: https://www.bilibili.com/video/av83628121/
 
-截图: 
+截图:
 ![mybatisCodeHelperPro](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/mybatisCodeHelperPro.gif)
 
 9. [singleton](https://plugins.jetbrains.com/plugin/9415-singleton)
@@ -70,7 +70,7 @@ mybatis全方位支持插件，方便的自动提示，代码检测，生成代�
 
 10. [Custom Postfix Templates](https://plugins.jetbrains.com/plugin/9862-custom-postfix-templates)
 
-在输入. 后的代码模版，自带包含很多模版,比如StringUtils.isBlank,写代码效率提升很大 
+在输入. 后的代码模版，自带包含很多模版,比如StringUtils.isBlank,写代码效率提升很大
 
 截图：
 ![customPosix](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/customPosix.gif)
