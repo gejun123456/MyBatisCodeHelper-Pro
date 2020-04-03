@@ -86,9 +86,9 @@ Intellij官方出的搜索依赖的工具，直接在Intellij中搜索依赖并�
 ![translations](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/translations.gif)
 
 
-以上插件均可在Intellij 插件市场中搜索到 或者 点击插件名字的链接 从硬盘安装插件
+以上插件均可在Intellij 插件市场中搜索到或者点击插件名字的链接，从硬盘安装插件。
 
-详细的话可以看p3c插件的安装文档 https://github.com/alibaba/p3c/tree/master/idea-plugin
+详细的话可以看p3c插件的安装文档：https://github.com/alibaba/p3c/tree/master/idea-plugin
 
-有其他插件推荐的话，欢迎留言，对Intellij开发感兴趣的话可以关注公众号
+有其他插件推荐的话，欢迎留言，对Intellij开发感兴趣的话可以关注公众号。
 
