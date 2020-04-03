@@ -52,7 +52,7 @@
 一键调用一个对象的所有set方法并且赋予默认值 在写测试用例时非常方便
 
 截图:
-![generateAllSetter](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateAllSetter.gif)
+![generaetAllSetter](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generaetAllSetter.gif)
 
 8. [MyBatisCodeHelperPro](https://plugins.jetbrains.com/plugin/9837-mybatiscodehelperpro)
 
@@ -61,7 +61,7 @@ mybatis全方位支持插件，方便的自动提示，代码检测，生成代�
 介绍视频: https://www.bilibili.com/video/av83628121/
 
 截图: 
-![bindSupport](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/bindSupport.gif)
+![mybatisCodeHelperPro](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/mybatisCodeHelperPro.gif)
 
 9. [singleton](https://plugins.jetbrains.com/plugin/9415-singleton)
 
@@ -105,5 +105,5 @@ Intellij官方出的搜索依赖的工具，直接在Intellij中搜索依赖并�
 
 有其他插件推荐的话，欢迎留言，对Intellij开发感兴趣的话可以关注公众号。
 
-![myQr](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/myQr.jpg)
+![java懒人](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/myQr.jpg)
 
