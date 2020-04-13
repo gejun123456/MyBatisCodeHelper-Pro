@@ -25,13 +25,13 @@ useGeneratedKey = true
 
 如果还是不想要注释 可以在数据库生成的时候 有一个 genComment选项 把它关闭就不会生成了
 
-## 数据库加减字段后如何重新生成 
+## 数据库加减字段后如何重新生成
 1.首先通过数据库生成的时候选中 genComment(默认选中) 会生成一些自带方法，请不要修改这些自动生成的方法 这些方法会在第二次生成的时候给新方法覆盖掉
 2.数据库加减或修改字段重新从数据库生成下即可，不会覆盖掉你自己加的自定义方法这些 xml mapper接口 service 都会自动合并好
 
 ## 如何进行逻辑删除
 
-目前在生成代码的时候还没有提供默认生成逻辑删除的语句 
+目前在生成代码的时候还没有提供默认生成逻辑删除的语句
 可以先通过方法名来进行生成
 可以写 updateIsDeleteById 来生成 通过主键逻辑删除
 
@@ -41,11 +41,11 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 部分数据库在插入 删除 更新的时候 如果传的是null值 需要添加jdbcType  加上jdbcType是更安全的做法
 
-经测试 mysql不需要 oracle需要 
+经测试 mysql不需要 oracle需要
 
 ## 怎么生成 if test 怎么换图标 方法名生成的代码怎么弄到service中
 
-设置里面可以配置 
+设置里面可以配置
 
 ![setting](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/settings.png)
 
@@ -58,7 +58,7 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 要么在 resultMap中添加缺少的属性  或者 在java实体中 将这个属性 设置为 transient
 
-有一些java实体中 会有一些属性是从其他表查出来的  比如 Blog类 里面有一个 List<Commnet> 
+有一些java实体中 会有一些属性是从其他表查出来的  比如 Blog类 里面有一个 List<Commnet>
 
 这种情况 用 transient 也不合适， 建议更改继承关系 不要把List<Comment>放到 Blog中  而是加一个 BlogWithComment的类 继承 Blog类。
 
@@ -67,6 +67,21 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 ## 数据库 添加字段后 如何生成
 
 直接使用 mybatis generator 重新生成即可 会保留接口和xml中不是自动生成的方法
+
+
+## 我的model类中添加了其他字段，重新生成的时候被覆盖了
+
+可以将自己添加的字段设置为transient类型，就不会覆盖了
+即private transient String moreField 或者添加@javax.persistence.Transient注解
+如果找不到该注解 请添加maven依赖
+
+```
+<dependency>
+    <groupId>javax.persistence</groupId>
+    <artifactId>javax.persistence-api</artifactId>
+    <version>2.2</version>
+</dependency>
+```
 
 
 ## mybatis在写sql时数据库字段没有自动提示
