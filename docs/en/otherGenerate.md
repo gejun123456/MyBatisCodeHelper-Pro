@@ -1,42 +1,54 @@
-## generate mapper xml from interface
-![addXml](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateXmlFromMapper.gif)
+## Generate xml from interface
+![addXml](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateXmlFromMapper.gif)
 
-## Add mybatis param annotation 
-![addParam](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/addParamForOneClick.gif)
+## Add @Param
+![addParam](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/addParamForOneClick.gif)
 
+## Auto map property and column in resultMap
 
-## generate unUsedProp in resultMap
-![generateUnusedProps](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateUnUsedProperties.gif)
+autoMap will find resultMap type property resultMap reference select sql statement, And map column and field by shortest distance.
 
+![joinAutoMapping](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/joinAutoMapping.gif)
+
+Support columnPrefix mapping
+![joinAutoMapping](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/joinAutoMapping.gif)
 
 ## Generate Mybatis Mapper method testcase
 
-![generate-testcase](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateTestCaseByClick.gif)
+No need to start spring context to test your sql, faster check sql error.
+
+![generateTestcase](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/autoGenerateTestCase.gif)
+
+## Generate method from xml (2.7.4)
+![generateResultMapAndXmlGenerateJavaMethod](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateResultMapAndXmlGenerateJavaMethod.gif)
+
+## Fix param and if test error (2.7.4)
+![paramOrIftestQuickFix](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/paramOrIftestQuickFix.gif)
 
 
 ## Generate java class and ResultMap from sql
 
-![generateJavaClassAndResultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateJavaClassAndResultMap.gif)
+![generateJavaClassAndResultMap](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateJavaClassAndResultMap.gif)
 
 
 ## Generate page query （depend on pageHelper)
 
-![generatePageQuery](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generatePageQuery.gif)
+![generatePageQuery](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generatePageQuery.gif)
 
 
-## generate cdata and collection statement
+## Generate cdata and collection statement
+
 cd  for cdata   co for collection
-![codeTemplate](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/codeTemplate.gif)
+![codeTemplate](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/codeTemplate.gif)
 
-
-
-## generate all column statement 
+## Generate all column statement 
 ![allColumnSql](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/allColumnSql.gif)
 
-generate result and column for join statement.
+Generate result and column for join statement
 ![generateJoinColumnAndResultMap](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/generateJoinColumnAndResultMap.gif)
 
-## extract java insert statement from table data, help to generate test data ect.
+## Extract java insert statement from table data, help to generate test data ect.
+
 ![GenerateJavaSetterFromTableRow](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/GenerateJavaSetterFromTableRow.gif)
 
 
