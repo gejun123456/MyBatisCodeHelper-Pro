@@ -17,10 +17,10 @@
 ## recognize mybatis tags include trim where set, after you add database to Intellij, you can full sql auto complete for it.
 
 trimTag
-![trim标签正确性检测](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/trim标签正确性检测.gif)
+![trim标签正确性检测](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/trim标签正确性检测.gif)
 
 setTag
-![set标签正确性](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/set标签正确性.gif)
+![set标签正确性](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/set标签正确性.gif)
 
 
 

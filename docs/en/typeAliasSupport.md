@@ -4,5 +4,5 @@ for IDEA ultimate version user. the plugin will auto detect springboot typeAlias
 
 If your typeAlias cant be auto detected, you can configure it in project setting.
 
-![supportTypeAlias](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/supportTypeAlias.gif)
+![supportTypeAlias](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/supportTypeAlias.gif)
 
