@@ -9,7 +9,7 @@
   * [Spring support](en/spring.md)
   * [Ognl support](en/ognl.md)
   * [TypeAliasSupport](en/typeAliasSupport.md)
-  * [Formatter](formatter.md)
+  * [Formatter](en/formatter.md)
   * [typeSafeSql](en/typeSafe.md)
   * [Java class generate create table sql](en/javaToCrud.md)
   * [Install and activate](en/install.md)
