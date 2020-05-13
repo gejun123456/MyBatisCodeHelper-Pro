@@ -1,6 +1,9 @@
 ## mybatis xml code formatter(from 2.8.2)
 
 
+## please config database and dialect before reformat https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/configure
+
+
 The formatter support mybatis dynamic tag，and ognl expression like if test ect.
 
 Example:

@@ -1,6 +1,7 @@
 - MybatisCodeHelperProPlugin
 
   * [Main features](en/README.md)
+  * [Configure database](en/configure.md)
   * [Data base generate crud code](en/databaseToCrud.md)
   * [Method name generate sql](en/methodNameToSql.md)
   * [Auto complete and Inspection](en/complete.md)
