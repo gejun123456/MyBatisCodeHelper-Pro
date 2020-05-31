@@ -143,6 +143,12 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 请参考文档配置数据库那节，照着配置下，确保sql dialect配置好
 
 
+## 2.8.2 BaseResultMap中的column标红了
+原因了引用的resultmap的select语句没有查对应的column，比如BaseResultMap有5个字段，但是select只查了4个字段这种。
+可以随便弄个方法名比如findById查所有字段那种就可以解决。
+下个版本做个兼容。
+
+
 ## 和其他插件对比
 插件拥有最好的mybatis sql代码提示，代码检测，重构，泛型支持，快速测试sql，方法名生成sql等。
 可以参考
