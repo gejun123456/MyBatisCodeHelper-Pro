@@ -11,6 +11,7 @@
   * [Ognl support](en/ognl.md)
   * [TypeAliasSupport](en/typeAliasSupport.md)
   * [Formatter](en/formatter.md)
+  * [SqlErrorFix](en/sqlred.md)
   * [typeSafeSql](en/typeSafe.md)
   * [Java class generate create table sql](en/javaToCrud.md)
   * [Install and activate](en/install.md)

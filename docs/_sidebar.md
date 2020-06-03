@@ -15,7 +15,7 @@
   * [生成join](join.md)
   * [TypeAlias支持](typeAliasSupport.md)
   * [代码格式化](formatter.md)
-  * [sql标红处理](sqlred.md)
+  * [sql错误处理](sqlred.md)
   * [安装和激活和解绑](install.md)
   * [设置详解](settings.md)
   * [更新日志](changelog.md)
