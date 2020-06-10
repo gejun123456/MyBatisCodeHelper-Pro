@@ -93,6 +93,11 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 ## 从表生成代码只有两个insert方法
 请检查表中是否有主键，如果有主键请刷新IDEA的数据库 直到下图这种
 
+
+## 如何配置java文件的header注释
+![header](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/header.png)
+
+
 ![tableNoPrimaryKey](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/tableNoPrimaryKey.png)
 
 ## sql标签中的字段标红 sql标签中的sql 由于不是完整的sql，无法进行检测和代码补全，插件引入了 @sql 注释，在注释中把sql的前缀和后缀填写进去，可保证sql标签中的sql无误
