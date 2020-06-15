@@ -92,9 +92,10 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## 从表生成代码只有两个insert方法
 请检查表中是否有主键，如果有主键请刷新IDEA的数据库 直到下图这种
+![tableNoPrimaryKey](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/tableNoPrimaryKey.png)
 
 
-## 如何配置java文件的header注释
+## 如何配置java文件的header注释 
 ![header](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/header.png)
 
 
