@@ -12,7 +12,7 @@ If there is referenced select statement for sql tag, you can just alt enter the 
 
 ### when using if test, choose when May some of the condition is passed. only one pass in choose when. The plugin introduced @ignoreSql comment，if you need if test or choose when statment not pass, you can use it, so the sql will be correct.
 
-Add ignore commment
+Add ignore comment
 ![chooseWhenAutoComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/chooseWhenAutoComplete.gif)
 
 ### for ${} statement, the part can be any string, the sql can't be recognized. The plugin introduced $sql commment, you can add your real sql into the $sql comment to make sql correct. Sql statement after ${} can be recognized.
