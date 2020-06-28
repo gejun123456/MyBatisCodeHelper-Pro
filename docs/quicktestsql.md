@@ -34,6 +34,18 @@
 ![GenerateJavaSetterFromTableRow](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/GenerateJavaSetterFromTableRow.gif)
 
 
+## 插件生成testcase的配置文件不包含用户配置的mybatis插件，如果想在testcase使用如Pagehelper等可在设置中配置(2.8.3)
+
+![testCaseAdditionalConfig](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/testCaseAdditionalConfig.png)
+
+配置例子:
+```
+ <plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="dialect" value="mysql"/>
+        </plugin>
+    </plugins>
+```
 
 
 
