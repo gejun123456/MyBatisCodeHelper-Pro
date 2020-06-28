@@ -41,8 +41,7 @@
 配置例子:
 ```
  <plugins>
-        <plugin interceptor="com.github.pagehelper.PageHelper">
-            <property name="dialect" value="mysql"/>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
         </plugin>
     </plugins>
 ```
