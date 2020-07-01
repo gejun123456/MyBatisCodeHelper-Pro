@@ -154,6 +154,10 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 可以随便弄个方法名比如findById查所有字段那种就可以解决或者单独抽一个ResultMap出来。
 下个版本做个兼容。
 
+## mybatis注解有支持吗？
+由于mybatis注解功能较弱，不支持resultMap的复用，并且复杂sql多的时候难以维护。插件对简单的注解sql有代码提示。
+另外插件提供了在注解上alt enter迁移到xml的功能。
+
 
 ## 和其他插件对比
 插件拥有最好的mybatis sql代码提示，代码检测，重构，泛型支持，typeAlias支持，快速测试sql，方法名生成sql等。
