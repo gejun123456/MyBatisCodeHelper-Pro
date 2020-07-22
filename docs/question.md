@@ -145,9 +145,8 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 ![testcaseAddMapperResource](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/testcaseAddMapperResource.png)
 
 
-## 2.8.2后代码格式化未生效
-请参考文档配置数据库那节，照着配置下，确保sql dialect配置好
-
+## 2.8.2后代码格式化未生效 多出空行
+请参考文档配置数据库那节，照着配置下，确保sql dialect配置好 https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/configure
 
 ## 2.8.2 BaseResultMap中的column标红了
 原因了引用的resultmap的select语句没有查对应的column，比如BaseResultMap有5个字段，但是select只查了4个字段这种。
