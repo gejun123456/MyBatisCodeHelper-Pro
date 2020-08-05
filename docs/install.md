@@ -50,5 +50,5 @@
 
 ## 解绑
 
-- 购买后会发两个激活码，可以在两台设备上绑定，一个激活码绑定一个设备。当更新机器或者重装系统时需要解绑。可进行下图的操作  一个激活码最多可以解绑10次(1.8.3版本支持)
+- 购买后会发两个激活码，可以在两台设备上绑定，一个激活码绑定一个设备。当更新机器或者重装系统时需要解绑。可进行下图的操作
 ![unBind](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/unBind.png)
