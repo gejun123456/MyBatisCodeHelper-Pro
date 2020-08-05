@@ -20,6 +20,7 @@
 
 ![findByAllEE](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/findByAllEE.gif)
 
+
 ## 一键生成insertList
 
 ![insertList](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/insertList.gif)
@@ -103,6 +104,8 @@ findFirst20ByIdLessThan  | select * from user where id < {} limit 20
 findFirst10ByIdGreaterThanOrderByUserName  | select * from user where id > {} order by user_name limit 10
 findMaxIdByUserNameGreaterThan | select max(id) from user where user_name > {}
 findMaxIdAndMinId   | select max(id) as maxId, min(id) as minId from user
+findByAll| select with all column if test
+findByAllExceptCreateBetween| select with all column if test except date between
 
 
 - update方法 by后面设置的条件同上 可以使用modify替代update开头
