@@ -2,7 +2,7 @@
 ## 安装
 ----
 
-### 插件可能会和其他的mybatis插件冲突，如 mybatisX,freeMybatisPlugin,mybatisPlugin.(mybatisLogPlugin没有冲突),如果发现比如方法名生成sql找不到对应的xml文件等，请先卸载掉其他的mybatis插件 然后使用 invalidate Cache and restart. https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/invalidateCacheAndRestart.png
+### 插件可能会和其他的mybatis插件冲突，如 mybatisX,freeMybatisPlugin,mybatisPlugin,ToolKit.(mybatisLogPlugin没有冲突),如果发现比如方法名生成sql找不到对应的xml文件等，请先卸载掉其他的mybatis插件 然后使用 invalidate Cache and restart. https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/invalidateCacheAndRestart.png
 
 
 
