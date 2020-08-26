@@ -20,6 +20,8 @@ qq群（插件bug修复 最新版本及问题讨论）
 
 文档地址： https://gejun123456.github.io/MyBatisCodeHelper-Pro/
 
+国内文档地址：http://118.24.53.162/#/
+
 ## 功能
 - **通过方法名(不需要方法的返回值和参数 会自动推导出来)来生成sql 可以生成大部分单表操作的sql 只需要一个方法的名字即可 会自动补全好方法的参数和返回值 和springdatajpa的语句基本一致**
 - **sql全自动提示，sql正确性检测，插件会识别mybatis的一系列标签 如 include trim set where，在这些标签之后的sql可以自动提示数据库的字段，检测sql的正确性，从此不用担心sql写错**
