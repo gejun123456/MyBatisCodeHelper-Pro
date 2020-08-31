@@ -94,6 +94,8 @@ mybatis-generator-gui: https://github.com/zouzg/mybatis-generator-gui
 
 mybatis generator plugin: https://github.com/itfsw/mybatis-generator-plugin
 
+mybatisplus: https://github.com/baomidou/mybatis-plus
+
 如果您是这些项目的作者，请联系我，我将发送免费的永久key给您
 
 [plugin]: https://plugins.jetbrains.com/plugin/9837
