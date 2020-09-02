@@ -1,15 +1,23 @@
-if test when test
+## if test when test
 ![If When Test Ognl Support](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/ifWhenTest中ognl支持.gif)
 
-bind And \${
+## bind And \${
 ![Bind And $ Ognl Support](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/bind和${的ognl支持.gif)
 
 
-foreach collection
+## foreach collection
 ![Collection Ognl Support](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/collection标签跳转检测正确.gif)
 
-ognl method call support and inspection
+## ognl method call support and inspection
 ![ognl method call](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/collectionCallMethdo.gif)
+
+
+## ognl single char string compare add toString call
+![checkOgnlSingleCharStringCompare](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/checkOgnlSingleCharStringCompare.gif)
+
 
 ##Known issues
 Ognl current not support multiple method invoke, you can bind a variable by method invoke, then use the variable to invoke next method.
+
+Example:
+![ognlbindcall](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/ognlbindcall.png)
