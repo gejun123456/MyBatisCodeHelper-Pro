@@ -6,7 +6,7 @@
 
 ## 自动匹配resultMap中的字段
 autoMap会找到resultMap type中的属性与resultMap引用的sql select的字段以最近的字段来进行匹配
-![joinAutoMapping](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/joinAutoMapping.gif)
+![automap](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/automap.png)
 
 支持columnPrefix匹配
 ![joinAutoMapping](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/joinAutoMapping.gif)
