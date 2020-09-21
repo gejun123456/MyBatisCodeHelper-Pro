@@ -1,1 +1,0 @@
-## resultMap property refactor
