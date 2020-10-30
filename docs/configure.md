@@ -7,6 +7,12 @@
 - 配置当前项目对应的数据库类型(达梦数据库请配置为GenericSql字段便可自动提示,或者本地装一个oracle把表拷过去 这样一些函数也能自动提示) 另外mysql如果是mariadb一定要配置为mariadb
 ![databaseConfig](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/configDatabase.png)
 
+- 配置插件方法名生成对应的数据库
+![configPluginDatabase2](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/configPluginDatabase2.png)
+
+- 如果有多个数据库，并且有相同的表名需要配置
+![resolutionScope](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/resolutionScope.png)
+
 
 ## 配置好后的效果
 
