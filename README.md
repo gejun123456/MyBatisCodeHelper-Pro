@@ -75,7 +75,7 @@ if test when test foreach collection $中的OGNL支持| ✘|✔
 param重构功能(2.7.2)| ✘|✔
 resultMap column提示与检测|✘|✔
 
-可以免费试用: http://brucege.com/pay/view
+可以免费试用: http://brucege.com/pay/view (网站正在备案，可以使用http://1.15.51.105:8080/ 访问)
 
 大家可以学习https://www.imooc.com/learn/924 来掌握更多使用Intellij的技巧 视频讲得很棒
 
