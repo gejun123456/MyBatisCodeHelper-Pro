@@ -53,7 +53,7 @@ param inspection and refactor| ✘|✔
 Ognl support if test when test bind foreach $, Inspection and refactor| ✘|✔
 ResultMap column inspection and autocompletion| ✘|✔
 
-Free trial: http://brucege.com/
+Free trial: http://mybatiscodehelper.com/
 
 The plugin are has used and learn from following project.
 
