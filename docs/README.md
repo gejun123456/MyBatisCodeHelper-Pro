@@ -62,7 +62,7 @@ param重构功能(2.7.2)| ✘|✔
 resultMap中column提示与检测(2.7.2)| ✘|✔
 Mybatis xml代码格式化(2.8.2)| ✘|✔
 
-可以免费试用: http://mybatiscodehelper.com/
+可以免费试用: http://brucege.com/
 
 之后会加入更多功能
 
