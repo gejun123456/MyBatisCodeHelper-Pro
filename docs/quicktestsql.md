@@ -46,6 +46,9 @@
     </plugins>
 ```
 
+## 生成testcase支持mybatisplus
+
+在生成的testcase中有一个setUp方法，将sqlSessionFactory改成MybatisSessionFactory即可测试mybatisplus自带的一些方法
 
 
 
