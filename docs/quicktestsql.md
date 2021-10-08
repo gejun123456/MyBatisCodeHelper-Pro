@@ -50,7 +50,22 @@
 
 在生成的testcase中有一个setUp方法，将SqlSessionFactoryBuilder改成MybatisSqlSessionFactoryBuilder即可测试mybatisplus自带的一些方法
 
+## mybatisplus添加分页插件和乐观锁插件
+在test类可以修改setUpMybatisDatabase 如下
 
+```
+@org.junit.BeforeClass
+    public static void setUpMybatisDatabase() {
+        SqlSessionFactory builder = new SqlSessionFactoryBuilder().build(SymphonyClientMapperTest.class.getClassLoader().
+                getResourceAsStream("mybatisTestConfiguration/SymphonyClientMapperTestConfiguration.xml"));
+        final MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+        interceptor.addInnerInterceptor(new OptimisticLockerInnerInterceptor());
+        interceptor.addInnerInterceptor(new PaginationInnerInterceptor());
+        builder.getConfiguration().addInterceptor(interceptor);
+        //you can use builder.openSession(false) to not commit to database
+        mapper = builder.getConfiguration().getMapper(SymphonyClientMapper.class, builder.openSession(true));
+    }
+```
 
 
 
