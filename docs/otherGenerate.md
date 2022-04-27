@@ -48,6 +48,8 @@ cd 生成cdata co生成collection
 ## 从表数据导出java insert语句 可用于快速构造测试数据
 ![GenerateJavaSetterFromTableRow](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/GenerateJavaSetterFromTableRow.gif)
 
+## 一键把 sql中if test string!=null 改成 if test string!=null and string !='' 
 
+在 xml的 sql中按alt enter 选Make All String Compare To Null Change to Null And Empty In Current Sql 即可
 
 
