@@ -1,9 +1,205 @@
+<strong>2.9.7</strong>
+<ul>
+<li>[NEW]支持kotlin添加param注解</li>
+<li>[NEW]kotlin接口方法找不到xml中的sql的检测</li>
+<li>[FIX]修复mybatis genrator文件夹配置为空的提示的位置</li>
+<li>[FIX]修复使用mybatis generator后idea的文件没有刷新出来</li>
+</ul>
+<strong>2.9.6</strong>
+        <ul>
+            <li>[FIX]方法名生成sql的exception修复</li>
+        </ul>
+        <strong>2.9.5</strong>
+        <ul>
+            <li>[FIX]生成java类时的exception</li>
+            <li>[IMPROVE]方法名生成sql可以在reslutMap缺少字段的情况下生成</li>
+            <li>[FIX]resultMap的格式化问题</li>
+        </ul>
+        <strong>2.9.4</strong>
+        <ul>
+            <li>[FIX]长sql xml文件格式化</li>
+            <li>[NEW]支持对复杂类型重构</li>
+            <li>[NEW]支持sqlSession 多个xml的跳转</li>
+            <li>[FIX]修复swagger注释</li>
+        </ul>
+        <strong>2.9.3</strong>
+        <ul>
+            <li>[FIX]修复sql标签带cdata的解析</li>
+            <li>[IMPROVE]支持sqlSession调用跳转到xml
+            <li>[IMPROVE]支持apple m1芯片
+            <li>[FIX]修复$ 的格式化问题
+        </ul>
+        <strong>2.9.0</strong>
+        <ul>
+            <li>[IMPROVE]support 2021.1</li>
+            <li>[IMPROVE]could config method name generate sql comment style</li>
+            <li>[NEW]mybatis generator could preview xml</li>
+            <li>[IMPROVE]support mybatisplus table exist false</li>
+            <li>[IMPROVE]method name generate sql support if test select all</li>
+            <li>[FIX]possible null pointer</li>
+        </ul>
+        <strong>2.8.9</strong>
+        <ul>
+            <li>[FIX]intellij community version xml code formatter ognl fix</li>
+            <li>[IMPROVE]support 2020.4 version</li>
+            <li>[IMPROVE]resultMap column duplicate inspection</li>
+            <li>[IMPROVE]better chinese inspection description</li>
+            <li>[IMPROVE]support search scope with module and project</li>
+            <li>[NEW]could config mybatis sql tag ignore sql syntax error</li>
+        </ul>
+        <strong>2.8.8</strong>
+        <ul>
+            <li>[FIX]intellij community version use database generate crud and generate testcase exception</li>
+            <li>[IMPROVE]intellij community version no primary key warning</li>
+            <li>[IMPROVE]method name generate sql @Transient maven location</li>
+            <li>[IMPROVE]resultMap column inspection ignore case</li>
+        </ul>
+        <strong>2.8.7</strong>
+        <ul>
+        <li>[FIX]support chinese or japanese in #{}</li>
+        <li>[FIX]generate insertOnDuplicateKeySelective string empty check</li>
+        <li>[IMPROVE]base support for include with property</li>
+        <li>[IMPROVE]generate from database table warning where table dont have primary key</li>
+        <li>[NEW]support for 2020.3</li>
+        </ul>
+        <strong>2.8.6</strong>
+        <ul>
+        <li>[FIX]fix sql keyword completion after #{}</li>
+        <li>[FIX]fix reformat code missing with comment inside sql</li>
+        </ul>
+        <strong>2.8.4</strong>
+        <ul>
+        <li>[NEW]fix java inspection performance issue</li>
+        </ul>
+        <strong>2.8.3</strong>
+        <ul>
+        <li>[NEW]kotlin method name generate sql</li>
+        <li>[IMPROVE]plugin conflict notification</li>
+        <li>[IMPROVE]sql dialect not configured notification</li>
+        <li>[NEW]could configure to remove some type parameter in mybatis method</li>
+        <li>[NEW]could configure eacape all column</li>
+        <li>[NEW]generate testcase could configure plugin part</li>
+        <li>[NEW]multiple table generate can use actual column name</li>
+        </ul>
+        <strong>2.8.2.fix-2</strong>
+        <ul>
+        <li>[FIX]compatible for 2020.2 eap version</li>
+        </ul>
+        <strong>2.8.2.fix</strong>
+        <ul>
+        <li>[FIX]fix line indent  create new statement from java method and when type enter</li>
+        </ul>
+        <strong>2.8.2</strong>
+        <ul>
+        <li>[NEW]better performance</li>
+        <li>[NEW]mybatis sql formatter</li>
+        <li>[NEW]resultMap column go to reference, rename</li>
+        <li>[FIX]fix using lombok plugin rename resultMap property name start with set</li>
+        <li>[FIX]fix mybatis generator with lombok builder annotation</li>
+        <li>[FIX]activation and unbind using socks proxy error</li>
+        </ul>
+        <strong>2.8.1</strong>
+        <ul>
+        <li>[FIX]generate testcase component exception</li>
+        </ul>
+        <strong>2.8.0</strong>
+        <ul>
+        <li>[FIX]fix possible null pointer exception when use project setting page</li>
+        <li>[NEW]support mybatis generator with configure method name generate</li>
+        <li>[NEW]support 2020 version</li>
+        <li>[NEW]better ognl complete and evaluate for bind and collection with method invoke</li>
+        <li>[NEW]support kotlin param completion and inspection</li>
+        <li>[NEW]add @ignore quick fix in mybatis choose when statement</li>
+        <li>[NEW]escape table name when they are keywords</li>
+        <li>[IMPROVE]better method name completion</li>
+        </ul>
+        <strong>2.7.8</strong>
+        <ul>
+        <li>[FIX]fix swagger exception when column comment is null</li>
+        <li>[NEW]support mysql json type</li>
+        <li>[NEW]generate all column sql right click on xml</li>
+        </ul>
+        <strong>2.7.7</strong>
+        <ul>
+            <li>[NEW]database generate could config method name to generate</li>
+            <li>[NEW]support findByAllExceptXXBetween statement</li>
+            <li>[NEW]move sql from annotation to xml</li>
+            <li>[FIX]test sql will add quote when param is string type</li>
+            <li>[NEW]test sql could write and test in the same time</li>
+            <li>[NEW]ognl support reference mybatis properties</li>
+            <li>[NEW]lombok when has extend add @EqualsAndHashCode(callSuper = true)</li>
+            <li>[NEW]support updateBatchSelective</li>
+            <li>[NEW]support simple sql reformat</li>
+        </ul>
+        <strong>2.7.6</strong>
+        <ul>
+            <li>[NEW]typeAlias support for Intellij community and mybatisPlus</li>
+            <li>[NEW]support param using static constant</li>
+            <li>[NEW]extract include refid from sql</li>
+            <li>[NEW]table name to entity support remove table prefix</li>
+            <li>[NEW]generate join support multiple table</li>
+            <li>[NEW]database generate crud support oracle sequence</li>
+            <li>[NEW]method name generate sql use where tag instead of where 1=1</li>
+            <li>[NEW]support 32 system</li>
+        </ul>
+        <strong>2.7.5</strong>
+        <ul>
+            <li>[NEW]method name generate sql will not depend on insert method</li>
+            <li>[FIX]press enter after if test ect error indent</li>
+            <li>[FIX]press enter or delete in blank part cause highlight disappear</li>
+            <li>[NEW]ognl support inner class</li>
+            <li>[FIX]sql parse error when no blank before param</li>
+            <li>[FIX]complete and inspection for param using generic</li>
+            <li>[NEW]support 2019.3 version</li>
+        </ul>
+        <strong>2.7.4</strong>
+        <ul>
+            <li>[FIX]possible substring exception when edit sql</li>
+            <li>[NEW]quick fix for param and ognl</li>
+            <li>[NEW]super class invoke could jump to xml</li>
+            <li>[FIX]resultMap column auto complete support more sql pattern</li>
+            <li>[NEW]generate java method from xml</li>
+            <li>[NEW]generate @sql comment for mybatis sql tag</li>
+            <li>[NEW]java method return type inspection support @MapKey</li>
+            <li>[FIX]if xml select steatment is referenced by resultMap will not show error</li>
+            <li>[FIX]database generate crud entity class will remove field in super class</li>
+            <li>[FIX]quick fix for resultMap property</li>
+            <li>[FIX]param auto completion for unpaid user</li>
+        </ul>
+        <strong>2.7.3</strong>
+        <ul>
+            <li>[NEW]resultmap column inspection support columnPrefix</li>
+            <li>[FIX]mapper interface with super class generic</li>
+            <li>[NEW]use java method to config columnName to propertyName</li>
+            <li>[NEW]resultMap jdbcType and typeHandler better auto complete and inspection</li>
+            <li>[NEW]generate properties on resultMap will auto match column in select tag</li>
+        </ul>
+        <strong>2.7.2</strong>
+        <ul>
+            <li>[NEW]param and ognl refactor</li>
+            <li>[NEW]intellij community version param complete</li>
+            <li>[IMPROVE]better param completion and inspection for typeHandler and mode and resultMap ect</li>
+            <li>[FIX]resultType resultMap inspection</li>
+            <li>[NEW]resultMap column inspection</li>
+            <li>[FIX]resultMap discriminator support</li>
+            <li>[NEW]database generate crud support mybatisPlus2</li>
+            <li>[NEW]better merge ui</li>
+            <li>[FIX]sql extract resultmap support more sql pattern</li>
+            <li>[NEW]kotlin class jump to xml each other</li>
+            <li>[FIX]better generic in mapper interface support</li>
+            <li>[NEW]support ognl use instanceOf</li>
+        </ul>
+<strong>2.7.1</strong>
+    <ul>
+        <li>[NEW]ognl better completion and inspection for single param no annotation</li>
+        <li>[FIX]intellij community version typed error</li>
+        <li>[FIX]support 2019.2 version</li>
+        <li>[NEW]add checkBlobColumn option </li>
+        <li>[FIX]check conflict for exampleQuery and tkMapper</li>
+        <li>[NEW]comment in sql use xml comment instead of sql</li>
+    </ul>
 
-   <strong>2.7</strong>https://github.com/gejun123456/MyBatisCodeHelper-Pro/issues?q=is%3Aissue+is%3Aopen+label%3A2.7
-
-   <strong>2.6</strong>https://github.com/gejun123456/MyBatisCodeHelper-Pro/issues?utf8=%E2%9C%93&q=label%3A2.6+
-
-   <strong>2.5</strong>
+<strong>2.5</strong>
         <ul>
             <li>[NEW]一键从xml生成join语句</li>
             <li>[IMPROVE]更短的xml注释</li>
