@@ -69,10 +69,11 @@ Mybatis xml代码格式化(2.8.2)| ✘|✔
 ## 联系我
 - 加入qq群 由于Intellij插件市场需要两天审核  插件的bug修复 最新版本 会先放在qq群中 出现任何问题可在qq群反馈
 
-1群 542735979(人满)
+
 ![qqGroup](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/qqgroup.png)
 2群: 914051156 (人满)
 3群：598080979
+1群备份: 685465570
 
 - 或者添加我的微信:
 
