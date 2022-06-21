@@ -1,11 +1,11 @@
 ## mybatis mapper method name refactor
-![renameMapperMethod](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/renameMapperMethod.gif)
+![renameMapperMethod](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/renameMapperMethod.gif)
 
 ## param and ognl refactor
-![paramOgnlRefactor](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/paramOgnlRefactor.gif)
+![paramOgnlRefactor](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/paramOgnlRefactor.gif)
 
 ## refactor from java field
-![fromFieldRefactor](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/fromFieldRefactor.gif)
+![fromFieldRefactor](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/fromFieldRefactor.gif)
 
 ## resultMap refid refactor
-![resultMapRefidJumAndRefactor](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/resultMapRefidJumAndRefactor.gif)
+![resultMapRefidJumAndRefactor](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapRefidJumAndRefactor.gif)

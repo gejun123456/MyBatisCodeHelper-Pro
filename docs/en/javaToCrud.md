@@ -1,5 +1,5 @@
 ## Generate Create table sql by java class
-![generateCreateTable](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/generateCreateTable.gif)
+![generateCreateTable](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateCreateTable.gif)
 
 ## how to use
 

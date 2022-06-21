@@ -8,13 +8,13 @@ The formatter support mybatis dynamic tag，and ognl expression like if test ect
 
 Example:
 
-![selectformat](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/selectformat.gif)
+![selectformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/selectformat.gif)
 
-![insertSelectiveReformat](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/insertSelectiveReformat.gif)
+![insertSelectiveReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/insertSelectiveReformat.gif)
 
-![findByAllReformat](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/findByAllReformat.gif)
+![findByAllReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findByAllReformat.gif)
 
-![ognlReformat](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/ognlReformat.gif)
+![ognlReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/ognlReformat.gif)
 
 
-![complexSqlReformat](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/complexSqlReformat.gif)
+![complexSqlReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/complexSqlReformat.gif)

@@ -1,12 +1,12 @@
 ## Intellij ultimate version please config your database and dialect
 
 - database name must be set.
-![configureDatabase](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/configureDatabase.png)
+![configureDatabase](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configureDatabase.png)
 
 - configure your current dialect.
-![databaseConfig](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/configDatabase.png)
+![databaseConfig](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabase.png)
 
 
 ## after configure
 
-![writeSql](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/writeSql.gif)
+![writeSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/writeSql.gif)
