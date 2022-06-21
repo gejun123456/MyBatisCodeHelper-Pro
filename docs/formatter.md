@@ -6,13 +6,13 @@
 插件的代码格式化支持mybatis标签，if test等ognl表达式
 
 例子:
-![selectformat](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/selectformat.gif)
+![selectformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/selectformat.gif)
 
-![insertSelectiveReformat](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/insertSelectiveReformat.gif)
+![insertSelectiveReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/insertSelectiveReformat.gif)
 
-![findByAllReformat](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/findByAllReformat.gif)
+![findByAllReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findByAllReformat.gif)
 
-![ognlReformat](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/ognlReformat.gif)
+![ognlReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/ognlReformat.gif)
 
 
-![complexSqlReformat](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/complexSqlReformat.gif)
+![complexSqlReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/complexSqlReformat.gif)

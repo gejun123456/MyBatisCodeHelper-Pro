@@ -5,15 +5,15 @@
 
 ### sql标签中的字段标红 sql标签中的sql 由于不是完整的sql，无法进行检测和代码补全，插件引入了 @sql 注释，在注释中把sql的前缀和后缀填写进去，可保证sql标签中的sql无误
 
-![sqlTagNoError](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/sqlTagNoError.gif)
+![sqlTagNoError](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/sqlTagNoError.gif)
 
 如果sql标签有引用的select语句 可以直接alt enter来生成注释
-![addSqlComment](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/addSqlComment.gif)
+![addSqlComment](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/addSqlComment.gif)
 
 ### choose when语句没有自动提示，标红。由于choose when只有一个生效，使用ignore注释将其他的when语句给忽略掉，用于自动补全和提示
 
 请添加ignore注释 参考
-![chooseWhenAutoComplete](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/chooseWhenAutoComplete.gif)
+![chooseWhenAutoComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/chooseWhenAutoComplete.gif)
 
 ### 使用${}的sql会标红
 
@@ -21,4 +21,4 @@
 ，这样$不会标红并且后面的sql也能正确识别
 
 (2.7.6支持一键生成对应的sql)
-![AddSqlAfter$](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/AddSqlAfter$.gif)
+![AddSqlAfter$](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/AddSqlAfter$.gif)

@@ -13,11 +13,11 @@
 
 
 ## ognl single char string compare add toString call
-![checkOgnlSingleCharStringCompare](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/checkOgnlSingleCharStringCompare.gif)
+![checkOgnlSingleCharStringCompare](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/checkOgnlSingleCharStringCompare.gif)
 
 
 ##Known issues
 Ognl current not support multiple method invoke, you can bind a variable by method invoke, then use the variable to invoke next method.
 
 Example:
-![ognlbindcall](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/ognlbindcall.png)
+![ognlbindcall](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/ognlbindcall.png)
