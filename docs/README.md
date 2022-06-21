@@ -70,14 +70,14 @@ Mybatis xml代码格式化(2.8.2)| ✘|✔
 - 加入qq群 由于Intellij插件市场需要两天审核  插件的bug修复 最新版本 会先放在qq群中 出现任何问题可在qq群反馈
 
 
-![qqGroup](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/qqgroup.png)
+![qqGroup](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/qqgroup.png)
 2群: 914051156 (人满)
 3群：598080979
 1群备份: 685465570
 
 - 或者添加我的微信:
 
-![weichaturl](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/wechatme.png)
+![weichaturl](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/wechatme.png)
 
 该项目使用了或参考了以下项目:
 

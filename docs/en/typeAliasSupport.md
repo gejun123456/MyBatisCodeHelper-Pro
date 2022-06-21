@@ -6,5 +6,5 @@ If your typeAlias cant be auto detected, you can configure it in project setting
 
 current typeAlias not support with **, you need to expand them into multiple package name without **
 
-![supportTypeAlias](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/supportTypeAlias.gif)
+![supportTypeAlias](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/supportTypeAlias.gif)
 

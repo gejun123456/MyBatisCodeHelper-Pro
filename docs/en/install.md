@@ -4,7 +4,7 @@
 ----
 
 * the plugin may have conflict with other mybatis plugin, if find any error like methodName generate sql can't work, please unistall other
-mybatis plugins.  then invalidate Cache and restart. https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/invalidateCacheAndRestart.png
+mybatis plugins.  then invalidate Cache and restart. https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/invalidateCacheAndRestart.png
 
 Support following product 2016.2 version and upper.
 
@@ -25,12 +25,12 @@ Restart**IDE**.
 ## Activation
 
 ### Using Activate code to activate
-![register](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/register_new.gif)
+![register](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/register_new.gif)
 
 - or register in setting page
-![registerInSetting](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/registerInSettings.png)
+![registerInSetting](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/registerInSettings.png)
 
 ### Unbind
 
 - If you want to change your computer or if you reinstall the operating system, You need to unbind the key
-![unBind](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/unBind.png)
+![unBind](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/unBind.png)

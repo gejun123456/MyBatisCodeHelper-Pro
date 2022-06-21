@@ -1,25 +1,25 @@
 ## Using Mapper method name to generate sql. Only need a method name, no need for method parameters and return type.
 
-![findMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findMethodNameToSql.gif)
+![findMethodNameToSql](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/findMethodNameToSql.gif)
 
-![updateMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/updateMethodNameToSql.gif)
+![updateMethodNameToSql](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/updateMethodNameToSql.gif)
 
-![deleteMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/deleteMethodNameToSql.gif)
+![deleteMethodNameToSql](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/deleteMethodNameToSql.gif)
 
-![countMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/countMethodNameToSql.gif)
+![countMethodNameToSql](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/countMethodNameToSql.gif)
 
 
 ## Method generate sql support generate if test.
 
-![findWithIfTest](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findWithIfTest.gif)
+![findWithIfTest](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/findWithIfTest.gif)
 
 
 ## Generate findByAll
 
-![findByAllEE](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findByAllEE.gif)
+![findByAllEE](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/findByAllEE.gif)
 
 ## Generate insertList
-![insertList](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/insertList.gif)
+![insertList](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/insertList.gif)
 
 ## How use
 
@@ -134,5 +134,5 @@ generate it by alt+enter on mapper interface class name.
 - If you have xml and you have insert method but the method name completion not work, please make sure your completion
 setting is same to following.
 
-![compele](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/completeSetting.png)
+![compele](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/completeSetting.png)
 
