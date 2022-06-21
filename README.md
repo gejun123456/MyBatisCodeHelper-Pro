@@ -68,7 +68,7 @@ resultMap中的property的自动提示|✔|✔
 一键生成mybatis接口的testcase |✘|✔
 通过方法名生成sql | ✘| ✔
 通过数据库生成crud代码| ✘|✔
-通过java类生成crud代码|✘|✔
+通过java类生成建表语句|✘|✔
 xml collection中的 param提示| ✘|✔
 识别mybatis的标签 全自动sql补全| ✘|✔
 检测#{中的参数是否正确| ✘|✔
