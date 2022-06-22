@@ -1,17 +1,17 @@
 ## mybatis param的自动补全
-![betterParamAutoComplete](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/betterParamAutoComplete.gif)
+![betterParamAutoComplete](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/betterParamAutoComplete.gif)
 
 ## mybatis param检测是否正确
-![检测param是否正确](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/检测param是否正确.gif)
+![检测param是否正确](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/检测param是否正确.gif)
 
 ## property refid resultMap等的自动补全
-![autoCompleteForPropertyResultMapEct](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/autoCompleteForPropertyResultMapEct.gif)
+![autoCompleteForPropertyResultMapEct](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/autoCompleteForPropertyResultMapEct.gif)
 
 ## resultMap column 检测是否正确(2.7.2)
-![resultMapColumnInspectionAndAutoComplete](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/resultMapColumnInspectionAndAutoComplete.gif)
+![resultMapColumnInspectionAndAutoComplete](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/resultMapColumnInspectionAndAutoComplete.gif)
 
 ## resultMap中的collection association自动补全
-![resultMapCollectionAndAssociactionBetterAutoComplete](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/resultMapCollectionAndAssociactionBetterAutoComplete.gif)
+![resultMapCollectionAndAssociactionBetterAutoComplete](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/resultMapCollectionAndAssociactionBetterAutoComplete.gif)
 
 ## 任意位置的sql的自动补全 识别include trim where set 等mybatis的标签
 对于Intellij的数据库来说 可以对一个xml的标签 注入sql语法
@@ -19,14 +19,14 @@
 插件优化了这块，可以让Intellij正确识别这些标签 正确解析sql语法
 
 trim标签
-![trim标签正确性检测](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/trim标签正确性检测.gif)
+![trim标签正确性检测](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/trim标签正确性检测.gif)
 
 set标签
-![set标签正确性](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/set标签正确性.gif)
+![set标签正确性](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/set标签正确性.gif)
 
 解析sql的正确性 需要先配置下
 
-![databaseConfig](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/configDatabase.png)
+![databaseConfig](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/configDatabase.png)
 
 
 

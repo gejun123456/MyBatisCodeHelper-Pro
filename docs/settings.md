@@ -1,3 +1,3 @@
 ## 设置配置详解
 
-![setting](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/settings.png)
+![setting](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/settings.png)

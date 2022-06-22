@@ -1,6 +1,6 @@
 ## 使用Intellij自带的datasource来生成 最简单的从数据库生成代码
 
-![intellijDatasourceGenerateCrud](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/databaseCrud.gif)
+![intellijDatasourceGenerateCrud](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/databaseCrud.gif)
 
 选定了module后 插件会自动配置好java model folder, java mapper folder 以及 resource folder 一般不需要修改
 
@@ -21,20 +21,20 @@
 
 ## IDEA社区版可以使用添加的datasource来生成 （目前支持mysql oracle postgresql sqlserver  myql支持5.5及以上  oracle支持oracle10g及以上 postgresql sqlserver支持最新版，老版本未测试 有问题请联系我) 
 
-![mybatis-database-generator](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/configDatabaseToUseMybatisGenerator.gif)
+![mybatis-database-generator](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/configDatabaseToUseMybatisGenerator.gif)
 
 ## 如何配置
 
 一般只用配置下包名 就可以使用了
-![mybatis-database-generator](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/DatabaseGenerateSetting.png)
+![mybatis-database-generator](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/DatabaseGenerateSetting.png)
 
 ## 使用mybatisGenerator的配置文件来生成(不推荐 直接从数据库生成更方便)
 
  mybatis generator 配置文件的规则   
   http://www.mybatis.org/generator/configreference/xmlconfig.html
 
-![mybatis-generator](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/2017_08_06_mybatis_generator.gif)
+![mybatis-generator](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/2017_08_06_mybatis_generator.gif)
     
 ## 一键生成mybatis generator的xml文件
 
-![generate_mybatis_generator_config_file](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/generate_mybatis_generator_config_file.gif)
+![generate_mybatis_generator_config_file](https://cdn.jsdelivr.net/gh/gejun123456/MyBatisCodeHelper-Pro@master/screenshots/generate_mybatis_generator_config_file.gif)
