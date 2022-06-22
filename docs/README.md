@@ -93,6 +93,8 @@ mybatis-generator-gui: https://github.com/zouzg/mybatis-generator-gui
 
 mybatis generator plugin: https://github.com/itfsw/mybatis-generator-plugin
 
+batlog: https://github.com/PerccyKing/batslog
+
 如果您是这些项目的作者，请联系我，我将发送免费的永久key给您
 
 截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.com/gejun123456/codehelperPluginDemo)
