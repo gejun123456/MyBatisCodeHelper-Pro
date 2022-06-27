@@ -7,5 +7,5 @@ mybatis-config文件中的typeAlias
 
 目前不支持typeAlias中的 \*号, 可以将 \* 号展开配置多个包名 (如下图)
 
-![supportTypeAlias](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/supportTypeAlias.gif)
+![supportTypeAlias](http://youpaiyuntupian.test.upcdn.net/supportTypeAlias.gif)
 
