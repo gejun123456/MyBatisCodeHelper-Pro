@@ -6,13 +6,13 @@
 插件的代码格式化支持mybatis标签，if test等ognl表达式
 
 例子:
-![selectformat](http://youpaiyuntupian.test.upcdn.net/selectformat.gif)
+![selectformat](http://myimages.brucege.com/selectformat.gif)
 
-![insertSelectiveReformat](http://youpaiyuntupian.test.upcdn.net/insertSelectiveReformat.gif)
+![insertSelectiveReformat](http://myimages.brucege.com/insertSelectiveReformat.gif)
 
-![findByAllReformat](http://youpaiyuntupian.test.upcdn.net/findByAllReformat.gif)
+![findByAllReformat](http://myimages.brucege.com/findByAllReformat.gif)
 
-![ognlReformat](http://youpaiyuntupian.test.upcdn.net/ognlReformat.gif)
+![ognlReformat](http://myimages.brucege.com/ognlReformat.gif)
 
 
-![complexSqlReformat](http://youpaiyuntupian.test.upcdn.net/complexSqlReformat.gif)
+![complexSqlReformat](http://myimages.brucege.com/complexSqlReformat.gif)
