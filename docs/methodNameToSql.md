@@ -2,28 +2,28 @@
 
 只需要一个方法名 即可 不需要方法和参数 和返回值 输入方法名后 alt+enter Generate mybatis sql 就可以生成了
 
-![findMethodNameToSql](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/findMethodNameToSql.gif)
+![findMethodNameToSql](https://myimages.brucege.com/findMethodNameToSql.gif)
 
-![updateMethodNameToSql](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/updateMethodNameToSql.gif)
+![updateMethodNameToSql](https://myimages.brucege.com/updateMethodNameToSql.gif)
 
-![deleteMethodNameToSql](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/deleteMethodNameToSql.gif)
+![deleteMethodNameToSql](https://myimages.brucege.com/deleteMethodNameToSql.gif)
 
-![countMethodNameToSql](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/countMethodNameToSql.gif)
+![countMethodNameToSql](https://myimages.brucege.com/countMethodNameToSql.gif)
 
 
 ## 方法名生成sql时支持if test (2.3版本后无需配置 直接alt+enter Generate mybatis sql with if test即可)
 
-![findWithIfTest](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/findWithIfTest.gif)
+![findWithIfTest](https://myimages.brucege.com/findWithIfTest.gif)
 
 
 ## 一键生成findByAll
 
-![findByAllEE](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/findByAllEE.gif)
+![findByAllEE](https://myimages.brucege.com/findByAllEE.gif)
 
 
 ## 一键生成insertList
 
-![insertList](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/insertList.gif)
+![insertList](https://myimages.brucege.com/insertList.gif)
 
 ## 使用方法  
 - 在mybatis的接口文件上的方法名(只需要一个名字，不需要返回值和参数 会自动推导出来)上使用alt+enter Generate mybatis sql 或者选中方法名右键来生成
@@ -159,4 +159,4 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 - 我写了find后方法名没有自动提示如何处理?
 
 查看IDEA设置里的completion 是否设置为 firstLetter
-![compele](https://mybatis-1309801975.cos.ap-shanghai.myqcloud.com/screenshots/completeSetting.png)
+![compele](https://myimages.brucege.com/completeSetting.png)
