@@ -1,3 +1,50 @@
+<strong>3.0.3</strong>
+<ul>
+<li>[NEW]支持resultmap中使用constructor，提供自动提示，检测等</li>
+<li>[IMPROVE]controller的模版可以自动提示</li>
+<li>[IMPROVE]更好的性能</li>
+<li>[NEW]mybatis日志转sql支持</li>
+<li>[IMPROVE]支持清除表缓存</li>
+<li>[FIX]修复idea社区版表生成代码出错 当表含有数据库关键字时</li>
+</ul>
+<strong>3.0.2</strong>
+<ul>
+<li>[NEW]支持mybatis注解使用常量的解析</li>
+<li>[NEW]支持mybatis注解 #{} 自动提示，检测，重构等</li>
+<li>[FIX]修复intention preview 会自动弹出窗口比如使用 generate testcase时</li>
+<li>[NEW]支持mybatisplus的分页</li>
+<li>[FIX]修复sql标签if test的格式化</li>
+<li>[FIX]支持解析接口参数为* extend 这种泛型</li>
+<li>[FIX]修复typeMapper配置不生效</li>
+</ul>
+<strong>3.0.1</strong>
+<ul>
+<li>[FIX]修复mybatis generator出现null pointer</li>
+</ul>
+<strong>3.0.0</strong>
+<ul>
+<li>[FIX]where和trim等标签在换行光标跳转问题修复</li>
+<li>[NEW]增加typemapper，可以配置java类型和表字段类型的转换关系</li>
+<li>[FIX]修复在xml上右键generate all column转义问题</li>
+<li>[FIX]给复杂类型加一个param注解支持解析父类中的属性</li>
+<li>[NEW]controller模版添加表注释变量</li>
+</ul>
+<strong>2.9.9</strong>
+<ul>
+<li>[FIX]修复xml格式化换行的问题</li>
+<li>[NEW]可配置if test格式化不换行</li>
+<li>[IMPROVE]定制列里面更好的java类型编辑器</li>
+<li>[IMPROVE]生成controller配置src folder和package名可以自动提示</li>
+</ul>
+<strong>2.9.8</strong>
+<ul>
+<li>[NEW]添加配置param中忽略解析的类型</li>
+<li>[NEW]支持ognl数组操作</li>
+<li>[FIX]修复从sql导出java类和resultMap sqlServer出现的exception</li>
+<li>[FIX]修复从sql导出java类和resultMap文件没有刷新</li>
+<li>[NEW]支持mybatis generator只生成java类</li>
+</ul>
+
 <strong>2.9.7</strong>
 <ul>
 <li>[NEW]支持kotlin添加param注解</li>
