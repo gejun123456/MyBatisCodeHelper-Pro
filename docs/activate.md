@@ -1,6 +1,6 @@
-# 无法进行在线激活
-## 如果你的电脑网站可以访问 http://brucege.com/pay/view 但是在线激活报网络错误
-请检查Intellij是否使用ja-netfilter 
+# 无法进行激活
+## 如果激活报密文数据已损坏 
+请检查Intellij是否使用了ja-netfilter>=20220701版本 
 最新版的ja-netfilter屏蔽了brucege.com并且不让插件进行正版验证 请打开ja-netfilter目录修改ja-netfilter\config\dns.conf
 把equal brucege.com 那一行给删掉 
 并且还需修改ja-netfilter\config\power.conf
