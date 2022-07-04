@@ -157,10 +157,6 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 由于mybatis注解功能较弱，不支持resultMap的复用，并且复杂sql多的时候难以维护。插件对简单的注解sql有代码提示。
 另外插件提供了在注解上alt enter迁移到xml的功能。
 
-## mac无法激活，Permission denied
-![noPermission](https://myimages.brucege.com/noPermission.png)
-请使用 cd ~ 然后 sudo chmod 777 .config 即可
-
 
 ## 和其他插件对比
 插件拥有最好的mybatis sql代码提示，代码检测，重构，泛型支持，typeAlias支持，快速测试sql，方法名生成sql等。
