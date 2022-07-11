@@ -1,3 +1,36 @@
+<strong>3.0.6</strong>
+<ul>
+<li>[FIX]sql log parameter contain null value logged sql is null</li>
+<li>[IMPROVE]module name can be searched and other ui improvement</li>
+<li>[FIX]move annotation to xml when xml not exist generate xml issue</li>
+<li>[IMPROVE]create xml for mapper interface</li>
+</ul>
+<ul>
+<li>1.修复sql log 参数值包含null时解析的问题</li>
+<li>2.表上生成代码功能module名可以进行搜索和一些其他ui优化</li>
+<li>3.修复从注解挪动sql到xml时，xml不存在创建xml</li>
+<li>4.优化从接口从生成xml触发问题</li>
+</ul>
+<strong>3.0.5</strong>
+<ul>
+<li>[FIX]fix editor null pointer exception</li>
+</ul>
+<ul>
+<li>1.修复editor为null的exception</li>
+</ul>
+<strong>3.0.4</strong>
+<ul>
+<li>[FIX]sql log remove duplicate not work in some case</li>
+<li>[FIX]sql log support more pattern</li>
+<li>[FIX]sql log support multi insert ect</li>
+<li>[IMPROVE]better ui</li>
+</ul>
+<ul>
+<li>1.修复sql log移除重复的sql某些情况不生效的问题</li>
+<li>2.sql log兼容各种sql</li>
+<li>3.sql log支持批量模式，一个parepare 多个parameter那种模式</li>
+<li>4.更好的ui</li>
+</ul>
 <strong>3.0.3</strong>
 <ul>
 <li>[NEW]支持resultmap中使用constructor，提供自动提示，检测等</li>
