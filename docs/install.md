@@ -47,9 +47,12 @@
 ![offline](https://myimages.brucege.com/offlineActivation.png)
 
 
+## 查询激活码
+
+- 网页http://brucege.com/keys 可以通过邮箱来查询激活码
 
 ## 解绑
 
 - 购买后会发两个激活码，可以在两台设备上绑定，一个激活码绑定一个设备。当更新机器或者重装系统时需要解绑。可进行下图的操作
 ![unBind](https://myimages.brucege.com/unBind.png)
-或者使用网页brucege.com/keys 来解绑
+或者使用网页http://brucege.com/keys 来解绑

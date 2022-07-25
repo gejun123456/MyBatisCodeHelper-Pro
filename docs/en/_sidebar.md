@@ -15,5 +15,6 @@
   * [typeSafeSql](en/typeSafe.md)
   * [Java class generate create table sql](en/javaToCrud.md)
   * [Install and activate](en/install.md)
+  * [SqlLog](en/sqlLog.md)
   * [ChangeLog](en/changelog.md)
   
