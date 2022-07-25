@@ -3,7 +3,7 @@
 ### idea console need to print mybatis log
 - make sure console print mybatis log
 
-![mybatislogsupport](https://myimages.brucege.com/mybatisLogSupportNew2.gif)
+![mybatislogsupport](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/mybatisLogSupportNew2.gif)
 
 make sure console log contains prepare and parameter
 
