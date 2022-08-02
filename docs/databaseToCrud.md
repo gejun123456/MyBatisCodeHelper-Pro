@@ -12,6 +12,10 @@
 
 可生成service 生成到通用mapper及mybatisplus
 
+## 支持定制列 配置column和java映射关系，typeHandler配置
+![customizedColumns](https://myimages.brucege.com/customizedColumns.png)
+
+
 ## 代码是如何自动合并的
 - mapper接口 如果新生成的接口中的方法包含原来接口中的方法会进行替换 即不会覆盖掉自己写的方法
 - mapper xml 文件 首先会删除掉 @mbg generated 注释的方法 然后生成你选择的方法  即不会覆盖掉你自己写的方法
