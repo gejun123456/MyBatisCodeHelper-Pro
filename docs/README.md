@@ -55,12 +55,13 @@ resultMap中的property的自动提示|✔|✔
 通过数据库生成crud代码| ✘|✔
 通过java类生成建表语句|✘|✔
 xml collection中的 param提示| ✘|✔
-识别mybatis的标签 全自动sql补全| ✘|✔
+识别mybatis的trim where include等标签 全自动sql补全| ✘|✔
 检测#{中的参数是否正确| ✘|✔
 if test when test foreach collection $中的OGNL支持| ✘|✔
 param重构功能(2.7.2)| ✘|✔
 resultMap中column提示与检测(2.7.2)| ✘|✔
 Mybatis xml代码格式化(2.8.2)| ✘|✔
+从sql生成resultMap和java类 | ✘|✔
 
 可以免费试用: http://brucege.com/pay/view
 
