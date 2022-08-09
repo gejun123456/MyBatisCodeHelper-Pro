@@ -1,3 +1,24 @@
+<strong>3.0.7</strong>
+<ul>
+<li>[FIX]mybatis interface generate xml when selected interface class name</li>
+<li>[IMPROVE]mybatis plus generate updateByPrimaryKeySelective</li>
+<li>[IMPROVE]mybatis plus typehandler will add to model class</li>
+<li>[IMPROVE]resultMap column auto completion when use with statement</li>
+<li>[IMPROVE]support swagger3 openapi annotation</li>
+<li>[IMPROVE]support disable param1,param2 like auto completion</li>
+<li>[FIX]fix deadLock exception</li>
+<li>[FIX]fix mybatis log parameter line contain multiple ending space to sql</li>
+</ul>
+<ul>
+<li>1.修复从接口类生成xml选中类名无法生成</li>
+<li>2.优化mybatisplus生成updateByPrimaryKeySelective</li>
+<li>3.mybatisplus定制列中配置的typehandler会生成到TableField注解上</li>
+<li>4.select使用with语句的resultMap column自动提示的解析</li>
+<li>5.表上生成代码支持swagger3，openapi</li>
+<li>6.支持配置禁用param1,param2这种代码提示</li>
+<li>7.修复deadLock异常</li>
+<li>8.修复mybatis log 部分情况无法解析问题</li>
+</ul>
 <strong>3.0.6</strong>
 <ul>
 <li>[FIX]sql log parameter contain null value logged sql is null</li>
