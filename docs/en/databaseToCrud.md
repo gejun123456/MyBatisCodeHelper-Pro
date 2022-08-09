@@ -8,13 +8,11 @@ after choose the module,the plugin will auto configure java model folder, java m
 ![mybatis-database-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/configDatabaseToUseMybatisGenerator.gif)
 
 
-## Use Mybatis generator config file to generate.
+## you can customize columns set their java type and typeHandler
 
- How to use mybatis generator.   
-  http://www.mybatis.org/generator/configreference/xmlconfig.html
+![customizedColumns](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/customizedColumns.png)
 
-![mybatis-generator](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/2017_08_06_mybatis_generator.gif)
 
-## Generate Mybatis generator config file
+## you can use typeMapper to customize table column type and java type
 
-![generate_mybatis_generator_config_file](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generate_mybatis_generator_config_file.gif)
+![typeMapperSettins](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/typeMapperSettings.png)
