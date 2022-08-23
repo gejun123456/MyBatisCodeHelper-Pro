@@ -16,3 +16,5 @@ Support following product 2016.2 version and upper.
 - <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>Search and find"MybatisCodeHelperPro-MarketPlace Edition"</kbd> > <kbd>Install Plugin</kbd>
 
 
+
+

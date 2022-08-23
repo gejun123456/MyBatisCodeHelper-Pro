@@ -1,5 +1,7 @@
 #  构建安全的mybatis sql（插件2.8.0版本）(插件原创功能)
 
+## 可以先看视频：https://www.bilibili.com/video/BV1PB4y167N1
+
 ## IDEA高级版提供了sql自动补全 sql语法检测， IDEA高级版可以写出安全的sql 如下图
 ![ideaInnerSupport](https://myimages.brucege.com/ideaInnerSupport.gif)
 

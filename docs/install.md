@@ -16,7 +16,7 @@
 - <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"MybatisCodeHelperPro"</kbd> > <kbd>Install Plugin</kbd>
 
 **直接下载** (不要解压zip 直接安装即可) 请根据IDEA的版本来下载对应的版本 
-如果链接下载不了 可以加qq群 542735979 群文件里面有最新的版本
+如果链接下载不了 可以加qq群 598080979 群文件里面有最新的版本
 - download[`lastest plugin zip`](https://plugins.jetbrains.com/plugin/9837-mybatiscodehelperpro) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
 
 
