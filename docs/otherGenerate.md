@@ -51,5 +51,10 @@ cd 生成cdata co生成collection
 ## 一键把 sql中if test string!=null 改成 if test string!=null and string !='' 
 
 在 xml的 sql中按alt enter 选Make All String Compare To Null Change to Null And Empty In Current Sql 即可
+![StringNullAndEmpty](https://myimages.brucege.com/stringNullAndEmtpy.png)
+
+
+## 一键给复杂类型添加param注解
+![AddParamToComplexType](https://myimages.brucege.com/AddparamToComplexType.gif)
 
 
