@@ -17,7 +17,7 @@
   * [代码格式化](formatter.md)
   * [sql标红处理](sqlred.md)
   * [达梦等其他数据库支持](damengsupport.md)
-  * [log支持](sqlLog.md)
+  * [mybatis日志转sql](sqlLog.md)
   * [安装和激活和解绑](install.md)
   * [设置详解](settings.md)
   * [更新日志](changelog.md)
