@@ -17,7 +17,7 @@
 
 
 ## 支持配置typemapper 配置表字段类型与java类型的映射关系
-![typeMappSettins](https://myimages.brucege.com/typeMapperSettings)
+![typeMappSettins](https://myimages.brucege.com/typeMapperSettings.png)
 
 
 
