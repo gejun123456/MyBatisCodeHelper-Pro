@@ -36,7 +36,7 @@ bind进行绑定变量的类型推断支持
 
 
 对于 ${ 由于里面的输入可以是任意字符，sql会无法解析，插件引入了 $sql注释，如下图，真正要被替换的语句写入$sql 注释中$后的sql也可正常代码提示了
-![AddSqlAfter$](https://myimages.brucege.com/AddSqlAfter$.gif) 
+![AddSqlAfter$](https://myimages.brucege.com/add$sql.gif) 
 
 
 foreach collection

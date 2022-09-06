@@ -4,7 +4,9 @@
 ## bind和 ${
 ![bind和${的ognl支持](https://myimages.brucege.com/bind和${的ognl支持.gif)
 
-对于 ${ 由于里面的输入可以是任意字符，sql会无法解析，插件引入了 $sql注释，如上图，真正要被替换的语句写入$sql 注释中
+对于 ${ 由于里面的输入可以是任意字符，sql会无法解析，插件引入了 $sql注释，如下图，真正要被替换的语句写入$sql 注释中
+
+![AddSqlAfter$](https://myimages.brucege.com/add$sql.gif)
 
 ## foreach collection
 ![collection标签跳转检测正确](https://myimages.brucege.com/collection标签跳转检测正确.gif)
