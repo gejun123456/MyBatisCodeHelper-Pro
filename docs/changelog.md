@@ -1,3 +1,30 @@
+<strong>3.0.9</strong>
+<ul>
+<li>[NEW]mybatis generator save configuration</li>
+<li>[NEW]mybatis generator configuration export to json and import from json</li>
+<li>[NEW]support xml include with bind names</li>
+<li>[NEW]mybatis generator will read line separator from intellij</li>
+<li>[FIX]some formatter issue</li>
+<li>[FIX]make string null and empty when reference to field and parameter</li>
+<li>[IMPROVE] $ replace sql support more pattern</li>
+</ul>
+<ul>
+<li>1.mybatis generator支持保存配置，导入导出配置</li>
+<li>2.支持xml include带bind变量的解析</li>
+<li>3.一键string判断null和空支持当值来自于字段或者方法参数</li>
+<li>4.bug修复
+</ul>
+<strong>3.0.8</strong>
+<ul>
+<li>[FIX]string exception when mybatis log has no parameter</li>
+<li>[FIX]mybatis log too many memory issue</li>
+<li>[NEW]support generate all column sql using template</li>
+</ul>
+<ul>
+<li>1.修复mybatis log当没有参数时的报错</li>
+<li>2.修复mybatis log数量太多时内存占用问题</li>
+<li>3.表上右键generate all column sql 可以通过模版来生成</li>
+</ul>
 <strong>3.0.7</strong>
 <ul>
 <li>[FIX]mybatis interface generate xml when selected interface class name</li>

@@ -1,4 +1,84 @@
-
+<strong>3.0.9</strong>
+<ul>
+<li>[NEW]mybatis generator save configuration</li>
+<li>[NEW]mybatis generator configuration export to json and import from json</li>
+<li>[NEW]support xml include with bind names</li>
+<li>[NEW]mybatis generator will read line separator from intellij</li>
+<li>[FIX]some formatter issue</li>
+<li>[FIX]make string null and empty when reference to field and parameter</li>
+<li>[IMPROVE] $ replace sql support more pattern</li>
+</ul>
+<ul>
+<li>1.mybatis generator支持保存配置，导入导出配置</li>
+<li>2.支持xml include带bind变量的解析</li>
+<li>3.一键string判断null和空支持当值来自于字段或者方法参数</li>
+<li>4.bug修复
+</ul>
+<strong>3.0.8</strong>
+<ul>
+<li>[FIX]string exception when mybatis log has no parameter</li>
+<li>[FIX]mybatis log too many memory issue</li>
+<li>[NEW]support generate all column sql using template</li>
+</ul>
+<ul>
+<li>1.修复mybatis log当没有参数时的报错</li>
+<li>2.修复mybatis log数量太多时内存占用问题</li>
+<li>3.表上右键generate all column sql 可以通过模版来生成</li>
+</ul>
+<strong>3.0.7</strong>
+<ul>
+<li>[FIX]mybatis interface generate xml when selected interface class name</li>
+<li>[IMPROVE]mybatis plus generate updateByPrimaryKeySelective</li>
+<li>[IMPROVE]mybatis plus typehandler will add to model class</li>
+<li>[IMPROVE]resultMap column auto completion when use with statement</li>
+<li>[IMPROVE]support swagger3 openapi annotation</li>
+<li>[IMPROVE]support disable param1,param2 like auto completion</li>
+<li>[FIX]fix deadLock exception</li>
+<li>[FIX]fix mybatis log parameter line contain multiple ending space to sql</li>
+</ul>
+<ul>
+<li>1.修复从接口类生成xml选中类名无法生成</li>
+<li>2.优化mybatisplus生成updateByPrimaryKeySelective</li>
+<li>3.mybatisplus定制列中配置的typehandler会生成到TableField注解上</li>
+<li>4.select使用with语句的resultMap column自动提示的解析</li>
+<li>5.表上生成代码支持swagger3，openapi</li>
+<li>6.支持配置禁用param1,param2这种代码提示</li>
+<li>7.修复deadLock异常</li>
+<li>8.修复mybatis log 部分情况无法解析问题</li>
+</ul>
+<strong>3.0.6</strong>
+<ul>
+<li>[FIX]sql log parameter contain null value logged sql is null</li>
+<li>[IMPROVE]module name can be searched and other ui improvement</li>
+<li>[FIX]move annotation to xml when xml not exist generate xml issue</li>
+<li>[IMPROVE]create xml for mapper interface</li>
+</ul>
+<ul>
+<li>1.修复sql log 参数值包含null时解析的问题</li>
+<li>2.表上生成代码功能module名可以进行搜索和一些其他ui优化</li>
+<li>3.修复从注解挪动sql到xml时，xml不存在创建xml</li>
+<li>4.优化从接口从生成xml触发问题</li>
+</ul>
+<strong>3.0.5</strong>
+<ul>
+<li>[FIX]fix editor null pointer exception</li>
+</ul>
+<ul>
+<li>1.修复editor为null的exception</li>
+</ul>
+<strong>3.0.4</strong>
+<ul>
+<li>[FIX]sql log remove duplicate not work in some case</li>
+<li>[FIX]sql log support more pattern</li>
+<li>[FIX]sql log support multi insert ect</li>
+<li>[IMPROVE]better ui</li>
+</ul>
+<ul>
+<li>1.修复sql log移除重复的sql某些情况不生效的问题</li>
+<li>2.sql log兼容各种sql</li>
+<li>3.sql log支持批量模式，一个parepare 多个parameter那种模式</li>
+<li>4.更好的ui</li>
+</ul>
 <strong>3.0.3</strong>
 <ul>
 <li>[NEW]support result map use constructor</li>
