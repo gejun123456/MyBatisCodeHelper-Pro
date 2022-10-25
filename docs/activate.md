@@ -1,6 +1,6 @@
 # 无法进行激活
 ## 如果激活报密文数据已损坏或者DnsFilter.testQuery报错
-请先更新到插件3.0.5(qq群:685465570)版本重新激活一下 如果还有问题，再看下面的   
+请先更新到插件3.0.5(qq群:598080979)版本重新激活一下 如果还有问题，再看下面的   
 请检查Intellij是否使用了ja-netfilter>=20220701版本   
 最新版的ja-netfilter屏蔽了brucege.com并且不让插件进行正版验证 请打开ja-netfilter目录修改ja-netfilter\config\dns.conf  
 把equal brucege.com 那一行给删掉   
