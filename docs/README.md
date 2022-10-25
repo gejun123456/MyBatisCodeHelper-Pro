@@ -71,11 +71,11 @@ Mybatis xml代码格式化(2.8.2)| ✘|✔
 - 加入qq群 由于Intellij插件市场需要两天审核  插件的bug修复 最新版本 会先放在qq群中 出现任何问题可在qq群反馈
 
 
-![qqGroup](https://myimages.brucege.com/qqgroup.png)
+![qqGroup](https://myimages.brucege.com/qqGroupNew.png)
 2群: 914051156 (人满)
 3群：598080979
 1群备份: 714116302  
-添加qq号:1098632410  
+或者添加qq号:1098632410  
 
 - 或者添加我的微信:
 
