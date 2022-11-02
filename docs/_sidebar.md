@@ -23,3 +23,4 @@
   * [更新日志](changelog.md)
   * [常见问题](question.md)
   * [无法进行激活](activate.md)
+  * [捐助](donate.md)
