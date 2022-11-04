@@ -21,3 +21,5 @@ autoMap会找到resultMap type中的属性与resultMap引用的sql select的字�
 ### resultMap中的collection association自动补全
 ![resultMapCollectionAndAssociactionBetterAutoComplete](https://myimages.brucege.com/resultMapCollectionAndAssociactionBetterAutoComplete.gif)
 
+## 将resultType转换为resultMap
+![convertResultTypeToResultMap](https://myimages.brucege.com/convertResutlTypeToResultMap.png)
