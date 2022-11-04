@@ -4,13 +4,6 @@
 ## 一键添加mybatis的param注解
 ![addParam](https://myimages.brucege.com/addParamForOneClick.gif)
 
-## 自动匹配resultMap中的字段
-autoMap会找到resultMap type中的属性与resultMap引用的sql select的字段以最近的字段来进行匹配
-![automap](https://myimages.brucege.com/automap.png)
-
-支持columnPrefix匹配
-![joinAutoMapping](https://myimages.brucege.com/joinAutoMapping.gif)
-
 ## 一键生成测试mybatis接口的测试类 
 
 不需要启动spring容器，写完了立马就可以测试sql  对于复杂的sql 可以很方便的进行测试 

@@ -7,11 +7,6 @@
 ## property refid resultMap等的自动补全
 ![autoCompleteForPropertyResultMapEct](https://myimages.brucege.com/autoCompleteForPropertyResultMapEct.gif)
 
-## resultMap column 检测是否正确(2.7.2)
-![resultMapColumnInspectionAndAutoComplete](https://myimages.brucege.com/resultMapColumnInspectionAndAutoComplete.gif)
-
-## resultMap中的collection association自动补全
-![resultMapCollectionAndAssociactionBetterAutoComplete](https://myimages.brucege.com/resultMapCollectionAndAssociactionBetterAutoComplete.gif)
 
 ## 任意位置的sql的自动补全 识别include trim where set 等mybatis的标签
 对于Intellij的数据库来说 可以对一个xml的标签 注入sql语法

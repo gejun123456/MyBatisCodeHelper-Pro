@@ -10,6 +10,7 @@
   * [java类生成建表语句](javaToCrud.md)
   * [实现安全的sql支持](typeSafe.md)
   * [重构](refactor.md)
+  * [resultMap支持](resultMap.md)
   * [spring的支持](spring.md)
   * [快速测试sql](quicktestsql.md)
   * [生成join](join.md)
