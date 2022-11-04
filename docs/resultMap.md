@@ -8,6 +8,10 @@ autoMap会找到resultMap type中的属性与resultMap引用的sql select的字�
 ## check result column 检测select语句中有但是resultMap中没有的column 批量生成好匹配
 ![checkResultColumn](https://myimages.brucege.com/checkResultMapColumns.gif)
 
+## 检测resultMap中重复的column
+![checkDuplicateColumn](https://myimages.brucege.com/checkDuplicateColumn.png)
+
+
 ## resultMap column and property 自动提示和检测
 ![resultMapColumnPropertyAutoComplete](https://myimages.brucege.com/resultMapColumnPropertyAutoComplete.gif)
 
