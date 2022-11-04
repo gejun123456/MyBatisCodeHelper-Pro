@@ -5,13 +5,15 @@ autoMap会找到resultMap type中的属性与resultMap引用的sql select的字�
 支持columnPrefix匹配
 ![joinAutoMapping](https://myimages.brucege.com/joinAutoMapping.gif)
 
+## check result column 检测select语句中有但是resultMap中没有的column 批量生成好匹配
+![checkResultColumn](https://myimages.brucege.com/checkResultMapColumns.gif)
+
 ## resultMap column and property 自动提示和检测
 ![resultMapColumnPropertyAutoComplete](https://myimages.brucege.com/resultMapColumnPropertyAutoComplete.gif)
 
-
-## resultMap column 检测是否正确(2.7.2)
+### resultMap column 检测是否正确(2.7.2)
 ![resultMapColumnInspectionAndAutoComplete](https://myimages.brucege.com/resultMapColumnInspectionAndAutoComplete.gif)
 
-## resultMap中的collection association自动补全
+### resultMap中的collection association自动补全
 ![resultMapCollectionAndAssociactionBetterAutoComplete](https://myimages.brucege.com/resultMapCollectionAndAssociactionBetterAutoComplete.gif)
 
