@@ -47,6 +47,45 @@ com.mapper 为mybatis接口的包名
 </Configuration>
 ```
 
+### 从日志跳转到xml (3.1.3版本)
+
+确保log配置打印了class信息
+
+log4j2配置如下
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+    <Appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%c %5level [%t] - %msg %n  "/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="stdout"/>
+        </Root>
+    </Loggers>
+</Configuration>
+```
+
+PatternLayOut 开始有一个%c 打印当前类的信息，打印的日志如下
+
+```text
+org.apache.ibatis.logging.LogFactory DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter. 
+  org.apache.ibatis.transaction.jdbc.JdbcTransaction DEBUG [main] - Opening JDBC Connection 
+Mon Nov 14 11:25:27 CST 2022 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+  com.bruce.ggg.AdminMapper.findByAdminNameAndAdminPwd DEBUG [main] - ==>  Preparing: SELECT admin_id, admin_name, admin_pwd, `status`, real_name, telephone, create_time, update_time, center_id, admin_type, myDate FROM `admin` where admin_name LIKE ? ORDER BY admin_id DESC  
+  com.bruce.ggg.AdminMapper.findByAdminNameAndAdminPwd DEBUG [main] - ==> Parameters: 74(Integer) 
+  com.bruce.ggg.AdminMapper.findByAdminNameAndAdminPwd DEBUG [main] - <==      Total: 0 
+```
+
+确保以类名为开头的日志，如上图，可以看到com.bruce.ggg.AdminMapper.findByAdminNameAndAdminPwd
+
+然后在mybatis sql控制台中，看看日志的注释中是否有类名信息，选中日志，按右键jumpToXml，即可跳转到xml
+
+![jumpToXml](https://myimages.brucege.com/jumpToXml.png)
+
 
 
 
