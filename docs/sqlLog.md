@@ -69,7 +69,11 @@ log4j2配置如下
 </Configuration>
 ```
 
-PatternLayOut 开始有一个%c 打印当前类的信息，打印的日志如下
+将类名.方法名 打印在最前面才可以识别
+log4j2 PatternLayOut 开始有一个%c 打印当前类的信息，打印的日志如下
+
+logback 用%class.%M 打印当前类的信息
+
 
 ```text
 org.apache.ibatis.logging.LogFactory DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter. 
