@@ -72,7 +72,7 @@ log4j2配置如下
 将类名.方法名 打印在最前面才可以识别
 log4j2 PatternLayOut 开始有一个%c 打印当前类的信息，打印的日志如下
 
-logback 用%class.%M 打印当前类的信息
+logback 用%logger 或者%c 打印当前类的信息
 
 
 ```text
