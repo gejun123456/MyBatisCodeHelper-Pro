@@ -1,3 +1,49 @@
+<strong>3.1.3</strong>
+<ul>
+<li>[NEW]support java annotation script tag</li>
+<li>[NEW]sql log jump to xml</li>
+<Li>[FIX]method name use insertList and insertSelective when resultmap not complete exception</Li>
+<li>[NEW]support kotlin mapper scan spring injection</li>
+<li>[NEW]support resulthandler type check</li>
+<li>[IMPROVE]better completion for ognl and #{}</li>
+</ul>
+<ul>
+<li>1.支持java注解中使用script的识别</li>
+<li>2.可以从日志跳转到xml</li>
+<li>3.方法名insertList和insertSelective当属性不一致exception修复</li>
+<li>4.支持kotlin mapperscan spring注入</li>
+<li>5.支持resulthandler类型的检测</li>
+<li>6.代码提示优化</li>
+</ul>
+<strong>3.1.2</strong>
+<ul>
+<li>[NEW]add option for sql tag auto detect prefix and suffix</li>
+<li>[NEW]resultMap add check column menu to check unused column in resultMap related select statement</li>
+<Li>[NEW]support icon for base class to xml</Li>
+<li>[NEW]support select * in resultMap auto map and check column</li>
+<li>[NEW]support to check mybatis interface unused method</li>
+</ul>
+<ul>
+<li>1.添加菜单可以自动识别sql标签的前后缀</li>
+<li>2.resultMap添加check column菜单来识别当前resultMap对应的select语句里面未使用的列</li>
+<li>3.从基类跳转到xml图标支持</li>
+<li>4.resultMap auto map和check column支持识别 select * </li>
+<li>5.支持检测mybatis接口中未使用的方法</li>
+</ul>
+<strong>3.1.1</strong>
+<ul>
+<li>[FIX]fix when generate test case line seprator issue</li>
+</ul>
+<ul>
+<li>1.修复生成testcase时生成换行符exception</li>
+</ul>
+<strong>3.1.0</strong>
+<ul>
+<li>[FIX]when open intention preview, create select statement multiple times</li>
+</ul>
+<ul>
+<li>1.修复开启intention preview, create select statement重复创建的问题</li>
+</ul>
 <strong>3.0.9</strong>
 <ul>
 <li>[NEW]mybatis generator save configuration</li>
