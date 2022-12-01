@@ -17,6 +17,7 @@
   * [TypeAlias支持](typeAliasSupport.md)
   * [代码格式化](formatter.md)
   * [sql标红处理](sqlred.md)
+  * [mybatis注解支持](annotation.md)
   * [达梦等其他数据库支持](damengsupport.md)
   * [mybatis日志转sql](sqlLog.md)
   * [安装和激活和解绑](install.md)
