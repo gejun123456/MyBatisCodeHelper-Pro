@@ -1,8 +1,7 @@
 ## 插件支持mybatis注解
+支持script标签，支持#{},if test,动态sql代码提示
 
-### 支持script 支持#{} if test 动态sql代码提示
-
-###使用注解需要先打开配置
+### 使用注解需要先打开配置
 
 ![annotationSupport](https://myimages.brucege.com/annotationSupport.jpg)
 
