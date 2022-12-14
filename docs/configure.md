@@ -16,4 +16,4 @@
 
 ## 配置好后的效果
 
-![writeSql](https://myimages.brucege.com/writeSql.gif)
+![writeSql](https://myimages.brucege.com/writeSql.gif)po
