@@ -5,6 +5,8 @@
 
 ![sprinboot](https://myimages.brucege.com/springSupportNew.gif)
 
+### 注意，mapperScan里面请直接写完整的字符串，不要使用常量或者+号等拼接，否则无法识别
+
 
 
 
