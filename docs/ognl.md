@@ -1,4 +1,7 @@
 ## if test when test
+
+![ognlUseEnum](https://myimages.brucege.com/ognlUseEnum.png)
+
 ![ifWhenTest中ognl支持](https://myimages.brucege.com/ifWhenTest中ognl支持.gif)
 
 ## bind和 ${
