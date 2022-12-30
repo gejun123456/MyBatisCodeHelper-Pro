@@ -38,6 +38,11 @@ bind进行绑定变量的类型推断支持
 对于 ${ 由于里面的输入可以是任意字符，sql会无法解析，插件引入了 $sql注释，如下图，真正要被替换的语句写入$sql 注释中$后的sql也可正常代码提示了
 ![AddSqlAfter$](https://myimages.brucege.com/add$sql.gif) 
 
+或者在xml的标签上加一个$注释
+![parse$byXmlTagComment](https://myimages.brucege.com/parse$byXmlTagComment.gif)
+
+
+
 
 foreach collection
 ![collection标签跳转检测正确](https://myimages.brucege.com/collection标签跳转检测正确.gif)

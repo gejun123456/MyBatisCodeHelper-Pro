@@ -11,6 +11,9 @@
 
 ![AddSqlAfter$](https://myimages.brucege.com/add$sql.gif)
 
+或者在xml的标签上加一个$注释
+![parse$byXmlTagComment](https://myimages.brucege.com/parse$byXmlTagComment.gif)
+
 ## foreach collection
 ![collection标签跳转检测正确](https://myimages.brucege.com/collection标签跳转检测正确.gif)
 

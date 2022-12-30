@@ -9,3 +9,5 @@ mybatis-config文件中的typeAlias
 
 ![supportTypeAlias](https://myimages.brucege.com/supportTypeAlias.gif)
 
+
+
