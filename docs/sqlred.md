@@ -20,5 +20,8 @@
 由于$中可以使用任意的字符串，无法解析具体的sql是啥，插件没有将${}加入sql解析，可以在${}的后面添加一个注释代表真正可能的sql，比如引用常量的时候，需要把常量的值放到注释中
 ，这样$不会标红并且后面的sql也能正确识别
 
+或者在xml的标签上加一个$注释 这种可以解析多个${}
+![parse$byXmlTagComment](https://myimages.brucege.com/parse$byXmlTagComment.gif)
+
 (2.7.6支持一键生成对应的sql)
 ![AddSqlAfter$](https://myimages.brucege.com/AddSqlAfter$.gif)

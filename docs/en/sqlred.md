@@ -17,5 +17,8 @@ Add ignore comment
 
 ### for ${} statement, the part can be any string, the sql can't be recognized. The plugin introduced $sql commment, you can add your real sql into the $sql comment to make sql correct. Sql statement after ${} can be recognized.
 
+add real sql for ${} expression
+![parse$byXmlTagComment](https://myimages.brucege.com/parse$byXmlTagComment.gif)
+
 (Add sql representation for $ statement))
 ![AddSqlAfter$](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/AddSqlAfter$.gif)
