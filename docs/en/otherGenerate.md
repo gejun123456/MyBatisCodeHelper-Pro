@@ -28,7 +28,7 @@ No need to start spring context to test your sql, faster check sql error.
 
 ## Generate java class and ResultMap from sql
 
-![generateJavaClassAndResultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateJavaClassAndResultMap.gif)
+![generateJavaClassAndResultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateJavaClassFromSelect.gif)
 
 
 ## Generate page query （depend on pageHelper)
