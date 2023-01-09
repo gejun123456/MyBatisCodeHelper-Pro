@@ -24,7 +24,7 @@ qq群（插件bug修复 最新版本及问题讨论）
 
 文档地址： https://gejun123456.github.io/MyBatisCodeHelper-Pro/
 
-国内文档地址：http://118.24.53.162/#/
+国内文档地址：https://brucege.com/doc/#/
 
 ## 功能
 - **通过方法名(不需要方法的返回值和参数 会自动推导出来)来生成sql 可以生成大部分单表操作的sql 只需要一个方法的名字即可 会自动补全好方法的参数和返回值 和springdatajpa的语句基本一致**
