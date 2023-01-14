@@ -93,7 +93,7 @@ List<AWithB> AJoinB();
 最终生成截图 (2.7.6)
 ![multipleTableJoin](https://myimages.brucege.com/multipleTableJoin.gif)
 
-使用该功能生成目前有一个要求 中需要有BaseResultMap存在 这样我可以找到表名 (2.7.6 不需要 2.7.6通过表mybatis generator生成的BaseResultMap就带了表名)
+使用该功能生成目前有一个要求 中需要有BaseResultMap存在，这样插件可以找到表名 (可以通过表上右键mybatis generator左下角预览xml弄到BaseResultMap带有表名)
 
 
 
