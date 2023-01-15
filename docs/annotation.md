@@ -3,10 +3,10 @@
 
 ### 使用注解需要先打开配置
 
-![annotationSupport](https://myimages.brucege.com/annotationSupport.jpg)
+![annotationSupport](https://images.brucege.com/annotationSupport.jpg)
 
 ### 支持注解的代码提示
-![annotationHighlight](https://myimages.brucege.com/annotationHighlight.jpg)
+![annotationHighlight](https://images.brucege.com/annotationHighlight.jpg)
 
 
 ## 不足

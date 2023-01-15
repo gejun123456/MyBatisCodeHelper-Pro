@@ -3,7 +3,7 @@
 ### idea控制台需要打印mybatis的日志 
 - 先检查控制台是否打印了mybatis的日志 如下图
 
-![mybatislogsupport](https://myimages.brucege.com/mybatisLogSupportNew2.gif)
+![mybatislogsupport](https://images.brucege.com/mybatisLogSupportNew2.gif)
 
 请确保idea控制台中包含 prepare 和 parameter 如上图
 
@@ -88,7 +88,7 @@ Mon Nov 14 11:25:27 CST 2022 WARN: Establishing SSL connection without server's 
 
 然后在mybatis sql控制台中，看看日志的注释中是否有类名信息，选中日志，按右键jumpToXml，即可跳转到xml
 
-![jumpToXml](https://myimages.brucege.com/jumpToXml.png)
+![jumpToXml](https://images.brucege.com/jumpToXml.png)
 
 
 
