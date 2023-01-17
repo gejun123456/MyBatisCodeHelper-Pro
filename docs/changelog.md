@@ -1,3 +1,38 @@
+<strong>3.1.6</strong>
+<ul>
+<li>[FIX]修复xml添加注释或空格高亮失效</li>
+<li>[NEW]xml测试sql添加All if test true和All if test false</li>
+<li>[NEW]生成代码支持生成javax注解@NotNull@Size</li>
+<li>[NEW]支持oracle批量插入语句生成</li>
+<li>[IMPROVE]inspection性能优化</li>
+<li>[FIX]修复getBean方法exception</li>
+</ul>
+
+<ul>
+    <li>[FIX]fix highlight loss when edit xml</li>
+    <li>[NEW]test sql add All if test true and All if test false Action</li>
+    <li>[NEW]support generate javax @NotNull @Size annotation</li>
+    <li>[IMPROVE]code inspection performance</li>
+    <li>[FIX]fix getBean method exception</li>
+</ul>
+<strong>3.1.5</strong>
+<ul>
+    <li>[NEW]support parse $ statement by xml tag comment</li>
+    <li>[FIX]fix spring mapperscan exception throw when use +</li>
+    <li>[NEW]add button to expand * and ** packages to package list</li>
+    <li>[IMPROVE]support completion for static field in super class</li>
+    <li>[FIX]exception when use intention preview</li>
+    <li>[IMPROVE]community version can set driver class and driver path</li>
+</ul>
+
+<ul>
+    <li>1.支持通过xml标签上的注释来解析$表达式</li>
+    <li>2.修复当mapperScan使用+号的报错</li>
+    <li>3.提供按钮可以一键把*和**的typeAlias转换为具体包名</li>
+    <li>4.支持自动提示父类中的static final字段</li>
+    <li>5.修复开启intention preview的代码报错</li>
+    <li>6.idea社区版生成代码数据库支持配置驱动</li>
+</ul>
 <strong>3.1.3</strong>
 <ul>
 <li>[NEW]support java annotation script tag</li>
