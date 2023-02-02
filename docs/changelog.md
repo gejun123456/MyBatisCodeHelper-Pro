@@ -1,3 +1,11 @@
+<strong>3.1.7</strong>
+<ul>
+<li>[FIX]兼容2023.1 eap版本</li>
+<li>[FIX]修复部分用户激活问题</li>
+</ul>
+<ul>
+<li>[FIX]compatability for 2023.1 eap version</li>
+</ul>
 <strong>3.1.6</strong>
 <ul>
 <li>[FIX]修复xml添加注释或空格高亮失效</li>
