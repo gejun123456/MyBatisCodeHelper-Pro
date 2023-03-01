@@ -16,6 +16,8 @@ global config选择为MybatisCodeHelperPro, template选择为MybatisCodeHelperMi
 
 建议每个生成配置的global config copy一下改成当前项目的名字，比如MybatisCodeHelperPro-DemoProject这种
 
+使用IDEA社区版的可以加qq群516959916，里面有社区版可用的模版插件
+
 未来将提供更多模版，欢迎大家提供模版，使用模版碰到问题可以联系我
 
 
