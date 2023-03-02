@@ -4,7 +4,7 @@
 
 ### MybatisCodeHelperPro插件为3.1.8或以上的版本，安装EasyCodeMybatisCodeHelper插件来进行模版生成
 
-### 提供了一个模版商城 https://brucege.com/easyCodePage
+### 提供了一个模版商城 https://brucege.com/easyCodePage或者到https://github.com/gejun123456/MybatisCodeHelperTemplates下载模版
 
 从模版商城下载模版后，通过json导入到EasyCodeMybatisCodeHelper插件中  
 
