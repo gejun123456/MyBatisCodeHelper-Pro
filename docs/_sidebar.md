@@ -3,6 +3,7 @@
   * [简介](README.md)
   * [配置数据库](configure.md)
   * [数据库生成crud代码](databaseToCrud.md)
+  * [通过模版生成代码](generateByTemplate.md)
   * [方法名生成sql](methodNameToSql.md)
   * [自动补全 检测正确等功能](complete.md)
   * [ognl支持](ognl.md)
