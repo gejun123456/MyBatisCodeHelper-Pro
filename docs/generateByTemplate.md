@@ -13,6 +13,9 @@ global config选择为MybatisCodeHelperPro, template选择为MybatisCodeHelperMi
 然后修改模版global config, mybatisCodeHelper.vm的配置，将mybatis generator的配置迁移到模版中
 
 可以从IDEA数据库表上右键Mybatis generator下面迁移到模版生成，把生成的路径等信息拷出来到MybatisCodeHelper.vm那里生成即可
+![projectTemplateInfo](https://images.brucege.com/projectTemplateInfo.png)
+
+![mybatisCodeHelper.vm](https://images.brucege.com/easyCodeMybatisCodeHelperGlobalConfig.png)
 
 建议每个生成配置的global config copy一下改成当前项目的名字，比如MybatisCodeHelperPro-DemoProject这种
 
