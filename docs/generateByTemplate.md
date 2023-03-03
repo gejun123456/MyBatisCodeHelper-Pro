@@ -12,7 +12,7 @@ global config选择为MybatisCodeHelperPro, template选择为MybatisCodeHelperMi
 
 然后修改模版global config, mybatisCodeHelper.vm的配置，将mybatis generator的配置迁移到模版中
 
-可以利用到mybatis generator快速选src目录和包名的功能。
+可以利用到mybatis generator快速选src目录和包名的功能，部分配置尚未支持，需要自己改模版
 
 可以从IDEA数据库表上右键Mybatis generator下面迁移到模版生成，把生成的路径等信息拷出来到MybatisCodeHelper.vm那里生成即可  
 
@@ -25,6 +25,7 @@ global config选择为MybatisCodeHelperPro, template选择为MybatisCodeHelperMi
 
 使用IDEA社区版的可以加qq群516959916，里面有社区版可用的模版插件
 
-未来将提供更多模版，欢迎大家提供模版，使用模版碰到问题可以联系我
+未来将提供更多模版，优化模版代码提示等，欢迎大家提供模版，使用模版碰到问题可以联系我
+
 
 
