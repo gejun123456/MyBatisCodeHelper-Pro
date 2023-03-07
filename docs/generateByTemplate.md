@@ -28,4 +28,7 @@ global config选择为MybatisCodeHelperPro, template选择为MybatisCodeHelperMi
 未来将提供更多模版，优化模版代码提示等，欢迎大家提供模版，使用模版碰到问题可以联系我
 
 
+###EasyCodeMybatisCodeHelper插件代码fork自https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件
+
+
 
