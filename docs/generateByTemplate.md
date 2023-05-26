@@ -7,8 +7,7 @@
 视频地址: https://www.bilibili.com/video/BV1dL41127SQ  
 
 github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载模版文件
-直接把模版文件拷到项目的easyCode目录来生成代码，插件有代码提示可以预览
-
+直接把模版文件拷到项目的easyCode目录来生成代码，写模版有代码提示，可以实时预览模版，直接在idea编辑器操作模版，可以把模版上传到git防止丢失  
 
 
 或者可以从json导入老模版   
