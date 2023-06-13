@@ -22,6 +22,8 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 
 推荐使用项目的easyCode目录，可以放到git中和同事共享防止丢失
 
+
+
 ### EasyCodeMybatisCodeHelper插件代码fork自https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件
 
 
