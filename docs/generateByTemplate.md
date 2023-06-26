@@ -22,7 +22,9 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 
 推荐使用项目的easyCode目录，可以放到git中和同事共享防止丢失
 
-
+## 怎么从之前设置配置的模版导入到 从easycode文件目录生成代码
+先将之前设置配置的导入到json，再从json导入到scratch那个，导入到scratch后 就可以直接复制easyCode文件夹到项目的根目录，
+弄一个group.json就可以生成代码了
 
 ### EasyCodeMybatisCodeHelper插件代码fork自https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件
 
