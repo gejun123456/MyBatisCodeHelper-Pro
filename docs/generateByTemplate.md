@@ -4,6 +4,8 @@
 
 ### MybatisCodeHelperPro插件为3.1.9或以上的版本，安装EasyCodeMybatisCodeHelper(1.3.0)版本插件来进行模版生成
 
+### 支持写模版代码提示，实时预览模版，直接在idea编辑器操作模版，可配置多个分组，最方便的模版生成代码插件
+
 视频地址: https://www.bilibili.com/video/BV1dL41127SQ  
 
 github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载模版文件
@@ -28,5 +30,6 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 
 ### EasyCodeMybatisCodeHelper插件代码fork自https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件
 
-
+## 我不会写模版怎么办？
+模版用的是velocity语法 文档:https://velocity.apache.org/ 碰到模版问题也可联系我来弄弄
 
