@@ -1,3 +1,63 @@
+<strong>3.2.1</strong>
+<ul>
+<li>[New]一键将cdata语句转换为&amp;gt;&amp;lt;这种方便SQL进行代码提示</li>
+<li>[New]xml上右键可以转换sql到xml,将大于号小于号转换为&amp;lt;&amp;gt;这种</li>
+<li>[FIX]controller模版import修复</li>
+<li>[FIX]部分机器离线激活出错</li>
+<li>[IMPROVE]mybatis log点击parameter log到相同的文件</li>
+<li>[IMPROVE]resultMap上autoMapProperty会根据java实体类字段的顺序来匹配 </li>
+</ul>
+<ul>
+<li>[New]convert cdata to &amp;gt;&amp;lt; for sql code completion</li>
+<li>[New]right click on xml to convert cdata to &amp;lt;&amp;gt;</li>
+<li>[FIX]fix controller template import</li>
+<li>[IMPROVE]mybatis log click parameter log to same file</li>
+<li>[IMPROVE]resultMap autoMapProperty will keep the order of java class field </li>
+</ul>
+<strong>3.2.0</strong>
+<ul>
+<li>[New]支持在map或map.entry类型上foreach</li>
+<li>[FIX]修复注解script标签解析依赖kotlin插件</li>
+<li>[FIX]生成代码结束的时候有可能导致项目卡住</li>
+<li>[FIX]exception修复</li>
+</ul>
+<ul>
+<li>[New]support using collection foreach on map or map.entry type</li>
+<li>[FIX]fix annotation sql with script depend on kotlin plugin</li>
+<li>[FIX]performance issue after generate code</li>
+<li>[FIX]exception fix</li>
+</ul>
+<strong>3.1.9</strong>
+<ul>
+<li>[New]支持xml调用枚举或者static变量上的方法解析</li>
+<li>[NEW]从模版文件生成代码代码提示支持</li>
+<li>[NEW]支持kotlin注解sql</li>
+<li>[FIX]mybatis xml未被使用的检测默认开启</li>
+<li>[FIX]findByXXBetween当if test null and empty勾选时生成问题</li>
+<li>[FIX]社区版使用mybatis database 自定义driver路径报错的问题</li>
+</ul>
+<ul>
+<li>[NEW]support xml use static field or enum with method</li>
+<li>[NEW]code completion when use template to generate</li>
+<li>[NEW]support kotlin annotation sql</li>
+<li>[FIX]mybatis xml unused check enable by default</li>
+<li>[FIX]findByXXBetween when if test null and empty is selected generate problem</li>
+<li>[FIX]community version use mybatis database driver jar error</li>
+</ul>
+<strong>3.1.8</strong>
+<ul>
+<li>[FIX]兼容2023.1最新eap版本</li>
+<li>[NEW]支持自定义lombok注解</li>
+<li>[IMPROVE]if test代码提示优化</li>
+<li>[IMPROVE]xml性能优化</li>
+<li>[NEW]迁移到模版生成代码</li>
+</ul>
+<ul>
+<li>[FIX]compatability for 2023.1 eap version</li>
+<li>[NEW]support customize lombok annotation</li>
+<li>[IMPROVE]if test completion improve</li>
+<li>[IMPROVE]xml performance improve</li>
+</ul>
 <strong>3.1.7</strong>
 <ul>
 <li>[FIX]兼容2023.1 eap版本</li>
