@@ -48,6 +48,7 @@
 - 离线激活的教程参考下图，先购买在线激活码: http://brucege.com/pay/view
 
 #### 请将离线激活里面的唯一码，还有购买的在线激活码发送给微信gejun12311,唯一码可以在idea设置 other mybatisCodeHelper拖最下面有个激活按钮找到
+#### 走 https://brucege.com/keys 可以用在线激活码转为离线激活码
 ![offline](https://images.brucege.com/offlineActivateNew.png)
 ![weichaturl](https://images.brucege.com/wechatme.png)
 
