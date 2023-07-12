@@ -22,7 +22,7 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 
 目前支持项目的easyCode目录或者scratch目录下的/extensions/EasyCode目录进行识别生成代码
 
-推荐使用项目的easyCode目录，可以放到git中和同事共享防止丢失
+推荐使用项目的easyCode目录，可以放到git中以及和同事共享防止丢失
 
 ## 怎么从之前设置配置的模版导入到 从easycode文件目录生成代码
 先将之前设置配置的导入到json，再从json导入到scratch那个，导入到scratch后 就可以直接复制easyCode文件夹到项目的根目录，
