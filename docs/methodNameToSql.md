@@ -136,7 +136,7 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 ## 注意的点  
 
 - 使用方法名生成sql 需要在接口中提供一个insert或save或add方法并以表对应的java对象为第一参数 (类似于 insert(User user) 需要通过User来进行方法名的推断) 使用了通用mapper或者mybatisplus的话 不需要insert方法
-- 2.7.5以上版本方法名生成sql不再依赖于insert方法 但需要一个BaseResultMap 里面包含 @Table注释，可以在表上使用mybatis generator来生成好
+- 2.7.5以上版本方法名生成sql不再依赖于insert方法 但需要一个BaseResultMap 里面包含 @Table注释，可以在表上右键使用mybatis generator左下角有个预览xml来生成好
 - 使用方法名生成的sql的字段会从数据库对象对应的resultMap中的数据库字段来设置。
 
 - "please check with your resultMap dose it contain all the property of 
