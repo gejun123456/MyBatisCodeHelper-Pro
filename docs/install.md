@@ -22,7 +22,7 @@
 
 重启**IDE**.
 
-### 注意插件市场有两个版本，两个版本功能一样，只是购买方式不一样，brucege.com网站购买的请下载不带marketplace edition的版本
+### 注意插件市场有两个版本，两个版本功能一样，只是购买方式不一样，brucege.com网站购买的请下载不带marketplace edition的版本t
 
 
 ## 激活
