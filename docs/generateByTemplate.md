@@ -28,10 +28,18 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 先将之前设置配置的导入到json，再从json导入到scratch那个，导入到scratch后 就可以直接复制easyCode文件夹到项目的根目录，
 弄一个group.json就可以生成代码了
 
-### EasyCodeMybatisCodeHelper插件代码fork自https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件
 
 ## 我不会写模版怎么办？
 模版用的是velocity语法 文档:https://velocity.apache.org/ 碰到模版问题也可联系我来弄弄
 
 ### 升级插件注意
 由于1.2.8版本对存储进行了更改，从1.2.7版本之前升级到之后的版本，需要先导出模版到json，升级到高版本然后导入json.
+
+### 模版生成的代码column连在了一起，中间没有逗号
+2023.1 idea升级了velocity，把$velocityHasNext 改成$foreach.hasNext即可
+
+
+### EasyCodeMybatisCodeHelper插件代码fork自 https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件
+
+
+
