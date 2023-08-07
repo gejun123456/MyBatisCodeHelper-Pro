@@ -38,6 +38,10 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 ### 模版生成的代码column连在了一起，中间没有逗号
 2023.1 idea升级了velocity，把$velocityHasNext 改成$foreach.hasNext即可
 
+### projectPath为空
+如果你的项目是一个多module平行的项目，没有一个总的project，可以在mybatisCodehelper.vm中将projectPath set为具体的路径  
+#set($projectPath="D:/workspace/idea/XXModule")
+
 
 ### EasyCodeMybatisCodeHelper插件代码fork自 https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件
 
