@@ -42,6 +42,12 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 如果你的项目是一个多module平行的项目，没有一个总的project，可以在mybatisCodehelper.vm中将projectPath set为具体的路径  
 #set($projectPath="D:/workspace/idea/XXModule")
 
+### GenerateCode(old)和GenerateFromEasyCodeFolder(new)的区别是啥
+GenerateCode(old)老的模版是在设置里面配置的,走的是设置里面的template globalConfig等配置,  
+GenerateFromEasyCodeFolder(new)是直接从easyCode文件夹下的模版生成的.
+当你使用GenerateFromEasyCodeFolder(new) 无需在设置里面配置模版，推荐使用GenerateFromEasyCodeFolder(new),  
+写模版有代码提示，可以实时预览模版，直接在idea编辑器操作模版，还可以加到git中方便与同事共享
+
 
 ### EasyCodeMybatisCodeHelper插件代码fork自 https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件
 
