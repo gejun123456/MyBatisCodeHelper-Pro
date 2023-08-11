@@ -52,6 +52,11 @@ GenerateFromEasyCodeFolder(new)是直接从easyCode文件夹下的模版生成�
 模版最上面有个链接 Add dependency for code completion,点击后会自动添加依赖,  
 之后编辑模版会有代码提示，编辑完模版后可以remove dependency来移除依赖
 
+## 为何包名和路径要放在mybatisCodeHelper.vm中，为啥不用ui配置路径
+包名和路径放在mybatisCodeHelper.vm的好处是方便放到git中和同事共享，不用每个人都去配置  
+未来也可利用这个来进行模版和已存在的文件直接对比，方便找到具体的路径,  
+mybatisCodeHelper.vm的路径和包名未来会加入自动提示，方便填写
+
 ## 模版例子
 #### 移除表名前缀 
 编辑globalconfig中的mybatisCodeHelper.vm
