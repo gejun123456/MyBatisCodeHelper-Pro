@@ -57,7 +57,7 @@ GenerateFromEasyCodeFolder(new)是直接从easyCode文件夹下的模版生成�
 编辑globalconfig中的mybatisCodeHelper.vm
 ```
 #if($tableInfo.obj.name.startsWith("table_"))
-$!tableInfo.setName($tableInfo.obj.name.substring(5))
+$!tableInfo.setName($tableInfo.name.substring(5))
 #end
 ```
 
