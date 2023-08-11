@@ -24,7 +24,7 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 
 推荐使用项目的easyCode目录，可以放到git中以及和同事共享防止丢失
 
-## 怎么从之前设置配置的模版导入到 从easycode文件目录生成代码
+## 怎么从之前用设置配置的模版导入到 从easycode文件目录生成代码
 先将之前设置配置的导入到json，再从json导入到scratch那个，导入到scratch后 就可以直接复制easyCode文件夹到项目的根目录，
 弄一个group.json就可以生成代码了
 
@@ -47,6 +47,88 @@ GenerateCode(old)老的模版是在设置里面配置的,走的是设置里面�
 GenerateFromEasyCodeFolder(new)是直接从easyCode文件夹下的模版生成的.  
 当你使用GenerateFromEasyCodeFolder(new) 无需在设置里面配置模版，推荐使用GenerateFromEasyCodeFolder(new),  
 写模版有代码提示，可以实时预览模版，直接在idea编辑器操作模版，还可以加到git中方便与同事共享
+
+### 写模版代码提示
+模版最上面有个链接 Add dependency for code completion,点击后会自动添加依赖,  
+之后编辑模版会有代码提示，编辑完模版后可以remove dependency来移除依赖
+
+### 模版例子
+#### 移除表名前缀 
+编辑globalconfig中的mybatisCodeHelper.vm
+```
+#if($tableInfo.obj.name.startsWith("table_"))
+$!tableInfo.setName($tableInfo.obj.name.substring(5))
+#end
+```
+
+#### 移除字段前缀
+编辑globalconfig中的mybatisCodeHelper.vm
+```
+#set($removeColumnPrefix="f_")
+#foreach($column in $tableInfo.fullColumn)
+#if($column.obj.name.startsWith($removeColumnPrefix))
+$!column.setName($tool.firstLowerCase($column.getName().substring(1)))
+#end
+#end
+```
+
+#### insert移除部分列
+编辑你的xml模版 比如insertBatch
+```
+    #set($insertSkipFields = ["create_time","update_time"])
+    <insert id="insertBatch" keyProperty="$!pk.name" useGeneratedKeys="true">
+        insert into $!{tableInfo.obj.name}
+        (
+#foreach($column in $tableInfo.otherColumn)
+#if($insertSkipFields.contains($column.obj.name))
+#elseif($foreach.hasNext)
+            $!column.obj.name,
+        #else
+            $!column.obj.name
+        #end#end
+        )
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (
+#foreach($column in $tableInfo.otherColumn)
+#if($insertSkipFields.contains($column.obj.name))
+#elseif($foreach.hasNext)
+            #{entity.$!{column.name}},
+#else
+            #{entity.$!{column.name}}
+#end#end
+            )
+        </foreach>
+    </insert>
+```
+
+#### 加上jdbcType typeHandler等
+编辑globalconfig中的mybatisCodeHelper.vm
+```
+#if($tool.newHashSet("java.lang.String").contains($column.type))
+        #set($jdbcType="VARCHAR")
+        #elseif($tool.newHashSet("java.lang.Integer","int").contains($column.type))
+        #set($jdbcType="INTEGER")
+        #else
+        ##其他类型
+        #set($jdbcType="VARCHAR")
+    #end
+$tool.call($column.ext.put("jdbcType", $jdbcType))
+```
+然后在xml中使用,ext是一个map，可以随意添加属性，方便用户使用
+```
+#{$!{column.name},jdbcType=$!{column.ext.jdbcType}}
+```
+这种代码调用即可
+
+#### 获取表名，字段名，字段类型，schema名
+```
+    表名= tableInfo.obj.name
+    字段名= column.obj.name
+    字段类型=$!tool.getField($tableInfo.fullColumn.get(0).obj.dataType, "typeName")
+    字段java类型=column.type
+    schema名=${tableInfo.obj.getParent().getName()}
+```
 
 
 ### EasyCodeMybatisCodeHelper插件代码fork自 https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件
