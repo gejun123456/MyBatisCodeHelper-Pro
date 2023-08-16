@@ -55,7 +55,7 @@ GenerateFromEasyCodeFolder(new)是直接从easyCode文件夹下的模版生成�
 ## 为何包名和路径要放在mybatisCodeHelper.vm中，为啥不用ui配置路径
 包名和路径放在mybatisCodeHelper.vm的好处是方便放到git中和同事共享，不用每个人都去配置  
 未来也可利用这个来进行模版和已存在的文件直接对比，方便找到具体的路径,  
-mybatisCodeHelper.vm的路径和包名未来会加入自动提示，方便填写
+mybatisCodeHelper.vm的路径和包名未来会加入自动提示，方便填写  
 
 ## 模版例子
 #### 移除表名前缀 
@@ -65,6 +65,14 @@ mybatisCodeHelper.vm的路径和包名未来会加入自动提示，方便填写
 $!tableInfo.setName($tableInfo.name.substring(5))
 #end
 ```
+
+也可以定义一个变量
+#set($entityName=$tableInfo.name)
+#if($tableInfo.obj.name.startsWith("table_"))
+#set($entityName=$tableInfo.name.substring(5))
+#end
+
+在模版中使用 ${entityName}来进行引用，多个模版可以直接引用这个变量
 
 #### 移除字段前缀
 编辑globalconfig中的mybatisCodeHelper.vm
