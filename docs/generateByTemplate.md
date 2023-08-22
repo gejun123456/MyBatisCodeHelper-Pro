@@ -67,12 +67,20 @@ $!tableInfo.setName($tableInfo.name.substring(5))
 ```
 
 也可以定义一个变量
+```
 #set($entityName=$tableInfo.name)
 #if($tableInfo.obj.name.startsWith("table_"))
 #set($entityName=$tableInfo.name.substring(5))
 #end
-
+```
 在模版中使用 ${entityName}来进行引用，多个模版可以直接引用这个变量
+
+#### Entity类添加后缀
+```
+#set($entityName=$tableInfo.name)
+#set($entityName = $tool.append($entityName,‘Entity’))
+```
+模版中使用 ${entityName}来进行引用
 
 #### 移除字段前缀
 编辑globalconfig中的mybatisCodeHelper.vm
@@ -144,7 +152,7 @@ $tool.call($column.ext.put("jdbcType", $jdbcType))
 ```
 
 
-### EasyCodeMybatisCodeHelper插件代码fork自 https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件
+### EasyCodeMybatisCodeHelper插件代码fork自 https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件,提供了直接从模版生成代码的功能
 
 
 
