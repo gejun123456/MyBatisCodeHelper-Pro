@@ -25,6 +25,9 @@
 
 ![insertList](https://images.brucege.com/insertList.gif)
 
+## 支持生成 mybatisplus的queryWrapper
+![methodToQueryWrapper](https://images.brucege.com/MethodNameToMybatisplusWrapper.gif)
+
 ## 使用方法  
 - 在mybatis的接口文件上的方法名(只需要一个名字，不需要返回值和参数 会自动推导出来)上使用alt+enter Generate mybatis sql 或者选中方法名右键来生成
 
