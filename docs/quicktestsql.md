@@ -46,6 +46,16 @@
     </plugins>
 ```
 
+或者修改Inteceptor，修改setUp方法加入interceptor即可
+```java
+SqlSessionFactory builder = new SqlSessionFactoryBuilder().build(UserMapperTest.class.getClassLoader().getResourceAsStream("mybatisTestConfiguration/UserMapperTestConfiguration.xml"));
+        //you can use builder.openSession(false) to not commit to database
+PageInterceptor interceptor = new PageInterceptor();
+builder.getConfiguration().addInterceptor(interceptor);
+mapper = builder.getConfiguration().getMapper(UserMapper.class, builder.openSession(true));
+```
+
+
 ## 生成testcase支持mybatisplus
 
 在生成的testcase中有一个setUp方法，将SqlSessionFactoryBuilder改成MybatisSqlSessionFactoryBuilder即可测试mybatisplus自带的一些方法
@@ -56,7 +66,7 @@
 ```
 @org.junit.BeforeClass
     public static void setUpMybatisDatabase() {
-        SqlSessionFactory builder = new SqlSessionFactoryBuilder().build(SymphonyClientMapperTest.class.getClassLoader().
+        SqlSessionFactory builder = new MybatisSqlSessionFactoryBuilder().build(SymphonyClientMapperTest.class.getClassLoader().
                 getResourceAsStream("mybatisTestConfiguration/SymphonyClientMapperTestConfiguration.xml"));
         final MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
         interceptor.addInnerInterceptor(new OptimisticLockerInnerInterceptor());
