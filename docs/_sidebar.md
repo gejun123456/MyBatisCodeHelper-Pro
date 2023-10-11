@@ -22,6 +22,7 @@
   * [达梦等其他数据库支持](damengsupport.md)
   * [mybatis日志转sql](sqlLog.md)
   * [安装和激活和解绑](install.md)
+  * [社区版支持](community.md)
   * [设置详解](settings.md)
   * [更新日志](changelog.md)
   * [常见问题](question.md)
