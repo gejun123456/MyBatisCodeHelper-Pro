@@ -36,32 +36,33 @@
 
 ## 插件未激活与激活状态的功能比较  未激活版的功能可以免费一直使用下去
 
-功能点  |  未激活版 | 激活版
------   | ------ | -----
-接口与xml互相跳转 更换图标|  ✔ | ✔
-接口方法名重构| ✔| ✔
-一键添加param| ✔| ✔
-xml中的 param的自动提示 resultMap refid 等的自动提示|✔| ✔
-resultMap中的property的自动提示|✔|✔
-检测没有使用的xml 可一键删除|✔|✔
-检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml方法块|✔|✔
-检测resultmap的property是否有误|✔|✔
-支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot|✔|✔
-一键生成分页查询|✔|✔
-代码模版，生成cdata和collection语句|✔|✔
-一键添加resultMap中未被使用的属性| ✔|✔
-一键生成mybatis接口的testcase |✘|✔
-通过方法名生成sql | ✘| ✔
-通过数据库生成crud代码| ✘|✔
-通过java类生成建表语句|✘|✔
-xml collection中的 param提示| ✘|✔
-识别mybatis的trim where include等标签 全自动sql补全| ✘|✔
-检测#{中的参数是否正确| ✘|✔
-if test when test foreach collection $中的OGNL支持| ✘|✔
-param重构功能(2.7.2)| ✘|✔
-resultMap中column提示与检测(2.7.2)| ✘|✔
-Mybatis xml代码格式化(2.8.2)| ✘|✔
-从sql生成resultMap和java类 | ✘|✔
+功能点  | 未激活版 | 激活版
+-----   |------| -----
+接口与xml互相跳转 更换图标| ✔    | ✔
+接口方法名重构| ✔    | ✔
+一键添加param| ✔    | ✔
+xml中的 param的自动提示 resultMap refid 等的自动提示| ✔    | ✔
+resultMap中的property的自动提示| ✔    |✔
+检测没有使用的xml 可一键删除| ✔    |✔
+检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml方法块| ✔    |✔
+检测resultmap的property是否有误| ✔    |✔
+支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot| ✔    |✔
+一键生成分页查询| ✔    |✔
+代码模版，生成cdata和collection语句| ✔    |✔
+一键添加resultMap中未被使用的属性| ✔    |✔
+一键生成mybatis接口的testcase | ✘    |✔
+通过方法名生成sql | ✘    | ✔
+通过数据库生成crud代码| ✘    |✔
+通过java类生成建表语句| ✘    |✔
+xml collection中的 param提示| ✘    |✔
+识别mybatis的trim where include等标签 全自动sql补全| ✘    |✔
+检测#{中的参数是否正确| ✘    |✔
+if test when test foreach collection $中的OGNL支持| ✘    |✔
+param重构功能(2.7.2)| ✘    |✔
+resultMap中column提示与检测(2.7.2)| ✘    |✔
+Mybatis xml代码格式化(2.8.2)| ✘    |✔
+从sql生成resultMap和java类 | ✘    |✔
+从sql直接生成mybatis xml和java接口方法 | ✘    |✔
 
 可以免费试用: http://brucege.com/pay/view
 

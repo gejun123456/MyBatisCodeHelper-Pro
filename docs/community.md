@@ -10,4 +10,5 @@ https://www.bilibili.com/video/BV1PF411U797
 ## 代码提示等
 ![code complete](https://images.brucege.com/communityCodeCompletion.png)
 
-
+## 注意需要配置xml文件夹和数据库schema的映射关系后才能有代码提示
+![config](https://images.brucege.com/configConnectionAndSchema.png)
