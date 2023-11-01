@@ -47,6 +47,11 @@ com.mapper 为mybatis接口的包名
 </Configuration>
 ```
 
+### 如果sql太长比如一条sql超过20000字符，可以把sql拷到TextToConvert那里进行识别
+
+![sql太长](https://images.brucege.com/MybatisLogTextToConvert.png)
+
+
 ### 从日志跳转到xml (3.1.3版本)
 
 确保log配置打印了class信息
