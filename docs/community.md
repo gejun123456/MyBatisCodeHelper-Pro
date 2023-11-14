@@ -12,3 +12,7 @@ https://www.bilibili.com/video/BV1PF411U797
 
 ## 注意需要配置xml文件夹和数据库schema的映射关系后才能有代码提示
 ![config](https://images.brucege.com/configConnectionAndSchema.png)
+
+需要先安装DatabaseHelper插件 然后安装群文件中的MybatisCodeHelperPro插件
+
+生成代码前需要点击一下表名刷新出来表字段即可

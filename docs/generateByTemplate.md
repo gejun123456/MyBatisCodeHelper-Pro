@@ -25,9 +25,10 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 推荐使用项目的easyCode目录，可以放到git中以及和同事共享防止丢失
 
 ### 怎么从之前用设置配置的模版导入到 从easycode文件目录生成代码
-先将之前设置配置的导入到json，再从json导入到scratch那个，导入到scratch后 就可以直接复制easyCode文件夹到项目的根目录，
-弄一个group.json就可以生成代码了
-
+先将之前设置配置的本地导出到json，再从json导入到scratch那个，导入到scratch后 就可以直接复制easyCode文件夹到项目的根目录，
+从https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 弄一个group.json放在easyCode目录下就可以生成代码了
+![exportAndImport](https://images.brucege.com/exportAndImport.png)
+![fromScratch](https://images.brucege.com/scratchTemplateGenerate.png)
 
 ### 我不会写模版怎么办？
 模版用的是velocity语法 文档:https://velocity.apache.org/ 碰到模版问题也可联系我来弄弄
