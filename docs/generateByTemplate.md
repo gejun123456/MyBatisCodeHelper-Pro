@@ -24,26 +24,29 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 
 推荐使用项目的easyCode目录，可以放到git中以及和同事共享防止丢失
 
-### 怎么从之前用设置配置的模版导入到 从easycode文件目录生成代码
+### 怎么从之前用设置配置的模版导入到 从easycode文件目录生成代码  
 先将之前设置配置的本地导出到json，再从json导入到scratch那个，导入到scratch后 就可以直接复制easyCode文件夹到项目的根目录，
 从https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 弄一个group.json放在easyCode目录下就可以生成代码了
 ![exportAndImport](https://images.brucege.com/exportAndImport.png)
 ![fromScratch](https://images.brucege.com/scratchTemplateGenerate.png)
 
-### 我不会写模版怎么办？
+### group.json 做啥用的  
+group.json是配置关联关系的，模版和globalConfig和typeMapper都是多对多的关系通过配置json的group名来进行区分，一个项目可以有多个生成组
+
+### 我不会写模版怎么办？  
 模版用的是velocity语法 文档:https://velocity.apache.org/ 碰到模版问题也可联系我来弄弄
 
-## 升级插件注意
+## 升级插件注意  
 由于1.2.8版本对存储进行了更改，从1.2.7版本之前升级到之后的版本，需要先导出模版到json，升级到高版本然后导入json.
 
-## 模版生成的代码column连在了一起，中间没有逗号
+## 模版生成的代码column连在了一起，中间没有逗号  
 2023.1 idea升级了velocity，把$velocityHasNext 改成$foreach.hasNext即可
 
-### projectPath为空
+### projectPath为空  
 如果你的项目是一个多module平行的项目，没有一个总的project，可以在mybatisCodehelper.vm中将projectPath set为具体的路径  
 #set($projectPath="D:/workspace/idea/XXModule")
 
-## GenerateCode(old)和GenerateFromEasyCodeFolder(new)的区别是啥
+## GenerateCode(old)和GenerateFromEasyCodeFolder(new)的区别是啥  
 GenerateCode(old)老的模版是在设置里面配置的,走的是设置里面的template globalConfig等配置,  
 GenerateFromEasyCodeFolder(new)是直接从easyCode文件夹下的模版生成的.  
 当你使用GenerateFromEasyCodeFolder(new) 无需在设置里面配置模版，推荐使用GenerateFromEasyCodeFolder(new),  
