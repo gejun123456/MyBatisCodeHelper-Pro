@@ -2,7 +2,7 @@
 
 ### 部分用户有定制的需求，比如公司代码要加特定的注释等，或者用了公司内部框架等，推荐用模版来生成代码
 
-### 安装EasyCodeMybatisCodeHelper(1.3.4)版本插件来进行模版生成
+### 安装EasyCodeMybatisCodeHelper(1.3.4)版本插件来进行模版生成 [下载地址](https://plugins.jetbrains.com/plugin/13847-easycode-mybatiscodehelper)
 
 ## 支持写模版代码提示，实时预览模版，直接在idea编辑器操作模版，可配置多个分组，直接从模版来生成代码.最方便的模版生成代码插件
 
