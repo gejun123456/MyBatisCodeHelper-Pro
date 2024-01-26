@@ -14,6 +14,7 @@
   * [SqlErrorFix](en/sqlred.md)
   * [typeSafeSql](en/typeSafe.md)
   * [Java class generate create table sql](en/javaToCrud.md)
+  * [Sql to Mybatis xml and java statemetn](en/sqlToMybatis.md)
   * [Install and activate](en/install.md)
   * [SqlLog](en/sqlLog.md)
   * [ChangeLog](en/changelog.md)
