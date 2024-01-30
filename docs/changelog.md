@@ -1,3 +1,112 @@
+<strong>3.2.9</strong>
+<ul>
+<li>[IMPROVE]kotlin报错优化</li>
+<li>[IMPROVE]支持mybatis ognl单个参数可以使用任意名字引用</li>
+<li>[IMPROVE]提供界面来合并xml代码</li>
+<li>[FIX]select中的column包含点号时添加到java类中报错优化</li>
+</ul>
+<ul>
+<li>[IMPROVE]kotlin exception fix</li>
+<li>[IMPROVE]support ognl use any name for single parameter</li>
+<li>[IMPROVE]provide ui to merge xml</li>
+<li>[FIX]select column with dot exception fix</li>
+</ul>
+<strong>3.2.8</strong>
+<ul>
+<li>[IMPROVE]性能优化，当有大量xml，在创建对应方法的xml后方法没有取消标红问题</li>
+<li>[FIX]2023.3 当查询为select *时 resultMap column的提示和检测</li>
+<li>[FIX]使用kotlin时select字段检测优化</li>
+<li>[FIX]java接口方法返回值类型检测可能出现的null pointer exception</li>
+<li>[IMPROVE]使用Autowire注解替代Resource注解</li>
+</ul>
+<ul>
+<li>[IMPROVE]performance improvement when contain many xml</li>
+<li>[IMPROVE]for 2023.3 version, when select *, resultMap column inspection and auto completion support</li>
+<li>[FIX]select column inspection when resultType is from kotlin</li>
+<li>[FIX]java method return type inspection null pointer</li>
+<li>[IMPROVE]use autowire to replace resource annotation</li>
+</ul>
+<strong>3.2.6</strong>
+<ul>
+<li>[IMPROVE]从sql生成java接口方法的参数会根据字段类型来做判断</li>
+<li>[IMPROVE]java接口方法返回值类型和xml resultType或resultMap不一致时可以快速修复java接口方法返回值类型</li>
+<li>[FIX]从xml生成java类和resultMap报错优化</li>
+<li>[FIX]支持kotlin接口参数为List类型的解析，支持泛型? extends解析</li>
+<li>[FIX]select中查询字段检测优化了resultMap中使用columnPrefix的检测</li>
+<li>[NEW]可以快速添加typeMapper,根据表中未匹配的字段来快速添加</li>
+</ul>
+<ul>
+<li>[IMPROVE]from sql generate mybatis java method param type will based on query column type</li>
+<li>[IMPROVE]provide auto fix on java method return type when java method return type is different to xml resultType or resultmap type</li>
+<li>[FIX]fix exception when use xml generate java class and resultMap</li>
+<li>[FIX]support param completion and inspection when method is using kotlin with List parameter, support ? extend as well</li>
+<li>[FIX]select query column inspection will work when resultmap contains columnPrefix</li>
+<li>[NEW]add typeMapper quicker when table has unmapped columns</li>
+</ul>
+<strong>3.2.5</strong>
+<ul>
+<li>[IMPROVE]可以从resultmap type快速配置typealias</li>
+<li>[NEW]从sql快速生成mybatis的java接口方法和xml</li>
+<li>[NEW]从#{}快速生成if test语句</li>
+<li>[FIX]兼容2023.3 eap版本</li>
+<li>[FIX]修复InvalidElementAccessException</li>
+<li>[IMPROVE]快速修复java接口方法返回类型和xml返回类型不一致</li>
+</ul>
+<ul>
+<li>[IMPROVE]config typeAlias when resultMap type is not found</li>
+<li>[NEW]from sql generate mybatis method and xml, replace value to #{}</li>
+<li>[NEW]add if test for #{}</li>
+<li>[FIX]compatability for 2023.3 eap version</li>
+<li>[FIX]fix InvalidElementAccessException</li>
+<li>[IMPROVE]quick fix for java method return type different from xml return type</li>
+</ul>
+<strong>3.2.4</strong>
+<ul>
+<li>[IMPROVE]check resultMap columns支持更复杂的resultmap检测</li>
+<li>[FIX]用户禁用了kotlin插件导致的#{}没有代码提示</li>
+<li>[IMPROVE]支持idea社区版在xml上填入参数预览sql</li>
+<li>[IMPROVE]使用convertTextToSql不再限制sql的长度</li>
+<li>[NEW]方法名生成sql支持mybatis flex框架</li>
+</ul>
+<ul>
+<li>[IMPROVE]check resultMap columns support more complex resultmap</li>
+<li>[FIX]fix completion on #{} when disable kotlin plugin</li>
+<li>[IMPROVE]support preview xml on intellij community version</li>
+<li>[IMPROVE]convert log to sql wont limit sql length</li>
+</ul>
+<strong>3.2.3</strong>
+<ul>
+<li>[NEW]like语句后面提示likeUserName这种并且直接bind好</li>
+<li>[FIX]select * 不再提示把column加到resultMap中</li>
+<li>[FIX]部分用户密文失败修复</li>
+<li>[FIX]mybatis log linux系统临时文件夹问题</li>
+<li>[IMPROVE]修复使用老版本api annotator可能会导致的性能问题</li>
+</ul>
+<ul>
+<li>[NEW]after like statement will auto bind</li>
+<li>[FIX]mybatis log linux temp folder issue</li>
+<li>[IMPROVE]fix potential performance issue</li>
+</ul>
+<strong>3.2.2</strong>
+<ul>
+<li>[NEW]支持#{}中使用数组操作符解析</li>
+<li>[IMPROVE]jdbcType会根据java类型来优先提示</li>
+<li>[NEW]检测查询的字段但是resultMap或者resultType中没有并且可以一键加过去</li>
+<li>[IMPROVE]支持mybatis generator配置xml后缀</li>
+<li>[NEW]支持jakarta注解</li>
+<li>[IMPROVE]方法名生成sql支持resultMap extends</li>
+<li>[New]从方法名生成到mybatisplus的QueryWrapper</li>
+<li>[NEW]生成testcase支持生成到mybatisplus</li>
+</ul>
+<ul>
+<li>[NEW]support #{} use array[] operation</li>
+<li>[NEW]detect select column not in resultMap or resultType, can add them quickly to resultMap or resultType</li>
+<li>[IMPROVE]support mybatis generator configure xml suffix</li>
+<li>[NEW]support jakarta annotation</li>
+<li>[IMPROVE]method name to sql support resultMap extends</li>
+<li>[New]mybatis plus method name to QueryWrapper</li>
+<li>[NEW]generate testcase support mybatisplus</li>
+</ul>
 <strong>3.2.1</strong>
 <ul>
 <li>[New]一键将cdata语句转换为&amp;gt;&amp;lt;这种方便SQL进行代码提示</li>
