@@ -16,6 +16,9 @@
 请添加ignore注释 参考
 ![chooseWhenAutoComplete](https://images.brucege.com/chooseWhenAutoComplete.gif)
 
+### 在编辑choose when时，可以把其他when语句设置为ignore，这样写when语句会有代码提示和检测，效率高一些
+
+
 ### 使用${}的sql会标红
 
 由于$中可以使用任意的字符串，无法解析具体的sql是啥，插件没有将${}加入sql解析，可以在${}的后面添加一个注释代表真正可能的sql，比如引用常量的时候，需要把常量的值放到注释中
