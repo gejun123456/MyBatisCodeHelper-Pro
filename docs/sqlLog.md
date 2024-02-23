@@ -47,9 +47,13 @@ com.mapper 为mybatis接口的包名
 </Configuration>
 ```
 
-### 如果sql太长比如一条sql超过20000字符，可以把sql拷到TextToConvert那里进行识别
+### 在idea的日志中，点击parameter就可以跳转到最终的sql
+
+### 如果sql太长比如一条sql超过20000字符，插件为了避免性能影响这个时候不能点击parameter跳转，可以把sql拷到TextToConvert框那里进行识别
 
 ![sql太长](https://images.brucege.com/MybatisLogTextToConvert.png)
+
+### 如果你的参数包含换行符，可以用sql and parameter 那里，把sql和参数拷到那里进行识别
 
 
 ### 从日志跳转到xml (3.1.3版本)
