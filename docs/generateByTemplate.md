@@ -6,7 +6,7 @@
 
 ## 支持写模版代码提示，实时预览模版，直接在idea编辑器操作模版，可配置多个分组，直接从模版来生成代码.最方便的模版生成代码插件
 
-视频地址: https://www.bilibili.com/video/BV1dL41127SQ  
+视频地址: https://www.bilibili.com/video/BV19C4y1Y7RN
 
 github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载模版文件
 直接把模版文件拷到项目的easyCode目录或者Scratches And Consoles的/extensions/EasyCode到来生成代码，写模版有代码提示，可以实时预览模版，直接在idea编辑器操作模版 
