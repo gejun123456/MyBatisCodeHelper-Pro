@@ -1,0 +1,86 @@
+
+#* @vtlvariable name="tableName" type="java.lang.String" *#
+#* @vtlvariable name="entityPackageName" type="java.lang.String" *#
+#* @vtlvariable name="entityClassName" type="java.lang.String" *#
+#* @vtlvariable name="servicePackageName" type="java.lang.String" *#
+#* @vtlvariable name="serviceInterfacePackage" type="java.lang.String" *#
+#* @vtlvariable name="serviceClassName" type="java.lang.String" *#
+#* @vtlvariable name="serviceInterfaceClassName" type="java.lang.String" *#
+#* @vtlvariable name="mapperPackageName" type="java.lang.String" *#
+#* @vtlvariable name="mapperClassName" type="java.lang.String" *#
+#* @vtlvariable name="controllerPackage" type="java.lang.String" *#
+#* @vtlvariable name="tableRemark" type="java.lang.String" *#
+#* @vtlvariable name="myDate" type="java.util.Date" *#
+#* @vtlvariable name="simpleDateFormat" type="java.text.SimpleDateFormat" *#
+package $!{controllerPackage};
+import $!{entityPackageName}.$!{entityClassName};
+###set($realServiceName = $!{serviceClassName}+'Impl')
+import $!{serviceInterfacePackage}.$!{serviceInterfaceClassName};
+import org.springframework.web.bind.annotation.*;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
+#set($serviceFirstLower = $!{serviceInterfaceClassName.substring(0,1).toLowerCase()}+$!{serviceInterfaceClassName.substring(1,$!{serviceInterfaceClassName.length()})})
+#set($entityFirstLower=$!{entityClassName.substring(0,1).toLowerCase()}+$!{entityClassName.substring(1,$!{entityClassName.length()})})
+import org.springframework.beans.factory.annotation.Autowired;
+
+/**
+* $!{tableRemark}($!{tableName})表控制层
+*
+* @author xxxxx
+*/
+@RestController
+@RequestMapping("/$!{tableName}")
+public class $!{entityClassName}Controller {
+    /**
+    * 服务对象
+    */
+    @Autowired
+    private $!{serviceInterfaceClassName} $!{serviceFirstLower};
+
+        /**
+     * 通过主键查询单条数据
+     *
+     * @param id 主键
+     * @return 单条数据
+     */
+    @GetMapping("{id}")
+    public ResponseEntity<$!{entityClassName}> queryById(@PathVariable("id") Integer id) {
+        return ResponseEntity.ok(this.${serviceFirstLower}.selectByPrimaryKey(id));
+    }
+
+    /**
+     * 新增数据
+     *
+     * @param $!{entityFirstLower} 实体
+     * @return 新增结果
+     */
+    @PostMapping(value = "/add")
+    public ResponseEntity< Object> add($!{entityClassName} $!{entityFirstLower}) {
+        this.${serviceFirstLower}.insertSelective($!{entityFirstLower})
+        return new ResponseEntity<>("created successfully", HttpStatus.OK);
+    }
+
+    /**
+     * 编辑数据
+     *
+     * @param $!{entityFirstLower} 实体
+     * @return 编辑结果
+     */
+    @PutMapping(value = "/update")
+    public ResponseEntity< Object> edit($!{entityClassName} $!{entityFirstLower}) {
+        this.${serviceFirstLower}.updateByPrimaryKeySelective($!{entityFirstLower})
+        return new ResponseEntity<>("updated successfully", HttpStatus.OK);
+    }
+
+    /**
+     * 删除数据
+     *
+     * @param id 主键
+     * @return 删除是否成功
+     */
+    @PostMapping(value = "/delete/{id}")
+    public ResponseEntity< Object> deleteById(@PathVariable("id") Integer id) {
+        this.${serviceFirstLower}.deleteByPrimaryKey(id)
+        return new ResponseEntity<>("deleted successfully", HttpStatus.OK);
+    }
+}
