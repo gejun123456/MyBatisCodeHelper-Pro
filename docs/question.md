@@ -166,9 +166,17 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 请加入qq群516959916 里面有专门支持社区版的插件，支持各种数据
 
 
+## 如何设置插件为中文
+可以尝试以下途径
+1. 在idea中安装中文支持插件
+2. 把操作系统的语言设置为中文
+3. 设置vmOption添加 -Duser.language=zh -Duser.region=CN
+一般会变成中文，有问题请再联系我
+
+
 
 
 ## 和其他插件对比
 插件拥有最好的mybatis sql代码提示，代码检测，重构，泛型支持，typeAlias支持，快速测试sql，方法名生成sql等。
 可以参考
-https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/typeSafe
+https://brucege.com/doc/#/typeSafe
