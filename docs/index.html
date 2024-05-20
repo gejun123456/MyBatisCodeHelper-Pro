@@ -7,6 +7,11 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/docsify/4.13.1/themes/vue.min.css">
+  <style>
+    .sidebar {
+      width: 260px;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
@@ -34,9 +39,45 @@
       //   depth: 6,
       //   hideOtherSidebarContent: false, // whether or not to hide other sidebar content
       // }
+      ads: [
+        {
+          img: 'https://images.brucege.com/request2.svg',
+          href: 'https://api-buddy.com?utm_source=MybatisCodeHelperPro&utm_campaign=product'
+        },{
+
+        }
+        ],
     }
+
+
   </script>
   <script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.13.1/docsify.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.13.1/plugins/search.min.js"></script>
+<!--  <script src="https://unpkg.com/docsify-ads@1.0.4/dist/docsify-ads.min.js"></script>-->
+
+<script type="text/javascript">
+  !function(o, e) {
+    "object" == typeof exports && "object" == typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define([], e) : "object" == typeof exports ? exports.DocsifyAds = e() : o.DocsifyAds = e()
+  }(this, (()=>(()=>{
+            "use strict";
+            var o = {};
+            return window.$docsify || (window.$docsify = {}),
+                    window.$docsify.plugins = (window.$docsify.plugins || []).concat((function(o, e) {
+                              o.doneEach((function() {
+                                        const d = document.querySelector(".sidebar-nav");
+                                        var i = document.createElement("div");
+                                        i.innerHTML = `<a target='_blank' href='https://api-buddy.com?utm_source=MybatisCodeHelperPro&utm_campaign=product'><img src='https://images.brucege.com/request2.svg'/></a>`,
+                                        d.insertBefore(i, d.firstChild),
+                                        console.info("docsify-ads render success!")
+                                      }
+                              ))
+                            }
+                    )),
+                    o = o.default
+          }
+  )()));
+</script>
+
+
 </body>
 </html>
