@@ -39,14 +39,14 @@
       //   depth: 6,
       //   hideOtherSidebarContent: false, // whether or not to hide other sidebar content
       // }
-      ads: [
-        {
-          img: 'https://images.brucege.com/request2.svg',
-          href: 'https://api-buddy.com?utm_source=MybatisCodeHelperPro&utm_campaign=product'
-        },{
-
-        }
-        ],
+      // ads: [
+      //   {
+      //     img: 'https://images.brucege.com/request2.svg',
+      //     href: 'https://api-buddy.com?utm_source=MybatisCodeHelperPro&utm_campaign=product'
+      //   },{
+      //
+      //   }
+      //   ],
     }
 
 
@@ -66,8 +66,11 @@
                               o.doneEach((function() {
                                         const d = document.querySelector(".sidebar-nav");
                                         var i = document.createElement("div");
-                                        i.innerHTML = `<a target='_blank' href='https://api-buddy.com?utm_source=MybatisCodeHelperPro&utm_campaign=product'><img src='https://images.brucege.com/request2.svg'/></a>`,
+                                        i.innerHTML = `<a target='_blank' href='https://api-buddy.com?utm_source=MybatisCodeHelperPro&utm_campaign=product'><img src='https://images.brucege.com/request2.svg' style="width: 220px"/></a>`;
+                                        var i2 = document.createElement("div");
+                                        i2.innerHTML = `<a target='_blank' href='https://plugins.jetbrains.com/plugin/9360-generateallsetter'><img src='https://images.brucege.com/GenerateAllSetter.png' style="width:220px"/></a>`;
                                         d.insertBefore(i, d.firstChild),
+                                        d.insertBefore(i2,d.firstChild)
                                         console.info("docsify-ads render success!")
                                       }
                               ))
