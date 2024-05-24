@@ -11,11 +11,11 @@
 
 驱动下载地址:https://share.weiyun.com/mdyhnTtL, 如果有问题，请联系我
 
-如果急用，请把方言配置为generic sql 然后使用官方的驱动
+如果急用，请把方言配置为generic sql 然后使用官方的驱动,注意这个方法sql代码提示很少，sql会标红等
 官方驱动下载地址:https://eco.dameng.com/download/
 
 
-## 复杂但是代码提示更好的方案
+## 如果实在用不了 复杂的方法
 
 本地弄一个 oracle，把达梦的表使用DTS工具迁移过去，然后在 oracle 的表上操作
 
