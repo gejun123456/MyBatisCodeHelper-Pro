@@ -9,9 +9,11 @@
 上面文章中的驱动 需要改为我改过的驱动 idea会把达梦数据库识别为oracle数据库。
 兼容的是oracle的语法，达梦数据库支持的非oracle语法则不能识别。
 
-如果还不行，请把方言配置为generic sql 然后使用官方的驱动
+驱动下载地址:https://share.weiyun.com/mdyhnTtL, 如果有问题，请联系我
 
-驱动在qq群文件 兼容dm7 和 dm8. dm8有点问题，可以先试试，不行再联系我
+如果急用，请把方言配置为generic sql 然后使用官方的驱动
+官方驱动下载地址:https://eco.dameng.com/download/
+
 
 ## 复杂但是代码提示更好的方案
 
