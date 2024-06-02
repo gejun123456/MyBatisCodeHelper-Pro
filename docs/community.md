@@ -15,4 +15,6 @@ https://www.bilibili.com/video/BV1PF411U797
 
 需要先安装DatabaseHelper插件 然后安装群文件中的MybatisCodeHelperPro插件
 
+DatabaseHelper插件:https://plugins.jetbrains.com/plugin/20294-databasehelper
+
 生成代码前需要点击一下表名刷新出来表字段即可

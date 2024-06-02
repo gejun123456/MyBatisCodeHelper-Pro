@@ -13,8 +13,9 @@
 
 ![configPluginDatabase2](https://images.brucege.com/configPluginDatabase2.png)
 
-- 如果有多个数据库，并且有相同的表名需要配置
+- 使用 postgresql，oracle,sqlserver，或者多个数据库有相同表名时需要配置 resolution scope,解析范围
 
+需要先反选 All，再选自己对应的库，或者按你的xml对应的文件夹路径来选择
 ![resolutionScope](https://images.brucege.com/resolutionScope.png)
 
 
