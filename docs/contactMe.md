@@ -1,6 +1,7 @@
 ## 联系我
 - 加入qq群 由于Intellij插件市场需要两天审核  插件的bug修复 最新版本 会先放在qq群中 出现任何问题可在qq群反馈
 
+[![加入QQ5群](https://img.shields.io/badge/chat-QQ群-46BC99.svg?style=flat-square)](https://qm.qq.com/q/dYYkYSpLoW)
 ![qqGroup](https://images.brucege.com/qq5New.png)
 2群: 914051156 (人满)  
 3群：598080979 (人满)  
