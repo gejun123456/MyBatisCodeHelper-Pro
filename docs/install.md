@@ -27,12 +27,12 @@
 
 ## 激活
 
-### 激活码激活
+### 激活码激活  
 
-- 未激活时IDEA打开项目时会有一个通知 在IDEA的eventLog可以找到 上面有一个一个register的按钮 点击按钮 输入激活码即可
+- 未激活时IDEA打开项目时会有一个通知 在IDEA的eventLog可以找到 上面有一个一个register的按钮 点击按钮 输入激活码即可  
 ![register](https://images.brucege.com/register_new.gif)
 
-- 或者可以在设置界面激活
+- 或者可以在设置界面激活  
 ![registerInSetting](https://images.brucege.com/activateNew.png)
 
 在线激活使用onlineActivation 无法联网的机器使用offlineActivation.
@@ -48,17 +48,17 @@
 - 离线激活的教程参考下图，先购买在线激活码: http://brucege.com/pay/view
 
 #### 请将离线激活里面的唯一码，还有购买的在线激活码发送给微信gejun12311,唯一码可以在idea设置 other mybatisCodeHelper拖最下面有个激活按钮找到
-#### 走 https://brucege.com/keys 可以将线激活码转为离线激活码
+#### 走 https://brucege.com/keys 可以将线激活码转为离线激活码  
 ![offline](https://images.brucege.com/offlineActivateNew.png)
 ![weichaturl](https://images.brucege.com/wechatme.png)
 
 
 ## 查询激活码
 
-- 网页 https://brucege.com/keys 可以通过邮箱来查询激活码
+- 网页 https://brucege.com/keys 可以通过邮箱来查询激活码  
 
-## 解绑
+## 解绑  
 
-- 购买后会发两个激活码，可以在两台设备上绑定，一个激活码绑定一个设备。当更新机器或者重装系统时需要解绑。可进行下图的操作
+- 购买后会发两个激活码，可以在两台设备上绑定，一个激活码绑定一个设备。当更新机器或者重装系统时需要解绑。可进行下图的操作    
 ![unBind](https://images.brucege.com/unBind.png)
 或者使用网页http://brucege.com/keys 来解绑
