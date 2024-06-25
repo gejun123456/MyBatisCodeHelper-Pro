@@ -56,6 +56,10 @@ com.mapper 为mybatis接口的包名
 ### 如果你的参数包含换行符，可以用sql and parameter 那里，把sql和参数拷到那里进行识别
 
 
+### 如果日志有固定的后缀导致不能解析可以配置一下日志需要删除的后缀
+![!deleteSuffix](https://images.brucege.com/configSuffix.png)
+
+
 ### 从日志跳转到xml (3.1.3版本)
 
 确保log配置打印了class信息
