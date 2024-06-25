@@ -16,5 +16,14 @@ Support following product 2016.2 version and upper.
 - <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>Search and find"MybatisCodeHelperPro-MarketPlace Edition"</kbd> > <kbd>Install Plugin</kbd>
 
 
+## Buy plugin from MarketPlace
+1. go to https://plugins.jetbrains.com/plugin/14522-mybatiscodehelperpro-marketplace-edition-/pricing#tabs to buy
+
+## Activation.
+1. go to https://account.jetbrains.com/licenses to see your licences.
+2. go to Help -> Register -> find MybatisCodeHelperPro-MarketPlace Edition
+3. login with your account. or you can download offline activation code in https://account.jetbrains.com/licenses
+
+
 
 
