@@ -16,8 +16,12 @@
 2. Help -> Register -> find MybatisCodeHelperPro-MarketPlace Edition 使用用户名密码可以激活
 3. 或者进行离线激活 https://account.jetbrains.com/licenses 网站可以下载离线激活码
 
-
 ![offlineCode](https://images.brucege.com/offlineForMarketPlace.png)
+![activateMarketPlace](https://images.brucege.com/activateMarketPlace.png)
+
+
+## 注意
+插件市场有两个版本，企业客户请安装名字带marketplace edition版本
 
 
 

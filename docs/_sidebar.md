@@ -23,6 +23,7 @@
   * [mybatis日志转sql](sqlLog.md)
   * [sql转换为mybatis xml和接口方法](sqlToMybatis.md)
   * [安装和激活和解绑](install.md)
+  * [企业客户购买激活](company.md)
   * [社区版支持](community.md)
   * [设置详解](settings.md)
   * [更新日志](changelog.md)
