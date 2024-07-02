@@ -17,4 +17,6 @@ https://www.bilibili.com/video/BV1PF411U797
 
 DatabaseHelper插件:https://plugins.jetbrains.com/plugin/20294-databasehelper
 
+## 2023.2后的社区版 直接安装插件商城的MybatisCodeHelperPro插件即可，低于2023.2的版本需要安装群文件的MybatisCodeHelperPro插件
+
 生成代码前需要点击一下表名刷新出来表字段即可

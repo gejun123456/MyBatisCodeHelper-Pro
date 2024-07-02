@@ -24,6 +24,10 @@ Support following product 2016.2 version and upper.
 2. go to Help -> Register -> find MybatisCodeHelperPro-MarketPlace Edition
 3. login with your account. or you can download offline activation code in https://account.jetbrains.com/licenses
 
+![offlineCode](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/offlineForMarketPlace.png)
+![mybatislogsupport](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/activateMarketPlace.png)
+
+
 
 
 
