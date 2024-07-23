@@ -5,9 +5,9 @@
 参考文章 https://blog.csdn.net/ilqgffvramusm2864/article/details/106211496
 
 ## 新方法(推荐)
-使用官方的驱动  
+使用达梦官方的驱动  
 然后在驱动的options中配置dialect为oracle   
-![damengDialect](https://images.brucege.com/damengdialect.png)
+![damengDialect](https://images.brucege.com/damengdialect.png)  
 
 然后可以配置resolutionScope到对应的数据库上:  
 ![resolutionScopedamgn](https://images.brucege.com/damengResolutionScope.png)
@@ -16,7 +16,7 @@ sqlDialect也设置为oracle
 
 最后的结果:表名和字段名会有代码提示,不再标红,可以识别oracle的函数  
 
-当然部分达梦非oracle的语法无法识别会标红,这个是由于intellij不支持达梦导致的  
+部分达梦非oracle的语法无法识别会标红,这个是由于intellij不支持达梦导致的  
 
 ![damgnresult](https://images.brucege.com/damengFinalResult.png)
 
