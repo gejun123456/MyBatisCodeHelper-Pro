@@ -63,8 +63,9 @@ resultMap中column提示与检测(2.7.2)| ✘    |✔
 Mybatis xml代码格式化(2.8.2)| ✘    |✔
 从sql生成resultMap和java类 | ✘    |✔
 从sql直接生成mybatis xml和java接口方法 | ✘    |✔
+生成join | ✘    |✔
 
-可以免费试用: http://brucege.com/pay/view
+试用或者购买链接: http://brucege.com/pay/view
 
 之后会加入更多功能
 

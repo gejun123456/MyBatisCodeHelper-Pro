@@ -1,6 +1,10 @@
 ## 插件支持mybatis注解
 支持script标签，支持#{},if test,动态sql代码提示
 
+
+### IDEA新版本会自动配置过java类@Select等的language injection配置，需要禁用掉，否则会导致在#{}中没有代码提示
+![removeInjection](https://images.brucege.com/removeInjection.png)
+
 ### 使用注解需要先打开配置
 
 ![annotationSupport](https://images.brucege.com/annotationSupport.jpg)
