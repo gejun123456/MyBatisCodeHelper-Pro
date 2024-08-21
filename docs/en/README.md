@@ -30,50 +30,8 @@ Gitter : https://gitter.im/MyBatisCodeHelper/Lobby
 
 -----------------------------------------------------------------------
 
-## Most features are free to use, following are the difference between after activate the plugin
 
-Feature  |  unActivate | after activate
------   | ------ | -----
-Jump from mybatis dao interface to mapper xml each other,change icon|  ✔ | ✔
-refactor for mapper method name| ✔| ✔
-add param | ✔| ✔
-Auto complete for mybatis param,if test,foreach,resultMap,refid in sql|✔| ✔
-Auto complete for resultMap property|✔|✔
-Full inspection for mybatis, like unused sql in xml, mapper method not have sql in xml, check if resultMap property is right ect|✔|✔
- Spring support for mybatis, inject mybatis mapper to spring bean, support springboot|✔|✔
- Generate page query by mapper interface method|✔|✔
- Code Template like cdata and collectioin statement|✔|✔
-Generate mybatis mapper testcase from mybatis interface method |✘|✔
-Generate mybatis sql based on mybatis interface method name like spring data jpa | ✘| ✔
-Use database to generate mybatis crud code| ✘|✔
-Generate mybatis crud and create table sql according to java class|✘|✔
-xml collection param auto complete| ✘|✔
-Recognize mybatis tag in xml, provide auto complete for table column ect| ✘|✔
-param inspection and refactor| ✘|✔
-Ognl support if test when test bind foreach $, Inspection and refactor| ✘|✔
-ResultMap column inspection and autocompletion| ✘|✔
-
-Free trial: http://brucege.com/
-
-The plugin are has used and learn from following project.
-
-codehelper.generator: https://github.com/zhengjunbase/codehelper.generator
-
-mybatis：https://github.com/mybatis/mybatis-3
-
-mybatis generator: https://github.com/mybatis/generator
-
-pageHelper: https://github.com/pagehelper/Mybatis-PageHelper
-
-mybatis-generator-gui: https://github.com/zouzg/mybatis-generator-gui
-
-If you are anthor of those project, please concat me, I will send you a long term free licence.
-
-## Contact me
-
-- If you find any probelm when using with the plugin, you can find me via  https://t.me/MybatisCodeHelperProPlugin
-
-- Send email to me gejun123456@gmail.com
+Free trial: https://plugins.jetbrains.com/plugin/14522-mybatiscodehelperpro-marketplace-edition-
 
 [plugin]: https://plugins.jetbrains.com/plugin/9837
 
