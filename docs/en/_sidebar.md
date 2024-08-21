@@ -7,6 +7,7 @@
   * [Auto complete and Inspection](en/complete.md)
   * [Refactor](en/refactor.md)
   * [Other code generate features](en/otherGenerate.md)
+  * [resultMap support](resultMap.md)
   * [Spring support](en/spring.md)
   * [Ognl support](en/ognl.md)
   * [TypeAliasSupport](en/typeAliasSupport.md)

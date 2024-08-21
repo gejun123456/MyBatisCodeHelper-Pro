@@ -1,25 +1,26 @@
+
 ## Auto map resultMap column and property
-autoMap会找到resultMap type中的属性与resultMap引用的sql select的字段以最近的字段来进行匹配
+`autoMap` finds matching properties in the `resultMap` type with the fields of the SQL `select` statement that the `resultMap` references.  
 ![automap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/automap.png)
 
-支持columnPrefix匹配
+Supports `columnPrefix` matching.   
 ![joinAutoMapping](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/joinAutoMapping.gif)
 
-## check result column 检测select语句中有但是resultMap中没有的column 批量生成好匹配
+## Check result column for columns present in the select statement but missing in the resultMap  
+Generates matching entries for these columns.  
 ![checkResultColumn](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/checkResultMapColumns.gif)
 
-## 检测resultMap中重复的column
+## Detect duplicate columns in the resultMap  
 ![checkDuplicateColumn](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/checkDuplicateColumn.png)
 
-
-## resultMap column and property 自动提示和检测
+## Auto-complete and validation for resultMap columns and properties  
 ![resultMapColumnPropertyAutoComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapColumnPropertyAutoComplete.gif)
 
-### resultMap column 检测是否正确(2.7.2)
+### Validation of resultMap columns (2.7.2)  
 ![resultMapColumnInspectionAndAutoComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapColumnInspectionAndAutoComplete.gif)
 
-### resultMap中的collection association自动补全
+### Auto-complete for collection and association elements within a resultMap  
 ![resultMapCollectionAndAssociactionBetterAutoComplete](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/resultMapCollectionAndAssociactionBetterAutoComplete.gif)
 
-## 将resultType转换为resultMap
+## Convert resultType to resultMap  
 ![convertResultTypeToResultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/convertResutlTypeToResultMap.png)
