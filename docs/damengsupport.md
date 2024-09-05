@@ -18,6 +18,8 @@ sqlDialect也设置为oracle
 
 部分达梦非oracle的语法无法识别会标红,这个是由于intellij不支持达梦导致的  
 
+## 人大金仓也是类似的，驱动dialect配置为postgresql,设置中dialect配置为postgresql即可
+
 ![damgnresult](https://images.brucege.com/damengFinalResult.png)
 
 ## 老方法 部分不能识别
