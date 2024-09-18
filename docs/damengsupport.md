@@ -18,7 +18,9 @@ sqlDialect也设置为oracle
 
 部分达梦非oracle的语法无法识别会标红,这个是由于intellij不支持达梦导致的  
 
-## 人大金仓也是类似的，驱动dialect配置为postgresql,设置中dialect配置为postgresql即可
+### 配置了后表名还标红 可以在表名上alt enter快捷键 attach session或者run query in console后点击cancel
+
+### 人大金仓也是类似的，驱动dialect配置为postgresql,设置中dialect配置为postgresql即可
 
 ![damgnresult](https://images.brucege.com/damengFinalResult.png)
 
