@@ -91,7 +91,7 @@ List<AWithB> AJoinB();
 在xml编辑器里面右键选择 generateJoin 即可
 
 最终生成截图 (2.7.6)
-![multipleTableJoin](https://images.brucege.com/multipleTableJoin.gif)
+![multipleTableJoin](https://newimages.brucege.com/multipleTableJoin.gif)
 
 使用该功能生成目前有一个要求 中需要有BaseResultMap存在，这样插件可以找到表名 (可以通过表上右键mybatis generator左下角预览xml弄到BaseResultMap带有表名)
 

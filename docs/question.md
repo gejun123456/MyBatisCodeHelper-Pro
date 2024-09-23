@@ -9,7 +9,7 @@ useGeneratedKey = true
 在执行完插入语句后 可以使用 user.getId() 来获取生成的id
 
 ## 生成代码出现 can't find xml file for namespace xxxx
-先查看xml中的namespace是否与接口一致，如果一致， 查看是否安装了其他冲突插件如FreeMybatisPlugin,MybatisX,MybatisPlugin(mybatisLogPlugin不冲突),如果有请卸卸掉 然后使用 invalidate Cache and restart. https://images.brucege.com/invalidateCacheAndRestart.png
+先查看xml中的namespace是否与接口一致，如果一致， 查看是否安装了其他冲突插件如FreeMybatisPlugin,MybatisX,MybatisPlugin(mybatisLogPlugin不冲突),如果有请卸卸掉 然后使用 invalidate Cache and restart. https://newimages.brucege.com/invalidateCacheAndRestart.png
 如果还没有发现问题，请查看下 接口和xml 是否在同一个module，module是否有依赖关系，如果在同一个module还有问题，请联系我
 
 
@@ -17,7 +17,7 @@ useGeneratedKey = true
 
 一般spring项目中service接口没啥用 参考 https://www.zhihu.com/question/296829023/answer/521249348
 
-如果实在要接口 可以使用Intellij自带的一键导出接口 https://images.brucege.com/extractInterface.png
+如果实在要接口 可以使用Intellij自带的一键导出接口 https://newimages.brucege.com/extractInterface.png
 
 ## 我不想要xml的注释怎么处理
 
@@ -47,7 +47,7 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 设置里面可以配置
 
-![setting](https://images.brucege.com/settings.png)
+![setting](https://newimages.brucege.com/settings.png)
 
 
 ## 方法名生成sql时 出现 please check with your xml resultMap id:  dose it contain all the property of resultMap 怎么处理
@@ -92,23 +92,23 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 
 ## 从表生成代码只有两个insert方法
 请检查表中是否有主键，如果有主键请刷新IDEA的数据库 直到下图这种
-![tableNoPrimaryKey](https://images.brucege.com/tableNoPrimaryKey.png)
+![tableNoPrimaryKey](https://newimages.brucege.com/tableNoPrimaryKey.png)
 
 
 ## 如何配置java文件的header注释 
-![header](https://images.brucege.com/header.png)
+![header](https://newimages.brucege.com/header.png)
 
 
-![tableNoPrimaryKey](https://images.brucege.com/tableNoPrimaryKey.png)
+![tableNoPrimaryKey](https://newimages.brucege.com/tableNoPrimaryKey.png)
 
 ## sql标签中的字段标红 sql标签中的sql 由于不是完整的sql，无法进行检测和代码补全，插件引入了 @sql 注释，在注释中把sql的前缀和后缀填写进去，可保证sql标签中的sql无误
 
-![sqlTagNoError](https://images.brucege.com/sqlTagNoError.gif)
+![sqlTagNoError](https://newimages.brucege.com/sqlTagNoError.gif)
 
 ## choose when语句 没有自动提示，标红
 
 请添加ignore注释 参考
-![chooseWhenAutoComplete](https://images.brucege.com/chooseWhenAutoComplete.gif)
+![chooseWhenAutoComplete](https://newimages.brucege.com/chooseWhenAutoComplete.gif)
 
 ## 使用${}的sql会标红
 
@@ -116,7 +116,7 @@ https://stackoverflow.com/questions/18645820/is-jdbctype-necessary-in-a-mybatis-
 ，这样$不会标红并且后面的sql也能正确识别
 
 (2.7.6支持一键生成对应的sql)
-![AddSqlAfter$](https://images.brucege.com/AddSqlAfter$.gif)
+![AddSqlAfter$](https://newimages.brucege.com/AddSqlAfter$.gif)
 
 ## 数据库表是tinyint(1)生成了boolean类型
 
@@ -126,7 +126,7 @@ mysql tinyint(1)与boolean是一个含义，不想生成boolean请使用tinyint(
 ## 怎么去掉sql显示中的黄色背景
 
 
-![yellowBackGround](https://images.brucege.com/yellowBackGround.png)
+![yellowBackGround](https://newimages.brucege.com/yellowBackGround.png)
 
 ## 生成的xml中的@Table有什么用
 
@@ -142,7 +142,7 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 
 ## 插件生成testcase 配置文件只会加载当前的接口对应的xml，如果引用了其他xml需要自己添加一下
 在生成testcase的setUp方法会引用一个xml文件，在xml文件中添加引用的xml位置
-![testcaseAddMapperResource](https://images.brucege.com/testcaseAddMapperResource.png)
+![testcaseAddMapperResource](https://newimages.brucege.com/testcaseAddMapperResource.png)
 
 
 ## 2.8.2后代码格式化未生效 多出空行

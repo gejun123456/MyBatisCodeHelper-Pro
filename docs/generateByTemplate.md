@@ -12,13 +12,13 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 直接把模版文件拷到项目的easyCode目录或者Scratches And Consoles的/extensions/EasyCode到来生成代码，写模版有代码提示，可以实时预览模版，直接在idea编辑器操作模版 
 
 或者可以从json导入老模版   
-![importToScratch](https://images.brucege.com/importToScratch.png)
+![importToScratch](https://newimages.brucege.com/importToScratch.png)
 
 模版预览:    
-![scratchGenerate](https://images.brucege.com/scrachGenerate.gif)
+![scratchGenerate](https://newimages.brucege.com/scrachGenerate.gif)
 
 生成代码,在idea的数据库表上,可以选多张表生成:
-![generateFromScratch](https://images.brucege.com/generateFromScratch.png)
+![generateFromScratch](https://newimages.brucege.com/generateFromScratch.png)
 
 目前支持项目的easyCode目录或者scratch目录下的/extensions/EasyCode目录进行识别生成代码
 
@@ -27,8 +27,8 @@ github:https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 下载�
 ### 怎么从之前用设置配置的模版导入到 从easycode文件目录生成代码  
 先将之前设置配置的本地导出到json，再从json导入到scratch那个，导入到scratch后 就可以直接复制easyCode文件夹到项目的根目录，
 从https://github.com/gejun123456/EasyCodeMybatisCodeHelperTemplates 弄一个group.json放在easyCode目录下就可以生成代码了
-![exportAndImport](https://images.brucege.com/exportAndImport.png)
-![fromScratch](https://images.brucege.com/scratchTemplateGenerate.png)
+![exportAndImport](https://newimages.brucege.com/exportAndImport.png)
+![fromScratch](https://newimages.brucege.com/scratchTemplateGenerate.png)
 
 ### group.json 做啥用的  
 group.json是配置关联关系的，模版和globalConfig和typeMapper都是多对多的关系通过配置json的group名来进行区分，一个项目可以有多个生成组

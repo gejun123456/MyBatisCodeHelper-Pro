@@ -2,31 +2,31 @@
 
 只需要一个方法名 即可 不需要方法和参数 和返回值 输入方法名后 alt+enter Generate mybatis sql 就可以生成了
 
-![findMethodNameToSql](https://images.brucege.com/findMethodNameToSql.gif)
+![findMethodNameToSql](https://newimages.brucege.com/findMethodNameToSql.gif)
 
-![updateMethodNameToSql](https://images.brucege.com/updateMethodNameToSql.gif)
+![updateMethodNameToSql](https://newimages.brucege.com/updateMethodNameToSql.gif)
 
-![deleteMethodNameToSql](https://images.brucege.com/deleteMethodNameToSql.gif)
+![deleteMethodNameToSql](https://newimages.brucege.com/deleteMethodNameToSql.gif)
 
-![countMethodNameToSql](https://images.brucege.com/countMethodNameToSql.gif)
+![countMethodNameToSql](https://newimages.brucege.com/countMethodNameToSql.gif)
 
 
 ## 方法名生成sql时支持if test (2.3版本后无需配置 直接alt+enter Generate mybatis sql with if test即可)
 
-![findWithIfTest](https://images.brucege.com/findWithIfTest.gif)
+![findWithIfTest](https://newimages.brucege.com/findWithIfTest.gif)
 
 
 ## 一键生成findByAll
 
-![findByAllEE](https://images.brucege.com/findByAllEE.gif)
+![findByAllEE](https://newimages.brucege.com/findByAllEE.gif)
 
 
 ## 一键生成insertList
 
-![insertList](https://images.brucege.com/insertList.gif)
+![insertList](https://newimages.brucege.com/insertList.gif)
 
 ## 支持生成 mybatisplus的queryWrapper
-![methodToQueryWrapper](https://images.brucege.com/MethodNameToMybatisplusWrapper.gif)
+![methodToQueryWrapper](https://newimages.brucege.com/MethodNameToMybatisplusWrapper.gif)
 
 ## 使用方法  
 - 在mybatis的接口文件上的方法名(只需要一个名字，不需要返回值和参数 会自动推导出来)上使用alt+enter Generate mybatis sql 或者选中方法名右键来生成
@@ -162,4 +162,4 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 - 我写了find后方法名没有自动提示如何处理?
 
 查看IDEA设置里的completion 是否设置为 firstLetter
-![compele](https://images.brucege.com/completeSetting.png)
+![compele](https://newimages.brucege.com/completeSetting.png)
