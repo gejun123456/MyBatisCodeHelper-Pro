@@ -37,7 +37,7 @@ for ${} statement, the part can be any string, the sql can't be recognized. The 
 ![AddSqlAfter$](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/add$sql.gif)
 
 or add real sql for ${} expression
-![parse$byXmlTagComment](https://newimages.brucege.com/parse$byXmlTagComment.gif)
+![parse$byXmlTagComment](https://images.brucege.com/parse$byXmlTagComment.gif)
 
 foreach collection
 

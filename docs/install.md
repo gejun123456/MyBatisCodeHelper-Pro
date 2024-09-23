@@ -2,7 +2,7 @@
 ## 安装
 ----
 
-### 插件可能会和其他的mybatis插件冲突，如 mybatisX,freeMybatisPlugin,mybatisPlugin,ToolKit.(mybatisLogPlugin没有冲突),如果发现比如方法名生成sql找不到对应的xml文件等，请先卸载掉其他的mybatis插件 然后使用 invalidate Cache and restart. https://newimages.brucege.com/invalidateCacheAndRestart.png
+### 插件可能会和其他的mybatis插件冲突，如 mybatisX,freeMybatisPlugin,mybatisPlugin,ToolKit.(mybatisLogPlugin没有冲突),如果发现比如方法名生成sql找不到对应的xml文件等，请先卸载掉其他的mybatis插件 然后使用 invalidate Cache and restart. https://images.brucege.com/invalidateCacheAndRestart.png
 
 
 
@@ -30,10 +30,10 @@
 ### 激活码激活  
 
 - 未激活时IDEA打开项目时会有一个通知 在IDEA的eventLog可以找到 上面有一个一个register的按钮 点击按钮 输入激活码即可  
-![register](https://newimages.brucege.com/register_new.gif)
+![register](https://images.brucege.com/register_new.gif)
 
 - 或者可以在设置界面激活  
-![registerInSetting](https://newimages.brucege.com/activateNew.png)
+![registerInSetting](https://images.brucege.com/activateNew.png)
 
 在线激活使用onlineActivation 无法联网的机器使用offlineActivation.
 
@@ -49,8 +49,8 @@
 
 #### 请将离线激活里面的唯一码，还有购买的在线激活码发送给微信gejun12311,唯一码可以在idea设置 other mybatisCodeHelper拖最下面有个激活按钮找到
 #### 走 https://brucege.com/keys 可以将线激活码转为离线激活码  
-![offline](https://newimages.brucege.com/offlineActivateNew.png)
-![weichaturl](https://newimages.brucege.com/wechatme.png)
+![offline](https://images.brucege.com/offlineActivateNew.png)
+![weichaturl](https://images.brucege.com/wechatme.png)
 
 
 ## 查询激活码
@@ -60,5 +60,5 @@
 ## 解绑  
 
 - 购买后会发两个激活码，可以在两台设备上绑定，一个激活码绑定一个设备。当更新机器或者重装系统时需要解绑。可进行下图的操作    
-![unBind](https://newimages.brucege.com/unBind.png)
+![unBind](https://images.brucege.com/unBind.png)
 或者使用网页http://brucege.com/keys 来解绑

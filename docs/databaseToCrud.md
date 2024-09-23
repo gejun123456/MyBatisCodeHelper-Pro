@@ -1,6 +1,6 @@
 ## 使用Intellij自带的datasource来生成 最简单的从数据库生成代码
 
-![intellijDatasourceGenerateCrud](https://newimages.brucege.com/databaseCrud.gif)
+![intellijDatasourceGenerateCrud](https://images.brucege.com/databaseCrud.gif)
 
 选定了module后 插件会自动配置好java model folder, java mapper folder 以及 resource folder 一般不需要修改
 
@@ -13,11 +13,11 @@
 可生成service 生成到通用mapper及mybatisplus
 
 ## 支持定制列 配置column和java映射关系，typeHandler配置
-![customizedColumns](https://newimages.brucege.com/customizedColumns.png)
+![customizedColumns](https://images.brucege.com/customizedColumns.png)
 
 
 ## 支持配置typemapper 配置表字段类型与java类型的映射关系
-![typeMappSettins](https://newimages.brucege.com/typeMapperSettings.png)
+![typeMappSettins](https://images.brucege.com/typeMapperSettings.png)
 
 
 
@@ -32,10 +32,10 @@
 
 ## IDEA社区版可以使用添加的datasource来生成 （目前支持mysql oracle postgresql sqlserver  myql支持5.5及以上  oracle支持oracle10g及以上 postgresql sqlserver支持最新版，老版本未测试 有问题请联系我) 
 
-![mybatis-database-generator](https://newimages.brucege.com/configDatabaseToUseMybatisGenerator.gif)
+![mybatis-database-generator](https://images.brucege.com/configDatabaseToUseMybatisGenerator.gif)
 
 ## 如何配置
 
 一般只用配置下包名 就可以使用了
-![mybatis-database-generator](https://newimages.brucege.com/DatabaseGenerateSetting.png)
+![mybatis-database-generator](https://images.brucege.com/DatabaseGenerateSetting.png)
 

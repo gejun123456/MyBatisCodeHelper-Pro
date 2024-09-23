@@ -7,10 +7,10 @@
 ## 新方法(推荐)
 使用达梦官方的驱动  
 然后在驱动的options中配置dialect为oracle   
-![damengDialect](https://newimages.brucege.com/damengdialect.png)  
+![damengDialect](https://images.brucege.com/damengdialect.png)  
 
 然后可以配置resolutionScope到对应的数据库上:  
-![resolutionScopedamgn](https://newimages.brucege.com/damengResolutionScope.png)
+![resolutionScopedamgn](https://images.brucege.com/damengResolutionScope.png)
 
 sqlDialect也设置为oracle  
 
@@ -22,7 +22,7 @@ sqlDialect也设置为oracle
 
 ### 人大金仓也是类似的，驱动dialect配置为postgresql,设置中dialect配置为postgresql即可
 
-![damgnresult](https://newimages.brucege.com/damengFinalResult.png)
+![damgnresult](https://images.brucege.com/damengFinalResult.png)
 
 ## 老方法 部分不能识别
 

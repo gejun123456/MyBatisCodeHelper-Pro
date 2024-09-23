@@ -3,14 +3,14 @@
 
 
 ### IDEA新版本会自动配置过java类@Select等的language injection配置，需要禁用掉，否则会导致在#{}中没有代码提示
-![removeInjection](https://newimages.brucege.com/removeInjection.png)
+![removeInjection](https://images.brucege.com/removeInjection.png)
 
 ### 使用注解需要先打开配置
 
-![annotationSupport](https://newimages.brucege.com/annotationSupport.jpg)
+![annotationSupport](https://images.brucege.com/annotationSupport.jpg)
 
 ### 支持注解的代码提示
-![annotationHighlight](https://newimages.brucege.com/annotationHighlight.jpg)
+![annotationHighlight](https://images.brucege.com/annotationHighlight.jpg)
 
 
 ## 不足

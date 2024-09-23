@@ -3,7 +3,7 @@
 ### idea控制台需要打印mybatis的日志 
 - 先检查控制台是否打印了mybatis的日志 如下图
 
-![mybatislogsupport](https://newimages.brucege.com/mybatisLogSupportNew2.gif)
+![mybatislogsupport](https://images.brucege.com/mybatisLogSupportNew2.gif)
 
 请确保idea控制台中包含 prepare 和 parameter 如上图
 
@@ -51,13 +51,13 @@ com.mapper 为mybatis接口的包名
 
 ### 如果sql太长比如一条sql超过20000字符，插件为了避免性能影响这个时候不能点击parameter跳转，可以把sql拷到TextToConvert框那里进行识别
 
-![sql太长](https://newimages.brucege.com/MybatisLogTextToConvert.png)
+![sql太长](https://images.brucege.com/MybatisLogTextToConvert.png)
 
 ### 如果你的参数包含换行符，可以用sql and parameter 那里，把sql和参数拷到那里进行识别  
 
 
 ### 如果日志有固定的后缀导致不能解析可以配置一下日志需要删除的后缀  
-![!deleteSuffix](https://newimages.brucege.com/configSuffix.png)
+![!deleteSuffix](https://images.brucege.com/configSuffix.png)
 
 
 ### 从日志跳转到xml (3.1.3版本)
@@ -101,7 +101,7 @@ Mon Nov 14 11:25:27 CST 2022 WARN: Establishing SSL connection without server's 
 
 然后在mybatis sql控制台中，看看日志的注释中是否有类名信息，选中日志，按右键jumpToXml，即可跳转到xml
 
-![jumpToXml](https://newimages.brucege.com/jumpToXml.png)
+![jumpToXml](https://images.brucege.com/jumpToXml.png)
 
 
 

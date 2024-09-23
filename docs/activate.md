@@ -13,5 +13,5 @@
 请联系微信gejun12311来进行离线激活，将插件离线激活里面的唯一码和购买的在线激活码发给他
 
 ## mac无法激活，Permission denied
-![noPermission](https://newimages.brucege.com/noPermission.png)
+![noPermission](https://images.brucege.com/noPermission.png)
 请使用 cd ~ 然后 sudo chmod 777 .config 即可
