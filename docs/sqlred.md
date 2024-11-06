@@ -29,3 +29,10 @@
 
 (2.7.6支持一键生成对应的sql)
 ![AddSqlAfter$](https://images.brucege.com/AddSqlAfter$.gif)
+
+
+### include使用property导致sql标签引用标红
+![includeWithProperty](https://images.brucege.com/supportIncludeWithProperty.png)
+
+需要开启设置:
+![includeSettings](https://images.brucege.com/includeWithPropertySettings.png)
