@@ -1,4 +1,13 @@
-<strong>3.2.9</strong>
+<strong>3.3.7</strong>
+<ul>
+<li>[NEW]支持多层sql标签代码提示和检测</li>
+<li>[NEW]支持全局替换$表达式解析</li>
+<li>[IMPROVE]更好的clickhouse支持</li>
+<li>[FIX]xml使用enter可能不换行的问题</li>
+<li>[IMPROVE]更好的2024.3支持</li>
+<li>[NEW]兼容kotlin k2 mode</li>
+</ul>
+strong>3.2.9</strong>
 <ul>
 <li>[IMPROVE]kotlin报错优化</li>
 <li>[IMPROVE]支持mybatis ognl单个参数可以使用任意名字引用</li>
