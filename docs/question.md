@@ -173,6 +173,10 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 3. 设置vmOption添加 -Duser.language=zh -Duser.region=CN
 一般会变成中文，有问题请再联系我
 
+## mac无法激活，Permission denied
+![noPermission](https://images.brucege.com/noPermission.png)  
+请使用 cd ~ 然后 sudo chmod 777 .config 即可
+
 ## 从其他Mybatis插件迁移到该插件 
 1. 之前公司使用的MybatisX的代码生成器，配置好了模板等，但是插件不兼容导致不能使用之前的代码生成
 可以使用：https://github.com/gejun123456/mybatisX-CodeGeneratorOnly
