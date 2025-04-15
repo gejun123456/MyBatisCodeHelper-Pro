@@ -14,6 +14,7 @@
   * [Formatter](en/formatter.md)
   * [SqlErrorFix](en/sqlred.md)
   * [typeSafeSql](en/typeSafe.md)
+  * [generateByTemplate](en/generateByTemplate.md)
   * [Java class generate create table sql](en/javaToCrud.md)
   * [Sql to Mybatis xml and java statemetn](en/sqlToMybatis.md)
   * [Install and activate](en/install.md)
