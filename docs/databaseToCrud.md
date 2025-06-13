@@ -39,3 +39,10 @@
 一般只用配置下包名 就可以使用了
 ![mybatis-database-generator](https://images.brucege.com/DatabaseGenerateSetting.png)
 
+### 什么时候需要清理表缓存
+当你之前修改过定制列里面的java类型，之后又想变成插件自动转换的，或者你之前使用了
+typeMapper后不想用了，或者你之前改了model名字都可以清理表缓存将这些重置为插件默认的  
+
+### 使用java8 LocalDateTime
+可以在设置中->other->MybatisCodeHelper  useJava8LocalDateTime勾一下就行 
+
