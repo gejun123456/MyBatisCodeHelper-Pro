@@ -36,3 +36,7 @@
 
 需要开启设置:
 ![includeSettings](https://images.brucege.com/includeWithPropertySettings.png)
+
+
+### 全局${}表达式配置，比如你的项目中使用了大量的${tableName} 可以全局配置
+![includeSettings](https://images.brucege.com/globalDollarExpression.png)
