@@ -12,13 +12,15 @@
 - **通过方法名(不需要方法的返回值和参数 会自动推导出来)来生成sql 可以生成大部分单表操作的sql 只需要一个方法的名字即可 会自动补全好方法的参数和返回值 和springdatajpa的语句基本一致**
 - **最好的mybatis代码提示，sql正确性检测，插件会识别mybatis的一系列标签 如 include trim set where，在这些标签之后的sql可以自动提示数据库的字段，检测sql的正确性，从此不用担心sql写错**
 - **直接从Intellij自带的数据库或者配置一个数据库生成crud代码 自动检测好 useGeneratedkey 自动配置好模块的文件夹 只用添加包名就可以生成代码了**
-- **xml代码格式化**
+- 从sql快速生成xml和java接口方法
+- 快速测试mybatis的sql，添加参数并运行
+- mybatis日志转sql，转sql后可以运行
 - 从java类生成建表语句
 - 数据库添加字段后可以继续生成，不会修改之前已经在接口或xml添加的自定义的方法 无需再去进行手动的添加
 - mybatis接口和xml的互相跳转  支持一个mybatis接口对应多个xml
 - mybatis接口中的方法名重构支持
 - xml中的 param的自动提示 if test的自动提示 resultMap refid 等的自动提示
-- resultMap中的property的自动提示，检测，重构
+- resultMap中的property的自动提示，检测，重构,支持collection,association等
 - resultMap中column自动提示，检测
 - xml中refid，resultMap等的跳转到定义
 - 检测没有使用的xml 可一键删除
@@ -31,7 +33,8 @@
 - 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot
 - 一键生成mybatis接口的testcase 无需启动spring，复杂sql可进行快速测试
 - 一键生成表关联的join
-- 一键从sql语句中 导出resultMap
+- 一键从sql语句中 导出resultMap和java类
+- xml代码格式化
 -----------------------------------------------------------------------
 
 ## 插件未激活与激活状态的功能比较  未激活版的功能可以免费一直使用下去
