@@ -1,10 +1,10 @@
 ## 使用模版来生成代码
 
-### 从2025.1.1版本开始EasyCode-MybatisCodeHelper转为freemium模式,只有模版代码提示功能需要付费,其他功能比如预览，生成代码等都是免费的
-
 ### 部分用户有定制的需求，比如公司代码要加特定的注释等，或者用了公司内部框架等，推荐用模版来生成代码
 
-### 安装EasyCodeMybatisCodeHelper(1.4.0)版本插件来进行模版生成 [下载地址](https://plugins.jetbrains.com/plugin/13847-easycode-mybatiscodehelper)
+### 安装EasyCode Plus插件来进行模版生成 [下载地址](https://plugins.jetbrains.com/plugin/13847-easycode-plus)
+
+### EasyCode Plus可以配合MybatisCodeHelperPro插件一起使用，比如可以用MybatisCodeHelperPro生成mapper,xml,然后用EasyCode Plus生成dto,service,controller等
 
 ## 支持写模版代码提示，实时预览模版，直接在idea编辑器操作模版，可配置多个分组，直接从模版来生成代码.最方便的模版生成代码插件
 
@@ -156,8 +156,6 @@ $tool.call($column.ext.put("jdbcType", $jdbcType))
     字段java类型=column.type
     schema名=${tableInfo.obj.getParent().getName()}
 ```
-
-
-### EasyCodeMybatisCodeHelper插件代码fork自 https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件,提供了直接从模版生成代码的功能
+### EasyCode Plus插件代码fork自 https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件,提供了直接从模版生成代码的功能
 
 
