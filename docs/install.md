@@ -33,9 +33,11 @@
 ![register](https://images.brucege.com/register_new.gif)
 
 - 或者可以在设置界面激活  
-![registerInSetting](https://images.brucege.com/activateNew.png)
+![](https://images.brucege.com//onlineActivation2.png)
 
-在线激活使用onlineActivation 无法联网的机器使用offlineActivation.
+网购购买的激活码请使用在线激活，无法联网的机器使用离线激活
+
+在线激活码转离线激活码：https://brucege.com/keys ,生成了离线激活码后填入离线激活即可  
 
 激活的时候 如果出现 connect error 请检查下IDEA是否设置了proxy 可以去掉proxy试试  
 
