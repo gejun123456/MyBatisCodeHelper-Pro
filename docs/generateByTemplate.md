@@ -4,7 +4,7 @@
 
 ### 安装EasyCode Plus插件来进行模版生成 [下载地址](https://plugins.jetbrains.com/plugin/13847-easycode-plus)
 
-### EasyCode Plus可以配合MybatisCodeHelperPro插件一起使用，比如可以用MybatisCodeHelperPro生成mapper,xml,然后用EasyCode Plus生成dto,service,controller等
+### EasyCode Plus也可以配合MybatisCodeHelperPro插件一起使用，比如可以用MybatisCodeHelperPro生成mapper,xml,然后用EasyCode Plus生成dto,service,controller等
 
 ## 支持写模版代码提示，实时预览模版，直接在idea编辑器操作模版，可配置多个分组，直接从模版来生成代码.最方便的模版生成代码插件
 
