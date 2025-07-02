@@ -184,7 +184,12 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 ## 表上右键没有mybatis generator菜单  
 升级下插件到3.3.9以上即可
 
-
+## xml太长(比如超过5000行,很多的动态sql) 电脑配置低,解析或者编辑卡顿 如何优化   
+1. 可以调整该选项,默认是300000字符，如果你觉得性能不好，可以根据你的xml来改动  
+![](https://images.brucege.com//xmlTooLong.png)  
+2. 可以改为使用多个xml文件用相同的namespace,比如表上右键生成的放到一个xml,自己写的放到另外一个
+3. 可以关闭一些插件的检测:  
+![](https://images.brucege.com//closeInspection.png)  
 
 
 ## 和其他插件对比

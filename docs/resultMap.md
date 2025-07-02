@@ -11,7 +11,6 @@ autoMap会找到resultMap type中的属性与resultMap引用的sql select的字�
 ## 检测resultMap中重复的column
 ![checkDuplicateColumn](https://images.brucege.com/checkDuplicateColumn.png)
 
-
 ## resultMap column and property 自动提示和检测
 ![resultMapColumnPropertyAutoComplete](https://images.brucege.com/resultMapColumnPropertyAutoComplete.gif)
 
