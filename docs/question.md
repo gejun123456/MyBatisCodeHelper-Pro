@@ -181,6 +181,8 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 1. 之前公司使用的MybatisX的代码生成器，配置好了模板等，但是插件不兼容导致不能使用之前的代码生成
 可以使用：https://github.com/gejun123456/mybatisX-CodeGeneratorOnly
 
+2. 使用插件兼容的模板插件EasyCode Plus插件 https://gejun123456.github.io/EasyCode-Plus/zh/
+
 ## 表上右键没有mybatis generator菜单  
 升级下插件到3.3.9以上即可
 
