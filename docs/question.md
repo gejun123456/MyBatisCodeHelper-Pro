@@ -12,6 +12,10 @@ useGeneratedKey = true
 先查看xml中的namespace是否与接口一致，如果一致， 查看是否安装了其他冲突插件如FreeMybatisPlugin,MybatisX,MybatisPlugin(mybatisLogPlugin不冲突),如果有请卸卸掉 然后使用 invalidate Cache and restart. https://images.brucege.com/invalidateCacheAndRestart.png
 如果还没有发现问题，请查看下 接口和xml 是否在同一个module，module是否有依赖关系，如果在同一个module还有问题，请联系我
 
+## 接口方法上没有小鸟图标
+先查看xml中的namespace是否与接口一致，如果一致， 查看是否安装了其他冲突插件如FreeMybatisPlugin,MybatisX,MybatisPlugin(mybatisLogPlugin不冲突),如果有请卸卸掉 然后使用 invalidate Cache and restart. https://images.brucege.com/invalidateCacheAndRestart.png  
+如果还没有,可以在resource文件夹上右键Mark directory as resource directory. 
+如果还没有，可以清理项目的.idea目录，重新打开项目看看
 
 ## mybatis generator没有生成service接口 (2.6版本可以生成)
 
