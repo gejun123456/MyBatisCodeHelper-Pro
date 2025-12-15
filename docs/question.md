@@ -198,6 +198,12 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 ![](https://images.brucege.com//closeInspection.png)  
 
 
+## 生成的字段都是Objet类型
+1. 重新刷新一下数据库，看看intellij是否识别出了字段的类型，比如主键等
+2. 如果识别了字段类型还生成object，可以查看定制列里面的匹配关系
+3. 可以使用typemapper来进行自定义的映射配置
+
+
 ## 和其他插件对比
 插件拥有最好的mybatis sql代码提示，代码检测，重构，泛型支持，typeAlias支持，快速测试sql，方法名生成sql等。
 可以参考
