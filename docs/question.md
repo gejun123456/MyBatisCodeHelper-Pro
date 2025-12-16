@@ -200,8 +200,10 @@ table注释用于 当 xml中没有insert方法时 指定了xml对应的表名，
 
 ## 生成的字段都是Objet类型
 1. 重新刷新一下数据库，看看intellij是否识别出了字段的类型，比如主键等
-2. 如果识别了字段类型还生成object，可以查看定制列里面的匹配关系
-3. 可以使用typemapper来进行自定义的映射配置
+2. Datasource那里修改introspection配置，改成level2或者level3然后重新刷新数据库
+![changeInspection](https://images.brucege.com/autoSyncSetting.png)
+3. 如果识别了字段类型还生成object，可以查看定制列里面的匹配关系
+4. 可以使用typemapper来进行自定义的映射配置
 
 
 ## 和其他插件对比
