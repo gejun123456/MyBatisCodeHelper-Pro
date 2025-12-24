@@ -147,5 +147,7 @@ Field type = $!tool.getField($tableInfo.fullColumn.get(0).obj.dataType, "typeNam
 Field Java type = column.type
 Schema name = ${tableInfo.obj.getParent().getName()}
 ```
+#### more documents：
+https://gejun123456.github.io/EasyCode-Plus/
 
 ### Note: EasyCodeMybatisCodeHelper plugin is forked from https://github.com/makejavas/EasyCode, modified for MybatisCodeHelperPro compatibility and direct template-based code generation.
