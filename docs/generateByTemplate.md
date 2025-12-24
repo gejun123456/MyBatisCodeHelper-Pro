@@ -158,7 +158,7 @@ $tool.call($column.ext.put("jdbcType", $jdbcType))
 ```
 
 #### 更多的操作文档：
-https://gejun123456.github.io/EasyCode-Plus/
+https://gejun123456.github.io/EasyCode-Plus/zh/
 
 ### EasyCode Plus插件代码fork自 https://github.com/makejavas/EasyCode 插件，修改了部分代码用于兼容MybatisCodeHelperPro插件,提供了直接从模版生成代码的功能
 
