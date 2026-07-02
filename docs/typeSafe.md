@@ -1,4 +1,7 @@
-#  构建安全的mybatis sql（插件2.8.0版本）(插件原创功能)
+# 构建安全的 MyBatis SQL（插件原创功能）
+
+> AI 可以帮你生成 SQL，但它不会帮你检查 SQL 对不对。  
+> 插件连接你的真实数据库，写 SQL 的时候实时检测正确性，和 AI 互补使用效果最佳。
 
 ## 可以先看视频：https://www.bilibili.com/video/BV1PB4y167N1
 

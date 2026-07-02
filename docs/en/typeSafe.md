@@ -1,4 +1,7 @@
-#  Type Safe sql support
+#  Type Safe SQL Support
+
+> AI coding assistants can generate SQL, but they don't verify its correctness against your real database.  
+> This plugin connects to your actual database and provides real-time SQL inspection — use it alongside AI for the best results.
 
 ## IDEA ultimate version provide safe sql support
 
