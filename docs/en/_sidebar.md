@@ -9,6 +9,7 @@
   * [Other code generate features](en/otherGenerate.md)
   * [resultMap support](resultMap.md)
   * [Spring support](en/spring.md)
+  * [MyBatis MCP support](en/mcp.md)
   * [Ognl support](en/ognl.md)
   * [TypeAliasSupport](en/typeAliasSupport.md)
   * [Formatter](en/formatter.md)

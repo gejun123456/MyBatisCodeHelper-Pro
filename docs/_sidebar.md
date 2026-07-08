@@ -6,6 +6,7 @@
   * [通过模版生成代码](generateByTemplate.md)
   * [方法名生成sql](methodNameToSql.md)
   * [自动补全 检测正确等功能](complete.md)
+  * [MyBatis MCP 支持](mcp.md)
   * [ognl支持](ognl.md)
   * [其他代码生成功能](otherGenerate.md)
   * [java类生成建表语句](javaToCrud.md)
