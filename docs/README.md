@@ -1,12 +1,28 @@
 # MyBatisCodeHelper-Pro
 
-[![Jetbrains Plugins](https://img.shields.io/jetbrains/plugin/v/9837-a8translate.svg)][plugin]
+[![Jetbrains Plugins](https://img.shields.io/jetbrains/plugin/v/9837-mybatiscodehelperpro.svg)][plugin]
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/9837.svg?style=flat-square)][plugin]
 [![加入QQ群](https://img.shields.io/badge/chat-QQ群-46BC99.svg?style=flat-square)](https://qm.qq.com/q/dYYkYSpLoW)
 
 > Intellij下Mybatis支持插件 
 
 介绍视频: https://www.bilibili.com/video/av50632948
+
+---
+
+### 💡 AI 时代，插件还有用吗？
+
+AI 写代码越来越强了，但如果你还在写 MyBatis，你会发现插件在很多场景下比 AI 更实用：
+
+- **AI 生成要等**，插件 Alt+Enter 即刻完成，不需要消耗 token
+- **AI 可能编造不存在的表名和字段**，插件连接你的真实数据库，100% 准确
+- **改表结构后 AI 要重新描述一遍**，插件一键重新生成，不覆盖自定义代码
+- **AI 不会帮你检查 SQL 对不对**，插件写的时候实时检测，标红提示
+- **AI 每月要花钱买 token**，插件3年99元，一天不到一毛钱
+
+**我的建议：AI 写通用逻辑，插件管 MyBatis 的正确性和效率，两个配合着用，效果最好。**
+
+---
 
 ## 功能
 - **通过方法名(不需要方法的返回值和参数 会自动推导出来)来生成sql 可以生成大部分单表操作的sql 只需要一个方法的名字即可 会自动补全好方法的参数和返回值 和springdatajpa的语句基本一致**
@@ -35,6 +51,7 @@
 - 一键生成表关联的join
 - 一键从sql语句中 导出resultMap和java类
 - xml代码格式化
+
 -----------------------------------------------------------------------
 
 ## 插件未激活与激活状态的功能比较  未激活版的功能可以免费一直使用下去
@@ -102,20 +119,14 @@ mybatis-generator-gui: https://github.com/zouzg/mybatis-generator-gui
 
 mybatis generator plugin: https://github.com/itfsw/mybatis-generator-plugin
 
+mybatisplus: https://github.com/baomidou/mybatis-plus
+
 batlog: https://github.com/PerccyKing/batslog
 
 如果您是这些项目的作者，请联系我，我将发送免费的永久key给您
 
 截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.com/gejun123456/codehelperPluginDemo)
 
-
 大家可以学习https://www.imooc.com/learn/924 来掌握更多使用Intellij的技巧 视频讲得很棒
 
-
 [plugin]: https://plugins.jetbrains.com/plugin/9837
-
-
-
-
-
-
