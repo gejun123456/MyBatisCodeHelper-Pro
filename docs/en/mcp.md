@@ -177,24 +177,13 @@ List project data sources.
 
 # 📦 Configuration
 
-Add the following configuration to your MCP-compatible AI coding assistant (for example, Claude Code):
+Add the following configuration to your MCP-compatible AI coding assistant (for example, cc-switch):
 
+name can use MybatisMcp
 ```json
 {
-  "mcpServers": {
-    "mybatisMcp": {
-      "type": "intellij",
-      "name": "MyBatis MCP",
-      "description": "MyBatis MCP support — mapper lookup, SQL discovery and schema inspection",
-      "tools": [
-        "find_mapper_xml",
-        "find_mapper_interface",
-        "get_table_columns",
-        "list_mapper_statements",
-        "list_data_sources"
-      ]
-    }
-  }
+  "type": "http",
+  "url": "http://127.0.0.1:63340/mcp"
 }
 ```
 

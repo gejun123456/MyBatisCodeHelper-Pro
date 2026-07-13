@@ -157,24 +157,13 @@ deleteByPrimaryKey   → delete (line 35)
 
 ## 📦 配置方式
 
-将以下配置添加到支持 MCP 的 AI 编码助手（如 Claude Code）配置中：
+将以下配置添加到支持 MCP 的 AI 编码助手（如 cc switch）配置中：
 
+名称可以设置为MybatisMcp
 ```json
 {
-  "mcpServers": {
-    "mybatisMcp": {
-      "type": "intellij",
-      "name": "MyBatis MCP",
-      "description": "MyBatis MCP 支持 — 查找 Mapper、SQL、表结构",
-      "tools": [
-        "find_mapper_xml",
-        "find_mapper_interface",
-        "get_table_columns",
-        "list_mapper_statements",
-        "list_data_sources"
-      ]
-    }
-  }
+  "type": "http",
+  "url": "http://127.0.0.1:63340/mcp"
 }
 ```
 
