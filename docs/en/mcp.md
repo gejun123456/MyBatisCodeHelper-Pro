@@ -175,6 +175,70 @@ List project data sources.
 
 ---
 
+## `generate_crud`
+
+Generate MyBatis CRUD code for a database table.
+
+**Input**
+
+* `table` (required): database table name
+* `projectPath`: absolute project path; optional when only one project is open
+* `dataSource`: optional data-source selector, useful when multiple data sources are configured
+* `modelName`: optional entity class name; defaults to the project's naming rule
+* `referenceMapperXml`: optional existing mapper XML; reuses its XML / mapper layout
+* `modelPackage` / `modelSrcRoot`: optional entity package and source root
+* `mapperPackage` / `mapperSrcRoot`: optional mapper interface package and source root
+* `xmlPackage` / `xmlSrcRoot`: optional mapper XML path and resources root
+* `servicePackage` / `serviceSrcRoot`: optional Service implementation package and source root
+* `serviceInterfacePackage` / `serviceInterfaceSrcRoot`: optional Service interface package and source root
+* `generateService` / `generateServiceInterface`: optional Service generation switches
+* `insertMethod`, `insertSelective`, `selectByPrimaryKey`, `updateByPrimaryKey`, `updateByPrimaryKeySelective`, `deleteByPrimaryKey`: optional CRUD method switches
+* `batchInsert`, `updateBatch`, `updateBatchSelective`: optional batch method switches
+* `useLombok`, `lombokGetterSetter`, `lombokBuilder`, `lombokAllArgs`, `lombokNoArgs`: optional Lombok switches
+* `useCommonMapper`, `mapperAnnotation`, `mybatisFlex`, `addSchemaName`, `generateComment`, `useSwagger`, `noJdbcType`: optional framework and annotation switches
+* `useMybatisPlus`, `mybatisPlusIdType`, `mybatisPlusStaticField`, `mybatisPlusGenerateByPrimaryKey`, `mybatisPlusGenerateUpdateAndInsertSelective`: optional MyBatis-Plus 3 switches
+
+**Output**
+
+* `status`
+* `table`
+* `modelName`
+* `generatedFiles`
+* `warnings`
+* resolved `modelPackage`
+* resolved `mapperPackage`
+* resolved `xmlPackage`
+
+> This is a write tool. It generates the entity, mapper interface, mapper XML, and optionally Service / Service Interface files. Location resolution uses explicit arguments first, then `referenceMapperXml`, then the project profile / module defaults. Style switches fall back to the current project profile when omitted.
+
+---
+
+## `generate_mapper_testcase`
+
+Generate or update a MyBatis mapper testcase.
+
+**Input**
+
+* `mapper` (required): mapper interface FQN or `.java` path
+* `projectPath`: absolute project path; optional when only one project is open
+* `methodName`: optional mapper method name; when omitted, only the test class, mapper field and setup method are generated
+* `dataSource`: optional test data-source selector
+* `testPackage`: optional package for the generated test class; defaults to the mapper package
+* `testFramework`: optional test framework, `JUNIT4` or `JUNIT5`
+
+**Output**
+
+* `status`
+* `testClassName`
+* `testClassPath`
+* `configurationPath`
+* `generatedFiles`
+* `warnings`
+
+> The tool creates or updates the mapper test class, the `setUpMybatisDatabase` method, the mapper field, and the `mybatisTestConfiguration` XML when needed. When `methodName` is provided, it also generates the corresponding test method; if that method already exists, the response includes a warning.
+
+---
+
 # 📦 Configuration
 
 Add the following configuration to your MCP-compatible AI coding assistant (for example, cc-switch):
@@ -249,6 +313,8 @@ indicating that the server is running and available to your AI coding assistant.
 | Inspect a table before writing SQL | `get_table_columns`      |
 | Discover existing SQL statements   | `list_mapper_statements` |
 | View configured data sources       | `list_data_sources`      |
+| Generate CRUD from a table         | `generate_crud`          |
+| Generate a mapper testcase         | `generate_mapper_testcase` |
 
 ---
 

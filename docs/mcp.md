@@ -155,6 +155,66 @@ deleteByPrimaryKey   → delete (line 35)
 
 ---
 
+### 6. `generate_crud` —— 生成 CRUD 代码
+
+**输入：**
+
+- `table`：表名，必填
+- `projectPath`：项目路径，可选；只打开一个项目时可以不传
+- `dataSource`：数据源名称，可选；多个数据源时用于指定使用哪个数据源
+- `modelName`：实体类名，可选；不传时使用项目配置的命名规则
+- `referenceMapperXml`：参考 mapper xml，可选；会复用现有 XML / Mapper 的目录和包名布局
+- `modelPackage` / `modelSrcRoot`：实体类包名和源码根目录，可选
+- `mapperPackage` / `mapperSrcRoot`：Mapper 接口包名和源码根目录，可选
+- `xmlPackage` / `xmlSrcRoot`：Mapper XML 路径和资源根目录，可选
+- `servicePackage` / `serviceSrcRoot`：Service 实现类包名和源码根目录，可选
+- `serviceInterfacePackage` / `serviceInterfaceSrcRoot`：Service 接口包名和源码根目录，可选
+- `generateService` / `generateServiceInterface`：是否生成 Service / Service 接口，可选
+- `insertMethod`、`insertSelective`、`selectByPrimaryKey`、`updateByPrimaryKey`、`updateByPrimaryKeySelective`、`deleteByPrimaryKey`：CRUD 方法开关，可选
+- `batchInsert`、`updateBatch`、`updateBatchSelective`：批量方法开关，可选
+- `useLombok`、`lombokGetterSetter`、`lombokBuilder`、`lombokAllArgs`、`lombokNoArgs`：Lombok 开关，可选
+- `useCommonMapper`、`mapperAnnotation`、`mybatisFlex`、`addSchemaName`、`generateComment`、`useSwagger`、`noJdbcType`：框架和注解风格开关，可选
+- `useMybatisPlus`、`mybatisPlusIdType`、`mybatisPlusStaticField`、`mybatisPlusGenerateByPrimaryKey`、`mybatisPlusGenerateUpdateAndInsertSelective`：MyBatis-Plus 3 相关开关，可选
+
+**输出：**
+
+- `status`
+- `table`
+- `modelName`
+- `generatedFiles`
+- `warnings`
+- `modelPackage`
+- `mapperPackage`
+- `xmlPackage`
+
+> 这是一个写入型工具，会直接在项目里生成实体类、Mapper 接口、Mapper XML，必要时也会生成 Service / Service 接口。路径解析顺序为：显式参数 > `referenceMapperXml` > 项目配置 / 模块默认值。风格开关不传时会使用当前项目 profile 中的默认配置。
+
+---
+
+### 7. `generate_mapper_testcase` —— 生成 Mapper 测试
+
+**输入：**
+
+- `mapper`：Mapper 接口 FQN 或 `.java` 路径，必填
+- `projectPath`：项目路径，可选；只打开一个项目时可以不传
+- `methodName`：Mapper 方法名，可选；不传时只生成测试类、mapper 字段和初始化方法
+- `dataSource`：测试数据源，可选；会匹配项目中配置的数据源
+- `testPackage`：测试类包名，可选；不传时默认使用 Mapper 所在包
+- `testFramework`：测试框架，可选；支持 `JUNIT4` 或 `JUNIT5`
+
+**输出：**
+
+- `status`
+- `testClassName`
+- `testClassPath`
+- `configurationPath`
+- `generatedFiles`
+- `warnings`
+
+> 工具会创建或更新 Mapper 测试类、`setUpMybatisDatabase` 方法、mapper 字段，以及需要的 `mybatisTestConfiguration` XML。指定 `methodName` 时，会额外生成对应的测试方法；如果测试方法已经存在，会通过 `warnings` 返回提示。
+
+---
+
 ## 📦 配置方式
 
 将以下配置添加到支持 MCP 的 AI 编码助手（如 cc switch）配置中：
@@ -229,6 +289,8 @@ Stop MCP Server
 | 编写 SQL 前查看表结构 | `get_table_columns`      |
 | 查看已有 SQL      | `list_mapper_statements` |
 | 查看项目数据源       | `list_data_sources`      |
+| 根据表生成 CRUD 代码 | `generate_crud`          |
+| 生成 Mapper 测试    | `generate_mapper_testcase` |
 
 ---
 
