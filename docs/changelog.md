@@ -1,39 +1,56 @@
-<strong>3.4.5</strong>
+<strong>3.6.1</strong>
 <ul>
-<li>[NEW]mybatis generator通过已经存在的xml文件快速配置好包名</li>
-<li>[NEW]支持select provider跳转到mapper方法</li>
-<li>[FIX]修复部分项目生成join时关联xml文件没有代码提示</li>
-<li>[IMPROVE]mybatisplus项目可以选择不生成tableField注解</li>
-<li>[IMPROVE]日志转sql可以配置忽略比如一些日志表</li>
+<li>[IMPROVE] 启动活动迁移至 ProjectActivity 模式，优化项目加载性能</li>
+<li>[IMPROVE] MyBatis Namespace 缓存重建优化，提升 XML 文件检测效率</li>
+<li>[IMPROVE] MyBatis 图标提供器性能优化，使用缓存替代文件系统搜索</li>
+<li>[IMPROVE] 测试用例生成器 XML 文件处理逻辑优化，增强错误处理与索引兼容性</li>
 </ul>
 <ul>
-<li>[NEW]Mybatis generator quick set packages by existing xml file</li>
-<li>[NEW]Support select provider jump to mapper method</li>
-<li>[IMPROVE]Mybatisplus not generate tableField annotation</li>
-<li>[FIX]Fix xml file code completion not work when generate join</li>
-<li>[IMPROVE]Log to sql could config to ignore some log tables</li>
+<li>[IMPROVE] Migrate startup activities to ProjectActivity pattern for better project loading performance</li>
+<li>[IMPROVE] Optimize MyBatis namespace cache rebuild for smarter XML file detection</li>
+<li>[IMPROVE] Optimize MyBatis icon provider performance with namespace cache instead of filesystem search</li>
+<li>[IMPROVE] Optimize test case generator XML handling with DumbService integration and better error handling</li>
 </ul>
-<strong>3.4.3</strong>
+<strong>3.6.0</strong>
 <ul>
-<li>[IMPROVE]修复mapper直接调用的方法名提示重复的问题</li>
-<li>[IMPROVE]支持自定义注解any类型以及添加注释</li>
-<li>[FIX]修复$表达式添加注释问题</li>
-</ul>
-<ul>
-<li>[IMPROVE]Fix duplicate method name prompt for mapper direct call</li>
-<li>[IMPROVE]Support custom annotation any type and add column remarks</li>
-<li>[FIX]Fix $ expression add replace comment issue</li>
-</ul>
-<strong>3.4.2</strong>
-<ul>
-<li>[IMPROVE]支持字段自定义注解比如Jackson</li>
-<li>[IMPROVE]mybatis log转sql性能优化</li>
-<li>[IMPROVE]生成testcase自动检测junit平台</li>
+<li>[NEW] 新增代码生成预览功能，生成前可预览即将生成的文件内容</li>
+<li>[NEW] 新增服务模板自定义功能，支持自定义 service 服务接口及实现类模板</li>
+<li>[NEW] 支持 SQL 行注释移除，清理解析后的 SQL 中的行注释</li>
 </ul>
 <ul>
-<li>[IMPROVE]Support custom annotations like jackson</li>
-<li>[IMPROVE]Performance optimization for mybatis log to sql conversion</li>
-<li>[IMPROVE]Auto-detect junit platform when generating testcase</li>
+<li>[NEW] Add a code generation preview feature to preview generated files before writing</li>
+<li>[NEW] Support customizing service templates</li>
+<li>[NEW] Support removing SQL line comments when cleaning parsed SQL</li>
+</ul>
+<strong>3.5.9</strong>
+<ul>
+<li>[NEW] 支持 MyBatis 参数表达式中的索引属性访问，例如 `#{list[0].aa}`</li>
+<li>[NEW] 支持 `${}` 表达式中的枚举和静态字段回退解析</li>
+<li>[NEW] 优化 GUI 界面国际化处理，支持用户在英文 IDEA 环境下仍可显示插件中文文案</li>
+</ul>
+<ul>
+<li>[NEW] Support indexed property access in MyBatis parameter expressions, such as `#{list[0].aa}`</li>
+<li>[NEW] Support fallback resolution for enum and static field references in `${}` expressions</li>
+<li>[NEW] Improve GUI internationalization so Chinese plugin text can still be shown when IDEA uses the English UI</li>
+</ul>
+<strong>3.5.8</strong>
+<ul>
+<li>[NEW] 新增生成 CRUD 代码的 MCP 工具</li>
+<li>[NEW] 新增生成 Mapper 测试用例的 MCP 工具</li>
+<li>[NEW] 增强数据库模式差异对比与 AI Prompt 生成功能</li>
+<li>[NEW] 支持 Properties 模块依赖，提升 Spring 配置解析兼容性</li>
+<li>[FIX] 修复数据库表名查找逻辑</li>
+<li>[FIX] 兼容用户禁用 YAML 插件时的 Spring Boot 别名解析</li>
+<li>[FIX] 修复 `java.lang.NoClassDefFoundError: com/intellij/lang/properties/PropertiesLanguage` 异常</li>
+</ul>
+<ul>
+<li>[NEW] Add an MCP tool for generating CRUD code</li>
+<li>[NEW] Add an MCP tool for generating mapper test cases</li>
+<li>[NEW] Improve database schema diff comparison and AI prompt generation</li>
+<li>[NEW] Support Properties module dependency for better Spring config resolution</li>
+<li>[FIX] Fix database table name lookup logic</li>
+<li>[FIX] Keep Spring Boot alias resolution working when the YAML plugin is disabled</li>
+<li>[FIX] Fix `java.lang.NoClassDefFoundError: com/intellij/lang/properties/PropertiesLanguage`</li>
 </ul>
 <strong>3.4.1</strong>
 <ul>
