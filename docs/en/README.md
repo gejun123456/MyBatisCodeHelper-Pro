@@ -9,19 +9,20 @@ Gitter: https://gitter.im/MyBatisCodeHelper/Lobby
 
 ---
 
-### 💡 Still need a MyBatis plugin in the AI era?
+### 💡 Still need a MyBatis plugin in the AI era? Yes — and AI and the plugin can work together.
 
-AI coding assistants are great at writing general logic, but MyBatis has specific needs that generic AI tools don't fully address:
+AI coding assistants are great at writing general logic, but MyBatis has a specific trait: **it connects to a real database and needs SQL correctness**. These two things are exactly where AI and the plugin complement each other:
 
-| Scenario | AI Assistant | This Plugin |
-|----------|-------------|-------------|
-| **Generate CRUD** | Wait seconds, pay per token | Instant, one-time purchase |
-| **Regenerate after DB change** | Re-prompt with full context | One-click, preserves your custom code |
-| **Database-aware completion** | May hallucinate non-existent tables | Connects your real DB, 100% accurate |
-| **SQL correctness check** | AI doesn't verify as you type | Real-time inspection, highlight errors immediately |
-| **Cost** | $10-20/month or pay-per-token | Starts at $20/year, far cheaper |
+| Scenario | AI is good at | The plugin fills in |
+|----------|--------------|---------------------|
+| **Generate CRUD** | Quickly write a skeleton | Right-click on the table / Alt+Enter, instant, no tokens |
+| **Regenerate after a DB change** | Re-describe everything | Add a column in the DB, one-click update, preserves custom code |
+| **Check whether SQL is correct** | Write the logic | Real-time inspection, highlight errors immediately |
+| **Look up table / column names** | May misremember | Connects your real DB, 100% accurate |
 
-**Best practice:** Use AI for business logic, use this plugin for MyBatis code correctness and productivity — they complement each other.
+**Even better, the plugin now provides an MCP service**: AI can directly call the plugin to read table schemas, look up mappers, and generate CRUD code — saving tokens and staying accurate.
+
+**Best practice:** Use AI for business logic, use the plugin for MyBatis code correctness and productivity, and let them collaborate directly through MCP.
 
 ---
 
