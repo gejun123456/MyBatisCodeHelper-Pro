@@ -1,3 +1,16 @@
+<strong>3.6.2</strong>
+<ul>
+<li>[NEW] 生成 Join 支持一对多 JSON 聚合 (JSON Join)，彻底解决一对多关联分页主表行数被笛卡尔积膨胀的问题</li>
+<li>[NEW] 支持 MySQL (json_arrayagg)、PostgreSQL (json_agg)、Oracle (json_arrayagg) 与 SQL Server (for json path) 主流数据库方言</li>
+<li>[NEW] 子表生成 Json_Column_List 代码片段，表结构增删字段后重新生成 CRUD 自动联动刷新</li>
+<li>[NEW] 自动生成工业级 Jackson List TypeHandler，深度兼容各种时间日期格式与空安全兜底</li>
+</ul>
+<ul>
+<li>[NEW] Support One-to-Many JSON Aggregation Join (JSON Join) to solve main table pagination count distortion caused by Cartesian products</li>
+<li>[NEW] Support JSON aggregation query generation for MySQL, PostgreSQL, Oracle, and SQL Server dialects</li>
+<li>[NEW] Generate Json_Column_List SQL fragments with automatic sync upon schema changes via MBG</li>
+<li>[NEW] Automatically generate production-grade Jackson List TypeHandler with flexible date/time parsing and null safety</li>
+</ul>
 <strong>3.6.1</strong>
 <ul>
 <li>[IMPROVE] 启动活动迁移至 ProjectActivity 模式，优化项目加载性能</li>

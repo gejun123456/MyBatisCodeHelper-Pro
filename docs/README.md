@@ -51,7 +51,7 @@ AI 写代码越来越强，但 MyBatis 有个特点：**它要连真实数据库
 - ognl 支持 if test when test foreach bind中的自动补全，跳转和检测
 - 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot
 - 一键生成mybatis接口的testcase 无需启动spring，复杂sql可进行快速测试
-- 一键生成表关联的join
+- 一键生成表关联的join (支持平铺Join与一对多JSON聚合Join，彻底解决分页问题)
 - 一键从sql语句中 导出resultMap和java类
 - xml代码格式化
 

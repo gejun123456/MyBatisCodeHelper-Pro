@@ -1,3 +1,10 @@
+<strong>3.6.2</strong>
+<ul>
+<li>[NEW] Support One-to-Many JSON Aggregation Join (JSON Join) to solve main table pagination count distortion caused by Cartesian products</li>
+<li>[NEW] Support JSON aggregation query generation for MySQL, PostgreSQL, Oracle, and SQL Server dialects</li>
+<li>[NEW] Generate Json_Column_List SQL fragments with automatic sync upon schema changes via MBG</li>
+<li>[NEW] Automatically generate production-grade Jackson List TypeHandler with flexible date/time parsing and null safety</li>
+</ul>
 <strong>3.4.5</strong>
 <ul>
 <li>[NEW]mybatis generator通过已经存在的xml文件快速配置好包名</li>
