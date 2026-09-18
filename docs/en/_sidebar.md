@@ -8,6 +8,7 @@
   * [Refactor](en/refactor.md)
   * [Other code generate features](en/otherGenerate.md)
   * [resultMap support](resultMap.md)
+  * [Generate join statement](en/join.md)
   * [Spring support](en/spring.md)
   * [MyBatis MCP support](en/mcp.md)
   * [Ognl support](en/ognl.md)
