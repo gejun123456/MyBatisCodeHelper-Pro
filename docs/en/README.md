@@ -20,13 +20,14 @@ AI coding assistants are great at writing general logic, but MyBatis has a speci
 | **Check whether SQL is correct** | Write the logic | Real-time inspection, highlight errors immediately |
 | **Look up table / column names** | May misremember | Connects your real DB, 100% accurate |
 
-**Even better, the plugin now provides an MCP service**: AI can directly call the plugin to read table schemas, look up mappers, and generate CRUD code — saving tokens and staying accurate.
+**Even better, the plugin now provides a powerful MCP service**: AI can directly call the plugin to read table schemas, locate mappers, generate CRUD code, statically validate mapper contracts (`validate_mybatis_mapper`, skipping tests for pure static SQL), and evaluate dynamic SQL with safe execution (`run_mybatis_sql`) — saving tokens, eliminating container startup overhead, and staying 100% accurate.
 
 **Best practice:** Use AI for business logic, use the plugin for MyBatis code correctness and productivity, and let them collaborate directly through MCP.
 
 ---
 
 ## Features
+- **Comprehensive MyBatis MCP (Model Context Protocol) Support** — Provides 12 specialized MCP tools for Oh My Pi, Claude Code, Cursor, and other AI coding assistants (two-way mapper/XML navigation, table schema queries, CRUD and testcase generation, deep static contract validation `validate_mybatis_mapper`, dynamic SQL branch evaluation and safe dry-run execution `run_mybatis_sql`), with one-click `.mcp.json` generation
 
 - **Generate SQL from method name** — just a method name, no params or return type needed. Works like Spring Data JPA
 - **Full MyBatis SQL auto-complete** — recognizes MyBatis tags (`include`, `trim`, `set`, `where`, `foreach`), provides database-aware completion and correctness checks

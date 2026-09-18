@@ -1,3 +1,33 @@
+<strong>3.6.6</strong>
+<ul>
+<li>[FIX] 修复 ProGuard 混淆导致 `run_mybatis_sql` MCP 工具序列化返回体时抛出 `Gson duplicate-fields` 异常的问题（在混淆配置中保留 MCP 相关的请求响应 DTO 与工具类）</li>
+<li>[IMPROVE] 支持自动从 IDEA Database 工具窗口（LocalDataSource / PasswordSafe）读取数据库账号密码，无需在插件弹窗中重复配置；同时 `run_mybatis_sql` 新增可选的 `username` 与 `password` 覆盖参数</li>
+</ul>
+<ul>
+<li>[FIX] Fix ProGuard obfuscation issue causing `run_mybatis_sql` MCP tool to throw `Gson duplicate-fields` serialization exception (keep all MCP request/response DTOs and tools in ProGuard configuration)</li>
+<li>[IMPROVE] Automatically resolve database username and password from IntelliJ Database tool window (LocalDataSource / PasswordSafe); add optional `username` and `password` overrides to `run_mybatis_sql`</li>
+</ul>
+<strong>3.6.5</strong>
+<ul>
+<li>[NEW] 新增 MCP 工具 `run_mybatis_sql`，支持对 MyBatis 动态 SQL 进行求值分支渲染、Druid 语法校验及数据库安全执行（支持 dryRun 事务回滚、传参模拟、if-test 条件覆盖及行数限制）</li>
+<li>[NEW] 新增 MCP 工具 `validate_mybatis_mapper`，支持对 MyBatis Mapper XML 与 Java 接口进行深度静态契约校验，自动识别动态 SQL 标签并给出置信度分级评估（纯静态 SQL 置信度 1.0 免跑单测，动态标签给出针对性测试指引）</li>
+<li>[NEW] 新增 `.mcp.json` 配置文件一键生成功能：在 MCP 设置与服务器启动弹窗中支持一键生成或更新项目根目录 `.mcp.json`，方便 Oh My Pi、Claude Code、Cursor 等 AI 编码工具自动发现与连接</li>
+<li>[NEW] 数据库表右键"调用 MyBatis MCP Prompt"新增"校验 Mapper"标签页</li>
+<li>[IMPROVE] MCP 服务启动体验优化：新增交互式配置指引弹窗 (McpServerDialog)，使用等宽字体清晰展示各 AI 客户端接入命令并支持一键生成配置文件</li>
+<li>[IMPROVE] 优化 XML 参数添加 if test 的意图动作 (Intention Action)：重构 if test 生成与参数提取逻辑，支持多参数精准识别并防止重复添加</li>
+<li>[FIX] 修复项目配置与包解析过程中的 ReadAction 权限异常问题，确保 PSI 操作在读线程中安全执行</li>
+<li>[FIX] 修复 Batslog 日志控制台与国际化资源引用的兼容性问题，完善试用与激活相关的 JSON 数据解析</li>
+</ul>
+<ul>
+<li>[NEW] Add MCP tool `run_mybatis_sql` for AI dynamic SQL evaluation, branch rendering, Druid syntax validation, and safe database execution with dry-run rollback, parameter mocking, and if-test override</li>
+<li>[NEW] Add MCP tool `validate_mybatis_mapper` for comprehensive static contract validation of MyBatis XML and Java interfaces, detecting dynamic SQL tags and providing confidence scoring (1.0 for static SQL, targeted testcase recommendations for dynamic tags)</li>
+<li>[NEW] Add one-click `.mcp.json` configuration generation in MCP settings and server dialog for seamless auto-discovery by Oh My Pi, Claude Code, Cursor, and other AI coding agents</li>
+<li>[NEW] Add "Validate Mapper" prompt tab in the "Call MyBatis MCP Prompt" table action</li>
+<li>[IMPROVE] Optimize MCP server startup UX: interactive configuration dialog with monospace instructions for various AI clients and quick config generation</li>
+<li>[IMPROVE] Optimize 'Add if test' intention action: refactor parameter extraction and if-test generation with duplicate prevention and multi-parameter support</li>
+<li>[FIX] Fix ReadAction access exceptions during package resolution in project configuration</li>
+<li>[FIX] Fix compatibility issues in Batslog console and resource bundle references, improve JSON deserialization for trial activation responses</li>
+</ul>
 <strong>3.6.1</strong>
 <ul>
 <li>[IMPROVE] 启动活动迁移至 ProjectActivity 模式，优化项目加载性能</li>
