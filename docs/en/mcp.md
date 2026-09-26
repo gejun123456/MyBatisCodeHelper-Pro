@@ -21,8 +21,9 @@ Without MCP, the AI typically searches the project, opens XML files, and extract
 | Find mapper → XML mapping            | Search project files and verify mapping (~150–250 tokens) | **Single MCP call (~30–60 tokens)**       |                **~100–200 tokens**                |
 | List SQL statements                  | Read XML file (~1,000–2,500 tokens depending on size)     | **Returns structured statement metadata** |              **~1,000–2,500 tokens**              |
 | Query table columns                  | Read DDL or inspect database (~300–500 tokens)            | **Single MCP call (~50 tokens)**          |                **~250–450 tokens**                |
+| Validate Mapper syntax & contracts   | Reading large XML manually invites hallucinations & misses| **Deep static analysis, ms-level diagnostics**| **Prevents dynamic SQL runtime bugs**          |
+| Dynamic SQL simulation & safe execution | Manually write tests, start Spring, or guess branches  | **Branch evaluation, parameter mocking & DryRun** | **Instant verification without test containers** |
 | Typical MyBatis development workflow | Multiple searches, XML reads, schema lookups              | **Direct MCP queries**                    | **Typically 60–90% less MyBatis-related context** |
-
 > Locating a mapper XML saves only a small number of tokens. The larger savings come from avoiding large XML reads and schema lookups. During real development these operations are often combined, so the overall savings accumulate quickly.
 
 ---
@@ -239,11 +240,143 @@ Generate or update a MyBatis mapper testcase.
 
 ---
 
+## `validate_mybatis_mapper`
+
+Performs comprehensive static contract validation for MyBatis Mapper XML files and their corresponding Java interfaces using IntelliJ IDEA's deep inspection framework (DOM validation, MyBatis ParamLanguage, and OGNL test-expression checks). Detects discrepancies and defects before code is executed or committed.
+
+**Validation Scope:**
+
+* **XML Structure & Syntax**: Valid root element, tag closures, and formatting
+* **DOM Mapping Contracts**: `resultType` resolution, `resultMap` property existence in entity POJOs, `association`/`collection` nested mappings
+* **Parameter Binding**: `#{...}` placeholder consistency with Java interface `@Param` annotations or POJO properties
+* **OGNL Test Expressions**: Variable references and syntax correctness in `<if test="...">` and `<when test="...">`
+* **SQL Fragment References**: `<include refid="...">` existence (both local and cross-namespace)
+* **Java-XML Coherence**: Namespace matching, interface method to XML statement ID pairing
+* **Static SQL Grammar**: IntelliJ SQL dialect parser checks for statically rendered SQL
+* **Database Schema Resolution (when IDE data source is configured)**: Validates table/column existence and `jdbcType` vs. physical DB column type compatibility
+
+> **Coverage Contract**:  
+> Statements containing dynamic tags (`<if>`, `<choose>`, `<foreach>`) cannot have every branch combination proven by static analysis alone. The tool provides a transparent `checksExecuted` / `checksSkipped` contract and gives targeted recommendations (`STATIC_CHECKS_PASSED_WITH_DYNAMIC_SQL`, etc.) guiding developers and AI to verify branches using `run_mybatis_sql` or testcases.
+
+**Input**
+
+* `mapper`: Mapper interface FQN (e.g. `com.example.mapper.UserMapper`) or `.java` path (use this or `xmlPath`)
+* `xmlPath`: Mapper XML file path (use this or `mapper`)
+* `statementId`: Optional. Validate a specific Statement ID; if omitted, all statements and resultMaps in the mapper are validated
+* `projectPath`: Optional. Project root path
+
+**Output**
+
+* `valid`: Boolean. `true` if no blocking errors are found
+* `recommendation`: Actionable recommendation, such as `ALL_STATIC_PASSED`, `STATIC_CHECKS_PASSED_WITH_DYNAMIC_SQL`, `PASSED_WITH_WARNINGS`, or `ERRORS_FOUND`
+* `summary`: Contains `totalStatements`, `staticStatements`, `dynamicStatements`, `totalErrors`, `totalWarnings`, plus `checksExecuted` and `checksSkipped`
+* `statements`: Per-statement analysis including dynamic tags list, `sqlAnalysisNotice`, errors, and warnings
+* `resultMaps`: ResultMap mapping and property validation details
+* `globalErrors` / `globalWarnings`: File-level diagnostics
+
+---
+
+## `run_mybatis_sql`
+
+Renders and optionally executes MyBatis dynamic SQL with zero overhead—**without starting Spring Boot or writing test scaffolding**!
+
+Supports dynamic branch evaluation (`<if>`, `<choose>`, `<where>`, `<trim>`, `<foreach>`, OGNL expressions), parameter injection, Druid AST syntax parsing, and safe database execution (with automatic DML transaction rollback `dryRun`, result set preview, and row limits).
+
+**Input**
+
+* **Statement Locator (choose one):**
+  * `xmlPath` + `statementId` (or `methodName`): Locate via XML file and statement ID
+  * `mapper` + `methodName` (or `statementId`): Locate via Java interface and method name
+  * `rawXml`: Direct XML statement snippet (e.g. `<select id="find">SELECT * FROM user WHERE id = #{id}</select>`), allowing AI to validate newly generated XML snippets before saving to disk
+* **Parameter Simulation & Branch Control:**
+  * `params`: Key-value pairs for parameter values (JSON object, e.g. `{"id": 1, "status": "ACTIVE"}`)
+  * `ifTests`: Explicit boolean overrides for `<if test="...">` conditions (e.g. `{"status != null": true}`)
+  * `allIfTestsTrue`: Force all dynamic `<if test>` conditions to `true`
+  * `allIfTestsFalse`: Force all dynamic `<if test>` conditions to `false`
+* **Execution & Dialect Settings:**
+  * `format`: Format and indent rendered SQL (default `true`)
+  * `checkSyntax`: Validate rendered SQL syntax using Druid parser (default `true`)
+  * `execute`: Execute rendered SQL against project database (default `false`)
+  * `dryRun`: Roll back DML (insert/update/delete) immediately after execution (default `true`, preventing data modification)
+  * `dataSource`: Target datasource name (defaults to configured project datasource)
+  * `maxRows`: Max rows returned for queries (default 50)
+  * `dbType`: SQL dialect: `mysql`, `postgresql`, `oracle`, `sqlserver`, `h2` (default auto-detected)
+  * `username` / `password`: Optional database credential overrides
+  * `projectPath`: Optional project root path
+
+**Output**
+
+* `status`: `success` or `error`
+* `statementId`: Statement ID
+* `statementType`: `select`, `insert`, `update`, `delete`
+* `renderedSql`: Fully evaluated and rendered SQL string
+* `parameters`: Parameter details (tokens, property names, used values, provided flag)
+* `ifTests`: Dynamic branch evaluation details (test expression, boolean result, evaluation source)
+* `syntax`: Druid syntax validation (`valid`, `dialect`, error messages)
+* `execution`: Database execution results (when `execute: true`):
+  * `executed`: Whether execution succeeded
+  * `dataSource`: Datasource used
+  * `executionTimeMs`: Execution duration in ms
+  * `rowCount` / `affectedRows`: Rows returned or affected
+  * `isDryRunRolledBack`: Whether transaction was rolled back
+  * `columns`: Returned column names
+  * `rows`: 2D array of data rows
+* `warnings`: Warnings during processing
+
+---
+
+## `list_tables`
+
+**Input**
+
+* `projectPath`: Optional project path
+
+**Output**
+
+List of all configured data sources and table names (with data source names and JDBC URLs).
+
+---
+
+## `get_mybatis_generator_profile` / `set_mybatis_generator_profile`
+
+Inspects or updates the project's MyBatis generator defaults (package names, source roots, Lombok switches, batch methods, etc.), allowing AI agents to generate code adhering to team standards.
+---
+
 # 📦 Configuration
 
-Add the following configuration to your MCP-compatible AI coding assistant (for example, cc-switch):
+The MyBatisCodeHelper-Pro plugin includes an internal MCP HTTP server (default port `63340`).
 
-name can use MybatisMcp
+### Method 1: Generate `.mcp.json` (Recommended)
+
+In IntelliJ IDEA:
+
+```text
+Tools
+    └── MyBatisCodeHelper
+            └── MCP Server
+```
+
+Click **Generate / Update .mcp.json in Project Root**.  
+AI tools like Claude Code, Cursor, Cline, and Oh My Pi will automatically detect and connect to the MCP server.
+
+Sample `.mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "mybatis": {
+      "type": "http",
+      "url": "http://127.0.0.1:63340/mcp"
+    }
+  }
+}
+```
+
+### Method 2: Manual Configuration
+
+Add the following configuration to your MCP-compatible assistant (e.g. cc-switch or global MCP settings):
+
+Server name can be `MybatisMcp`:
 ```json
 {
   "type": "http",
@@ -251,8 +384,7 @@ name can use MybatisMcp
 }
 ```
 
-> This is an example configuration. The MCP server is provided by the **MyBatisCodeHelper-Pro** IntelliJ IDEA plugin.
-
+> The MCP server is provided by the **MyBatisCodeHelper-Pro** IntelliJ IDEA plugin. Install the plugin and start the IDE first.
 ---
 
 # 🚦 Starting the MCP Server
@@ -310,12 +442,15 @@ indicating that the server is running and available to your AI coding assistant.
 | ---------------------------------- | ------------------------ |
 | Locate a mapper XML                | `find_mapper_xml`        |
 | Find the Java interface from XML   | `find_mapper_interface`  |
+| List all database tables           | `list_tables`            |
 | Inspect a table before writing SQL | `get_table_columns`      |
 | Discover existing SQL statements   | `list_mapper_statements` |
 | View configured data sources       | `list_data_sources`      |
+| **Validate mapper syntax & contracts** | **`validate_mybatis_mapper`** |
+| **Render / validate / execute SQL** | **`run_mybatis_sql`** |
 | Generate CRUD from a table         | `generate_crud`          |
 | Generate a mapper testcase         | `generate_mapper_testcase` |
-
+| Query / set generator profile      | `get_mybatis_generator_profile` / `set_mybatis_generator_profile` |
 ---
 
 # 📊 Key Benefits
