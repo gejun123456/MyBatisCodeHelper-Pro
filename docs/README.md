@@ -21,13 +21,14 @@ AI 写代码越来越强，但 MyBatis 有个特点：**它要连真实数据库
 | **检测 SQL 对不对** | 写逻辑 | 写的时候实时检测，标红提示 |
 | **查表名 / 字段** | 可能记错 | 插件连接真实数据库，100% 准确 |
 
-**更妙的是，插件现在提供 MCP 服务**：AI 可以直接调用插件的能力来读表结构、查 Mapper、生成 CRUD 代码，省 token 又准确。
+**更妙的是，插件现在提供强大的 MCP 服务**：AI 可以直接调用插件的能力来读表结构、查 Mapper、生成 CRUD 代码、静态校验 Mapper 契约（`validate_mybatis_mapper`，纯静态 SQL 免跑单测），以及进行动态 SQL 求值渲染与安全执行（`run_mybatis_sql`），省 token、免启动容器、准确率 100%。
 
 **最佳实践：AI 写通用逻辑，插件管 MyBatis 的正确性和效率，再通过 MCP 让两者直接协作，效果最好。**
 
 ---
 
 ## 功能
+- **完整的 MyBatis MCP (Model Context Protocol) 支持** — 为 Oh My Pi、Claude Code、Cursor 等 AI 编码工具提供 12 个专用 MCP 工具（Mapper/XML 双向检索、表结构查看、CRUD 与单测生成、Mapper 深度静态契约校验 `validate_mybatis_mapper`、动态 SQL 分支求值与安全执行 `run_mybatis_sql` 等），支持一键生成 `.mcp.json`
 - **通过方法名(不需要方法的返回值和参数 会自动推导出来)来生成sql 可以生成大部分单表操作的sql 只需要一个方法的名字即可 会自动补全好方法的参数和返回值 和springdatajpa的语句基本一致**
 - **最好的mybatis代码提示，sql正确性检测，插件会识别mybatis的一系列标签 如 include trim set where，在这些标签之后的sql可以自动提示数据库的字段，检测sql的正确性，从此不用担心sql写错**
 - **直接从Intellij自带的数据库或者配置一个数据库生成crud代码 自动检测好 useGeneratedkey 自动配置好模块的文件夹 只用添加包名就可以生成代码了**
