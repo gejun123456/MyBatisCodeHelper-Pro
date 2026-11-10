@@ -1,123 +1,32 @@
-# Intellij Plugin for Mybatis
+# MyBatisCodeHelper-Pro
 
-[![Jetbrains Plugins](https://img.shields.io/jetbrains/plugin/v/9837-mybatiscodehelperpro.svg)][plugin]
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/9837.svg?style=flat-square)][plugin]
-[![加入QQ群](https://img.shields.io/badge/chat-QQ群-46BC99.svg?style=flat-square)](https://qm.qq.com/q/dYYkYSpLoW)
+[![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/9837-mybatiscodehelperpro.svg)](https://plugins.jetbrains.com/plugin/9837)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/9837.svg?style=flat-square)](https://plugins.jetbrains.com/plugin/9837)
 
-<div align="left">
-  <a href="https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/en/" 
-     style="font-weight: bold; font-size: 16px; color: #007BFF; text-decoration: none;">
-     🌎 English
-  </a>
-</div>
+> **让 AI 写 MyBatis 少走弯路，节省开发时间与 Token。**
 
-> Intellij下Mybatis支持插件
+少找 XML、少复制表结构、少重复解释项目规范。MyBatisCodeHelper-Pro 将项目上下文、代码生成和检查能力接入 AI 工作流，帮助减少人工整理信息和反复纠错的时间；在 IDEA 中也支持补全、跳转和重构。
 
----
+**[中文文档](https://gejun123456.github.io/MyBatisCodeHelper-Pro/)** · **[English](https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/en/)** · **[试用与购买](https://brucege.com/pay/view)**
 
-## 功能
-- **通过方法名(不需要方法的返回值和参数 会自动推导出来)来生成sql 可以生成大部分单表操作的sql 只需要一个方法的名字即可 会自动补全好方法的参数和返回值 和springdatajpa的语句基本一致**
-- **最好的mybatis代码提示，sql正确性检测，插件会识别mybatis的一系列标签 如 include trim set where，在这些标签之后的sql可以自动提示数据库的字段，检测sql的正确性，从此不用担心sql写错**
-- **直接从Intellij自带的数据库或者配置一个数据库生成crud代码 自动检测好 useGeneratedkey 自动配置好模块的文件夹 只用添加包名就可以生成代码了**
-- 从sql快速生成xml和java接口方法
-- 快速测试mybatis的sql，添加参数并运行
-- mybatis日志转sql，转sql后可以运行
-- 从java类生成建表语句
-- 数据库添加字段后可以继续生成，不会修改之前已经在接口或xml添加的自定义的方法 无需再去进行手动的添加
-- mybatis接口和xml的互相跳转  支持一个mybatis接口对应多个xml
-- mybatis接口中的方法名重构支持
-- xml中的 param的自动提示 if test的自动提示 resultMap refid 等的自动提示
-- resultMap中的property的自动提示，检测，重构,支持collection,association等
-- resultMap中column自动提示，检测
-- xml中refid，resultMap等的跳转到定义
-- 检测没有使用的xml 可一键删除
-- 检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml
-- mybatis接口中一键添加param注解
-- mybatis接口一键生成xml
-- 完整的typeAlias支持
-- param检测 检测#{ 中的内容是否有误
-- ognl 支持 if test when test foreach bind中的自动补全，跳转和检测
-- 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot
-- 一键生成mybatis接口的testcase 无需启动spring，复杂sql可进行快速测试
-- 一键生成表关联的join (支持平铺Join与一对多JSON聚合Join，彻底解决分页问题)
-- 一键从sql语句中 导出resultMap和java类
-- xml代码格式化
+## 已经用 AI 写代码？
 
------------------------------------------------------------------------
+通过 MCP，AI 可以按需查询 Mapper 和真实表字段，读取项目生成配置，并调用代码生成、静态校验与动态 SQL 求值工具。将适合交给插件的重复步骤交给工具，有机会减少重复读取、对话和生成消耗。
 
-## 插件未激活与激活状态的功能比较  未激活版的功能可以免费一直使用下去
+从一个已有 Mapper 的修改开始：读取接口与 XML、确认表字段、修改查询、运行静态检查，再按实际参数渲染 SQL，必要时运行有断言的测试。
 
-功能点  | 未激活版 | 激活版
------   |------| -----
-接口与xml互相跳转 更换图标| ✔    | ✔
-接口方法名重构| ✔    | ✔
-一键添加param| ✔    | ✔
-xml中的 param的自动提示 resultMap refid 等的自动提示| ✔    | ✔
-resultMap中的property的自动提示| ✔    |✔
-检测没有使用的xml 可一键删除| ✔    |✔
-检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml方法块| ✔    |✔
-检测resultmap的property是否有误| ✔    |✔
-支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot| ✔    |✔
-一键生成分页查询| ✔    |✔
-代码模版，生成cdata和collection语句| ✔    |✔
-一键添加resultMap中未被使用的属性| ✔    |✔
-一键生成mybatis接口的testcase | ✘    |✔
-通过方法名生成sql | ✘    | ✔
-通过数据库生成crud代码| ✘    |✔
-通过java类生成建表语句| ✘    |✔
-xml collection中的 param提示| ✘    |✔
-识别mybatis的trim where include等标签 全自动sql补全| ✘    |✔
-检测#{中的参数是否正确| ✘    |✔
-if test when test foreach collection $中的OGNL支持| ✘    |✔
-param重构功能(2.7.2)| ✘    |✔
-resultMap中column提示与检测(2.7.2)| ✘    |✔
-Mybatis xml代码格式化(2.8.2)| ✘    |✔
-从sql生成resultMap和java类 | ✘    |✔
-从sql直接生成mybatis xml和java接口方法 | ✘    |✔
-生成join | ✘    |✔
+- [安装并接入 AI 客户端](docs/quickstart.md)
+- [可复制的 AI 任务示例](docs/ai-workflow.md)
+- [MCP 工具与配置参考](docs/mcp.md)
+- [功能与免费 / 付费版对比](docs/features.md)
 
-试用或者购买链接: http://brucege.com/pay/view
+按量计费时，减少 Token 消耗有机会降低 AI 费用；固定订阅下，收益主要体现在时间与额度利用上。实际节省取决于任务、模型和客户端，请用 [同一任务对照](docs/ai-workflow.md#如何比较时间与-token-消耗) 评估，工具定义、调用和返回内容也应计入消耗。
 
-之后会加入更多功能
+静态检查只覆盖实际执行的检查项；生成测试代码不等于验证通过。请查看工具返回的检查范围，并按业务预期验证结果。
 
-## 联系我
-- 加入qq群 由于Intellij插件市场需要两天审核  插件的bug修复 最新版本 会先放在qq群中 出现任何问题可在qq群反馈
+## 选择发行版本
 
-![qqGroup](https://images.brucege.com/qq5New.png)
-2群: 914051156 (人满)  
-3群：598080979 (人满)  
-4群：232578741 (人满)
-5群: 575733084
-1群备份: 789681969    
-2群备份: 140492753
-或者添加qq号:1098632410  
+- 官网授权：安装 [MyBatisCodeHelperPro](https://plugins.jetbrains.com/plugin/9837)，在 [官网](https://brucege.com/pay/view) 试用或购买。
+- 企业客户及中国以外用户：按购买渠道安装 [Marketplace Edition](https://plugins.jetbrains.com/plugin/14522-mybatiscodehelperpro-marketplace-edition-)。
 
-- 或者添加我的微信:
-
-![weichaturl](https://images.brucege.com/wechatme.png)
-
-该项目使用了或参考了以下项目:
-
-codehelper.generator: https://github.com/zhengjunbase/codehelper.generator
-
-mybatis：https://github.com/mybatis/mybatis-3
-
-mybatis generator: https://github.com/mybatis/generator
-
-pageHelper: https://github.com/pagehelper/Mybatis-PageHelper
-
-mybatis-generator-gui: https://github.com/zouzg/mybatis-generator-gui
-
-mybatis generator plugin: https://github.com/itfsw/mybatis-generator-plugin
-
-mybatisplus: https://github.com/baomidou/mybatis-plus
-
-batlog: https://github.com/PerccyKing/batslog
-
-如果您是这些项目的作者，请联系我，我将发送免费的永久key给您
-
-截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.com/gejun123456/codehelperPluginDemo)
-
-大家可以学习https://www.imooc.com/learn/924 来掌握更多使用Intellij的技巧 视频讲得很棒
-
-[plugin]: https://plugins.jetbrains.com/plugin/9837
+[安装与激活](docs/install.md) · [企业购买](docs/company.md) · [联系支持](docs/contactMe.md) · [更新记录](docs/changelog.md) · [项目致谢](docs/features.md)

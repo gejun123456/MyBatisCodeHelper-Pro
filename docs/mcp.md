@@ -1,58 +1,23 @@
-# MyBatis MCP (Model Context Protocol) 支持
+# MyBatis MCP：工具与客户端接入
 
-MyBatisCodeHelper-Pro 提供了 **MCP (Model Context Protocol)** 支持，让 AI 编码助手（如 Claude Code）能够直接与你的 MyBatis 项目交互，大幅提升开发效率。
+通过插件内置的 MCP 服务，AI 可以按需读取项目 Mapper、数据库元数据和生成配置，并调用代码生成、静态校验与动态 SQL 求值工具，帮助减少手动提供上下文、重复解释规范和反复纠错的时间。
 
----
+**[首次接入与任务演练](quickstart.md)** · [可复制的任务示例](ai-workflow.md) · [试用与购买](https://brucege.com/pay/view)
 
-## 🚀 为什么使用 MyBatis MCP？
+## 先看完整工作流程
 
-AI 编码助手在处理 MyBatis 项目时，经常需要查找 Mapper 接口对应的 XML 文件、查看数据库表结构、分析 SQL 语句。**没有 MCP 时**，AI 通常需要搜索项目文件、读取 XML 内容，再从中提取所需信息，不仅消耗更多 Token，也会占用大量上下文窗口。
+| 阶段 | 工具 | 作用 |
+| --- | --- | --- |
+| 了解已有代码 | find_mapper_xml、find_mapper_interface、list_mapper_statements | 定位接口与 XML，读取现有语句信息 |
+| 确认数据库 | list_data_sources、list_tables、get_table_columns | 查看可用连接、表与实际字段 |
+| 遵循项目规范 | get_mybatis_generator_profile、set_mybatis_generator_profile | 读取或调整生成目录、包名与风格 |
+| 生成代码 | generate_crud、generate_mapper_testcase | 写入业务代码或测试骨架 |
+| 检查修改 | validate_mybatis_mapper | 检查语法、引用与映射，报告已执行及跳过的检查 |
+| 验证指定输入 | run_mybatis_sql | 渲染动态 SQL、检查语法，按需连接数据库执行 |
 
-### 有 MCP vs 无 MCP
+按需查询上下文、调用工具生成和检查代码，有机会减少模型的重复读取与生成消耗。工具定义、调用与返回内容也占 Token，实际耗时和费用应按完整任务比较。[如何比较时间与 Token 消耗](ai-workflow.md#如何比较时间与-token-消耗)。
 
-| 操作                | 无 MCP                                        | 有 MCP                         |                 节省                 |
-| ----------------- | -------------------------------------------- | ----------------------------- | :--------------------------------: |
-| 查 Mapper → XML 映射 | 搜索项目并确认映射（约 150~250 Tokens）                  | **一次 MCP 调用（约 30~60 Tokens）** |        **约 100~200 Tokens**        |
-| 查看 Mapper SQL 列表  | 通常需要读取 XML 文件（约 1000~2500 Tokens，视 XML 大小而定） | **直接返回结构化 SQL 列表**            |       **约 1000~2500 Tokens**       |
-| 查询数据库表字段          | 打开数据库工具或读取 DDL（约 300~500 Tokens）             | **一次 MCP 调用（约 50 Tokens）**    |        **约 250~450 Tokens**        |
-| 校验 Mapper 契约与语法   | 人肉阅读长 XML 易漏看，且常出现 OGNL / 类型幻觉           | **深度静态契约检测，毫秒级定位标签/参数/类型错误** | **大幅避免动态 SQL 暗坑与繁琐排错**  |
-| 动态 SQL 模拟与安全执行 | 手写单测启动 Spring 上下文或脑补分支拼接结果              | **支持分支求值、参数模拟、Druid 校验与 DryRun** | **秒级验证，无需启动复杂测试容器**    |
-| MyBatis 相关开发流程    | 多次搜索、读取 XML、查看表结构                            | **直接调用 MCP 获取所需信息**           | **通常可减少 60%~90% 的 MyBatis 相关信息读取** |
-> 查找文件本身节省有限，但读取 XML、查看 SQL、查询表结构等操作能够显著减少 Token 消耗。随着查询次数增加，整体收益会越来越明显。
-
----
-
-## 📉 减少上下文占用
-
-没有 MCP 时，AI 往往需要把整个 XML 文件读入当前会话上下文。
-
-例如一个对话涉及 3 个不同的 Mapper：
-
-```text
-无 MCP：
-3 × 约 2000 Tokens
-≈ 6000 Tokens 的 XML 内容持续占用当前会话上下文
-
-有 MCP：
-3 × 约 50 Tokens
-≈ 150 Tokens 的结构化数据
-```
-
-节省约 **5800 Tokens** 的上下文空间。
-
-上下文越干净，模型越容易关注真正需要的信息，而不是大量 XML 内容，因此回答通常也会更加准确。
-
----
-
-## 📈 项目越大，收益越明显
-
-| 项目规模 | 典型 XML 大小 |       单次读取 XML      |     涉及 5 个 Mapper    |
-| :--- | :-------: | :-----------------: | :------------------: |
-| 小型项目 |  5~10 KB  |  约 1000~2500 Tokens |  约 5000~12500 Tokens |
-| 中型项目 |  15~30 KB |  约 4000~7500 Tokens | 约 20000~37500 Tokens |
-| 大型项目 |  30~50 KB | 约 7500~12500 Tokens | 约 37500~62500 Tokens |
-
-> XML 越大，AI 每次读取消耗的 Token 越多。MCP 返回结构化数据，因此项目规模越大，优势越明显。
+静态检查、SQL 渲染、数据库执行和测试断言验证的是不同内容。静态检查通过或测试骨架生成成功，都不代表业务结果已经验证。
 
 ---
 
@@ -214,6 +179,8 @@ deleteByPrimaryKey   → delete (line 35)
 
 > 工具会创建或更新 Mapper 测试类、`setUpMybatisDatabase` 方法、mapper 字段，以及需要的 `mybatisTestConfiguration` XML。指定 `methodName` 时，会额外生成对应的测试方法；如果测试方法已经存在，会通过 `warnings` 返回提示。
 
+支持运行命令返回的版本还会提供 `runCommand`、`runWorkingDirectory` 等信息（能识别构建工具时）。这是测试骨架：默认调用使用占位输入，未包含业务断言，测试配置可能自动提交写入。请先核对开发 / 测试连接、事务设置，补充有效输入、数据和断言，再执行并报告结果。
+
 ---
 
 ### 8. `validate_mybatis_mapper` —— 校验 Mapper XML 与 Java 接口契约
@@ -244,7 +211,7 @@ deleteByPrimaryKey   → delete (line 35)
    - 自动识别 `<if>`, `<choose>`, `<when>`, `<otherwise>`, `<where>`, `<trim>`, `<set>`, `<foreach>`, `${...}` 动态标签
    - **采用结构化覆盖度契约取代模糊的数值“置信度”**：在 `summary.checksExecuted` 中诚实列出所有已执行的静态检测项，在 `summary.checksSkipped` 中列出未执行的检测项（如未配置数据源时提示跳过表级校验；包含动态标签时提示静态分析无法穷举分支）。
    - **行动建议（recommendation）**：
-     - `ALL_STATIC_PASSED`：纯静态 SQL 且全部静态契约校验通过，AI 可确信静态契约无误，**安全免跑单测**，极大节省测试与生成耗时
+     - `ALL_STATIC_PASSED`：语句为纯静态 SQL，已执行的静态检查未发现问题；仍需查看 `summary.checksSkipped`。该结论不证明运行时或业务结果正确，不能直接据此跳过相关测试
      - `STATIC_CHECKS_PASSED_WITH_DYNAMIC_SQL`：静态契约通过，但语句包含动态条件分支，提示 AI 配合 `run_mybatis_sql` 验证分支或编写多分支单测
      - `PASSED_WITH_WARNINGS`：静态契约通过，但存在警告（拼写可疑、类型不匹配），建议确认
      - `ERRORS_FOUND`：直接返回具体错误行号、错误描述和修复建议
@@ -275,7 +242,8 @@ summary: {
   "staticStatements": 4,
   "dynamicStatements": 0,
   "totalErrors": 0,
-  "checksExecuted": ["xmlSyntax", "resultMapPropertyContract (DOM)", "parameterBinding (#{...})", "tableColumnResolution", ...]
+  "checksExecuted": ["xmlSyntax", "resultMapPropertyContract (DOM)", "parameterBinding (#{...})", "tableColumnResolution", ...],
+  "checksSkipped": []
 }
 ```
 
@@ -288,13 +256,13 @@ summary: {
 - **分支覆盖与条件控制**：
   - 支持传入 `params`（如 `{"status": 1, "userId": 1001}`）自动进行 OGNL 求值
   - 支持传入 `ifTests` 精确覆盖特定 `<if test>` 条件（如 `{"status != null": true}`）
-  - 支持 `allIfTestsTrue: true` 强制开启全部动态分支（快速验证全覆盖 SQL 语法）
+  - 支持 `allIfTestsTrue: true` 强制将 if 条件设为 true，检查该组合下的 SQL；这不等于覆盖所有条件组合
   - 支持 `allIfTestsFalse: true` 强制关闭全部动态分支（验证基础 SQL 语法）
 - **Druid SQL 语法解析**：使用内置 Druid 语法解析器针对目标方言（MySQL, PostgreSQL, Oracle, SQLServer, H2, DB2 等）进行静态语法校验，检测关键字拼写、逗号缺失、括号不闭合等语法错误。
 - **真实数据库安全执行（带 dryRun 回滚）**：
   - 自动复用 IntelliJ Database 工具窗口已保存的连接凭据，也可传入 `username`/`password` 临时覆盖
   - 查询类语句（SELECT）受 `maxRows` 行数保护（默认 50 条），防止大表数据撑爆 AI 上下文
-  - 更新类语句（INSERT/UPDATE/DELETE）默认开启 `dryRun: true`，在事务中执行后**自动回滚**，既能验证 SQL 在真实数据库能否正常执行，又绝不污染或破坏业务数据。
+  - 更新类语句（INSERT/UPDATE/DELETE）默认开启 `dryRun: true`，在事务中执行后**自动回滚**，可检查该输入下的数据库执行结果。事务回滚不能当作隔离环境，也不能保证消除所有副作用；请在开发 / 测试数据库使用真实执行。
 - **多种声明载体支持**：不仅支持 XML 中的 `<select>`/`<update>` 标签，还支持 Java 接口上的 `@Select`/`@Update` 注解方法，甚至支持直接传入一段未保存的 `rawXml` 字符串片段进行测试。
 
 **输入：**
@@ -371,6 +339,27 @@ summary: {
 
 ---
 
+## 生成 AI Skill
+
+支持此功能的版本提供 **Generate MyBatis AI Skill (SKILL.md)**：可从 Tools → MyBatisCodeHelper、MCP 启动窗口或 MCP 设置页打开。选择实际使用的客户端后生成，再按提示重载客户端或项目。
+
+| 客户端 | 项目内生成位置 |
+| --- | --- |
+| Claude Code | .claude/skills/mybatis-code-helper/SKILL.md |
+| CodeBuddy | .codebuddy/skills/mybatis-code-helper/SKILL.md |
+| WorkBuddy | .workbuddy/skills/mybatis-code-helper/SKILL.md |
+| Cursor | .cursor/rules/mybatis-code-helper.mdc |
+
+Skill 包含工具使用流程、参数参考与常见问题；生成时写入当前服务地址。它指导 AI 先读取上下文，再修改并验证。MCP 连接和 Skill 加载需分别确认。生成操作会覆盖相同路径下的同名 Skill / 规则文件，请先查看预览。
+
+如果安装版本尚无此按钮，可先使用 [任务提示词](ai-workflow.md)，并在 Marketplace 的版本记录中确认功能可用性。
+
+### WorkBuddy 接入
+
+支持此功能的版本可在 MCP 窗口或设置页使用“写入 WorkBuddy”，将 mybatis HTTP 服务合并到用户的 ~/.workbuddy/mcp.json，保留已有服务；不合法的 JSON 不会被覆盖。写入后按提示重启或重新打开项目，并确认工具可见。此连接配置与项目内 Skill 是两项独立配置。
+
+---
+
 ## 📦 配置与客户端接入
 
 MyBatisCodeHelper-Pro 内置了符合标准 Streamable-HTTP 规范的 MCP Server（默认监听端口 `http://127.0.0.1:63340/mcp`）。
@@ -390,7 +379,7 @@ MyBatisCodeHelper-Pro 内置了符合标准 Streamable-HTTP 规范的 MCP Server
 }
 ```
 
-**Oh My Pi**、**Claude Code**、**Cursor** 等 AI 编码工具在打开该项目时会自动发现并连接该 MCP 服务。
+此文件适用于支持项目 `.mcp.json` 的客户端。不同客户端的配置路径与启用流程不同，请按启动窗口或客户端说明接入，并在客户端确认服务已连接、工具可见。
 
 ---
 
@@ -429,9 +418,9 @@ Type: http
 URL:  http://127.0.0.1:63340/mcp
 ```
 
-#### 4. Codex / stdio 桥接（DeepSeek CLI / Python）
+#### 4. 仅支持 stdio 的客户端桥接
 
-对于只支持 stdio 传输协议的客户端，可以通过 `mcp-remote` 将 HTTP 端点转为 stdio（例如在 `~/.codex/config.toml` 中）：
+对于只支持 stdio 传输协议的客户端，可以通过 `mcp-remote` 将 HTTP 端点转为 stdio（以下为 TOML 配置格式示例，实际配置文件位置以客户端为准）：
 
 ```toml
 [mcp_servers.mybatis]
@@ -463,7 +452,7 @@ MyBatisCodeHelper-Pro 提供两种启动方式：
 ```text
 Tools
     └── MyBatisCodeHelper
-            └── Start MCP Server
+            └── Start MyBatis MCP Server
 ```
 
 启动成功后会弹出交互式配置指引弹窗（McpServerDialog），可一键生成 `.mcp.json` 或复制接入命令。
@@ -490,18 +479,18 @@ Tools
 启动成功后，菜单项会由
 
 ```text
-Start MCP Server
+Start MyBatis MCP Server
 ```
 
 变为
 
 ```text
-Stop MCP Server
+Stop MyBatis MCP Server
 ```
 
 说明服务已经运行，此时 AI 编码助手即可通过 MCP 与当前项目进行交互。
 
-> MCP 服务依赖 IntelliJ IDEA 运行。关闭 IDE 后服务会自动停止，重新打开 IDE 后需要重新启动。
+> MCP 服务依赖 IntelliJ IDEA 运行。保持目标项目打开、索引完成，并确认服务正在运行。
 
 ---
 
@@ -516,20 +505,16 @@ Stop MCP Server
 | 查看所有数据库表 | `list_tables` | 按数据源和 schema 列出全部表 |
 | 查看项目数据源 | `list_data_sources` | 了解当前配置的数据库连接 |
 | **静态校验 Mapper 与 XML 契约** | `validate_mybatis_mapper` | **深度检测属性映射、OGNL、参数绑定，标红语法错误** |
-| **纯静态 SQL 免测判断** | `validate_mybatis_mapper` | **ALL_STATIC_PASSED 时安全免跑单测，省时省 token** |
-| **动态 SQL 求值与渲染** | `run_mybatis_sql` | **模拟传参和 OGNL，零开销渲染最终 SQL** |
-| **SQL 真实语法与分支覆盖** | `run_mybatis_sql` | **Druid 语法解析，一键全分支/基础分支测试** |
-| **真实数据库安全执行** | `run_mybatis_sql` | **带 dryRun 事务回滚，验证真实 DB 执行且不污染数据** |
+| 查看校验覆盖范围 | `validate_mybatis_mapper` | 查看 checksExecuted 与 checksSkipped，确定还需执行的验证 |
+| **动态 SQL 求值与渲染** | `run_mybatis_sql` | 按指定参数求值与渲染 SQL |
+| **SQL 真实语法与分支覆盖** | `run_mybatis_sql` | 检查指定参数或条件覆盖设置下的语法，不代表全部分支组合通过 |
+| **真实数据库安全执行** | `run_mybatis_sql` | 在开发 / 测试库执行指定输入；DML 支持 dryRun 回滚 |
 | 根据表生成 CRUD 代码 | `generate_crud` | 直接生成实体、Mapper、XML 及 Service |
 | 生成 Mapper 单元测试 | `generate_mapper_testcase` | 自动配置 H2/真实库测试用例 |
 | 读取代码生成规则 | `get_mybatis_generator_profile` | 获取包名、路径规范与代码风格 |
 | 设置代码生成规则 | `set_mybatis_generator_profile` | 统一团队工程目录规范 |
 ---
 
-## 📊 核心优势
+## 接下来
 
-1. **🎯 深度静态契约校验** —— 复用 IntelliJ IDEA 原生 DOM 与语言注入检查，识别 ResultMap 字段映射、OGNL 表达式语法、`#{}` 参数绑定及 XML 语法错误，纯静态 SQL 免跑单测（置信度 1.0）。
-2. **⚡ Headless 动态 SQL 求值与安全执行** —— 无需启动耗时的 Spring 容器，直接求值 `<if>`/`<choose>` 等动态分支，Druid 语法解析，支持 DML 事务自动回滚（dryRun）。
-3. **📉 极致减少上下文占用** —— 返回结构化数据，避免 AI 读取动辄几千 Tokens 的完整 XML 和 DDL。
-4. **🛠️ 完善的生成与工程规范闭环** —— 支持读写工程代码生成配置（Profile），一键生成 CRUD 代码与单元测试。
-5. **🔌 开箱即用的多客户端生态** —— 支持一键生成 `.mcp.json`，无缝对接 Oh My Pi、Claude Code、Cursor、Windsurf、Codex 等主流 AI 工具。
+[完成第一个 AI 任务](quickstart.md) · [更多任务示例](ai-workflow.md) · [功能与版本对比](features.md) · [试用与购买](https://brucege.com/pay/view)

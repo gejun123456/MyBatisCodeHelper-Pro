@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>MyBatisCodeHelper-Pro | 节省 MyBatis 开发时间与 AI Token</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="让 AI 写 MyBatis 少走弯路：通过 MCP 按需查询 Mapper 与表结构，调用代码生成和检查工具，减少手动整理上下文、重复生成与反复纠错，节省开发时间和不必要的 Token 消耗。查看接入教程与试用方式。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/themes/vue.min.css">
 <!--  <script defer src="https://cloud.umami.is/script.js" data-website-id="a9d19c92-90e2-4eb5-9dc4-d4a2a9c5bede"></script>-->
   <style>
@@ -18,16 +18,12 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
+      name: 'MyBatisCodeHelper-Pro',
       repo: '',
       maxLevel: 4,
       subMaxLevel: 2,
       loadSidebar: true,
       loadNavbar: true,
-      alias: {
-        // '/.*/_navbar.md': '/_navbar.md',
-        '/en/(.*)': 'https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/docs/en/$1'
-      },
       search: 'auto', // default
 
       // complete configuration parameters
@@ -75,9 +71,9 @@
 
                                         var i4 = document.createElement("div");
                                         i4.innerHTML = `<a target='_blank' href='https://gitee.com/gejun123456/HotSwapHelper'><img src='https://images.brucege.com/HotSwapHelper2.png'/></a>`;
-                                        d.insertBefore(i4,d.firstChild),// d.insertBefore(i3, d.firstChild),
-                                        d.insertBefore(i, d.firstChild),
-                                        d.insertBefore(i2,d.firstChild)
+                                        d.appendChild(i2),
+                                        d.appendChild(i),
+                                        d.appendChild(i4)
 
                                         console.info("docsify-ads render success!")
                                       }

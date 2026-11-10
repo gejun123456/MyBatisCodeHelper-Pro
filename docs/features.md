@@ -1,0 +1,113 @@
+# 功能与免费 / 付费版对比
+
+[返回首页](README.md) · [接入 AI 工作流](quickstart.md) · [试用与购买](https://brucege.com/pay/view)
+
+## 功能
+
+MCP 的接入方式和校验范围见 [MCP 工具参考](mcp.md)。以下功能对比保留原有授权说明，试用及购买条件以对应渠道为准。
+
+- **MyBatis MCP (Model Context Protocol) 支持** — 为 Oh My Pi、Claude Code、Cursor 等 AI 编码工具提供 12 个专用 MCP 工具（Mapper/XML 双向检索、表结构查看、CRUD 与单测生成、Mapper 深度静态契约校验 `validate_mybatis_mapper`、动态 SQL 分支求值与安全执行 `run_mybatis_sql` 等），支持一键生成 `.mcp.json`
+- **通过方法名(不需要方法的返回值和参数 会自动推导出来)来生成sql 可以生成大部分单表操作的sql 只需要一个方法的名字即可 会自动补全好方法的参数和返回值 和springdatajpa的语句基本一致**
+- **MyBatis SQL 补全与静态检查：识别 include、trim、set、where 等标签，结合数据源提示字段并检查语法；业务结果仍需测试验证**
+- **直接从Intellij自带的数据库或者配置一个数据库生成crud代码 自动检测好 useGeneratedkey 自动配置好模块的文件夹 只用添加包名就可以生成代码了**
+- 从sql快速生成xml和java接口方法
+- 快速测试mybatis的sql，添加参数并运行
+- mybatis日志转sql，转sql后可以运行
+- 从java类生成建表语句
+- 数据库变更后可增量生成；保留自定义方法的条件见 [代码合并规则](databaseToCrud.md#代码是如何自动合并的)
+- mybatis接口和xml的互相跳转  支持一个mybatis接口对应多个xml
+- mybatis接口中的方法名重构支持
+- xml中的 param的自动提示 if test的自动提示 resultMap refid 等的自动提示
+- resultMap中的property的自动提示，检测，重构,支持collection,association等
+- resultMap中column自动提示，检测
+- xml中refid，resultMap等的跳转到定义
+- 检测没有使用的xml 可一键删除
+- 检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml
+- mybatis接口中一键添加param注解
+- mybatis接口一键生成xml
+- 完整的typeAlias支持
+- param检测 检测#{ 中的内容是否有误
+- ognl 支持 if test when test foreach bind中的自动补全，跳转和检测
+- 支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot
+- 一键生成mybatis接口的testcase 无需启动spring，复杂sql可进行快速测试
+- 一键生成表关联的join (支持平铺 Join 与一对多 JSON 聚合 Join)
+- 一键从sql语句中 导出resultMap和java类
+- xml代码格式化
+
+-----------------------------------------------------------------------
+
+## 插件未激活与激活状态的功能比较  未激活版的功能可以免费一直使用下去
+
+功能点  | 未激活版 | 激活版
+-----   |------| -----
+接口与xml互相跳转 更换图标| ✔    | ✔
+接口方法名重构| ✔    | ✔
+一键添加param| ✔    | ✔
+xml中的 param的自动提示 resultMap refid 等的自动提示| ✔    | ✔
+resultMap中的property的自动提示| ✔    |✔
+检测没有使用的xml 可一键删除| ✔    |✔
+检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml方法块| ✔    |✔
+检测resultmap的property是否有误| ✔    |✔
+支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot| ✔    |✔
+一键生成分页查询| ✔    |✔
+代码模版，生成cdata和collection语句| ✔    |✔
+一键添加resultMap中未被使用的属性| ✔    |✔
+一键生成mybatis接口的testcase | ✘    |✔
+通过方法名生成sql | ✘    | ✔
+通过数据库生成crud代码| ✘    |✔
+通过java类生成建表语句| ✘    |✔
+xml collection中的 param提示| ✘    |✔
+识别mybatis的trim where include等标签 全自动sql补全| ✘    |✔
+检测#{中的参数是否正确| ✘    |✔
+if test when test foreach collection $中的OGNL支持| ✘    |✔
+param重构功能(2.7.2)| ✘    |✔
+resultMap中column提示与检测(2.7.2)| ✘    |✔
+Mybatis xml代码格式化(2.8.2)| ✘    |✔
+从sql生成resultMap和java类 | ✘    |✔
+从sql直接生成mybatis xml和java接口方法 | ✘    |✔
+生成join | ✘    |✔
+
+试用或者购买链接: https://brucege.com/pay/view
+
+
+## 联系我
+- 加入qq群 由于Intellij插件市场需要两天审核  插件的bug修复 最新版本 会先放在qq群中 出现任何问题可在qq群反馈
+
+![qqGroup](https://images.brucege.com/qq5New.png)
+2群: 914051156 (人满)  
+3群：598080979 (人满)  
+4群：232578741 (人满)
+5群: 575733084
+1群备份: 789681969    
+2群备份: 140492753
+或者添加qq号:1098632410  
+
+- 或者添加我的微信:
+
+![weichaturl](https://images.brucege.com/wechatme.png)
+
+该项目使用了或参考了以下项目:
+
+codehelper.generator: https://github.com/zhengjunbase/codehelper.generator
+
+mybatis：https://github.com/mybatis/mybatis-3
+
+mybatis generator: https://github.com/mybatis/generator
+
+pageHelper: https://github.com/pagehelper/Mybatis-PageHelper
+
+mybatis-generator-gui: https://github.com/zouzg/mybatis-generator-gui
+
+mybatis generator plugin: https://github.com/itfsw/mybatis-generator-plugin
+
+mybatisplus: https://github.com/baomidou/mybatis-plus
+
+batlog: https://github.com/PerccyKing/batslog
+
+如果您是这些项目的作者，请联系我，我将发送免费的永久key给您
+
+截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.com/gejun123456/codehelperPluginDemo)
+
+大家可以学习https://www.imooc.com/learn/924 来掌握更多使用Intellij的技巧
+
+[plugin]: https://plugins.jetbrains.com/plugin/9837

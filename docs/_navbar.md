@@ -1,3 +1,5 @@
-* [试用购买](https://brucege.com/pay/view)
+* [接入 AI](quickstart.md)
+* [试用与价格](https://brucege.com/pay/view)
+* [企业购买](company.md)
 * [En](/en/)
 * [中文](/)

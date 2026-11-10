@@ -1,30 +1,45 @@
 * 快速开始
 
-  * [简介](README.md)
+  * [插件能帮你做什么](README.md)
+  * [安装并接入 AI](quickstart.md)
+  * [AI 修改 Mapper 的任务示例](ai-workflow.md)
+  * [功能与免费 / 付费版对比](features.md)
+  * [安装、激活与解绑](install.md)
+  * [企业客户购买](company.md)
+
+* AI 工作流
+
+  * [MCP 工具与客户端配置](mcp.md)
+
+* 代码生成
+
   * [配置数据库](configure.md)
   * [数据库生成crud代码](databaseToCrud.md)
   * [通过模版生成代码](generateByTemplate.md)
   * [方法名生成sql](methodNameToSql.md)
-  * [自动补全 检测正确等功能](complete.md)
-  * [MyBatis MCP 支持](mcp.md)
-  * [ognl支持](ognl.md)
   * [其他代码生成功能](otherGenerate.md)
   * [java类生成建表语句](javaToCrud.md)
+  * [生成join](join.md)
+  * [sql转换为mybatis xml和接口方法](sqlToMybatis.md)
+
+* 检查、重构与调试
+
+  * [自动补全与检查](complete.md)
+  * [ognl支持](ognl.md)
   * [实现安全的sql支持](typeSafe.md)
   * [重构](refactor.md)
   * [resultMap支持](resultMap.md)
   * [spring的支持](spring.md)
   * [快速测试sql](quicktestsql.md)
-  * [生成join](join.md)
   * [TypeAlias支持](typeAliasSupport.md)
   * [代码格式化](formatter.md)
   * [sql标红处理](sqlred.md)
   * [mybatis注解支持](annotation.md)
   * [达梦等其他数据库支持](damengsupport.md)
   * [mybatis日志转sql](sqlLog.md)
-  * [sql转换为mybatis xml和接口方法](sqlToMybatis.md)
-  * [安装和激活和解绑](install.md)
-  * [企业客户购买激活](company.md)
+
+* 帮助与支持
+
   * [社区版支持](community.md)
   * [设置详解](settings.md)
   * [更新日志](changelog.md)

@@ -1,64 +1,16 @@
-# MyBatis MCP (Model Context Protocol) Support
+# MyBatis MCP: Tools and Client Setup
 
-MyBatisCodeHelper-Pro provides **MCP (Model Context Protocol)** support, enabling AI coding assistants (such as Claude Code) to interact directly with your MyBatis project, making MyBatis development faster, more accurate, and more context-efficient.
+The plugin's MCP server gives AI assistants access to mapper lookup, configured database metadata, generator profiles, static checks, dynamic SQL rendering, and code generation.
 
----
+**[First-time setup and task walkthrough](/en/quickstart.md)** · [Features and editions](/en/features.md) · [Try Marketplace Edition](https://plugins.jetbrains.com/plugin/14522-mybatiscodehelperpro-marketplace-edition-)
 
-# 🚀 Why Use MyBatis MCP?
+## Use the tools as a workflow
 
-When working with MyBatis projects, AI coding assistants frequently need to:
+Find the existing mapper, inspect actual columns, follow the project profile, make the change, and validate it. For dynamic SQL, render representative inputs and use tests with expected outcomes to check business behavior.
 
-* Locate the XML file corresponding to a mapper interface
-* Inspect database table schemas
-* Discover existing SQL statements
+On-demand context queries and tool-based generation and checking can reduce manual context gathering and repeated model work. Include tool definitions, calls, and results when comparing total token usage. Compare elapsed time and actual metered charges for the same task; savings depend on the client, model, returned content, and verification requirements.
 
-Without MCP, the AI typically searches the project, opens XML files, and extracts the required information itself. Besides consuming additional tokens, this also fills the conversation context with large amounts of XML that are irrelevant to the final answer.
-
-## With MCP vs. Without MCP
-
-| Operation                            | Without MCP                                               | With MCP                                  |                  Typical Savings                  |
-| ------------------------------------ | --------------------------------------------------------- | ----------------------------------------- | :-----------------------------------------------: |
-| Find mapper → XML mapping            | Search project files and verify mapping (~150–250 tokens) | **Single MCP call (~30–60 tokens)**       |                **~100–200 tokens**                |
-| List SQL statements                  | Read XML file (~1,000–2,500 tokens depending on size)     | **Returns structured statement metadata** |              **~1,000–2,500 tokens**              |
-| Query table columns                  | Read DDL or inspect database (~300–500 tokens)            | **Single MCP call (~50 tokens)**          |                **~250–450 tokens**                |
-| Validate Mapper syntax & contracts   | Reading large XML manually invites hallucinations & misses| **Deep static analysis, ms-level diagnostics**| **Prevents dynamic SQL runtime bugs**          |
-| Dynamic SQL simulation & safe execution | Manually write tests, start Spring, or guess branches  | **Branch evaluation, parameter mocking & DryRun** | **Instant verification without test containers** |
-| Typical MyBatis development workflow | Multiple searches, XML reads, schema lookups              | **Direct MCP queries**                    | **Typically 60–90% less MyBatis-related context** |
-> Locating a mapper XML saves only a small number of tokens. The larger savings come from avoiding large XML reads and schema lookups. During real development these operations are often combined, so the overall savings accumulate quickly.
-
----
-
-# 📉 Cleaner Conversation Context
-
-Without MCP, AI assistants often need to load entire XML files into the current conversation context.
-
-For example, if a conversation involves three different mappers:
-
-```text
-Without MCP:
-3 × ~2,000 tokens
-≈ 6,000 tokens of XML occupying the current conversation context
-
-With MCP:
-3 × ~50 tokens
-≈ 150 tokens of structured metadata
-```
-
-That's roughly **5,800 fewer tokens** occupying the context window.
-
-A cleaner context allows the model to focus on the information that actually matters instead of large XML documents, often resulting in faster and more accurate responses.
-
----
-
-# 📈 Larger Projects Benefit Even More
-
-| Project Size | Typical XML Size |     XML Read Cost    | Working with 5 Mappers |
-| ------------ | :--------------: | :------------------: | :--------------------: |
-| Small        |      5–10 KB     |  ~1,000–2,500 tokens |  ~5,000–12,500 tokens  |
-| Medium       |     15–30 KB     |  ~4,000–7,500 tokens |  ~20,000–37,500 tokens |
-| Large        |     30–50 KB     | ~7,500–12,500 tokens |  ~37,500–62,500 tokens |
-
-As projects grow, mapper XML files become larger and more numerous. MCP continues to return only the information the AI actually needs, making its advantages increasingly significant.
+Static checks, rendering, database execution, and test assertions provide different evidence. Generating a test skeleton is not a completed verification.
 
 ---
 
@@ -238,6 +190,8 @@ Generate or update a MyBatis mapper testcase.
 
 > The tool creates or updates the mapper test class, the `setUpMybatisDatabase` method, the mapper field, and the `mybatisTestConfiguration` XML when needed. When `methodName` is provided, it also generates the corresponding test method; if that method already exists, the response includes a warning.
 
+Versions supporting test run hints also return a run command and working directory when the build tool is detected. Generated calls use placeholder inputs and lack business assertions; setup may auto-commit writes. Review the test connection and transaction settings, add valid fixtures and assertions, then run the test and report actual outcomes.
+
 ---
 
 ## `validate_mybatis_mapper`
@@ -266,7 +220,7 @@ Performs **deep static contract validation** of MyBatis mapper XML and Java inte
    * Automatically detects dynamic SQL tags: `<if>`, `<choose>`, `<when>`, `<otherwise>`, `<where>`, `<trim>`, `<set>`, `<foreach>`, and `${...}` substitutions
    * **Structured Coverage Contract**: Replaces ambiguous numeric scores with explicit `checksExecuted` and `checksSkipped` lists in `summary`
    * **Actionable Recommendations**:
-     * `ALL_STATIC_PASSED`: All statements are deterministic static SQL and pass all static contract checks. AI can be certain the SQL is 100% correct, **safely skipping unit test execution** and saving development time and tokens.
+     * `ALL_STATIC_PASSED`: Statements are static SQL and the executed static checks found no issues. Read `summary.checksSkipped` as well. This does not establish runtime or business correctness and is not a reason by itself to skip relevant tests.
      * `STATIC_CHECKS_PASSED_WITH_DYNAMIC_SQL`: Static contracts passed, but due to conditional runtime branches, recommends using `run_mybatis_sql` for dynamic branch evaluation or writing unit tests covering branch permutations.
      * `PASSED_WITH_WARNINGS`: Static contracts passed, but warnings indicate potential defects (e.g., suspicious typos, mismatched types).
      * `ERRORS_FOUND`: Returns line numbers, error descriptions, and actionable fix suggestions.
@@ -295,13 +249,13 @@ A headless dynamic SQL evaluation engine for rendering, validating syntax, and s
 * **Branch Coverage & Conditional Overrides**:
   * Supply `params` (e.g. `{"status": 1, "userId": 1001}`) for automatic OGNL evaluation
   * Override specific `<if test="...">` conditions via `ifTests` (e.g. `{"status != null": true}`)
-  * Use `allIfTestsTrue: true` to force all dynamic branches active (verifies full syntax coverage)
+  * Use `allIfTestsTrue: true` to force if conditions to true and inspect that combination; this does not cover all possible branch combinations
   * Use `allIfTestsFalse: true` to evaluate baseline SQL without dynamic branches
 * **Druid SQL Syntax Validation**: Automatically parses rendered SQL using the Druid parser for target dialects (MySQL, PostgreSQL, Oracle, SQLServer, H2, DB2, etc.) to catch syntax errors, missing commas, or misplaced keywords.
 * **Safe Database Execution with Dry-Run Rollback**:
   * Reuses database credentials configured in IntelliJ's Database tool window, or accepts `username`/`password` overrides
   * SELECT queries are capped by `maxRows` (default 50) to protect conversation context
-  * DML statements (INSERT, UPDATE, DELETE) default to `dryRun: true`, executing inside a transaction that is **automatically rolled back**, proving database compatibility without corrupting real data.
+  * DML statements (INSERT, UPDATE, DELETE) default to `dryRun: true`, executing inside a transaction that is **automatically rolled back**, providing an execution result for that input. Rollback is not an isolation boundary and may not undo every side effect; use a development / test database.
 * **Multiple SQL Sources**: Supports XML statement tags, `@Select`/`@Update` Java annotations, or direct uncommitted `rawXml` snippets.
 
 **Input**
@@ -397,7 +351,7 @@ When the MCP server starts, the configuration dialog provides a **"Generate / Up
 }
 ```
 
-AI tools like **Oh My Pi**, **Claude Code**, and **Cursor** automatically discover and connect to the MyBatis MCP server when opening the project.
+Use this file with clients that support project `.mcp.json` configuration. Configuration locations and enablement vary by client. Confirm the service connection and visible tools in your client.
 
 ---
 
@@ -436,9 +390,9 @@ Type: http
 URL:  http://127.0.0.1:63340/mcp
 ```
 
-#### 4. Codex / stdio Bridge (DeepSeek CLI / Python)
+#### 4. Bridge for stdio-only clients
 
-For clients supporting only stdio transport, bridge the HTTP endpoint using `mcp-remote` (e.g. in `~/.codex/config.toml`):
+For clients supporting only stdio transport, bridge the HTTP endpoint using `mcp-remote` (TOML example below; use the configuration location required by your client):
 
 ```toml
 [mcp_servers.mybatis]
@@ -468,7 +422,7 @@ Paste the raw JSON server entry:
 ```text
 Tools
     └── MyBatisCodeHelper
-            └── Start MCP Server
+            └── Start MyBatis MCP Server
 ```
 
 Starting the server opens an interactive configuration dialog (McpServerDialog) with one-click `.mcp.json` generation and connection commands for various clients.
@@ -495,18 +449,18 @@ Configure the listening port (default 63340) and monitor server status.
 After startup, the menu item toggles from
 
 ```text
-Start MCP Server
+Start MyBatis MCP Server
 ```
 
 to
 
 ```text
-Stop MCP Server
+Stop MyBatis MCP Server
 ```
 
 indicating the server is running.
 
-> The MCP server runs inside IntelliJ IDEA. When the IDE closes, the server stops and should be restarted after reopening.
+> The MCP server runs inside IntelliJ IDEA. Keep the target project open, wait for indexing, and confirm the server is running.
 
 ---
 
@@ -521,8 +475,8 @@ indicating the server is running.
 | List all database tables | `list_tables` | Full table inventory grouped by data source & schema |
 | View project data sources | `list_data_sources` | Inspect configured JDBC connections |
 | **Static Mapper & XML Contract Validation** | `validate_mybatis_mapper` | **Deep checks for property mapping, OGNL expressions, and syntax errors** |
-| **Pure Static SQL Skip-Test Assessment** | `validate_mybatis_mapper` | **ALL_STATIC_PASSED safely skips unit tests, saving tokens and time** |
-| **Dynamic SQL Branch Evaluation** | `run_mybatis_sql` | **Zero-overhead dynamic tag rendering with parameter simulation** |
+| Check validation coverage | `validate_mybatis_mapper` | Read checksExecuted and checksSkipped to plan further verification |
+| **Dynamic SQL Branch Evaluation** | `run_mybatis_sql` | Render dynamic SQL for the supplied inputs |
 | **SQL Syntax & Branch Verification** | `run_mybatis_sql` | **Druid syntax parser validation with branch override options** |
 | **Safe Real Database Execution** | `run_mybatis_sql` | **Automatic dryRun transaction rollback for DML statements** |
 | Generate CRUD from a table | `generate_crud` | Generates entity, mapper, XML, and service code |
@@ -531,10 +485,6 @@ indicating the server is running.
 | Set generator settings | `set_mybatis_generator_profile` | Synchronizes project configuration standards |
 ---
 
-# 📊 Key Benefits
+## Next steps
 
-1. **🎯 Deep Static Contract Validation** — Leverages IntelliJ IDEA's native DOM and language injection subsystems to validate ResultMap property mappings, OGNL syntax, and `#{}` parameter bindings. Pure static SQL can skip unit tests with 1.0 confidence.
-2. **⚡ Headless Dynamic SQL Evaluation & Safe Execution** — Evaluates dynamic `<if>`/`<choose>` branches, validates SQL syntax via Druid parser, and executes queries against real databases with automatic dry-run rollback.
-3. **📉 Maximum Context Conservation** — Delivers compact structured JSON, eliminating the need to feed large XML documents into AI context windows.
-4. **🛠️ Complete Generation & Engineering Workflow** — Reads and writes code generation profiles, scaffolding complete CRUD implementations and test suites.
-5. **🔌 Universal AI Tool Compatibility** — Offers one-click `.mcp.json` generation and works out of the box with Oh My Pi, Claude Code, Cursor, Windsurf, Codex, and cc-switch.
+[Connect your assistant](/en/quickstart.md) · [Features and editions](/en/features.md) · [Try Marketplace Edition](https://plugins.jetbrains.com/plugin/14522-mybatiscodehelperpro-marketplace-edition-)

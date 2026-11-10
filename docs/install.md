@@ -1,19 +1,28 @@
 
+# 安装、试用与激活
+
+## 先选择与你购买渠道对应的版本
+
+| 购买渠道 | 安装版本 | 试用 / 购买入口 |
+| --- | --- | --- |
+| brucege.com 官网 | MyBatisCodeHelperPro，不带 Marketplace Edition | [官网试用与购买](https://brucege.com/pay/view) |
+| JetBrains Marketplace；企业客户及中国以外用户 | MyBatisCodeHelperPro (Marketplace Edition) | [Marketplace](https://plugins.jetbrains.com/plugin/14522-mybatiscodehelperpro-marketplace-edition-) |
+
+两个发行版本的购买和激活渠道不同。已有授权请安装对应版本；企业客户的购买与激活见 [企业客户说明](company.md)。价格、试用及授权条件以对应渠道页面为准。
+
+安装后希望直接让 AI 调用插件，请继续 [安装并接入 AI](quickstart.md)。
+
 ## 安装
 ----
 
-### 插件可能会和其他的mybatis插件冲突，如 mybatisX,freeMybatisPlugin,mybatisPlugin,ToolKit.(mybatisLogPlugin没有冲突),如果发现比如方法名生成sql找不到对应的xml文件等，请先卸载掉其他的mybatis插件 然后使用 invalidate Cache and restart. https://images.brucege.com/invalidateCacheAndRestart.png
-
-
-
-支持下面产品 2016.2版本及以上版本
+支持的 IDE 与兼容版本请以所安装发行版本的 Marketplace 页面为准。
 
 - IntelliJ IDEA
 - IntelliJ IDEA Community Edition
 - Android Studio
 
 **使用 IDE 内置插件系统:**
-- <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"MybatisCodeHelperPro"</kbd> > <kbd>Install Plugin</kbd>
+- <kbd>Settings / Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > 搜索上表中的对应插件名称 > <kbd>Install</kbd>
 
 **直接下载** (不要解压zip 直接安装即可) 请根据IDEA的版本来下载对应的版本 
 如果链接下载不了 可以加qq群 598080979 群文件里面有最新的版本
@@ -22,10 +31,14 @@
 
 重启**IDE**.
 
-### 注意插件市场有两个版本，两个版本功能一样，只是购买方式不一样，brucege.com网站购买的请下载不带marketplace edition的版本t
+### 安装后无法找到 Mapper 或 XML？
+
+先等待项目索引完成，检查 XML namespace 与接口、模块依赖及资源目录。安装了多个 MyBatis 插件时，可能存在冲突，可先禁用其他相关插件并重启排查，详见 [常见问题](question.md)。
 
 
 ## 激活
+
+以下激活码操作适用于官网购买的版本。Marketplace Edition 请按 [企业客户说明](company.md) 中的 JetBrains 账号 / 离线授权方式激活。
 
 ### 激活码激活  
 
@@ -41,7 +54,7 @@
 
 激活的时候 如果出现 connect error 请检查下IDEA是否设置了proxy 可以去掉proxy试试  
 
-#### 如果还有问题，请参考 [activate](/activate) 
+#### 如果还有问题，请参考 [激活问题排查](activate.md)
 
 
 ### 离线激活
