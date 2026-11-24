@@ -24,8 +24,8 @@ Or add a comment before the xml tag
 ![checkOgnlSingleCharStringCompare](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/checkOgnlSingleCharStringCompare.gif)
 
 
-##Known issues
-Ognl current not support multiple method invoke, you can bind a variable by method invoke, then use the variable to invoke next method.
+## Chained method calls and property access (3.7.0+)
 
-Example:
-![ognlbindcall](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/ognlbindcall.png)
+In OGNL expressions such as `<if test="...">`, `<when test="...">`, and `<bind value="...">`, you can chain method calls and access properties between them. The plugin uses the type returned at each step to resolve the next member and provide completion and reference checks.
+
+For example, in `user.getAddress().getCity().trim()`, `getCity()` returns a `String`, so completion after the next dot offers string methods such as `trim()`. You can also mix property access and method calls, as in `user.getAddress().city.trim()`.

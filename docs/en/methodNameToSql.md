@@ -1,5 +1,13 @@
 ## Using Mapper method name to generate sql. Only need a method name, no need for method parameters and return type.
 
+## Generate a method and SQL with `.sql` (3.7.0+)
+
+On a new line inside a Java or Kotlin Mapper interface linked to Mapper XML, type `findById.sql` and press `Tab`. The plugin fills in the method signature and generates the corresponding SQL in the linked XML. You can also type `findById` and use `Alt+Enter` to choose **Generate mybatis sql**.
+
+## Complete method names at a Mapper call site
+
+Type `mapper.` to see suggestions for methods the plugin can generate. This setting is enabled by default as of 3.7.0. Java completion lists existing methods first and omits generated suggestions with the same name. To change this behavior, open **Settings → MyBatisCodeHelperPro** and look for **method name completion when use mapper.**
+
 ![findMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findMethodNameToSql.gif)
 
 ![updateMethodNameToSql](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/updateMethodNameToSql.gif)

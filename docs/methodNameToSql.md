@@ -2,6 +2,10 @@
 
 只需要一个方法名 即可 不需要方法和参数 和返回值 输入方法名后 alt+enter Generate mybatis sql 就可以生成了
 
+## 使用 `.sql` 后缀生成方法和 SQL（3.7.0 起）
+
+在已关联 Mapper XML 的 Java 或 Kotlin Mapper 接口体中另起一行，输入 `findById.sql`，按 `Tab`。插件会补全接口方法的签名，并在关联的 XML 中生成对应 SQL。也可以只输入 `findById`，使用 `Alt+Enter` 打开 **Generate mybatis sql**。
+
 ![findMethodNameToSql](https://images.brucege.com/findMethodNameToSql.gif)
 
 ![updateMethodNameToSql](https://images.brucege.com/updateMethodNameToSql.gif)
@@ -29,7 +33,9 @@
 ![methodToQueryWrapper](https://images.brucege.com/MethodNameToMybatisplusWrapper.gif)
 
 
-## 支持直接从mapper. 调用的时候就做代码提示和生成 (3.4.0)
+## 在 Mapper 调用处补全方法
+
+输入 `mapper.` 时，插件会提供可生成的方法名建议。3.7.0 起，该选项默认开启。Java 补全优先显示已有方法，并过滤与已有方法同名的生成建议。可在 **Settings → MyBatisCodeHelperPro** 中调整 **使用 mapper. 调用时提示方法名** 设置。
 ![fromMethodCall](https://images.brucege.com/mapperCallCompletion.gif)
 
 ## 使用方法  

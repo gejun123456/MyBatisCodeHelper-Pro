@@ -3,10 +3,10 @@
 
 ## 先选择与你购买渠道对应的版本
 
-| 购买渠道 | 安装版本 | 试用 / 购买入口 |
-| --- | --- | --- |
-| brucege.com 官网 | MyBatisCodeHelperPro，不带 Marketplace Edition | [官网试用与购买](https://brucege.com/pay/view) |
-| JetBrains Marketplace；企业客户及中国以外用户 | MyBatisCodeHelperPro (Marketplace Edition) | [Marketplace](https://plugins.jetbrains.com/plugin/14522-mybatiscodehelperpro-marketplace-edition-) |
+| 购买渠道                               | 安装版本 | 试用 / 购买入口 |
+|------------------------------------| --- | --- |
+| brucege.com 官网                     | MyBatisCodeHelperPro，不带 Marketplace Edition | [官网试用与购买](https://brucege.com/pay/view) |
+| JetBrains Marketplace；中国以外用户或者企业客户 | MyBatisCodeHelperPro (Marketplace Edition) | [Marketplace](https://plugins.jetbrains.com/plugin/14522-mybatiscodehelperpro-marketplace-edition-) |
 
 两个发行版本的购买和激活渠道不同。已有授权请安装对应版本；企业客户的购买与激活见 [企业客户说明](company.md)。价格、试用及授权条件以对应渠道页面为准。
 
@@ -39,6 +39,12 @@
 ## 激活
 
 以下激活码操作适用于官网购买的版本。Marketplace Edition 请按 [企业客户说明](company.md) 中的 JetBrains 账号 / 离线授权方式激活。
+
+### 在 IDE 中试用或扫码购买（3.7.0 起）
+
+- **试用**。符合试用条件时，在插件未激活通知中点击 **一键免费试用**，即可在 IDE 中申请并激活试用。
+- **购买**。打开 **Tools → MybatisCodeHelper → 立即购买 / 恢复订单**，或在未激活通知中点击 **立即购买**。输入接收激活码的邮箱，选择套餐，点击 **确认并扫码支付**。付款成功后，插件会自动激活当前设备，激活码也会发送到邮箱。
+- **恢复订单**。关闭购买窗口后，可从同一菜单恢复待处理订单，并点击 **查询付款结果**。如果已经付款但自动激活未完成，点击 **重试激活**，或使用邮件中的激活码手动激活。
 
 ### 激活码激活  
 

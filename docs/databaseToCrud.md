@@ -1,3 +1,14 @@
+## 从数据库同步已有 Java 实体与 Mapper XML（3.7.0 起）
+
+数据库表新增列后，可以给已有的 Java 实体和 Mapper XML 补充字段与映射。先确认 Mapper XML 有 `resultMap`，且 `resultMap` 的类型能解析到 Java 实体。
+
+1. 在 Mapper XML 编辑器中右键，选择 **从数据库同步实体与 XML…**，按提示选择 `resultMap`，再选择数据源并确认目标表。XML 入口支持插件配置的 JDBC 数据源和 IDEA 的 Database 数据源。
+2. 也可以在 IDEA 的 **Database** 工具窗口中右键单张表，选择同一操作，再确认要同步的 Mapper XML 和 `resultMap`。
+3. 勾选需要补充的列，点击 **对比修改…**，逐项查看 Java 属性、`resultMap` 和 SQL 的差异。
+4. 根据需要勾选受支持的 `INSERT`、`UPDATE` 和自定义查询改动，点击 **应用所选修改** 写入文件。
+
+同步会保留已有的 Java 类型和映射。构造器映射、嵌套属性映射或无法安全修改的 SQL 请手动处理。
+
 ## 使用Intellij自带的datasource来生成 最简单的从数据库生成代码
 
 ![intellijDatasourceGenerateCrud](https://images.brucege.com/databaseCrud.gif)

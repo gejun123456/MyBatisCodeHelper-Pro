@@ -1,20 +1,19 @@
-## mybatis xml code formatter(from 2.8.2)
+# Format Mapper XML
 
+As of 3.7.0, use the IDE's **Reformat Code** shortcut in the Mapper XML editor. The default is `Ctrl+Alt+L` on Windows and Linux or `⌥⌘L` on macOS. Check the IDE's Keymap for your configured shortcut.
 
-## please config database and dialect before reformat https://gejun123456.github.io/MyBatisCodeHelper-Pro/#/configure
+| Scope | How to format |
+| --- | --- |
+| Current statement | Place the caret inside a `<select>`, `<insert>`, `<update>`, `<delete>`, or `<sql>` tag. Press the shortcut with no selection. |
+| Selection | Select the text and press the shortcut. |
+| Entire file | Move the caret outside the SQL statements and fragments, clear the selection, and press the shortcut. |
 
+## Formatter settings
 
-The formatter support mybatis dynamic tag，and ognl expression like if test ect.
+Under **Settings → MyBatisCodeHelperPro → Formatter**, select `Plugin formatter` or `No formatter`. The latter disables formatting for Mapper XML and its injected SQL fragments. Existing `IDEA default formatter` settings migrate to `No formatter` on upgrade. Select `Plugin formatter` to turn formatting back on.
 
-Example:
+This feature requires the IDE's Database Tools and SQL support. The formatter uses the Mapper file's configured SQL dialect when available, then falls back to the database type in the plugin settings and finally to the generic SQL dialect. [Configure the database and SQL dialect](configure.md)
 
-![selectformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/selectformat.gif)
+## What formatting preserves
 
-![insertSelectiveReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/insertSelectiveReformat.gif)
-
-![findByAllReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/findByAllReformat.gif)
-
-![ognlReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/ognlReformat.gif)
-
-
-![complexSqlReformat](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/complexSqlReformat.gif)
+The plugin adjusts indentation, spacing, and line breaks around tags and SQL. It preserves dynamic tags, parameter expressions, string contents, comments, and existing SQL keyword case. It skips statements that could change meaning, such as those with arbitrary `${...}` substitution or string literals that span dynamic tags.

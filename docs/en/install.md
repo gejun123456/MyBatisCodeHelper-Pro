@@ -26,3 +26,4 @@ Check the relevant Marketplace edition page for supported IDE versions.
 
 ![offlineCode](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/offlineForMarketPlace.png)
 ![mybatislogsupport](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/activateMarketPlace.png)
+

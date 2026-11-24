@@ -23,8 +23,8 @@
 ## ognl单字符串比较检测与提示添加toString调用
 ![checkOgnlSingleCharStringCompare](https://images.brucege.com/checkOgnlSingleCharStringCompare.gif)
 
-## 注意 
-Ognl目前不支持多层方法的调用，如果有多层方法调用 请先bind一个变量 在调用下一个方法
+## 链式方法调用与属性访问（3.7.0 起）
 
-类似于如下
-![ognlbindcall](https://images.brucege.com/ognlbindcall.png)
+在 `<if test="...">`、`<when test="...">` 和 `<bind value="...">` 等 OGNL 表达式中，可以连续调用方法，也可以在方法调用之间访问属性。插件使用每一步的返回类型解析下一步，并提供补全和引用检查。
+
+例如，`user.getAddress().getCity().trim()` 中，`getCity()` 返回 `String`，因此输入下一个 `.` 后会看到 `trim()` 等字符串方法。也可以混用属性与方法，例如 `user.getAddress().city.trim()`。

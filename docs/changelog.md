@@ -1,3 +1,15 @@
+## 3.7.0
+
+- **新增** Java 和 Kotlin Mapper 接口已关联 XML 时，输入 `findById.sql` 后按 `Tab`，即可生成接口方法和 SQL。[方法名生成 SQL](methodNameToSql.md)
+- **改进** 默认启用 Mapper 方法调用补全。Java 补全优先显示已有方法，并过滤同名生成建议。[方法调用补全](methodNameToSql.md)
+- **改进** 重做 Mapper XML 格式化，支持整个文件、选区和当前语句。格式化保留动态标签、参数、字符串和注释，跳过可能改变 SQL 含义的语句。旧的 `IDEA default formatter` 设置会迁移到 `No formatter`。[格式化说明](formatter.md)
+- **新增** 可从 Mapper XML 或数据库表发起同步，预览并应用数据库新增列对应的 Java 属性、`resultMap` 映射和受支持的 SQL 修改。[从数据库同步实体与 Mapper XML](databaseToCrud.md)
+- **新增** OGNL 支持链式方法调用和属性访问，并根据返回类型提供补全和引用检查。[OGNL 支持](ognl.md)
+- **新增** XML 没有对应接口方法时，可根据 `parameterType` 声明的类或类型别名解析参数，支持嵌套属性、`foreach` 和 `bind`。[参数补全](complete.md)
+- **新增** 官网版支持在 IDE 内扫码购买、恢复待处理订单和付款后自动激活。符合试用条件的用户可在未激活通知中一键试用。[试用与激活](install.md)
+- **修复** 循环 `include` 导致 SQL 展开和 OGNL `bind` 变量收集出现无限递归。
+- **修复** More SQL 批量更新按复合主键的全部列匹配记录，并在执行 SQL 前拦截空批次。
+
 <strong>3.6.6</strong>
 <ul>
 <li>[FIX] 修复 ProGuard 混淆导致 `run_mybatis_sql` MCP 工具序列化返回体时抛出 `Gson duplicate-fields` 异常的问题（在混淆配置中保留 MCP 相关的请求响应 DTO 与工具类）</li>

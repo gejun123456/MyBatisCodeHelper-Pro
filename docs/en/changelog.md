@@ -1,3 +1,15 @@
+## 3.7.0
+
+- **New** In a Java or Kotlin Mapper interface linked to XML, type `findById.sql` and press `Tab` to generate the method and its SQL. [Generate SQL from method names](methodNameToSql.md)
+- **Improved** Mapper call suggestions are enabled by default. Java completion ranks existing methods first and omits generated suggestions with the same name. [Mapper call completion](methodNameToSql.md)
+- **Improved** Format a Mapper XML file, a selection, or the current statement. The formatter preserves dynamic tags, parameters, string literals, and comments, and skips statements whose SQL semantics could change. Existing `IDEA default formatter` settings migrate to `No formatter`. [Formatting](formatter.md)
+- **New** Start a sync from Mapper XML or a database table. Preview and apply Java properties, `resultMap` mappings, and supported SQL updates for new database columns. [Sync entities and Mapper XML](databaseToCrud.md)
+- **New** OGNL supports chained method calls and property access, with completion and reference checks based on return types. [OGNL support](ognl.md)
+- **New** When a statement has no matching interface method, the plugin resolves parameters using the class or alias declared in `parameterType`, including nested properties, `foreach`, and `bind`. [Parameter completion](complete.md)
+- **New** The brucege.com edition supports in-IDE QR code payments, pending order recovery, and automatic activation after payment. Eligible users can start a free trial from the activation reminder. [Trial and activation](install.md)
+- **Fixed** Cyclic `include` references no longer cause infinite recursion during SQL expansion or OGNL `bind` variable collection.
+- **Fixed** More SQL batch updates match records on all columns of a composite primary key. Empty batches are rejected before SQL execution.
+
 <strong>3.6.6</strong>
 <ul>
 <li>[FIX] 修复 ProGuard 混淆导致 `run_mybatis_sql` MCP 工具序列化返回体时抛出 `Gson duplicate-fields` 异常的问题（在混淆配置中保留 MCP 相关的请求响应 DTO 与工具类）</li>
